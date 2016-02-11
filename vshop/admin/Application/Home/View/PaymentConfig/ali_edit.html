@@ -1,0 +1,64 @@
+<include file="Public:header" />
+
+<div class="content">
+<div class="title">编辑支付宝支付[ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3  class="add">
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >支付公司：</TD>
+	<TD class="tLeft" >
+	<select name="pay_name" id="pay_name" onchange="rungo();">
+	 <option value="支付宝" selected>支付宝</option>
+	</select>
+	<a href="__URL__/wx_add">切换到微信支付</a>
+	<a href="__URL__/wxapp_add">切换到微信APP支付</a>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >账户昵称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  NAME="account_nickname" value="{$vo.account_nickname}"> 用以区别不同账号</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >合作身份者id：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  NAME="partner" value="{$vo.partner}"> 合作身份者id，以2088开头的16位纯数字</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >key：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  NAME="key" value="{$vo.key}"> 安全检验码，以数字和字母组成的32位字符</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >账号：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  NAME="seller_email" value="{$vo.seller_email}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT class="small bLeft" NAME="status">
+	  <option value="1" <eq name="vo.status" value="1">SELECTED</eq> >启用</option>
+	  <option value="0" <eq name="vo.status" value="0">SELECTED</eq> >禁用</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

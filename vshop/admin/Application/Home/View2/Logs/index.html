@@ -1,0 +1,55 @@
+<include file="Public:header" />
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+
+	  <div class="guanli">
+
+	  </div>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<myhtml:list id="checkList" name="user" style="list" checkbox="true" action="true" datasource="list" show="id:编号|8%,msg:信息,create_time|toDate='Y-m-d H#i#s':时间" order_fields="id" actionlist="edit:编辑,foreverdel:删除" />  
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

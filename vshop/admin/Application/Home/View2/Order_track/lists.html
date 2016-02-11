@@ -1,0 +1,13 @@
+  <table>
+   <tbody>
+    <volist name="list" id="vo">
+    <tr class="order-win">
+     <td class="order-win1">{$vo.user_name}</td>
+     <td>{$vo.action}</td>
+     <td>{$vo.msg}</td>
+     <td>{$vo.ip}</td>
+     <td>{$vo.create_time|toDate='Y-m-d H#i#s'}</td>
+    </tr>
+	</volist>
+   </tbody>
+  </table>

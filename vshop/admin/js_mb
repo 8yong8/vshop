@@ -1,0 +1,63 @@
+$(function() {
+    var p = $('#js_region').attr('p');
+    var c1 = $('#js_region').attr('c1');
+    var c2 = $('#js_region').attr('c2');
+    var html = '';
+    html = '<select id="province_id" class="select_input" name="province_id"><option value="">省份</option>';
+    var i = 0;
+    for (i = 0; i < provincecount; i++) {
+        if (provinces[i][0] == p) {
+            html += '<option selected="selected" value="' + provinces[i][0] + '">' + provinces[i][1] + '</option>';
+        } else {
+            html += '<option value="' + provinces[i][0] + '">' + provinces[i][1] + '</option>';
+        }
+    }
+    html += '</select>';
+    html += ' <select id="city_id" class="select_input" name="city_id"><option value="">城市</option>';
+    var i = 0;
+    for (i = 0; i < citycount; i++) {
+        if (cities[i][0] == p) {
+            if (cities[i][1] == c1) {
+                html += '<option selected="selected" value="' + cities[i][1] + '">' + cities[i][2] + '</option>';
+            } else {
+                html += '<option value="' + cities[i][1] + '">' + cities[i][2] + '</option>';
+            }
+        }
+    }
+    html += '</select>';
+    html += ' <select id="county_id" class="select_input" name="county_id"><option value="">区县</option>';
+    var i = 0;
+    for (i = 0; i < countycount; i++) {
+        if (counties[i][0] == c1) {
+            if (counties[i][1] == c2) {
+                html += '<option selected="selected" value="' + counties[i][1] + '">' + counties[i][2] + '</option>';
+            } else {
+                html += '<option value="' + counties[i][1] + '">' + counties[i][2] + '</option>';
+            }
+        }
+    }
+    html += '</select>';
+    $('#select_region').html(html);
+    
+    $('#province_id').change(function() {
+        var pid = $(this).val();
+        var i = 0;
+        document.getElementById('city_id').length = 1;
+        document.getElementById('county_id').length = 1;
+        for (i = 0; i < citycount; i++) {
+            if (cities[i][0] == pid) {
+                document.getElementById('city_id').options[document.getElementById('city_id').length] = new Option(cities[i][2], cities[i][1]);
+            }
+        }
+    });
+    $('#city_id').change(function() {
+        var cid = $(this).val();
+        var i = 0;
+        document.getElementById('county_id').length = 1;
+        for (i = 0; i < countycount; i++) {
+            if (counties[i][0] == cid) {
+                document.getElementById('county_id').options[document.getElementById('county_id').length] = new Option(counties[i][2], counties[i][1]);
+            }
+        }
+    })
+})

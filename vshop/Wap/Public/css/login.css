@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+/*未登录*/
+.wdl{ width:200px; height:100px; background:url(../images/tmh.png) repeat;-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; position:fixed; left:50%; margin-left:-100px; top:50%; margin-top:-50px; line-height:100px; color:#fff; text-align:center; font-size:14px; display:none; z-index:1000000;}
+/*注册登录*/
+.info{ width:auto;  overflow:hidden; margin:0 auto;}
+.btxt{ width:auto; margin:10px 10px 0 10px; height:32px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; border:1px solid #999;background:#fff;padding:5px 10px 5px 18px; }
+.ptxt{width:auto;margin:10px 10px 0 10px; height:32px; padding:5px 10px 5px 18px;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;  border:1px solid #999;background:#fff;}
+.p_txt{ width:100%; height:30px; font-size:16px; color:#9e9e9e; line-height:30px;font-family:"微软雅黑";}
+.bbtxt{width:auto;margin:10px 10px 0 10px; height:40px;}
+.stxt{ background:#fff; width:40%; height:32px; padding:5px 10px 5px 18px; float:left;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;border:1px solid #999;}
+.sstxt{ width:40%; height:42x; overflow:hidden; float:right; line-height:42px; background:#334a6a; color:#fff; text-align:center; font-size:14px; }
+.sstxt2{ width:40%; height:42x; overflow:hidden; float:right; line-height:42px;  text-align:center; background:#fff;}
+.sstxt2 img{ width: auto; height:42px;}
+.stxt_1{ background:#fff; width:60%; height:32px; padding:5px 10px 5px 18px; float:left;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;border:1px solid #999;}
+.sstxt_1{ width:25%; height:36px; padding-top:6px;overflow:hidden; float:right; line-height:30px; }
+.t_btn{ width:100%; background:#FC6;color:#333; height:30px; cursor:pointer;font-size:14px; text-align:center; }
+.s_txt{width:100%; height:32px; font-size:16px; color:#9e9e9e; line-height:32px; font-family:"微软雅黑";}
+.agrin{ height:30px; line-height:30px; color:#333; font-size:16px; margin:10px 10px 0 10px;}
+.agrin a{ color:#4f617e;}
+.cbox{ background:#FFF; border:1px solid #9e9e9e; width:20px; height:20px;}
+.bbtn{ width:auto; height:44px;  margin:10px 10px 0 10px;}
+.i_btn{ width:100%; height:44px; text-align:center; color:#fff; cursor:pointer; -webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;-webkit-user-select: none;font-size:20px; font-family:"微软雅黑"; background:#fb60ac;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;-webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;-webkit-user-select: none;}
+.w_btn{ width:100%; height:44px; text-align:center; color:#333; cursor:pointer; -webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;-webkit-user-select: none;font-size:20px; font-family:"微软雅黑"; background:#ececec;-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; border:1px solid #b4b4b4;-webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;-webkit-user-select: none;}
+.btna{ width:auto; height:44px;  margin:10px 10px 0 10px; text-align:right;}
+.btna a{ font-size:16px; color:#989898;}
+.btna span{ float:left;}
+.btna span a{ color:#2f4567;}
+
+.denglu{width:auto; margin:30px 10px 0 10px; min-height:30px; max-height:60px;}
+.qidenglu{width:auto; margin:10px 10px 0 10px; height:100px;}
+.qidenglu a{width:20%; overflow:hidden; line-height:30px; display:block; float:left; margin-right:15px; font-size:16px; color:#333; text-align:center;}
+
+/*帮助*/
+.help{ width:auto; margin:10px 10px 0 10px; overflow:hidden; border:1px solid #dedede; background:#fff;}
+.help li{ width:100%; height:46px; font-size:20px; float:left; border-bottom:1px solid #dedede; line-height:46px;}
+.help a{width:95%; height:46px; display:block; text-indent:40px; background:url(../images/ico_next.png) no-repeat right center; color:#333;}
+.help_info{ width:auto; margin:10px 10px 0 10px; overflow:hidden; border:1px solid #dedede; background:#fff; padding:15px; min-height:400px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+.help_info h1{ font-size:20px; font-weight:bold; text-align:center; line-height:50px;}
+.help_info p{ text-indent:40px; font-size:16px; line-height:30px;} 
+.help_info img{ width:100%; text-align:center;}

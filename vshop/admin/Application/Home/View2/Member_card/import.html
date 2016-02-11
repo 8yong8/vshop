@@ -1,0 +1,34 @@
+<include file="Public:header" />
+
+<div class="content">
+<div class="title">新增会员卡[ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3 class="add" style="margin-bottom:550px;">
+<FORM METHOD=POST id="form1" action="__URL__/import?<?php echo time(); ?>" enctype="multipart/form-data">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+
+<TR>
+	<TD class="tRight" >Excel导入：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="file" NAME="text" size="100">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" ></TD>
+	<TD class="tLeft" >
+	（excel导入）<a href="__ROOT__/card.xls"><font color="red"><strong>格式参考</strong></font></a>
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

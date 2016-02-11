@@ -1,0 +1,200 @@
+<include file="Public:header" />
+<SCRIPT LANGUAGE="JavaScript">
+var imgurl = "{$imgurl}";
+
+//插入分页
+function insertPage(){
+	var oEditor = FCKeditorAPI.GetInstance("content");
+	if (oEditor.EditMode==FCK_EDITMODE_WYSIWYG)
+	{
+	   var text = document.getElementById('title').value;
+	   oEditor.InsertHtml('[page]'+text+'[/page]');
+	}
+	else
+	{
+		return false;
+	}
+	return;
+}
+
+//缩略图
+function insertsl(dir){
+  var imgdir = dir;
+  jQuery('#litpic').val(imgurl+imgdir);
+  var img = "<img src='"+imgurl+imgdir+"' width='200px'>";
+  jQuery('#showimg').html(img);
+  InsertHTML("<img src='"+imgurl+imgdir+"'>");
+}
+
+//多图添加内容
+function insertnrjson(msg){
+  var objs = eval('('+msg+')');
+  var oEditor = FCKeditorAPI.GetInstance("content");
+  for(i=0;i<objs.length;i++){
+    var img = "<img src='"+imgurl+objs[i].filepath+"' title='"+objs[i].title+"' alt='"+objs[i].title+"'>";
+    oEditor.InsertHtml(img);
+  }
+
+}
+
+//内容
+function insertnr(dir){
+  var imgdir = dir;
+  var img = "<img src='"+imgurl+imgdir+"'>";
+	var oEditor = FCKeditorAPI.GetInstance("content");
+	if (oEditor.EditMode==FCK_EDITMODE_WYSIWYG)
+	{
+	   oEditor.InsertHtml(img);
+	}
+	else
+	{
+		return false;
+	}
+	return;
+}
+
+</SCRIPT>
+<div class="content">
+<div class="title">添加数据 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>" enctype="multipart/form-data">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="标题不能为空" NAME="title" value="{$vo.title}" ID="title"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >简略标题：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="shorttitle"   ID="shorttitle" value="{$vo.shorttitle}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >链接地址：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="huge bLeftRequire" NAME="link"   ID="link" value="{$vo.link}"> 如果填上链接地址,将会直接跳转此地址.(链接地址需要有http://)</TD>
+</TR>
+
+<TR>
+	<TD class="tRight">状态：</TD>
+	<TD class="tLeft">
+	<SELECT class="small bLeft"  NAME="status">
+	<option <eq name="vo[status]" value="1" >selected</eq> value="1">通过</option>
+	<option <eq name="vo[status]" value="0" >selected</eq> value="0">待审核</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >文章来源：</TD>
+	<TD class="tLeft" ><input name="source" type="text" id="f_source" style="width:160px;" value="{:C('site_name')}"/> &nbsp;作 者：<input name="author" type="text" id="author" style="width:120px;"  value="{:C('site_name')}"/></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >关键字：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="keyword" value="{$vo['keyword']}"></TD>
+</TR>
+<TR>
+	<TD class="tRight" >描述</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="description" ROWS="6" COLS="45">{$vo['description']}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >分类：</TD>
+	<TD class="tLeft" >
+	<span id="cid_span">
+	<select name="cid" id="cid" onchange="cid_change();">
+	<volist name="types" id="type">
+	<option value="{$type[id]}" <eq name="vo[cid]" value="$type[id]">selected</eq> >
+	{$type.node_name}</option>
+	</volist>
+	</select>
+	</span>
+	</TD>
+</TR>
+<neq name="flags" value="">
+<TR>
+	<TD class="tRight" >属性：</TD>
+	<TD class="tLeft" >
+	<volist name="flags" id="flag" key="k">
+	<input name="flags[]" value="{$flag['id']}" type="checkbox"
+	<php>
+	if($vo['flags']){
+	  $ar = explode(',',$vo['flags']);
+	  if(array_search($flag['id'],$ar)!==false){
+	    echo 'checked="checked"';
+	  }
+	}
+	</php>
+	>{$flag['name']}&nbsp;
+	<php>
+	if($k%6==0){
+	  echo "<br>";
+	}
+	</php>
+	</volist>
+	</TD>
+</TR>
+</neq>
+<TR>
+	<TD class="tRight tTop">缩略图：</TD>
+	<TD class="tLeft">
+	<!--<input type="button" class="button" value="显示多缩略图" onclick="showhide()">-->
+	<div>
+		<input type="file" id="lit_pic" name="lit_pic" onchange="yulan(this,'show1')"> 大小260*260
+		<div id="show1">
+		<neq name="vo.lit_pic" value="">
+		<img src="{$vo.litpic}">
+		<INPUT TYPE="hidden" NAME="lit_pic" value="{$vo.lit_pic}">
+		</neq>
+		</div>
+	</div>
+	</TD>
+</TR>
+
+
+<TR>
+	<TD class="tRight tTop">广告图2：</TD>
+	<TD class="tLeft">
+	<div>
+		<input type="file" id="lit_pic2" name="lit_pic2" onchange="yulan(this,'show2','img_id2')"> 大小750*337
+		<div id="show2">
+		<neq name="vo.lit_pic2" value="">
+		<img src="{$vo.lit_pic2}" width="260px">
+		</neq>
+		</div>
+	</div>
+	</TD>
+</TR>
+<!--
+<TR>
+	<TD class="tRight tTop">内 容：</TD>
+	<TD class="tLeft"><font color="red">	<input type="button" onclick="window.open('__URL__/ajax_upimg/jsdo/insertnrjson/hash/{$hash}')" class="button" value="上传图片"></font></TD>
+</TR>
+-->
+<TR>
+    <TD class="tRight tTop">内 容：</TD>
+	<TD class="tLeft" colspan="2">
+	<myhtml:editor type="KINDEDITOR" items="base" id="content" name="content" width="650px" height="345px">{$vo.content}</myhtml:editor>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" ></TD>
+	<TD class="tLeft" >
+	<div id="yulan"></div>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button" >
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

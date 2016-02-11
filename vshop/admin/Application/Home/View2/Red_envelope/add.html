@@ -1,0 +1,68 @@
+<include file="Public:header" />
+<script>
+//搜索会员
+function get_members(){
+  var key = jQuery("#key").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/get_members",
+	data:"key="+key,
+	success:function(msg){
+	 var objs = eval('('+msg+')');
+	 var html = '<select name="member_id" id="member_id"><option value="0">选择</option>';
+	 for(i=0;i<objs.length;i++){
+
+	   if(i==0){
+	     html += '<option value='+objs[i].id+' selected>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }else{
+	     html += '<option value='+objs[i].id+'>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }
+	 }
+	 html += '</select>';
+	 jQuery('#cidspan').html(html);
+	}
+  })
+}
+</script>
+<div id="main" class="main" >
+<div class="content">
+<div class="title">新增红包积分[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >原因：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="title" ></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >会员：</TD>
+	<TD class="tLeft" >
+		&nbsp;&nbsp;搜索：<input id="key" style="width:100px;"> <INPUT TYPE="button" value="搜索" class="button" onclick="get_members();">
+		<span id="cidspan">
+		<select name="member_id" id="member_id">
+		  <option value="">选择</option>
+		  <neq name="vo" value="">
+		  <option value="{$vo.member_id}" selected>{$vo.member_name} | {$$vo.realname}</option>
+		  </neq>
+		</select>
+		</span>	
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >数量：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  NAME="num"></TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

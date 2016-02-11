@@ -1,0 +1,79 @@
+<include file="Public:header" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/EasyUI/themes/haidaoblue/easyui.css">
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <div class="guanli">
+		<FORM METHOD=get ACTION="__URL__/prom_list">
+			<TABLE cellpadding="1" cellspacing="2" width="100%">
+			<TR>
+				<TD class="tRight">类型：</TD>
+				<TD>
+				<select id="prom_type" name="prom_type">
+					<option value="">类型选择</option>
+					<option value="order" <eq name="prom_type" value="order">selected</eq> >订单优惠</option>
+					<option value="product" <eq name="prom_type" value="product">selected</eq> >产品优惠</option>
+					<option value="timed" <eq name="prom_type" value="timed">selected</eq> >限时优惠</option>
+				</select>
+				</TD>
+				<TD class="tRight">促销id：</TD>
+				<TD>
+				<INPUT TYPE="text" NAME="prom_id" class="small" value="{$prom_id}">
+				</TD>
+				<TD>
+				<input type="submit" value="提交" class="button_search">
+				</TD>
+			</TR>
+			</TABLE>
+		</FORM>	  
+	  </div>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<!--
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				-->
+				</div>
+
+				  <div class="datagrid-view">
+					<myhtml:list id="checkList" name="user" style="list" checkbox="true" action="false" datasource="list" show="id:编号|8%,prom_type|rs='order#订单促销@product#商品促销':类型|20%:edit,pid:优惠ID,award_value:优惠价格,limt:满足价格,info:规则说明,btime|toDate='Y-m-d H#i#s':开始时间,etime|toDate='Y-m-d H#i#s':结束时间" order_fields="id" align_left='info' actionlist="edit:编辑,look:查看使用情况" />  
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+
+<include file="Public:footer" />  

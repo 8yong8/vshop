@@ -1,0 +1,35 @@
+<include file="Public:header" />
+<script>
+
+$(function(){
+	setTimeout(function(){
+		history.go(-1);
+	},5000);
+})
+
+</script>
+<div class="menu">
+   <a class="back" href="javascript:history.go(-1);"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">信息提醒</div>
+</div>
+<div class="menber">
+    <div class="nopay">
+       <img src="__PUBLIC__/images/nopay.png">
+       <h2>{$error}</h2>
+       <p>5秒后页面自动跳转，您还可以：</p>
+       <p>1）<a href="__ROOT__/">返回首页</a></p>
+       <p>2）其他地方逛逛：
+	   <volist name="buttons"  id="button">
+	   <a href="{$button.href}">{$button.text}</a>
+	   </volist>
+	   <!--
+	   <a href="#">登录</a>
+	   <a href="#">注册</a
+	   ><a href="{$smarty.const.WEBAPP_DOMAIN_NAME}product/product/list?&area=0">免费区</a>
+	   <a href="{$smarty.const.WEBAPP_DOMAIN_NAME}product/product/list?&area=0">消费区</a>
+	   -->
+	   </p>
+    </div>
+</div>
+
+<include file="Public:footer" />

@@ -1,0 +1,132 @@
+<include file="Public:header" />
+  <!-- 内容区 -->
+  <div class="content">
+		<div class="site">
+			{:C('site_name')} {$board_title} > {$node_title}
+		</div>
+		<span class="line_white"></span>
+	<div class="goods mt10">
+		<FORM METHOD=get ACTION="__URL__">
+		<div class="guanli">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">ID：</TD>
+			<TD><INPUT TYPE="text" NAME="id" class="small" value="{$id}"></TD>
+			<TD class="tRight">用户名：</TD>
+			<TD><INPUT TYPE="text" NAME="username" class="small" value="{$username}"></TD>
+			<TD class="tRight">用户类型：</TD>
+			<TD>
+			<SELECT NAME="utype">
+				<OPTION VALUE="0" SELECTED>全部</OPTION>
+				<OPTION VALUE="1" <eq name="utype" value="1">SELECTED</eq> >普通用户</OPTION>
+				<OPTION VALUE="2" <eq name="utype" value="2">SELECTED</eq> >战略合作商</OPTION>
+				<OPTION VALUE="3" <eq name="utype" value="3">SELECTED</eq> >合作商</OPTION>
+				<OPTION VALUE="4" <eq name="utype" value="4">SELECTED</eq> >分销商</OPTION>
+				<OPTION VALUE="5" <eq name="utype" value="5">SELECTED</eq> >代理商</OPTION>
+			</SELECT>
+			</TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+		</div>
+		</FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					<a href="javascript:del();" class="l-btn l-btn-small l-btn-plain" id="delrows"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">删除</span><span class="l-btn-icon icon-del">&nbsp;</span></span>
+					</a>
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+					<tr class="row" >
+					  <th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+					  <th width="5%">
+					  <eq name="sort" value="1">
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-desc" style="text-align: center;" onclick="javascript:sortBy('id','1','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  <else/>
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-asc" style="text-align: center;" onclick="javascript:sortBy('id','0','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  </a>
+					  </eq>
+					  </th>
+					  <th width="5%">类型</th>
+					  <th width="10%">等级</th>
+					  <th width="8%">用户名</th>
+					  <th width="8%">真实名</th>
+					  <th width="8%">城市</th>
+					  <th width="8%">注册时间</th>
+					  <th>可用余额</th>
+					  <th>冻结余额</th>
+					  <th>状态</th>
+					  <th>操作</th>
+					</tr>
+					<volist name="list" id="vo" mod="2">
+					<tr class="datagrid-row <eq name="mod" value="1">datagrid-row-alt</eq>">
+					  <td><input type="checkbox" name="key"	value="{$vo.id}"></td>
+					  <td>{$vo.id}</td>
+					  <td>{$vo.utype|rs='1#会员#black@2#战略合作商#blue@3#合作商#red@4#分销商@5#代理商#purple'}</td>
+					  <td>
+					  会员等级:{$vo.lv_name} 
+					  <neq name="vo.utype" value="1">
+					  商家等级:{$vo.bus_lv_name}
+					  </neq>
+					  </td>
+					  <td><a href="__URL__/edit/id/{$vo.id}" target="_blank">{$vo.username}</a></td>
+					  <td>{$vo.realname}</td>
+					  <td>{$vo.province} - {$vo.city} - {$vo.district}</td>
+					  <td>{$vo.create_time|toDate='Y-m-d'}</td>
+					  <td>{$vo.balance|default='0.00'}</td>
+					  <td>{$vo.frozen|default='0.00'}</td>
+					  <td>{$vo.status|rs='0#待审核#red@1#审核通过'}</td>
+					  <td style="text-align:left;height:auto;">
+						&nbsp;<a href="javascript:edit('{$vo.id}')">编辑</a>&nbsp;
+						&nbsp;<a href="__MODULE__/Record/index/member_id/{$vo.id}" target="_balnk">交易记录查看</a>&nbsp;
+
+						<a href="__URL__/memmsg_edit/id/{$vo.id}" target="_balnk">其他信息</a>&nbsp;
+						<eq name="vo.utype" value="5">
+						<a href="__URL__/agent_edit/id/{$vo.id}" target="_balnk">代理商信息</a>&nbsp;
+						</eq>
+					  </td>
+					</tr>
+					</volist>
+					</table>
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+		 
+
+<!-- /内容区 -->
+</div>
+
+<include file="Public:footer" />  

@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-5-28, 16:07:35
+    Author     : 李春林
+*/
+label{vertical-align:middle}
+.inputcheckbox{vertical-align:middle;}
+body{font-family:tahoma;font-size:12px;}
+*{vertical-align : middle;}
+/* border_table style start */
+.border_table{border-width:1px;margin-top:10px;background:#fff;}
+.border_table th,.border_table td{border:1px solid #e1e1e1;vertical-align:middle;padding:5px 10px 5px;white-space:nowrap;word-break:keep-all}
+.border_table th,.border_table td.non{width:auto;}
+.border_table td.attr{white-space:pre-wrap;}
+.border_table thead th{color:#333;white-space:nowrap;text-align:center;background:url(../../images/admin/bg_5.png) repeat-x 0 -191px}
+.border_table tbody th{padding-right:5px; text-align:right;color:#707070;background-color:#f9f9f9}
+.border_table label{color:#777}
+.border_table1{border-width:1px;margin:10px 5px;background:#fff;}
+.border_table1 th,.border_table1 td{border:1px solid #e1e1e1;vertical-align:middle;padding:5px 10px 5px;word-break:keep-all}
+.border_table1 th,.border_table1 td.non{width:auto;}
+.border_table1 td.attr{white-space:pre-wrap; text-align:left;}
+.border_table1 thead th{color:#333;white-space:nowrap;text-align:center;background:url(../../images/admin/bg_5.png) repeat-x 0 -191px}
+.border_table1 tbody th{padding-right:5px; text-align:right;color:#707070;background-color:#f9f9f9}
+.border_table_org{border:1px solid #ed8a0a;margin:10px 5px;background:#fff}
+.border_table_org th{padding:3px 10px 3px 17px; font-size:14px;vertical-align:middle;white-space:nowrap;word-break:keep-all;border-bottom:1px solid #ed8a0a;}
+.border_table_org td{padding:4px 5px;}
+.border_table_org thead th{color:#fff;white-space:nowrap;text-align:center; text-align:left; padding-left:17px;background:url(../../images/admin/bg_5.png) repeat-x 0 -561px}
+table.list_table2 td,table.list_table2 th{color:#7d7d7d;text-align:right; font-size:12px;background-color:#fefaf6; border-top:5px solid #fff; border-bottom:5px solid #fff;}
+table.list_table2 th{color:#474747; font-size:14px; font-weight:normal;}
+table.list_table2 a:link,table.list_table2 a:visited{color:#b9b9b9; text-decoration:underline;}
+table.list_table2 a:hover,table.list_table2 a:active{color:#c30;}
+table.list_table3 thead th{color:#000; text-align:center;border-top:1px solid #cecece;border-bottom:1px solid #cecece;background-image:none; background-color:#f6f6f6;}
+table.list_table3 tbody td{padding:5px 0;color:#505050;border-bottom:1px solid #e7e7e7}
+
+.td_c td{text-align:center}
+.th_c th{text-align:center}
+/* border_table style end */
+/* pop_win style start */
+.pop_win{position:relative;background-color:#fff;border:1px solid #aadaff;overflow:scroll;width:100%;height:450px;}
+.pop_win p{ text-align:left;line-height:23px;margin: 8px 10px 8px 15px;vertical-align:middle;}
+.pop_win table.spec{padding:0 10px 10px 0;text-align:left;color:#4d4d4d}
+.pop_win table.form_table td{padding:5px}
+.pop_win table.form_table td.t_r{text-align:right}
+.pop_win .pages_bar{margin-top:5px;padding:5px 0 5px 5px;border:none;color:#525252;text-align:left}
+.pop_win table.spec td{vertical-align:middle;}
+.pop_win table.spec .form_table {margin-top:10px;}
+.pop_win table.spec .form_table th,.pop_win table.spec .form_table td{background:none; vertical-align:middle}
+.pop_win table.spec h3,.pop_win table.spec h4{font-size:14px;margin:10px 10px 5px 10px}
+.pop_win table.spec .cont{overflow:auto;margin:0 10px;overflow:auto;background-color:#fff;border:1px solid #aadaff}
+.pop_win table.spec ul{padding:5px 8px}
+.pop_win table.spec li{padding:2px 0 0 15px;line-height:22px;text-align:left;color:#4d4d4d;white-space:nowrap}
+.pop_win table.spec li input{margin-left:-13px;*margin-left:-20px;}
+.pop_win table.spec li.current{background:#e8f5fc;border:1px solid #aadaff}
+.pop_win table.spec li label{display:inline;float:none;white-space:normal}
+.pop_win table.spec .goods_spec_box li{float:left;cursor:default;margin:0 3px 3px}
+.pop_win table.spec li span{display:block;border:1px solid #aadaff;padding:1px 4px;white-space:nowrap;color:#000;background:#fff}
+.pop_win table.spec li span.pic{padding:0;}
+.summary{margin:8px 10px 8px 15px}
+.summary dt{color:#666;margin:0 7px 7px 0; font-weight:bold}
+.summary dt span{margin-left:30px;font-weight:normal;}
+.summary dt a{text-decoration:underline}
+.summary .item{float:left;margin-right:7px;}
+.summary .item a{display:block;margin:1px;border:1px solid #ccc; text-align:center; vertical-align:middle;background-color:#fff;}
+.summary .item a.current{margin:0;border:2px solid #f90;}
+.w_45 .item{width:45px;height:45px;}
+.w_45 a,.w_45 img{width:41px;height:41px;}
+.w_27 .item{min-width:27px; _width:27px; height:27px;line-height: 27px; margin-left:0; float:left;white-space:nowrap}
+.w_27 a{min-width:27px;height:27px; padding:0 5px; float:left; line-height:27px;white-space:nowrap;text-decoration:none}
+/* pop_win style end */
+/* tab style start */
+.tab{height:23px;line-height:23px;margin:8px 10px 8px 15px;border-bottom:1px #e1e1e1 solid}
+.tab li{float:left;width:78px;height:22px;margin:0 2px 0 5px;border:1px #e1e1e1 solid;border-bottom:0;background:url(../../images/admin/bg_5.png) repeat-x 0 -228px; _background-position:0 -227px;_margin-bottom:-1px;_border-top:0}
+.tab li.selected{background-image:none;border-bottom:1px solid #fff;margin-bottom:-1px;_border-top:1px}
+.tab li a:link,.tab li a:visited,.tab li a:hover,.tab li a:active{display:block;width:78px;height:22px;color:#767676;outline:none;width:40px;overflow: hidden;}
+.tab li.selected a{color:#000;text-decoration:none;}
+/* tab style end */

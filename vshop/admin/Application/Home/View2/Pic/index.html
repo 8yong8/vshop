@@ -1,0 +1,57 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="../Public/header" />
+<!-- 菜单区域  -->
+<script>
+function look(filedir){
+  window.open(PUBLIC+filedir)
+}
+</script>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">图片列表</div>
+<!--  功能操作区域  -->
+<div class="operate" >
+<html:imageBtn name="add" value="新增" click="add()" style="impBtn hMargin fLeft shadow" />
+<html:imageBtn name="edit" value="编辑" click="edit()" style="impBtn hMargin fLeft shadow" />
+<html:imageBtn name="delete" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+<!-- 查询区域 -->
+<div class="fRig">
+<form method='GET' action="__URL__">
+</div>
+<!-- 高级查询区域 -->
+<div  id="searchM" class="search cBoth" >
+
+<TABLE cellpadding="1" cellspacing="2" width="100%">
+<TR>
+	<TD class="tRight" style="width:60px">用户ID：</TD>
+	<TD>
+	<INPUT TYPE="text" NAME="uid" class="medium" value="{$uid}">
+	</TD>
+	<TD class="tRight">用户名：</TD>
+	<TD><INPUT TYPE="text" NAME="username" class="medium" value="{$usernamer}"></TD>
+	<TD class="tRight">相册名：</TD>
+	<TD><INPUT TYPE="text" NAME="albumname" class="medium" value="{$albumname}"></TD>
+	<TD><html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /></TD>
+</TR>
+</TABLE>
+</div>
+</FORM>
+</div>
+<!-- 功能操作区域结束 -->
+<!-- 列表显示区域  -->
+<div class="list" >
+<html:list id="checkList" name="pic" pk="picid" style="list" checkbox="true" action="true" datasource="list" show="picid:编号|8%,uid:用户ID,username:用户名,name:姓名,albumname|intercept=15:相册名,title|intercept=10:标签,dateline|toDate='Y-m-d H#i#s':添加时间" actionlist="edit:编辑:uid,look:查看图片:filepath" /> 
+</div>
+<!--  分页显示区域 -->
+<div class="page">{$page}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+

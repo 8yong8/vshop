@@ -1,0 +1,205 @@
+<include file="Public:header" />
+<script>
+
+//查看产品图
+function album( sourceid ){
+  window.location.href = "__URL__/album/sourceid/"+sourceid;
+}
+
+function look(id){
+    window.location.href="__APP__/Auction_log/index/aid/"+id;
+}
+
+function runguo(action){
+    window.location.href="__URL__/"+action;
+} 
+var pid;
+function Timing(id){
+  pid = id;
+  var html = '年:<input id="year" value="<?php echo date("Y"); ?>"><br/>月:<input id="month"  value="<?php echo date("m"); ?>"><br/>日:<input id="day"  value="<?php echo date("d"); ?>"><br/>';
+  html+= '小时:<select id="hour">';
+  for(i=0;i<24;i++){
+    html+= '<option value="'+i+'">'+i+'</option>';
+  }
+  html+= '</select>';
+  html+= '分:<select id="minute">';
+  for(i=0;i<60;i++){
+    html+= '<option value="'+i+'">'+i+'</option>';
+  }
+  html+= '</select>';
+  html+= '秒:<select id="second">';
+  for(i=0;i<60;i++){
+    html+= '<option value="'+i+'">'+i+'</option>';
+  }
+  html+= '</select>';
+  ymPrompt.succeedInfo({message:html,width:400,height:260,title:'定时时间设置',handler:handler});
+}
+function handler(tp){
+  if(tp=='close'){
+	return false;
+  }  
+  var year = jQuery('#year').val();
+  var month = jQuery('#month').val();
+  var day = jQuery('#day').val();
+  var hour = jQuery('#hour').val();
+  var minute = jQuery('#minute').val();
+  var second = jQuery('#second').val();
+  var parameter = "pid="+pid+"&year="+year+"&month="+month+"&day="+day+"&hour="+hour+"&minute="+minute+"&second="+second;
+  //alert(parth);return false;
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/set_timing',
+	data:parameter,
+	success:function(msg){
+	  alert(msg);
+	}
+  })
+}
+
+function auction(pid){
+  //alert(pid);
+  window.location.href="__APP__/Auction/add/pid/"+pid;
+}
+
+function add_attr(id){
+  window.location.href="__URL__/add_attr/id/"+id;
+}
+</script>
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">ID：</TD>
+			<TD><INPUT TYPE="text" NAME="id" class="small" value="{$id}" class="J_check"></TD>
+			<TD class="tRight">商品ID：</TD>
+			<TD><INPUT TYPE="text" NAME="product_id" class="small" value="{$product_id}"></TD>
+			<TD class="tRight">状态：</TD>
+			<TD>	
+			<select name="status">
+			 <option value="" >状态选择</option>
+			 <option value="1" <eq name="status" value="1">selected</eq> >
+			 上架</option>
+			 <option value="0" <eq name="status" value="0">selected</eq> >
+			 下架</option>
+			</select>
+			</TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="no" value="上架" click="forbid()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="ok" value="下架" click="resume()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+					<tr><td height="5" colspan="12" class="topTd" ></td></tr>
+					<tr class="row" >
+					  <th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+					  <th width="8%">
+					  <eq name="sort" value="1">
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-desc" style="text-align: center;" onclick="javascript:sortBy('id','1','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  <else/>
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-asc" style="text-align: center;" onclick="javascript:sortBy('id','0','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  </a>
+					  </eq>
+					  </th>
+					  <th width="28%">商品</th>
+					  <th>分类</th>
+					  <th>价格</th>
+					  <th>添加时间</th>
+					  <th>状态</th>
+					  <th>操作</th>
+					</tr>
+					<volist name="list" id="vo">
+					<tr class="row">
+					  <td><input type="checkbox" name="key"	value="{$vo.id}"></td>
+					  <td>{$vo.id}</td>
+					  <td style="text-align:left;height:auto;padding-left:8px;">{$vo.name}</td>
+					  <td>{$vo.type_name}</td>
+					  <td>
+					  {$vo.price}
+					  </td>
+					  <td>
+					  {$vo.create_time|toDate='Y-m-d H#i#s'}
+					  </td>
+					  <td>{$vo.status|rs='0#下架#red@1#上架#blue'}</td>
+					  <td style="text-align:left;height:auto;padding-left:8px;">
+					  <eq name="vo.status" value="1">
+					  <a href="javascript:forbid({$vo.id})">下架</a>&nbsp;
+					  <else/>
+					  <a href="javascript:resume({$vo.id})">上架</a>&nbsp;
+					  </eq>
+					  <a href="javascript:edit('{$vo.id}')">编辑</a>&nbsp;
+					  <a href="__URL__/album/sourceid/{$vo.id}">图片编辑</a>&nbsp;
+					  <a href="javascript:add_attr('{$vo.id}')">添加属性</a>&nbsp;
+					  <?php
+					  if ($specifications[$vo['goods_type']] != ''){
+					  ?>
+					  <a href="__URL__/product_list/goods_id/{$vo.id}" title="货品列表">货品列表</a>
+					  <?php } ?>
+					  </td>
+					</tr>
+					</volist>
+					</table>
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

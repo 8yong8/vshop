@@ -1,0 +1,96 @@
+<include file="Public:header" />
+<script>
+ function cache(){
+   location.href = "__URL__/GiveCache";
+ }
+
+ function add(){
+   location.href = "__URL__/ali_add";
+ }
+</script>
+
+<!--
+<style type="text/css">
+	.menu {background:#FFFFFF;}
+	#batch .m-btn-small {margin-left: 0;}
+</style>
+-->
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/hd_default_config.js"></script>
+	<!-- 内容区 -->
+	<div class="content">
+		<div class="site">
+			{:C('site_name')} {$board_title} > {$node_title}
+		</div>
+		<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli" style="/*border:1px red solid;*/">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">ID：</TD>
+			<TD><INPUT TYPE="text" NAME="id" class="small" value="{$id}"></TD>
+			<TD class="tRight">标题：</TD>
+			<TD><INPUT TYPE="text" NAME="title" class="small" value="{$title}"></TD>
+			<TD class="tRight">分类：</TD>
+			<TD>	
+			<select name="cid">
+			<option value="" >分类选择</option>
+			 <volist name="types" id="vo">
+			 <option value="{$vo.id}" <eq name="cid" value="$vo.id">selected</eq> >
+			 {$vo.node_name}</option>
+			 </volist>
+			</select>
+			</TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+			  <div class="datagrid-view">
+
+				<!-- Think 系统列表组件开始 -->
+				<myhtml:list id="checkList" name="user" style="list" checkbox="true" action="true" datasource="list" show="id:编号|3%,account_nickname:名称|20%:edit,status|rs='0#待审核#red@1#审核通过':状态" order_fields="id" align_left='title' actionlist="status|showStatus=$user['id'],edit:编辑" /> 
+				<!-- Think 系统列表组件结束 -->
+				<!--  分页显示区域 -->
+				  <div class="datagrid-pager pagination">
+				   <div class="page" style="float:left">{$page}</div>
+				   <div class="pagination-info">
+					共{$count}条记录
+				   </div>
+				   <div style="clear:both;"></div>
+				  </div>
+			  </div>
+			<div class="clear"></div>
+		</dd>
+	</dl>
+		 
+
+<!-- /内容区 -->
+</div>
+
+<include file="Public:footer" /> 

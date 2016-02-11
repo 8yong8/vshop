@@ -1,0 +1,653 @@
+[ 2015-07-12T12:54:10+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004168s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004528s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001911s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003972s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000569s ]
+
+[ 2015-07-12T12:54:31+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001967s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002061s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002086s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004054s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000734s ]
+
+[ 2015-07-12T12:54:47+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002464s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002652s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+
+[ 2015-07-12T12:57:15+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002883s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003105s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005200s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003924s ]
+
+[ 2015-07-12T13:07:20+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001707s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002266s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004681s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.005103s ]
+SQL: SELECT * FROM `zy_cart` WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: INSERT INTO `zy_cart` (`member_id`,`item_id`) VALUES (107,3) [ RunTime:0.000286s ]
+
+[ 2015-07-12T13:08:41+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002090s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002205s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003854s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003669s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004692s ]
+SQL: SELECT * FROM `zy_cart` WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) LIMIT 1   [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 25 行.
+SQL: UPDATE `zy_cart` SET `num`=0 WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) [ RunTime:0.000180s ]
+
+[ 2015-07-12T13:08:52+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002051s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002240s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003716s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.006677s ]
+SQL: SELECT * FROM `zy_cart` WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: INSERT INTO `zy_cart` (`member_id`,`item_id`) VALUES (107,3) [ RunTime:0.000185s ]
+
+[ 2015-07-12T13:09:40+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002062s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002247s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002287s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003787s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.007306s ]
+SQL: SELECT * FROM `zy_cart` WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) LIMIT 1   [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 1059 行.
+ERR: 模板不存在[./AppApi/Tpl/Public/error.html]
+
+[ 2015-07-12T13:10:00+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003491s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003638s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003701s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.006304s ]
+SQL: SELECT * FROM `zy_cart` WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 1059 行.
+
+[ 2015-07-12T13:11:46+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001487s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001580s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002007s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.006377s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004739s ]
+SQL: SELECT * FROM `zy_cart` WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: INSERT INTO `zy_cart` (`item_id`,`num`,`member_id`,`create_time`) VALUES (3,3,107,1436677906) [ RunTime:0.000215s ]
+
+[ 2015-07-12T13:12:09+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002162s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002863s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003507s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.005054s ]
+SQL: SELECT * FROM `zy_cart` WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: UPDATE `zy_cart` SET `num`=6 WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) [ RunTime:0.000560s ]
+
+[ 2015-07-12T13:27:23+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001518s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004524s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004041s ]
+SQL: SELECT * FROM `zy_cart` WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: UPDATE `zy_cart` SET `num`=9 WHERE ( `member_id` = 107 ) AND ( `item_id` = 3 ) [ RunTime:0.000255s ]
+
+[ 2015-07-12T13:34:54+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001512s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004199s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003758s ]
+SQL: SELECT * FROM `` WHERE ( `member_id` = 107 )  [ RunTime:0.000066s ]
+ERR: 1103:Incorrect table name ''
+ [ SQL语句 ] : SELECT * FROM `` WHERE ( `member_id` = 107 ) 
+
+[ 2015-07-12T13:37:38+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001439s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001524s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003236s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003296s ]
+SQL: SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' )  [ RunTime:0.000270s ]
+ERR: 1103:Incorrect table name 'zy_product_item as b on a.item_id=b.id LEFT JOIN '
+ [ SQL语句 ] : SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' ) 
+
+[ 2015-07-12T13:37:38+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000747s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003554s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003049s ]
+SQL: SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' )  [ RunTime:0.000094s ]
+ERR: 1103:Incorrect table name 'zy_product_item as b on a.item_id=b.id LEFT JOIN '
+ [ SQL语句 ] : SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' ) 
+
+[ 2015-07-12T13:37:39+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000742s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003196s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003189s ]
+SQL: SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' )  [ RunTime:0.000110s ]
+ERR: 1103:Incorrect table name 'zy_product_item as b on a.item_id=b.id LEFT JOIN '
+ [ SQL语句 ] : SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' ) 
+
+[ 2015-07-12T13:37:39+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000926s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003262s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003021s ]
+SQL: SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' )  [ RunTime:0.000113s ]
+ERR: 1103:Incorrect table name 'zy_product_item as b on a.item_id=b.id LEFT JOIN '
+ [ SQL语句 ] : SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' ) 
+
+[ 2015-07-12T13:37:50+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000726s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003189s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003046s ]
+SQL: SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' )  [ RunTime:0.000091s ]
+ERR: 1103:Incorrect table name 'zy_product_item as b on a.item_id=b.id LEFT JOIN '
+ [ SQL语句 ] : SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item as b on a.item_id=b.id LEFT JOIN `zy_product as c on b.product_id=c.id WHERE ( `member_id` = '107' ) 
+
+[ 2015-07-12T13:38:53+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002258s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002424s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004039s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003063s ]
+SQL: SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( `member_id` = '107' )  [ RunTime:0.000202s ]
+ERR: 1052:Column 'member_id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( `member_id` = '107' ) 
+
+[ 2015-07-12T13:39:12+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001721s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001804s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003205s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004904s ]
+SQL: SELECT * FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' )  [ RunTime:0.000364s ]
+
+[ 2015-07-12T13:40:46+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001716s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001797s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002103s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004703s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003101s ]
+SQL: SELECT a.num,b.* FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' )  [ RunTime:0.000234s ]
+
+[ 2015-07-12T13:42:14+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002141s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002310s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001950s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004408s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003340s ]
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' )  [ RunTime:0.000230s ]
+
+[ 2015-07-12T13:45:56+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001718s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004054s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003884s ]
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' )  [ RunTime:0.000242s ]
+NOTIC: [8] Undefined variable: spec D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 19 行.
+
+[ 2015-07-12T13:46:17+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001329s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003757s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004005s ]
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,c.lit_pic FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' )  [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: spec D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 19 行.
+
+[ 2015-07-12T13:46:53+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001352s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003596s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003416s ]
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,c.lit_pic FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' )  [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: spec D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 19 行.
+
+[ 2015-07-12T13:48:10+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001666s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001801s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005220s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003393s ]
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,c.lit_pic FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' )  [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: spec D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 19 行.
+
+[ 2015-07-12T13:50:51+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003603s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003380s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,c.lit_pic FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000268s ]
+NOTIC: [8] Undefined variable: spec D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 25 行.
+
+[ 2015-07-12T16:11:02+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001728s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001803s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005284s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003647s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000145s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,c.lit_pic FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000823s ]
+NOTIC: [8] Undefined variable: spec D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 24 行.
+
+[ 2015-07-12T23:07:26+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001360s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003217s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.005051s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,c.lit_pic FROM `zy_cart` as a LEFT JOIN `zy_product_item` as b on a.item_id=b.id LEFT JOIN `zy_product` as c on b.product_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: spec D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 24 行.
+
+[ 2015-07-12T23:09:20+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002324s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004053s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003516s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,b.price as item_price,c.lit_pic,c.price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000171s ]
+ERR: 1054:Unknown column 'b.product_id' in 'field list'
+ [ SQL语句 ] : SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,b.price as item_price,c.lit_pic,c.price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20  
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 20 行.
+
+[ 2015-07-12T23:09:35+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001477s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003848s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003249s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,b.price as item_price,c.lit_pic,c.price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000137s ]
+ERR: 1054:Unknown column 'b.product_id' in 'field list'
+ [ SQL语句 ] : SELECT a.*,b.product_id,b.product_id,b.product_attr,b.attr_name,b.product_attr_value,b.price as item_price,c.lit_pic,c.price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20  
+
+[ 2015-07-12T23:10:10+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001671s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004337s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003295s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000125s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000153s ]
+ERR: 1054:Unknown column 'a.product_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20  
+
+[ 2015-07-12T23:11:27+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001950s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002035s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002045s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005001s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003333s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000153s ]
+ERR: 1054:Unknown column 'a.product_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20  
+
+[ 2015-07-12T23:11:27+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001162s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003799s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003310s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000136s ]
+ERR: 1054:Unknown column 'a.product_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20  
+
+[ 2015-07-12T23:11:28+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001120s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003516s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003320s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000135s ]
+ERR: 1054:Unknown column 'a.product_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20  
+
+[ 2015-07-12T23:11:28+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001201s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004099s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003304s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000133s ]
+ERR: 1054:Unknown column 'a.product_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20  
+
+[ 2015-07-12T23:13:25+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001992s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002636s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005142s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004056s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000598s ]
+
+[ 2015-07-12T23:13:38+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001746s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003946s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003686s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: spec D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 25 行.
+
+[ 2015-07-12T23:16:16+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001693s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001774s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003952s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003991s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000283s ]
+
+[ 2015-07-12T23:17:57+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001335s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003599s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004497s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000279s ]
+
+[ 2015-07-12T23:18:16+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001344s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003828s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004496s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000597s ]
+
+[ 2015-07-12T23:18:30+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004144s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003450s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000251s ]
+
+[ 2015-07-12T23:18:42+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001256s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003508s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.005098s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000309s ]
+

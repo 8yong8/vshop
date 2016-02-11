@@ -1,0 +1,122 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<script>
+function search(){
+  var key = jQuery("#name").val();
+  var source = jQuery("#source").val();
+  jQuery.ajax({
+    type:"POST",
+	dataType: "json",
+	url: APP+"/Product/get_product",
+	data:"source="+source+"&key="+key,
+	success:function(objs){
+	 //alert(objs);return false;
+	 //alert(objs.length);
+	 var html = '<select name="sourceid" id="sourceid"><option value="0">选择</option>';
+	 for(i=0;i<objs.length;i++){
+	   if(i==0){
+	     html += '<option value='+objs[i].id+' selected>'+objs[i].product_name+' | '+objs[i].member_name+' | '+objs[i].realname+'</option>';
+	   }else{
+	     html += '<option value='+objs[i].id+'>'+objs[i].product_name+' | '+objs[i].member_name+' | '+objs[i].realname+'</option>';
+	   }
+	 }
+	 html += '</select>';
+	 jQuery('#cidspan').html(html);
+	}
+  })
+}
+
+jQuery(function($) {
+  $('#like_count').change(function(){
+     check();
+  });
+  $('#favorite_count').change(function(){
+     check();
+  });
+  $('#comment_count').change(function(){
+     check();
+  });
+  $('#pv_count').change(function(){
+     check();
+  });
+  function check(){
+    var like_count = $('#like_count').val();
+	var favorite_count = $('#favorite_count').val();
+	var comment_count = $('#comment_count').val();
+	var pv_count = $('#pv_count').val();
+	//parseInt(7/2) 
+    var qz = like_count*1+favorite_count*2+comment_count*3+parseInt(pv_count/100);
+	$('#qz').val(qz);
+	//alert(qz);
+  }
+});
+
+</script>
+<div id="main" class="main" >
+<div class="content">
+<div class="title">添加数据 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1"  action="__URL__/add?<?php echo time(); ?>"  onsubmit="check();" enctype="multipart/form-data">
+<TABLE cellpadding=3 cellspacing=3>
+
+<TR>
+	<TD class="tRight" >分类：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="source" id="source">
+		<OPTION VALUE="Auction" <eq name="$Think.GET.source" value="Auction">SELECTED</eq>>拍卖</OPTION>
+		<OPTION VALUE="Goods" <eq name="$Think.GET.source" value="Goods">SELECTED</eq>>商城</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >艺术品：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" NAME="name" id="name" value="{$vo.product_name}"> <INPUT TYPE="button" value="搜 索" class="button" onclick="search();">
+			<span id="cidspan">
+			<select name="sourceid" id="sourceid">
+			  <option value="">选择</option>
+			  <neq name="vo" value="">
+			  <option value="{$vo.id}" SELECTED>{$vo.product_name} | {$vo.member_name} | {$vo.realname}</option>
+			  </neq>
+			</select>
+			</span>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >赞：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="like_count"   ID="like_count" value="{$vo.like_count}">(1个赞权重+1)</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >收藏：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="favorite_count"   ID="favorite_count" value="{$vo.favorite_count}">(1个收藏权重+2)</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >点评：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="comment_count"   ID="comment_count" value="{$vo.comment_count}">(1个点评权重+3)</TD>
+</TR>
+<TR>
+	<TD class="tRight" >流量：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="pv_count"   ID="pv_count" value="{$vo.pv_count}">(100个流量权重+1)</TD>
+</TR>
+<TR>
+	<TD class="tRight" >权重：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="qz"   ID="qz" value="{$vo.qz}">(数字越大搜索越排前)</TD>
+</TR>
+
+
+
+<TR>
+  <TD>
+  <INPUT TYPE="submit" value="保 存" class="button">
+  </TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

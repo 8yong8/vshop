@@ -1,0 +1,76 @@
+<include file="Public:header" />
+<!--
+<script src="{:C('STATIC_SITE_URL')}/js/Validform_v5.3.2_min.js"></script>
+-->
+<script src="{:C('STATIC_SITE_URL')}/js/Validform_Datatype.js"></script>
+<div class="menu">
+   <a class="back" href="#"></a>
+   <div class="tit">登 录</div>
+</div>
+<FORM METHOD=POST ACTION="" id="login" onsubmit="return false;">
+<div class="info">
+   <div class="ptxt"><input type="text" class="p_txt" value="手机号" onFocus="if(value =='手机号'){ value ='' }"onblur="if(value ==''){ value='手机号' }" name="account" id="account"></div>
+   <div class="btxt"><input name="" type="text" value="6-16位密码" class="p_txt" id="tx" /> 
+<input name="password" type="password" id="pwd" class="p_txt" style="display:none;" /> 
+<script type="text/javascript"> 
+var tx = document.getElementById("tx"), pwd = document.getElementById("pwd"); 
+tx.onfocus = function(){ 
+if(this.value != "6-16位密码") return; 
+this.style.display = "none"; 
+pwd.style.display = ""; 
+pwd.value = ""; 
+pwd.focus(); 
+} 
+pwd.onblur = function(){ 
+if(this.value != "") return; 
+this.style.display = "none"; 
+tx.style.display = ""; 
+tx.value = "6-16位密码"; 
+} 
+$(document).ready(function(){
+  $('#login_do').click(function(){
+	  if(check())send('login',URL+'/checkLogin');
+  });
+});
+
+//检测
+function check(){
+  var account = $('#account').val();
+  var pwd = $('#pwd').val();
+  var verifycode = $('#verifycode').val();
+  if(!account || account=='手机号'){
+    showMessage('手机号码必须',1500);
+	return false;
+  }
+  if(pwd==''){
+    showMessage('密码必须',1500);
+	return false;
+  }
+  if(verifycode==''){
+    showMessage('验证码必须',1500);
+	return false;
+  }
+  return true;
+}
+
+//验证码刷新
+function fleshVerify(){
+	//重载验证码
+	var timenow = new Date().getTime();
+	$('#verifyImg').attr('src','__PUBLIC__/verify?time='+timenow);
+}
+</script></div>
+   <div class="bbtxt">
+       <div class="stxt"><input type="text" class="s_txt" value="请输入图文验证码" onFocus="if(value =='请输入图文验证码'){ value ='' }"onblur="if(value ==''){ value='请输入图文验证码' }" name="verifycode" id="verifycode"></div>
+       <div class="sstxt"><img src="__URL__/verify?<?php echo time(); ?>" id="verifyImg" onclick="fleshVerify();"></div>
+   </div>
+   <div class="bbtn"><input type="submit" value="登录" class="i_btn" id="login_do"></div>
+   </FORM>
+   <div class="btna"><span><a href="__ROOT__/Public/register">免费注册</a></span><a href="__ROOT__/Public/findpwd">找回密码</a></div>
+
+   <div class="denglu"><img src="__PUBLIC__/images/login2.png" width="100%"></div>
+   <div class="qidenglu">
+      <a href="__APP__/Public/wx_auth"><img src="__PUBLIC__/images/ico_wx.jpg" width="100%">微信</a>
+   </div>
+</div>
+<include file="Public:footer" />

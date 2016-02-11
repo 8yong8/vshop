@@ -1,0 +1,150 @@
+<include file="Public:header" />
+<script>
+//搜索会员
+function get_members(){
+  var key = jQuery("#key").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/get_members",
+	data:"key="+key,
+	success:function(msg){
+	 //alert(msg);
+	 var objs = eval('('+msg+')');
+	 var html = '<select name="member_id" id="member_id"><option value="0">选择</option>';
+	 for(i=0;i<objs.length;i++){
+	   if(i==0){
+	     html += '<option value='+objs[i].id+' selected>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }else{
+	     html += '<option value='+objs[i].id+'>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }
+	 }
+	 html += '</select>';
+	 jQuery('#cidspan').html(html);
+	}
+  })
+}
+</script>
+
+<div class="content">
+<div class="title">编辑信息[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">
+		&nbsp;对象：</TD>
+	<TD  style="width:450px;">
+		{$vo.member_name}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付方式：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="payment_mode">
+		<OPTION VALUE="1" <eq name="vo.payment_mode" value="1">SELECTED</eq>>1</OPTION>
+		<OPTION VALUE="2" <eq name="vo.payment_mode" value="线下支付">SELECTED</eq>>线下支付</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付单位：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="payment_company">
+		<OPTION VALUE="支付宝" <eq name="vo.payment_company" value="支付宝">SELECTED</eq>>支付宝支付</OPTION>
+		<OPTION VALUE="微信支付" <eq name="vo.payment_company" value="微信支付">SELECTED</eq>>微信支付</OPTION>
+		<OPTION VALUE="余额支付" <eq name="vo.payment_company" value="余额支付">SELECTED</eq>>余额支付</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付渠道：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="payment_channel">
+		<OPTION VALUE="app" <eq name="vo.payment_channel" value="app">SELECTED</eq>>APP</OPTION>
+		<OPTION VALUE="wap" <eq name="vo.payment_channel" value="wap">SELECTED</eq>>WAP</OPTION>
+		<OPTION VALUE="web" <eq name="vo.payment_channel" value="web">SELECTED</eq>>WEB</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付交易号：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" NAME="pay_order_id" value="{$vo.pay_order_sn}" class="large"> 支付宝生成的交易号
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >我方交易号：</TD>
+	<TD class="tLeft" >
+	 {$vo.order_sn}&nbsp;我方生成的<a href="__APP__/Order/index/" target="_blank" style="color:red">`订单号`</a>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易类型：</TD>
+	<TD class="tLeft" >
+	<?php
+	  if($vo['pay_type']==1){
+	    echo '充值';
+	  }else if($vo['pay_type']==2){
+	    echo '消费';
+	  }else if($vo['pay_type']==3){
+	    echo '提现';
+	  }else if($vo['pay_type']==4){
+	    echo '收入';
+	  }else if($vo['pay_type']==5){
+	    echo '退款';
+	  }
+	?>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易金额：</TD>
+	<TD class="tLeft" >
+	{$vo.amount}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易内容：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="content" ROWS="10" COLS="30">{$vo.content}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >备注：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="memo" ROWS="10" COLS="30">{$vo.memo}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="status">
+	  <option value="1" <eq name="vo.status" value="1">SELECTED</eq>>已支付</option>
+	  <option value="0" <eq name="vo.status" value="0">SELECTED</eq>>未支付</option>
+	  <option value="-1" <eq name="vo.status" value="-1">SELECTED</eq>>审核不通过</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

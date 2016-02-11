@@ -1,0 +1,41 @@
+<include file="Public:header" />
+<script type="text/javascript" defer="defer" src="__PUBLIC__/js/WdatePicker/WdatePicker.js"></script>
+<script>
+
+</script>
+<div class="content">
+<div  id="searchM" class="search cBoth" >
+<FORM METHOD="GET" ACTION="__URL__/">
+<TABLE cellpadding="1" cellspacing="2" width="100%" class="add">
+<TR>
+	<TD class="tRight">开始日期：</TD>
+	<TD><INPUT TYPE="text" NAME="btime" id="btime" class="small" value="{$btime}" onclick="WdatePicker({dateFmt:'yyyy/MM/dd'})"></TD>
+	<TD class="tRight">结束日期：</TD>
+	<TD><INPUT TYPE="text" NAME="etime" id="etime" class="small" value="{$etime}" onclick="WdatePicker({dateFmt:'yyyy/MM/dd'})"></TD>
+	<TD></TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+
+    <div class="search cBoth" >
+     &nbsp;&nbsp;文章数据 : <font color="red">{$art_count}</font>&nbsp;篇 &nbsp;&nbsp;&nbsp;&nbsp; <br/>
+
+	 &nbsp; 艺术品数量 : <font color="red">{$product_count}</font>&nbsp;个
+	 &nbsp;&nbsp;&nbsp;&nbsp; 
+	 拍品数量 : <font color="red">{$auction_count}</font>&nbsp;个&nbsp;&nbsp;&nbsp;&nbsp; 
+	 拍品出价次数 : <font color="red">{$auction_log_count}</font>&nbsp;次&nbsp;&nbsp;&nbsp;&nbsp; 
+	 商品数量 : <font color="red">{$goods_count}</font>&nbsp;个&nbsp;&nbsp;&nbsp;&nbsp; 	 
+	 <br/>
+	 &nbsp;&nbsp;会员数据 : <font color="red">{$member_count}</font>&nbsp;人 (普通会员[<font color="red">{$pt_mem_count}</font>] 艺术家[<font color="red">{$ysj_mem_count}</font>] 合作商户[<font color="red">{$sh_mem_count}</font>]) 
+	 &nbsp;&nbsp;&nbsp;&nbsp;
+	 <br/>
+	 &nbsp;&nbsp;财务数据 : 网站收入<font color="blue">{$recharge+$consume}</font> （充值[<font color="red">{$recharge}</font>] 消费[<font color="red">{$consume}</font>]）
+	 &nbsp;&nbsp;&nbsp;&nbsp; 网站支出<font color="blue">{$expend+$buyback}</font> （提现[<font color="red">{$expend}</font>] 回购[<font color="red">{$buyback}</font>]）&nbsp;&nbsp;&nbsp;&nbsp;用户余额[<font color="red">{$balance}</font>]
+    </div>
+  </div>
+
+</div> 
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

@@ -1,0 +1,54 @@
+<include file="Public:header" />
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/laydate/laydate.js"></script>
+<div class="content">
+<div class="title">新增优惠券[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>" enctype="multipart/form-data">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="title"  value="{$vo.title}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">开始日期：</TD>
+	<TD><INPUT TYPE="text" NAME="btime" id="btime" class="medium" value="{$vo.btime|toDate='Y-m-d H#i#s'}" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">结束日期：</TD>
+	<TD><INPUT TYPE="text" NAME="etime" id="etime" class="medium" value="{$vo.etime|toDate='Y-m-d H#i#s'}" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"></TD>
+</TR>
+
+
+<TR>
+	<TD class="tRight" >订单金额满：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="limt" value="{$vo.limt}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >单张减免金额：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="value" value="{$vo.value}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >信息：</TD>
+	<TD class="tLeft" ><TEXTAREA NAME="info" ROWS="5" COLS="33">{$vo.info}</TEXTAREA></TD>
+</TR>
+
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

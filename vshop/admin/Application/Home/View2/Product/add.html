@@ -1,0 +1,494 @@
+<include file="Public:header" />
+    <!-- 内容区 -->
+      <style>
+    #Validform_msg {
+	display: none
+	}
+	img {
+		cursor: pointer;
+	}
+	.editor .ke-toolbar span,
+	.editor .ke-statusbar span {
+		padding: 0px;
+	}
+	.editor .ke-toolbar .ke-outline {
+		border: 1px solid #F0F0EE;
+		cursor: pointer;
+		display: block;
+		float: left;
+		font-size: 0;
+		line-height: 0;
+		margin: 1px;
+		overflow: hidden;
+		padding: 1px 2px;
+	}
+	.imgWrap div {
+		border: 1px solid #3B72A5;
+		cursor: pointer;
+		float: left;
+		margin-left: 26px;
+		margin-top: 20px;
+		position: relative;
+	}
+	.imgWrap div span {
+		color: #FFFFFF;
+		display: none;
+		padding: 0 5px;
+		position: absolute;
+	}
+	.setdef {
+		background: none repeat scroll 0 0 #F48C3A;
+		bottom: 0;
+		line-height: 18px;
+		height: 18px;
+		position: absolute;
+		right: 0;
+        padding: 0 5px;
+        display: none;
+        z-index: 9999;
+        color: #FFFFFF;
+	}
+    .setdel:hover{
+        color: #E4F14A;
+    }
+	.setdel {
+        cursor:pointer;
+		background: none repeat scroll 0 0 #3b72a5;
+		top: 200;
+		color: #FFFFFF;
+		display: none;
+		height: 18px;
+		line-height: 18px;
+		padding: 0 5px;
+		position: absolute;
+		right: 0px;
+        z-index: 9999;
+	}
+	table.areaBox th {
+		background: #e8f5fc;
+		border-bottom: 1px solid #e8f5fc;
+	}
+	table.areaBox {
+		border-left: 1px solid #e8f5fc;
+		border-right: 1px solid #e8f5fc;
+		border-top: 1px solid #e8f5fc;
+		margin: 10px auto;
+		width: 720px;
+	}
+	table.areaBox td {
+		border-bottom: 1px solid #e8f5fc;
+	}
+	.add_area,
+	table.areaBox {
+	width: 98%;
+}</style>
+    <div class="content">
+        <div class="site">
+	        {:C('site_name')} <a href="__URL__">商品管理</a> > 添加商品
+    	</div>
+		<span class="line_white"></span>
+    <div class="install tabs mt10">
+        <dl>
+            <dt><a href="javascript:" class="hover">基本信息</a><a href="javascript:">详细描述</a><a href="javascript:">商品图册</a><a href="javascript:">商品规格</a></dt>
+            <form method="post" action="__URL__/add?<?php echo time(); ?>" name="goodsForm" class="goodsForm" enctype="multipart/form-data">
+                <dd>
+                    <ul class="web">
+                        <li>
+                            <strong>商品名称：</strong>
+                            <input type="text" value="" class="text_input" datatype="*" nullmsg="请输入商品名称！" name="name"  /><span>填写商品名称</span>
+                        </li>
+
+                        <li>
+                            <strong>副标题：</strong>
+                            <input type="text" value="" class="text_input" datatype="*" nullmsg="请输入商品副标题！" name="subtitle"  /><span>填写商品副标题</span>
+                        </li>
+
+                        <li>
+                            <strong>商品货号：</strong>
+                            <input type="text" value="" class="text_input" datatype="*" nullmsg="请输入商品货号！" name="sn" id="sn" /><span>填写商品货号</span>
+                        </li>
+
+                        <li>
+                            <strong>市场价：</strong>
+                            <input type="text" value="" class="text_input" datatype="*" nullmsg="请输入市场价！" name="market_price"  /><span>填写市场价</span>
+                        </li>
+
+                        <li>
+                            <strong>销售价：</strong>
+                            <input type="text" value="" class="text_input" datatype="*" nullmsg="请输入销售价！" name="price" id="price" /><span>填写销售价</span>
+                        </li>
+
+                        <li>
+                            <strong>库存：</strong>
+                            <input type="text" value="" class="text_input" name="stock"  /><span>填写库存，有规格则根据规格库存统计</span>
+                        </li>
+
+						<li>
+                            <strong>推荐图：</strong>
+							<input type="file" name="lit_pic" id="lit_pic" onchange="yulan(this,'show1')">
+							<span id="show1"></span>
+						</li>
+
+                        <li>
+                        <strong>商品分类：</strong>
+                        <div class="fenlei">
+                            <div class="fentt clearfix">
+                                <h3 class="fl">所选<br />分类</h3>
+                                <div class="sl fl">
+
+                                </div>
+                                <div class="flts fr">
+                                    	选择商品所属分类，一个商品可选择多个分类
+                                </div>
+                            </div>
+                            <div class="fendd clearfix">
+                                <div class="root">
+								 <volist name="types" id="producttype">
+								 <eq name="producttype.pid" value="0">
+								 <a href="javascript:void(0)" onclick="nb_category({$producttype.id},this)" id="{$producttype.id}"> {$producttype.name} </a>
+								 </eq>
+								 </volist>
+                                </div>
+                                <div class="bgef">
+                                </div>
+                                <div class="bgef">
+                                </div>
+                                <div class="bgef">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" xtishi">
+                            <div class="fl">小提示：所选分类应为最后一级子分类。双击可选中该分类或点击按钮确定选择</div>
+                            <div class="submit fr">
+                                <a href="javascript:" id="add_cat">选择当前分类</a>
+                            </div>
+                        </div>
+						</li>
+                        <li>
+                            <strong>商品品牌：</strong>
+                             <select name="brand_id" class="select" style="margin-right: 48px;">
+                                <option value="0">请选择</option>
+								 <volist name="brands" id="brand">
+								 <option value="{$brand.id}" <eq name="vo.brand_id" value="$brand.id">selected</eq> >
+								 {$brand.name}</option>
+								 </volist>
+                            </select>
+							<span>为商品选择所属品牌，便于用户按照品牌进行查找</span>
+                        </li>
+                        <li>
+                            <strong>上架销售：</strong>
+                            <b style="margin-right: 44px;">
+                                <label><input type="radio" checked name="status" value="1" /> 是 </label>
+                                <label><input type="radio" name="status" value="0" /> 否 </label>
+                            </b>
+                            <span style="margin-left:1px">设置当前商品是否上架销售，默认为是，如选择否，将不在前台显示该商品</span>
+                        </li>
+                        <li>
+                            <strong>免邮：</strong>
+                            <b style="margin-right: 44px;">
+                                <label><input type="radio" checked name="is_free_shipping" value="1" /> 是 </label>
+                                <label><input type="radio" name="is_free_shipping" value="0" /> 否 </label>
+                            </b>
+                            <span style="margin-left:1px">设置商品是否免邮，默认为是，如选择否，将在确认订单时显示邮费</span>
+                        </li>
+
+                        <li>
+                            <strong>货重：</strong>
+                            <input type="text" class="text_input" name="nw"  /><span>填写货重，货物重量，计算邮费使用。单位公斤</span>
+                        </li>
+
+                        <li>
+                            <strong>自定义属性：</strong>
+                            <b style="margin-right: 44px;">
+							<volist name="flags" id="flag" key="k">
+							<label>
+							<input name="flags[]" value="{$flag['id']}" type="checkbox"
+							<php>
+							if($vo['flags']){
+							  $ar = explode(',',$vo['flags']);
+							  if(array_search($flag['id'],$ar)!==false){
+								echo 'checked="checked"';
+							  }
+							}
+							</php>	
+							>{$flag['name']}&nbsp;
+							<php>
+							if($k%5==0){
+							  echo "<br>";
+							}
+							</php>
+							</label>
+							</volist>
+                            </b>
+                            <span style="margin-left:1px">设置商品状态属性，可进行多选</span>
+                        </li>
+						<!--
+                        <li>
+                            <strong>库存警告：</strong>
+                            <input type="text" class="text_input" value="2" name="warn_number"><span>填写商品库存警告数，当库存小于等于警告数，系统就会提醒此商品为库存警告商品，系统默认为2</span>
+                        </li>
+						-->
+                        <li>
+                            <strong>商品积分：</strong>
+                            <input type="text" class="text_input" value="1" name="integral" ><span>设置此商品每消费1元可以获得多少积分，默认为-1，即按照系统设置的积分换算比例，设为0则此商品不参与积分</span>
+                        </li>
+
+                        <li>
+                            <strong>商品关键词：</strong>
+                            <input type="text" value="" name="keyword" class="text_input" /><span style="margin-left:-2px">用于在前台、后台筛选商品，多个关键词用空格分开，同时作为商品的Meta Keyword，有利于搜索引擎优化</span>
+                        </li>
+                        <li>
+                            <strong>商品描述：</strong>
+                            <textarea name="description" style="margin-right: 52px;"></textarea><p class="p">为商品编辑内容描述，同时作为商品的Meta Description，有利于搜索引擎优化</p>
+                        </li>
+                    </ul>
+                </dd>
+
+                <dd>
+                   <div class="edit_box">
+                       <strong class="edit">您正在编辑当前商品详细信息，默认所见即所得模式，您也可以点击HTML源码切换到代码模式进行编辑。</strong>
+                       <div class="editor edit">
+					   <myhtml:editor type="KINDEDITOR"  id="content" name="content" width="650px" height="345px" items="base">{$vo.content}</myhtml:editor>
+					   </div>
+                   </div>
+                </dd>
+                <dd>
+			    <div id="wrapper">
+				   <div id="container">
+					<!--头部，相册选择和格式选择-->
+					 <div id="uploader">
+					   <div class="queueList">
+						   <div id="dndArea" class="placeholder">
+							  <div id="filePicker">
+							  </div>
+							</div>
+						   <ul class="filelist">
+						   </ul>
+					   </div>
+					   <div class="statusBar" style="display:none">
+						   <div class="progress">
+								<span class="text">0%</span>
+								<span class="percentage"></span>
+						   </div>
+						   <div class="info"></div>
+						   <div class="btns">
+							 <div id="filePicker2" class="webuploader-containe webuploader-container"></div><div class="uploadBtn state-finish">开始上传</div>
+						   </div>
+					   </div>
+					 </div>
+				   </div>
+				</div>
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/style.css" />
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/webuploader.css" />
+				<script type="text/javascript" src="__PUBLIC__/js/image-upload/webuploader.js"></script>
+                </dd>
+
+                <dd>
+					<ul class="web">
+					  <li>
+                            <strong>商品类型：</strong>
+							  <select name="product_type" id="product_type" onchange="goods_type_change();">
+							     <option value="-1">无属性</option>
+								 <volist name="product_types" id="producttype">
+								 <option value="{$producttype.id}" 
+								 <?php
+								 if($product_type){
+								   if($product_type==$producttype['id']){
+								     echo 'selected';
+								   }
+								 }else if($producttype['default']==1){
+								   echo 'selected';
+								 }
+								 ?> >
+								 {$producttype.name}</option>
+								 </volist>
+							  </select>	
+							<span>为商品选择类型，不同类型有不同商品属性。</span>
+                        </li>
+					</ul>
+					<ul class="web2 p1">
+					<li>
+						<sTRong>规格数据：</sTRong>
+						<dl class="blue_table mt10">
+							<dt style="height:42px; background: none repeat scroll 0 0 #E8F5FC;"><img src="__PUBLIC__/images/spec_add.png" onclick="selSpec($('#product_type').val())" style="padding:10px;float:left;cursor: pointer;">
+							<span class="add" style="float:left;line-height: 22px;;cursor: pointer;padding-left: 50px;margin-top:13px;">点击添加商品规格可为不同规格的商品指定不同的库存和和价格，方便用户选择购买</span>
+							<span class="delete_checked_goods" onclick="delChecked()">多选删除</span>
+							<span class="change_all_goods">批量修改</span>
+							<img src="__PUBLIC__/images/input_8.png" onclick="delAll()" style="padding:10px;float:right;cursor: pointer;">
+							</dt>
+							<div>
+								<table class="border_table">
+									<thead id="goodsBaseHead">
+									<TR>
+										<th width="5%"><label id="select_all"><input type="checkbox"> 全选</label></th>
+										<th width="15%">商品条码</th>
+										<th width="15%">商品货号</th>
+										<volist name="attribute" id="attribute_value">
+										<th>{$attribute_value.attr_name}</th>
+										</volist>
+										<th width="5%">库存</th>
+										<th width="10%">销售价格</th>
+										<th width="10%">图片</th>
+										<th>操作</th>
+									</TR>
+									</thead>
+
+									<tbody id="goodsBaseBody">
+
+									</tbody>
+								</table>
+							</div>
+						</dl>
+					</li>    
+					</ul>
+					<script>
+						var default_sn = '';
+						var defaultProductNo = '';
+						var products = '';
+						var default_price = '';
+						var product_id = 0;
+						var default_number = '1';
+						//类型改变
+						function goods_type_change(){
+						  var id = $("#product_type").val();
+						  $.ajax({
+							type:"POST",
+							dataType:'json',
+							url: URL+"/get_attr_val",
+							data:"id="+id,
+							success:function(objs){
+							  $('.add_th').remove();
+							  if(objs){
+								  html = '';
+								  for(i=0;i<objs.length;i++){
+									html += '<th class="add_th">'+objs[i].attr_name+'</th>';
+								  }
+								  if(html)$('#select_all').parents().find('th').eq(3).after(html);
+							  }
+							}
+						  })
+						}
+						//批量修改信息
+						$('.change_all_goods').click(function(){
+							art.dialog({
+								padding: '0px ',
+								id: 'BatchEditingMoney',
+								background: '#ddd',
+								opacity: 0.3,
+								title: '批量编辑商品信息',
+								content: document.getElementById('batcheditGoods'),
+								ok:function() {
+									var number_change 	= $('[name="number_change"]').val();
+									var price_change 		= $('[name="price_change"]').val();
+									var num_reg = /^[-\+]?\d*$/;
+									var price_reg = /^[-\+]?\d+(\.\d{2})?$/;
+									if(!(num_reg.test(number_change)) || !(price_reg.test(price_change))){
+										alert('请输入正确的数字!');
+										return false;
+									}
+									//库存
+									$('#goodsBaseBody [name^="spec_stock"]').each(function(index,data){
+										num = parseInt($(this).val()) + parseInt(number_change);
+										num = num < 0 ? 0 : num;
+										$(this).val(num);
+									})
+									//销售价
+									$('#goodsBaseBody [name^="spec_price"]').each(function(index,data){
+										num = Number($(this).val()) + Number(price_change);
+										num = num < 0 ? 0 : num;
+										$(this).val(num.toFixed(2));
+									})
+
+									$('[name="number_change"]').val('+0');
+									$('[name="price_change"]').val('+0.00');
+									return true;
+								},
+								cancel:true
+							});
+						});
+						// 全选
+						$(window).load(function(){
+							$('#select_all').on('click',"input",function() {
+								if ($(this).is(':checked') == true) {
+									$("input[name='key']").each(function() {
+										$(this).attr("checked",true);
+									});
+								} else {
+									$("input[name='key']").each(function() {
+										$(this).attr("checked",false);
+									});
+								}                
+							});
+							$("input[name='key']").click(function() {
+								if($(this).attr("checked")){
+									$(this).attr("checked","true");
+								}else{
+									$(this).removeAttr("checked");
+								}
+								var num= 0;
+								$("input[name='key']").each(function() {
+									if($(this).attr("checked")){
+										num++;
+									}
+								});
+								if(num==$("input[name='key']").length){
+									$('#select_all').children('input').attr("checked","true");
+								}else{
+									$('#select_all').children('input').removeAttr("checked");
+								}
+							});
+							goods_type_change();
+						})
+					</script>
+                </dd>
+
+                <div class="submit">
+				    <INPUT TYPE="hidden" NAME="hash" value="{$hash}">
+                    <input type="submit" class='button_search' value='提交'/>
+                </div>
+            </form>
+        </dl>
+    </div>
+	<!--批量编辑商品信息弹窗-->
+	<div id="batcheditGoods" class="BatchEditingMoney">
+		<ul>
+			<li class="w85"><strong>库存</strong></li>
+			<li class="w85"><strong>销售价格</strong></li>
+			<!--
+			<li class="w85"><strong>市场价格</strong></li>
+			<li class="w85"><strong>成本价格</strong></li>
+			-->
+		</ul>
+		<ul>
+			<li class="w85"><input type="text" name="number_change" value="+0" /></li>
+			<li class="w85"><input type="text" name="price_change" value="+0.00" /></li>
+			<!--
+			<li class="w85"><input type="text" name="_market_price_change" value="+0.00" /></li>
+			<li class="w85"><input type="text" name="_cost_price_change" value="+0.00" /></li>
+			-->
+		</ul>
+		<p>小提示：此处修改的值将对所有商品值进行加减修改如:+10 -5<br>库存必须是整数  价格可带两位小数</p>
+	</div>
+	<include file="Public:footer" />
+	<script type="text/javascript" src="__PUBLIC__/js/apply/product.js"></script>
+	<script>
+	$(function() {
+			//切换
+			var tabTitle = ".tabs dt a";
+			var tabContent = ".tabs dd";
+			$(tabTitle + ":first").addClass("hover");
+			$(tabContent).not(":first").hide();
+			$(tabTitle).unbind("click").bind("click", function() {
+				$(this).siblings("a").removeClass("hover").end().addClass("hover");
+				var index = $(tabTitle).index($(this));
+				$(tabContent).eq(index).siblings(tabContent).hide().end().fadeIn(0);
+			});
+			$(tabTitle).eq(2).click(function(){
+				var timenow = new Date().getTime();
+				$.getScript("__PUBLIC__/js/image-upload/upload.js?"+timenow);
+			})
+			//初始化分类选择
+			JsonCategory = {$types|json_encode} ;
+
+	})
+	</script>

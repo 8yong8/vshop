@@ -1,0 +1,29 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title">数据修改[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="标题不能为空" NAME="name" value="{$vo.name}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >排序：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="sort" value="{$vo.sort}"></TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<input type="hidden" name="id" value="{$vo.id}" />
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

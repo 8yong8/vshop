@@ -1,0 +1,150 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uploadify/uploadify.css?2014/12/17" />
+<div class="W" id="flash_upplad">
+	<div class="Bg"></div>
+	<div class="Wrap" id="Wrap">
+		<div class="Title">
+			<h3 class="MainTit" id="MainTit">文件上传</h3>
+			<a href="javascript:Close();" title="关闭" class="Close"></a>
+		</div>
+		<div class="Cont">
+			<!--<p class="Note">最多上传<strong>10</strong>个附件,单文件最大<strong> 488KB </strong>,类型<strong>*.png;*.jpg;*.gif;*.jpeg;</strong></p>-->
+			<p class="Note">最多上传<strong>10</strong>个附件</p
+			<div class="flashWrap">
+				<input name="uploadify" id="uploadify" type="file" multiple="true" />
+				<!--
+				<span>
+                	<input type="checkbox" name="iswatermark" id="iswatermark" /><label>是否添加水印</label>
+                </span>
+				-->
+			</div>
+			<div class="fileWarp">
+				<fieldset>
+					<legend>列表</legend>
+					<ul>
+					</ul>
+					<div id="fileQueue">
+					</div>
+				</fieldset>
+			</div>
+			<div class="btnBox">
+				<button class="btn" id="SaveBtn">保存</button>
+				&nbsp;
+				<button class="btn" id="CancelBtn">取消</button>
+			</div>
+		</div>
+		<!--[if IE 6]>
+		<iframe frameborder="0" style="width:100%;height:100px;background-color:transparent;position:absolute;top:0;left:0;z-index:-1;"></iframe>
+		<![endif]-->
+	</div><!--Wrap end-->
+</div><!--W end-->
+
+<script src="__PUBLIC__/js/uploadify/jquery.min.js" type="text/javascript"></script> 
+<script src="__PUBLIC__/js/uploadify/jquery.uploadify.js" type="text/javascript"></script> 
+<script src="__PUBLIC__/js/uploadify/uploadify-move.js" type="text/javascript"></script> 
+<script type="text/javascript">
+function Close(){
+	$('#flash_upplad').remove();
+	//$('#flash_upplad').parent().remove();
+}
+$("#CancelBtn").click(function(){
+	$('#flash_upplad').remove();
+});
+
+/*实例化上传控件 */
+$(function() {
+	$('#uploadify').uploadify({
+			'formData'        : {
+				'timestamp'   : '1417071567',
+				'sessid'   : '<?php echo session_id();?>',
+				'token'       : '{$token}',
+				'doaction'		  : '{$doaction}',
+				'check'		  : ''
+			},
+			'auto'			  : true,
+			'method'   		  : 'post',
+			'multi'   		  : true,
+			'swf'      		  : '__PUBLIC__/js/uploadify/uploadify.swf',
+       		//'uploader'        : 'http://localhost/yiyuan/?/api/uploadify/insert',
+			'uploader'        : '__APP__?m=Uploadify&a=flash_upload_insert',
+			'queueSizeLimit'  : '10',
+			'fileSizeLimit'   : '5000000000',
+			'fileTypeExts'    : '*.png;*.jpg;*.gif;*.jpeg;*.doc;*.docx;*.pdf;*.txt;*.ppt;',
+			'fileTypeDesc'    : 'image',
+			'buttonImage'     : '__PUBLIC__/js/uploadify/select.png',
+			'queueID'         : 'fileQueue',
+			'onUploadStart'   : function(file){
+				$('#uploadify').uploadify('settings', 'formData', {'iswatermark':$("#iswatermark").is(':checked')});				
+			},
+			'onUploadSuccess' : function(file, data, response){
+			    //alert(data);return;
+				$(".fileWarp ul").append(SetImgContent(data));
+				//SetUploadFile();
+			}
+		});	
+
+});
+
+//显示上传的图片
+function SetImgContent(data){
+	var obj=eval('('+data+')');  
+	if(obj.ok == 'no'){
+		//window.parent.message(obj.text,8,2);
+		//alert(obj.text);
+		return;
+	}else{
+		var sLi = "";
+		sLi += '<li class="img">';
+		//sLi += '<img src="' + obj.text + '" width="100" height="100" onerror="this.src=\'__PUBLIC__/js/uploadify/nopic.png\'">';
+		sLi += '<img src="__PUBLIC__/Images/file.gif">';
+		sLi += obj.text;
+		sLi += '<input type="hidden" name="file_url[]" value="' + obj.file_url + '" filename="' + obj.file_name + '">';
+		//sLi += '<input type="hidden" name="file_name[]" value="' + obj.file_name + '">';
+		//sLi += '<a href="javascript:void(0);">删除</a>';
+		sLi += '<img src="__PUBLIC__/Images/del.gif" onclick="$(this).parent().remove();">';
+		sLi += '</li>';
+		return sLi;
+	}
+}
+
+//删除上传元素DOM并清除目录文件
+function SetUploadFile(){
+	$("ul li").each(function(l_i){
+		$(this).attr("id", "li_" + l_i);
+	})
+	$("ul li a").each(function(a_i){
+		$(this).attr("rel", "li_" + a_i);
+	}).click(function(){
+	    //alert($(this).prev().val());
+		$.post(
+			'__URL__/delupload/',
+			{action:"del", filename:$(this).prev().val()},
+			function(data){
+			  //alert(data);
+			}
+		);
+		$("#" + this.rel).remove();
+	})
+}
+	
+	/*点击保存按钮时
+	 *判断允许上传数，检测是单一文件上传还是组文件上传
+	 *如果是单一文件，上传结束后将地址存入$input元素
+	 *如果是组文件上传，则创建input样式，添加到$input后面
+	 *隐藏父框架，清空列队，移除已上传文件样式*/
+$("#SaveBtn").click(function(){							 
+	if(10 > 1){
+			var fileurl_tmp = "";
+
+			$("input[name^='file_url']").each(function(){
+				//fileurl_tmp += '<li rel="'+ this.value +'"><input class="input-text" type="text" name="uppicarr[]" value="'+ this.value +'" /><input class="input-text" type="hidden" name="uppicname[]" value="'+ $(this).attr('filename') +'" /><a href="javascript:void(0);" onclick="ClearPicArr(\''+ this.value +'\',\'__URL__/delupload\')">删除</a><a href="'+ this.value +'" target="_blank">看附件</a></li>';
+				fileurl_tmp += '<li rel="'+ this.value +'"><input class="input-text" type="hidden" name="uppicarr[]" value="'+ this.value +'" /><input class="input-text" type="hidden" name="uppicname[]" value="'+ $(this).attr('filename') +'" /><img src="__PUBLIC__/Images/file.gif">'+$(this).attr('filename')+'&nbsp;<a href="javascript:void(0);" onclick="ClearPicArr(\''+ this.value +'\',\'__URL__/delupload\')">删除</a>&nbsp;<a href="'+ this.value +'" target="_blank">看附件</a></li>';	
+			});
+			
+			$(window.parent.document).find("#uppicarr").append(fileurl_tmp);
+	}else{
+			$(window.parent.document).find("#uppicarr").val($("input[name^='file_url']").val());
+	}
+	$('#flash_upplad').remove();
+	//$(window.parent.document).find("#uploadify").remove();
+});
+</script>

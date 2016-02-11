@@ -1,0 +1,83 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<div id="main" class="main" >
+<div class="content">
+<div class="title">新增信息 [ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/insert/" enctype="multipart/form-data" onsubmit="return ck();">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="large bLeftRequire" NAME="name" >
+	<font color="red">最多200字</font>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >是否必须注册用户：</TD>
+	<TD class="tLeft" >
+	<select name="reg">
+	<option value=1>是</option>
+	<option value=0>否</option>
+	</select>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >是否需要验证码：</TD>
+	<TD class="tLeft" >
+	<select name="verify">
+	<option value=1>是</option>
+	<option value=0>否</option>
+	</select>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >是否短信通知：</TD>
+	<TD class="tLeft" >
+	<select name="sms">
+	<option value=1>是</option>
+	<option value=0 selected>否</option>
+	</select>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >短信内容：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="sms_msg" ROWS="5" COLS="25"></TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight">城市：</TD>
+	<TD class="tLeft">
+	<SELECT class="small bLeft" NAME="webset" onchange="gettype(this)">
+	<volist name="ac_sites" id="site">
+	<option value="{$site.key}" <eq name="site.key" value="$webset">
+	  selected = "selected"
+	</eq>>{$site.name}</option>
+	</volist>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="../Public/footer" /> 

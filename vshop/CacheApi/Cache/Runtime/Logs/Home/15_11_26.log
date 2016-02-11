@@ -1,0 +1,418 @@
+[ 2015-11-26T22:20:58+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=fvjpfc5w189k1m349dligw1wi2o77yks&time_stamp=1448547657&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003403s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T22:21:01+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=zpjzpgzque65cryf3xbhl3y5zltkl04g&time_stamp=1448547661&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003361s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T22:21:02+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=pdae3mmjpkh8og7z3uf374qtr6zdzp4n&time_stamp=1448547662&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004630s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T22:21:04+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=gjk19lb1eflsuhz25vkrxb4rr2q40gh0&time_stamp=1448547664&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003340s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T22:21:07+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=ivgf49qmrusua1kik93xh2h6x5mz3jlw&time_stamp=1448547666&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003327s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:05:16+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=kf1anyxl5d8k2vls4nyqv4n5ssyga474&time_stamp=1448550315&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:05:18+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=zrd3syx2sspxi6d5ixi7188jkh9macs0&time_stamp=1448550318&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:05:20+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=ije1ec384nkn6undnu89uolcrv0oc593&time_stamp=1448550320&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:05:22+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=5fuq0ip7f8g30v5zy7r8c8nzz37beaet&time_stamp=1448550322&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:05:22+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=ubsutrfapsl9a25t5qg2nh4es4wxacgn&time_stamp=1448550322&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002305s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:08:08+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=7oyst90y1d7emii395nynv093j3zd59d&time_stamp=1448550488&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:08:11+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=hw2omyfeggq309xjebdwxfcrrlt2jgbe&time_stamp=1448550491&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:08:12+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=g8pn5canhhu4mmbhk77oi5sb4mggyujr&time_stamp=1448550492&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001680s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:08:14+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=xmc8pahxijswh6k45fhkzry76l2jx7ir&time_stamp=1448550494&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:08:26+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=as21pvdxzhgmt6kb2nvgx9wd6dmcoush&time_stamp=1448550506&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:09:56+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=0nthew1ffqzj1ppiazj5hge9uqkqy6n9&time_stamp=1448550596&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001601s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:12:09+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=1cbla46ljagjopefgkurcb8pul8zczrk&time_stamp=1448550729&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:12:11+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=qm8va0mh2pxwb0gb8owosc6izu33orhc&time_stamp=1448550731&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:12:15+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=skh4j4x40kseqpj9mdoi2pmp4l3olqwb&time_stamp=1448550735&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:12:17+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=bwzdm5qfup21ew860k186xu36a0ozz57&time_stamp=1448550737&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:14:27+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=japic29jap6wqdljs2eri4qf38wp2r1m&time_stamp=1448550867&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:14:32+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=i3wgcoo5o2we5734lj2n1n078e6vokdk&time_stamp=1448550872&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:14:32+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=lma896l0yd4as0rv9o7hdnxekrsp4wop&time_stamp=1448550872&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:14:40+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=xucalfka86u599dysa5fat4bhmnid39q&time_stamp=1448550880&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:14:47+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=b885mo5uxz98h5zdnyoyfat2ydpp0dhu&time_stamp=1448550887&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:15:45+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=qx7arc8mqqb1n73xtlgka9bg6pyz0jog&time_stamp=1448550945&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:15:45+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=2fg6n4ti63a1zz72r6g058yy9cdshcnf&time_stamp=1448550945&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:15:50+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=h08qgake04wf3jqmr4piu03vjmsjjwr0&time_stamp=1448550949&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001751s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:15:55+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=kw7jebxdmqafc5qn22t9wb6rsat6e9ov&time_stamp=1448550955&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2015-11-26T23:15:55+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=5expc0gckhgqczpjfa4v53wi7jd6sjun&time_stamp=1448550955&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2015-11-26T23:16:59+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=rqhkqhoczz0djr8epp9tfyohyblacvuf&time_stamp=1448551019&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:17:00+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=53qh18w0gdpy40wquywrgyepzep44gn7&time_stamp=1448551020&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:17:03+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=cdfoh26brlybocpjaleg3q74xww0skt6&time_stamp=1448551022&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-11-26T23:17:06+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=25u7vpjyw4vhq1278mrj5vdximh0a78w&time_stamp=1448551026&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:17:06+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=0btmr1g1yev3bfd3uowd6bnvonscfwqp&time_stamp=1448551026&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-11-26T23:17:29+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=ou9uos51s3ejl2ta8f7mpvt11tf8f8hd&time_stamp=1448551049&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-26T23:17:32+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=ezcdltjj9xpk0vdnbhewjjlf1o3o7h7k&time_stamp=1448551052&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-26T23:17:32+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&c=Local&name=list&nonce_str=wc60jjwoo16mnwmw80nqm8mcc22yivs3&time_stamp=1448551052&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+NOTIC: [2048] Declaration of Home\Controller\LocalController::Get() should be compatible with that of Think\Controller::get() D:\wamp\www\guoji\vshop\CacheApi\Cache\Home\Controller\LocalController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `zy_api` WHERE `py_name` = 'cache' AND `appid` = '201586485090108670' LIMIT 1   [ RunTime:0.0003s ]
+

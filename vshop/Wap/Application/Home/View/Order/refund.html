@@ -1,0 +1,30 @@
+<include file="Public:header" />
+<div class="menu">
+   <a class="back" href="__APP__/Order"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">退款</div>
+</div>
+<FORM METHOD=POST ACTION="" onsubmit="return false" id="refund">
+<div class="menber">
+    <div class="tk_box">
+       <div class="tk_tt">商品信息</div>
+       <div class="tk_info"><input type="text" value="{$vo.product_name} {$vo.spec}（￥{$vo.price} * {$vo.num}）" class="txt_fk" readonly></div>
+    </div>
+    <div class="tk_box">
+       <div class="tk_tt">退款金额</div>
+       <div class="tk_info"><input type="text" value="￥{$vo.pay_amount}" class="txt_fk" readonly> {$vo.pay_msg}</div>
+    </div>
+    <div class="tk_box">
+       <div class="tk_tt">退款原因</div>
+       <div class="tk_info"><textarea NAME="refund_reason" id="refund_reason" onclick="$(this).val('');">请输入退款原因</textarea></div>
+    </div>
+    <div class="tk_box mgt15">
+		<INPUT TYPE="hidden" NAME="order_sn" value="{$Think.get.order_sn}">
+		<!--
+        <div class="tk_info2"><input type="submit" value="提交申请" class="btn_fk"></div>
+		-->
+        <div class="tk_info2"><input type="button" value="提交申请" class="btn_fk" onclick="send('refund','{:U('Order/refund')}');"></div>
+
+    </div>
+</div>
+</FORM>
+<include file="Public:footer" /> 

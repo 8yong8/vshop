@@ -1,0 +1,129 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<SCRIPT language=JavaScript src="__PUBLIC__/Js/ymPrompt.js"></SCRIPT>
+
+<link rel="stylesheet" id='skin' type="text/css" href="__PUBLIC__/Css/skin/qq/ymPrompt.css" />
+<div id="main" class="main" >
+<script language="JavaScript">
+jQuery.noConflict();
+//图片预览
+function yulan(file,id) {
+  if(file.value.indexOf(".jpg")<0 && file.value.indexOf(".jpeg")<0 &&   file.value.indexOf(".gif")<0 && file.value.indexOf(".png")<0 && file.value.indexOf(".JPG")<0 && file.value.indexOf(".JPEG")<0 &&   file.value.indexOf(".GIF")<0 && file.value.indexOf(".PNG")<0){
+		alert('您选择的不是图片文件');
+		return false;
+	}
+	if(navigator.userAgent.indexOf("Mozilla/5.")>-1){
+	    document.getElementById(id).innerHTML = "<img src='"+file.files[0].getAsDataURL()+"' width='128px'>";
+		CheckFileSize(file.files[0].getAsDataURL(),id);
+
+	}else{
+      //var newPreview = document.getElementById(id);
+      //newPreview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = file.value;
+	  file.select();
+	  var img = document.selection.createRange().text;
+	  jQuery('#'+id).html("<img src='"+img+"' width='128px'>");
+	  //document.getElementById(id).innerHTML = "<img src='"+img+"' width='128px'>";
+	}
+}
+//添加上传条
+function addinput(name){
+  var o = jQuery('#'+name).parent();
+  var n = jQuery(o).find('input:last').val();
+  var title = jQuery(o).find('input:last').prev().attr('name');
+  var vname = jQuery(o).find('input:last').prev().prev().attr('name');
+  var html = "<input type='file' onChange=yulan(this,'"+vname+"1') name='"+vname+"1'>&nbsp;简介:<input name='"+title+"1' class='medium'><input type='hidden' value='"+n+"1'><div id='"+vname+"1'></div>";
+  jQuery('#'+name).parent().append(html);
+}
+
+function delpic( pid ){
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/ajax_delpic',
+	data:"pid="+pid,
+	success:function(msg){
+	  if(msg==1){
+		jQuery('#pic'+pid).remove();
+	  }else{
+	    alert(msg);
+	  }
+	}
+  })
+}
+
+function titleupdate( pid ){
+  var title = jQuery('#msg_'+pid).val();
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/titleupdate',
+	data:"pid="+pid+'&title='+title,
+	success:function(msg){
+	  ymPrompt.alert({message:msg,title:'信息提示页面'});
+	}
+  })
+}
+
+</script>
+<div class="content">
+<div class="title">用户图库 
+[ <a href="__URL__">返回列表</a> ]</div>
+<form method='post' id="form1" action="__URL__/upablum/" enctype="multipart/form-data">
+		<table>
+		 <tr>
+		    <td>
+			用户姓名:<font color="blue">&nbsp;&nbsp;{$member.realname}</font> 
+			</td>
+		  </tr>
+		<TR>
+			<TD class="tLeft" >分类：
+			<span id="tid">
+			<select name="tid" >
+			<volist name="types" id="type">
+			<option value="{$type['id']}" <eq name="vo.tid" value="$type['id']">selected</eq>>{$type['name']}</option>
+			</volist>
+			</select>
+			</span>
+			</TD>
+		</TR>
+		  <tr>
+		    <td>作品图上传：<input type="button" value="添加上传" onclick="addinput('up_zp1')"/></td>
+		  </tr>
+		  <tr>
+		   <td>
+		   <input type="file" name="up_zp1" onchange="yulan(this,'up_zp1')">&nbsp;简介:<input name="title1" class="medium"><INPUT TYPE="hidden" value="1"><div id="up_zp1"></div>
+		   </td>
+		  </tr>
+		</table>
+<table>
+<neq name="pics" value="">
+<tr>
+	<td class="tRight" >作品图：</td>
+	<td class="tLeft">
+	<volist name="pics" id="pic" key="k">
+	<div id="pic{$pic.picid}">
+	<img src="{$pic.domain}{$pic.filepath}" WIDTH="150PX" alt="{$pic.title}" title="{$pic.title}">&nbsp;
+	<img src="__PUBLIC__/images/b_drop.png" onclick="delpic('{$pic.picid}')" style="cursor:pointer" alt="删除按钮">
+	简介:<input id="msg_{$pic.picid}" class="medium" value="{$pic.title}">
+	&nbsp;&nbsp;<input type="button" value="修改" class="small submit" onclick="titleupdate({$pic.picid})">
+	</div>
+	<php>
+	if($k%5==0){
+	  echo "<br>";
+	}
+	</php>
+	</volist>
+	</td>
+</tr>
+</neq>
+<tr>
+	<!--<td></td>-->
+	<td class="center">
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.albumid}">
+	<INPUT TYPE="hidden" NAME="userid"  value="{$member.id}">
+	<input type="submit" value="保 存" class="small submit">
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<include file="Public:footer" />  

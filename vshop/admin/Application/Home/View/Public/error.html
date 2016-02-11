@@ -1,0 +1,19 @@
+<include file="Public:header" />
+<div class="content">
+    <div class="" style="height: 20px;"></div>
+    <dl class="tishi">
+    	<dt><em><img src="__PUBLIC__/images/ico_i.png" /></em><span>温馨提示</span></dt>
+        <dd>
+            <h3>{$error|htmlspecialchars|nl2br}</h3>
+				<p>
+                	<!--<a href="{$jumpUrl}">如果您的浏览器没有自动跳转，请点击这里</a>-->
+					您可以选择 [ <A HREF="{$FCS.SERVER.PHP_SELF}">重试</A> ] [ <A HREF="javascript:history.back()">返回</A> ] 或者 [ <A HREF="__APP__">回到首页</A> ]
+                </p>
+        </dd>
+    </dl>
+<script language="javascript">
+setTimeout(function(){
+   window.location.href = '{$jumpUrl}';
+},3000);
+</script>
+<include file="Public:footer" />

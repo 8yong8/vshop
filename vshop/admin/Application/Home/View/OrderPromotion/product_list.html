@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="x-ua-compatible">
+<title>后台管理</title>
+<link rel="stylesheet" type="text/css" href="/haidao/statics/css/admin/style.css">
+<link rel="stylesheet" type="text/css" href="/haidao/statics/css/font-awesome.css">
+<!--[if IE 6]>
+<script type="text/javascript" src="/haidao/statics/js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<script type="text/javascript" src="/haidao/statics/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/haidao/statics/js/common.js"></script>
+</head>
+<body><div id="allBox" class="allBox " style="display: block;">
+	<div class="allBoxSearch">
+		<span class="allBoxSearchPut1 fl">
+			<input type="checkbox" name="" id="" value="" class="check-all">全选
+		</span>
+		<span class="allBoxSearchPut2 fr">
+			<form action="__URL__/product_list" method="get" name="searchListForm">
+				<input type="hidden" name="prom_id" value="">
+				<input type="text" value="{$keyword}" class="input_ss" name="keyword" placeholder="输入名称/货号均可搜索">
+				<a href="javascript:void(0)" onclick="$('form').submit()" class="prosearch_03">
+					<img src="__PUBLIC__/images/prosearch_03.png">
+				</a>
+			</form>
+		</span>
+	</div>
+	<div class="clear"></div>
+	<div class="allBoxTable">
+		<br><table>
+			<tbody><tr class="odd" style="height: 30px;">
+				<th>选择</th>
+				<th>商品名称</th>
+				<th>零售价</th>
+				<th>库存</th>
+			</tr>
+			<volist name="list" id="vo">
+			<tr class="even">
+				<td><input type="checkbox" name="id[]" id="" value="" class="ids" data-id="{$vo.id}" data-name="{$vo.name}" data-price="{$vo.price}" data-stock="{$vo.stock}"></td>
+				<td class="mo_text1">{$vo.name}</td>
+				<td>{$vo.price}</td>
+				<td>{$vo.stock}</td>
+			</tr>
+			</volist>
+			</tbody>
+		</table>
+	</div>
+	<div class="page fr">
+	{$page}
+	<span class="nodownpage"></span>    
+	</div>
+</div>
+</body></html>

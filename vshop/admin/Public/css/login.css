@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+body{
+	margin:0;
+	padding:0;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	overflow: hidden;
+	height:100%;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+.main{
+	min-width: 808px;
+	height:100%;
+	/*position:absolute;*/
+	margin: 0 auto;
+	background: url('../images/loginbg.jpg') center 0 no-repeat #dfdfdf;
+}
+.login{
+	width: 808px;
+	margin: 0 auto;
+}
+.left{
+	width: 404px;
+	float: left;
+	margin-top: 347px;
+}
+.left p{
+	padding-left: 90px;
+	width: 270px;
+}
+.left p a{ color: #2366a8;  text-decoration: none;}
+.right{
+	width: 366px;
+	float: left;
+	margin-top:270px;
+	padding-left: 14px;
+}
+.right label{
+	width: 60px;
+	display: inline-block;
+}
+.right p{
+	margin: 14px 0;
+	line-height: 21px;
+}
+.Inpt{
+	outline:none;
+	text-indent: 5px;
+	width: 157px;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #c5c5c5;
+}
+.Inpt:hover,.Inpt:focus,
+.captcha:hover,.captcha:focus{
+    border-color: #417eb7;
+    background:#f5f8fd;
+}
+.captcha{
+	outline:none;
+	text-indent: 5px;
+	width: 90px;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #c5c5c5;
+	vertical-align:center;
+}
+.Btn{
+	background: url('../images/loginbtn.png') no-repeat;
+	width: 94px;
+	height: 28px;
+	border: 0;
+	cursor: pointer;
+}
+/*验证*/
+.Validform_wrong{
+    color: red;
+}
+.Validform_right{
+    color: #009900;
+}
+.Validform_error{
+    background-color:#ffcccc;
+}

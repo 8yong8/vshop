@@ -1,0 +1,113 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<div id="main" class="main" >
+<script language="JavaScript">
+jQuery.noConflict();
+//图片预览
+function yulan(file,id) {
+  if(file.value.indexOf(".jpg")<0 && file.value.indexOf(".jpeg")<0 &&   file.value.indexOf(".gif")<0 && file.value.indexOf(".png")<0 && file.value.indexOf(".JPG")<0 && file.value.indexOf(".JPEG")<0 &&   file.value.indexOf(".GIF")<0 && file.value.indexOf(".PNG")<0){
+		alert('您选择的不是图片文件');
+		return false;
+	}
+	if(navigator.userAgent.indexOf("Mozilla/5.")>-1){
+	    document.getElementById(id).innerHTML = "<img src='"+file.files[0].getAsDataURL()+"' width='128px'>";
+		CheckFileSize(file.files[0].getAsDataURL(),id);
+
+	}else{
+      //var newPreview = document.getElementById(id);
+      //newPreview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = file.value;
+	  file.select();
+	  var img = document.selection.createRange().text;
+	  jQuery('#'+id).html("<img src='"+img+"' width='128px'>");
+	  //document.getElementById(id).innerHTML = "<img src='"+img+"' width='128px'>";
+	}
+}
+//添加上传条
+function addinput(name){
+  var o = jQuery('#'+name).parent();
+  var n = jQuery(o).find('input:last').val();
+  var title = jQuery(o).find('input:last').prev().attr('name');
+  var vname = jQuery(o).find('input:last').prev().prev().attr('name');
+  var html = "<input type='file' onChange=yulan(this,'"+vname+"1') name='"+vname+"1'>标题:<input name='"+title+"1' class='small'><input type='radio' name='f_logo' value='"+n+"1'><div id='"+vname+"1'></div>";
+  jQuery('#'+name).parent().append(html);
+}
+
+function delpic( pid ){
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/ajax_delpic',
+	data:"pid="+pid,
+	success:function(msg){
+	  if(msg==1){
+	    //window.location.reload();
+		jQuery('#pic'+pid).remove();
+	  }else{
+	    alert(msg);
+	  }
+	}
+  })
+}
+
+function check_radio( id ){
+  /*
+  if(n==1){
+    jQuery('input[name="logo"]').attr('checked',false);
+  }else{
+    jQuery('input[name="f_logo"]').attr('checked',false);
+  }
+  */
+  jQuery('#logo').val(jQuery('#'+id).val());
+}
+</script>
+<div class="content">
+<div class="title">商品图库 [ <a href="__URL__">返回列表</a> ] [ <a href="__URL__/edit/id/{$vo.id}">返回商品</a> ]</div>
+<form method='post' id="form1" action="__URL__/upablum/" enctype="multipart/form-data">
+		<table>
+		 <tr>
+		    <td>
+			商品：<font color="red">{$vo.name}</font></td>
+		  </tr>
+		  <tr>
+		    <td>商品图上传：<input type="button" value="添加上传" onclick="addinput('up_zp1')"/></td>
+		  </tr>
+		  <tr>
+		   <td>
+		   <input type="file" name="up_zp1" onchange="yulan(this,'up_zp1')">标题:<input name="title1" class="small"><input type="radio" value="1" name="f_logo" onclick="check_radio(1)"><div id="up_zp1"></div>
+		   </td>
+		  </tr>
+		</table>
+<table>
+<tr>
+	<td class="tRight" >商品图：</td>
+	<td class="tLeft">
+	<volist name="pics" id="pic" key="k">
+	<span id="pic{$pic.picid}">
+	<INPUT type="radio" value="{$pic.domain}{$pic.filepath}{$pic.savename}" id="logo{$k}" name="select_logo"
+	<php>
+	 if($pic['domain'].$pic['filepath'].$pic['savename']==$vo['lit_pic']){
+	   echo 'checked="checked"';
+	 }
+	</php>
+	><img src="{$pic.domain}{$pic.filepath}{$pic.savename}" WIDTH="150PX" alt="{$pic.title}" title="{$pic.title}">&nbsp;
+	<img src="__PUBLIC__/Images/b_drop.png" onclick="delpic('{$pic.picid}')" style="cursor:pointer" alt="删除按钮">
+	</span>
+	<php>
+	if($k%5==0){
+	  echo "<br>";
+	}
+	</php>
+	</volist>
+	</td>
+</tr>
+<tr>
+	<td></td>
+	<td class="center">
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="hidden" NAME="logo" id="logo"  value="{$vo.logo}">
+	<input type="submit" value="保 存" class="small submit">
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div>

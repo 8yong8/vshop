@@ -1,0 +1,43 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title">物流修改[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit/">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >订单信息：</TD>
+	<TD class="tLeft" ><a href="__APP__?m=Order&a=index&order_id={$vo.order_id}" target="_blank">{$vo.order_sn}</a></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >快递公司：</TD>
+	<TD class="tLeft" >
+	<select name="shipping_id">
+		<volist name="shippings" id="ship">
+		<option value="{$ship.id}" <eq name="ship.id" value="$vo.shipping_id">selected</eq> >{$ship.name}</option>
+		</volist>
+	</select>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >快递单号：</TD>
+	<TD class="tLeft" >
+	<input type="text" name="shipping_no" id="shipping_no" value="{$vo.shipping_no}">
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<input type="hidden" name="id" value="{$vo.id}" />
+	<input type="hidden" name="order_id" value="{$vo.order_id}" />
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

@@ -1,0 +1,294 @@
+<include file="Public:header" />
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/laydate/laydate.js"></script>
+<script>
+$(function() {
+	var start = {
+		elem: '#exp_time',
+		format: 'YYYY-MM-DD',
+		//min: laydate.now(), //设定最小日期为当前日期
+		max: '2099-06-16 23:59:59', //最大日期
+		istime: false,
+		istoday: true,
+		choose: function(datas){
+			 //end.min = datas; //开始日选好后，重置结束日的最小日期
+			 //end.start = datas //将结束日的初始值设定为开始日
+		}
+	};
+	laydate(start);
+});
+
+function checkName(){
+  var username = jQuery('#username').val();
+  if(username==''){
+	art.dialog({
+		time: 1.5,
+		content: '不能为空'
+	});
+	return;
+  }
+	jQuery.ajax({
+	  type:'POST',
+	  url:'__URL__/checkAccount/',
+	  data:'username='+username,
+	  success:function(msg){
+		//alert(msg);
+		  art.dialog({
+			time: 1.5,
+			content: msg
+		  });
+	  }
+	});
+}
+</script>
+<div class="content">
+<div class="title">添加帐号 [ <a href="__URL__">返回列表</a> ]</div>
+<form method='post' id="form1" action="__URL__/add?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<table cellpadding=3 cellspacing=3 class="add">
+<tr>
+	<td class="tRight" colspan="2"><hr></td>
+</tr>
+
+<tr>
+	<td class="tRight" >昵称：</td>
+	<td class="tLeft" ><font color="red"><strong><input type="text" class="medium bLeft" name="username" id="username"></strong></font> <input type="button" value="检测帐号" onclick="checkName()" class="button"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >密码：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="password" value="{$vo.password}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >性别：</td>
+	<td class="tLeft" >
+	<SELECT NAME="sex">
+		<OPTION VALUE="1" <eq name="vo.utype" value="1">SELECTED</eq>>女</OPTION>
+		<OPTION VALUE="2" <eq name="vo.utype" value="2">SELECTED</eq>>男</OPTION>
+		<OPTION VALUE="3" <eq name="vo.utype" value="3">SELECTED</eq>>未知</OPTION>
+	</SELECT>	
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >用户类型：</td>
+	<td class="tLeft" >
+	<SELECT NAME="utype">
+		<OPTION VALUE="1" <eq name="vo.utype" value="1">SELECTED</eq>>会员</OPTION>
+		<OPTION VALUE="2" <eq name="vo.utype" value="2">SELECTED</eq>>战略合作商</OPTION>
+		<OPTION VALUE="3" <eq name="vo.utype" value="3">SELECTED</eq>>合作商</OPTION>
+		<OPTION VALUE="4" <eq name="vo.utype" value="4">SELECTED</eq>>分销商</OPTION>
+		<OPTION VALUE="5" <eq name="vo.utype" value="5">SELECTED</eq>>代理商</OPTION>
+	</SELECT>
+	</td>
+</tr>
+
+<tr id="lv_tr">
+	<td class="tRight" >等级：</td>
+	<td class="tLeft" >
+	<SELECT NAME="lv" id="lv">
+	    <volist name="lvs" id="lv">
+		<OPTION VALUE="{$lv.val}" <eq name="vo.lv" value="$lv.val">SELECTED</eq>>{$lv.name}</OPTION>
+		</volist>
+	</SELECT>	
+	</td>
+</tr>
+
+<tr id="bus_lv_tr">
+	<td class="tRight" >商家等级：</td>
+	<td class="tLeft" >
+	<SELECT NAME="bus_lv" id="bus_lv">
+		<OPTION VALUE="0" <eq name="vo.bus_lv" value="0">SELECTED</eq>>普通/区代理</OPTION>
+		<OPTION VALUE="1" <eq name="vo.bus_lv" value="1">SELECTED</eq>>银牌/市代理</OPTION>
+		<OPTION VALUE="2" <eq name="vo.bus_lv" value="2">SELECTED</eq>>金牌/省代理</OPTION>
+	</SELECT>	
+	</td>
+</tr>
+
+<script>
+
+  function up_type(){
+    var utype = jQuery('#utype').val();
+	if(utype==1){
+	  jQuery('#bus_lv_tr').hide();
+	}else{
+	  jQuery('#bus_lv_tr').show();
+	}
+  }
+</script>
+
+
+<TR>
+	<TD class="tRight" >
+		到期时间：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="exp_time" id="exp_time" value="{$vo.exp_time|toDate='Y-m-d'|default='0'}"> 
+		<strong><font color="red">日期格式：<?php echo date('Y-m-d');  ?>；0表示永久有效</font></strong>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight" >真实姓名：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="realname" value="{$vo.realname}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >Email：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="email" value="{$vo.email}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >头像：</td>
+	<td class="tLeft" ><input type="file" name="logo" onchange="yulan(this,'show1')">
+	<div id="show1">
+	<neq name="vo.logo" value="">
+	<img src="{$vo.logo}">
+	</neq>
+	</div>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft"><SELECT class="small bLeft"  name="status">
+	<option <eq name="vo.status" value="1" >selected</eq> value="1">启用</option>
+	<option <eq name="vo.status" value="0" >selected</eq> value="0">禁用</option>
+	</SELECT></td>
+</tr>
+
+<tr>
+	<td class="tRight" colspan="2"><hr></td>
+</tr>
+
+<tr>
+	<td class="tRight">电话：</td>
+	<td class="tLeft"><INPUT TYPE="text" NAME="phone" id="phone" value="{$vo.phone}"></td>
+</tr>
+
+<tr>
+	<td class="tRight">手机：</td>
+	<td class="tLeft"><INPUT TYPE="text" NAME="tel" id="tel" value="{$vo.tel}"></td>
+</tr>
+
+<tr>
+	<td class="tRight">地区：</td>
+	<td class="tLeft">
+	<SELECT name="pv_id" id="province"  size=1 onchange="pvchange(this);">   
+		<OPTION>请选择</OPTION>
+		<volist name="pvlist" id="pv">
+		<OPTION value="{$pv.id}" <eq name="vo.pv_id" value="$pv.id">selected</eq>>{$pv.area_name}</OPTION>
+		</volist>
+	</SELECT>
+	<span id="ct_span">
+	<SELECT name="ct_id" id="city" size=1 onchange="ctchange(this);">   
+		<OPTION>请选择</OPTION>
+		<volist name="ctlist" id="ct">
+		<OPTION value="{$ct.id}" <eq name="vo.ct_id" value="$ct.id">selected</eq>>{$ct.area_name}</OPTION>
+		</volist>
+	</SELECT>
+	</span>
+	<span>
+	<SELECT name="dist_id" id="district" size=1>   
+		<OPTION>请选择</OPTION>
+		<volist name="districts" id="ct">
+		<OPTION value="{$ct.id}" <eq name="vo.dist_id" value="$ct.id">selected</eq>>{$ct.area_name}</OPTION>
+		</volist>
+	</SELECT>
+	</span>
+	<INPUT TYPE="hidden" NAME="province" id="post_pv">
+	<INPUT TYPE="hidden" NAME="city" id="post_ct">
+	<INPUT TYPE="hidden" NAME="district" id="post_district">
+	<INPUT TYPE="hidden" NAME="lv_name" id="lv_name" value="">
+	<INPUT TYPE="hidden" NAME="bus_lv_name" id="bus_lv_name" value="">
+	</td>
+</tr>
+<script>
+  function check(){
+	var pv = jQuery('#province option:selected').text();
+	var ct = jQuery('#city option:selected').text();
+	var district = jQuery('#district option:selected').text();
+	var lv_name = jQuery('#lv option:selected').text();
+	var bus_lv_name = jQuery('#bus_lv option:selected').text();
+	//alert(bus_lv_name);return false;
+	if(!pv || pv=='请选择'){
+	  alert('省必须选择!');
+	  return false;
+	}
+	if(!ct || ct=='请选择'){
+	  alert('市必须选择!');
+	  return false;
+	}
+	if(!district || district=='请选择'){
+	  alert('区域必须选择!');
+	  return false;
+	}
+	jQuery('#post_pv').val(pv);
+	jQuery('#post_ct').val(ct);
+	jQuery('#post_district').val(district);
+	jQuery('#lv_name').val(lv_name);
+	jQuery('#bus_lv_name').val(bus_lv_name);
+	return true;
+  }
+
+  //显示城市
+  function pvchange(){
+	var pid = jQuery('#province').val();
+	jQuery.ajax({
+	   type: "POST",
+	   url: "__URL__/get_city",
+	   data: "pid="+pid,
+	   success: function(msg){
+		 var objs = eval('('+msg+')');
+		 //var html = '<select id="city" name="ct_id">';
+		 var html = '';
+		 for(i=0;i<objs.length;i++){
+			//html += '<option value='+objs[i].id+'>'+objs[i].class_name+'</option>';
+			if(i==0){
+			   html += '<option value='+objs[i].id+' selected>'+objs[i].area_name+'</option>';
+			}else{
+			   html += '<option value='+objs[i].id+'>'+objs[i].area_name+'</option>';	
+			}
+		 }
+		 //html += '</select>';
+		 jQuery('#city').html(html);
+		 ctchange();
+	   }
+	}); 
+  }
+
+  //显示区域
+  function ctchange(){
+	var pid = jQuery('#city').val();
+	jQuery.ajax({
+	   type: "POST",
+	   url: "__URL__/get_district",
+	   data: "pid="+pid,
+	   success: function(msg){
+		 var objs = eval('('+msg+')');
+		 //var html = '<select id="city" name="ct_id">';
+		 var html = '';
+		 for(i=0;i<objs.length;i++){
+			html += '<option value='+objs[i].id+'>'+objs[i].area_name+'</option>';
+		 }
+		 //html += '</select>';
+		 jQuery('#district').html(html);
+	   }
+	}); 
+  }
+</script>
+<tr>
+	<td class="tRight tTop">简 介：</td>
+	<td class="tLeft">
+	<myhtml:editor type="KINDEDITOR"  id="intro" name="intro" width="650px" height="345px" items="base">{$vo.intro}</myhtml:editor>
+	</td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<input type="submit" value="保 存" class="button">
+	</td>
+</tr>
+</table>
+</form>
+<include file="Public:footer" />

@@ -1,0 +1,61 @@
+<include file="Public:header" />
+<div class="menu">
+   <a class="back" href="__APP__/Order"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">退款</div>
+</div>
+<div class="menber">
+    <div class="o_list">
+       <div class="o_timeinfo">下单时间：{$vo.create_time|toDate='Y-m-d'}</div>
+       <div class="o_box">
+           <div class="o_price">￥{$vo.price}<p>x{$vo.num}</p></div>
+           <div class="o_img"><img src="{$item.lit_pic}"></div>
+           <div class="o_name"><p>{$vo.product_name}</p></div>
+       </div>
+
+       <div class="mm_tkje"><em>实退</em>￥{$vo.pay_amount}</div>
+    </div>
+	<FORM METHOD=POST ACTION="" id="order_shipping" onsubmit="return false;">
+    <div class="tk_box mgt15">
+       <div class="tk_tt">快递公司</div>
+       <div class="tk_info">
+	   <select name="shipping_id" id="shipping_id" onchange="shipping_change();">
+	     <volist name="shippings" id="shipping">
+	     <option value="{$shipping.id}">{$shipping.name}</option>
+		 </volist>
+		 <option value="0">其他</option>
+	   </select>
+	   <span id="company" style="display:none"><input type="text" value="请填写快递公司" class="txt_zz" onFocus="if(value =='请填写快递公司'){ value ='' }"onblur="if(value ==''){ value='请填写快递公司' }" name="shipping_company" id="shipping_company"></span>
+	   </div>
+    </div>
+    <div class="tk_box mgt15">
+       <div class="tk_tt">快递单号</div>
+       <div class="tk_info"><input type="text" value="请填写快递单号" class="txt_zz" onFocus="if(value =='请填写快递单号'){ value ='' }"onblur="if(value ==''){ value='请填写快递单号' }" class="txt_zz" name="shipping_no" id="shipping_no" ></div>
+    </div>
+    <div class="tk_box mgt15">
+       <div class="tk_tt">备注</div>
+       <div class="tk_info"><input type="text" name="memo" id="memo" value="" class="txt_zz"></div>
+    </div>
+    <div class="tk_box mgt15">
+		<INPUT TYPE="hidden" NAME="order_sn" value="{$Think.get.order_sn}">
+        <div class="tk_info2"><input type="button" value="提交" class="btn_fk" onclick="send('order_shipping','__APP__/Order/return_item')"></div>
+    </div>
+    <div class="tkdz">
+      <h3>货物要退到哪里呢？</h3>
+      <p>【邮寄地址】{$configs['consignee_address']}</p>
+      <p>【收 货 人】{$configs['consignee_mobile']}</p>
+      <p>【手机号码】{$configs['consignee']}</p>
+    </div>
+	</FORM>
+</div>
+<script>
+//快递选择
+function shipping_change(){
+  var shipping_id = $('#shipping_id').val();
+  if(shipping_id==0){
+    $('#company').show();
+  }else{
+    $('#company').hide();
+  }
+}
+</script>
+<include file="Public:footer" /> 

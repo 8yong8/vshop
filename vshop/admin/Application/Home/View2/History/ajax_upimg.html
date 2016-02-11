@@ -1,0 +1,47 @@
+{// 加载头部公共文件 }
+<include file="../Public/header" />
+<style>
+img{cursor:pointer}
+.Folders td{text-align:center}
+	TD.digg {
+		PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 3px; TEXT-ALIGN: left;font-size:12px
+	}
+	TD.digg A {
+		BORDER-RIGHT: #aaaadd 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaaadd 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #aaaadd 1px solid; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaadd 1px solid; TEXT-DECORATION: none
+	}
+	TD.digg A:hover {
+		BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid
+	}
+	TD.digg A:active {
+		BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid
+	}
+	TD.digg SPAN.current {
+		BORDER-RIGHT: #000099 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #000099 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #000099 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #000099 1px solid; BACKGROUND-COLOR: #000099
+	}
+	TD.digg SPAN.disabled {
+		BORDER-RIGHT: #eee 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #eee 1px solid; COLOR: #ddd; PADDING-TOP: 2px; BORDER-BOTTOM: #eee 1px solid
+	}
+    .pagebox_pre_nolink{border:1px #ddd solid; width:53px; height:21px; line-height:21px; text-align:center; color:#999; cursor:default;}
+</style>
+<script language="javascript">
+function upyulan(obj){
+  $('#upimg').html("<img src='"+obj.value+"'>");
+}
+function imgupsave(){
+ $('#upform').submit(); 
+}
+</script>
+<div>
+<form action="__URL__/ajax_upimg" enctype="multipart/form-data" METHOD="POST"  id="upform">
+<div>
+图片名:<INPUT  NAME="imgname" style="width:50px">
+<input type="file" NAME="img" onchange="upyulan(this)" >
+<INPUT TYPE="hidden" NAME="jsdo" value="{$jsdo}">
+<INPUT TYPE="hidden" NAME="hash" value="{$hash}">
+<input type="button" value="图片上传" onclick="imgupsave()">
+</div>
+</form>
+</div>
+</table>
+<div>图片预览:<span id="upimg"></span></div>
+<include file="../Public/footer" />  

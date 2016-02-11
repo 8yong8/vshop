@@ -1,0 +1,114 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title"> <eq name="level" value="1">项目</eq><eq name="level" value="2">模块</eq><eq name="level" value="3">操作</eq>排序  [ <a href="__URL__">返回列表</a> ]</div>
+<script language="JavaScript">
+function allSelect(){
+	var	colInputs = document.getElementsByTagName("input");
+	for	(var i=0; i < colInputs.length; i++)
+	{
+		colInputs[i].checked= true;
+	}
+}
+function allUnSelect(){
+	var	colInputs = document.getElementsByTagName("input");
+	for	(var i=0; i < colInputs.length; i++)
+	{
+		colInputs[i].checked= false;
+	}
+}
+
+function InverSelect(){
+	var	colInputs = document.getElementsByTagName("input");
+	for	(var i=0; i < colInputs.length; i++)
+	{
+		colInputs[i].checked= !colInputs[i].checked;
+	}
+}
+function saveAccess(){
+  sendForm('form1','__URL__/setUser/');
+}
+function goType(type){
+	window.location = '?type='+type;
+}
+
+
+function usersearch(){
+  var key = $('#search').val();
+  $.ajax({
+    type:"POST",
+	dataType:'json',
+	url:URL+'/usersearch',
+	data:"key="+key+"&gr={$Think.get.id}",
+	success:function(objs){
+	 //alert(msg);return;
+	 //var objs = eval('('+msg+')');
+	 if(objs==null){
+	   alert('没有数据');
+	   return;
+	 }
+	 html = '';
+	 //var html = '<select name="cid">';
+	 for(i=0;i<objs.length;i++){
+		//html += '<option value='+objs[i].id+'>'+objs[i].account+'   '+objs[i].nickname+'</option>';
+		if(objs[i].check==1){
+		  html += '<div class="customMultipleSelect_option" style="padding-left: 20px; cursor: default;"><input type="checkbox"  checked="" value="'+objs[i].id+'" style="margin-left: -16px; margin-right: 5px; margin-top: -2px;" name="groupUserId[]">'+objs[i].account+' '+objs[i].nickname+'</div>';	
+		}else{
+		  html += '<div class="customMultipleSelect_option" style="padding-left: 20px; cursor: default;"><input type="checkbox" value="'+objs[i].id+'" style="margin-left: -16px; margin-right: 5px; margin-top: -2px;" name="groupUserId[]">'+objs[i].account+' '+objs[i].nickname+'</div>';		
+		}
+	 }
+	 //html += '</select>';
+	 //jQuery('#sourceS').html(html);
+	 $('.customMultipleSelect').html(html);
+	}
+  })
+}
+
+function usersearch1(){
+  $('.customMultipleSelect div').each(function(){
+    $(this).contents('周').find('input').attr('checked',true);
+  });
+}
+</script>
+
+<load href="__PUBLIC__/js/Form/MultiSelect.js" />
+<load href="__PUBLIC__/css/select.css" />
+<form method='post' name = 'form1' id="form1">
+<div align="left" style="margin-left:30px;margin-top:20px;">
+<table class="select" style="width:265px" align="center">
+
+<tr><Th class="tRight">当前组：<myhtml:select name="groupId" change="location.href = '__URL__/user/id/'+this.options[this.selectedIndex].value;" first="选择组" style="medium" options="groupList" selected="selectGroupId" />
+</Th></tr>
+
+<tr>
+	<Th colspan=2 align="right"><div class="fLeft"><input name="search" id="search" type="text"></div>
+<input type="button" value="查 询" onclick="usersearch()" class="submit hMargin small " /></Th>
+</tr>
+
+<tr>
+<td><a href="__URL__/user/id/{$Think.get.id}/h/1" <eq name="Think.get.h" value="1">style="color:red"</eq>>有权限</a>&nbsp;&nbsp;<a href="__URL__/user/id/{$Think.get.id}/h/2" <eq name="Think.get.h" value="2">style="color:red"</eq>>无权限</a>&nbsp;&nbsp;<a href="__URL__/user/id/{$Think.get.id}" <eq name="Think.get.h" value="">style="color:red"</eq>>全部</a></td>
+</tr>
+
+<tr>
+<td>
+<myhtml:select name="groupUserId[]" id="sourceS" options="userList" selected="groupUserList"  multiple="true" style="multiSelect" size="15" />
+</td>
+</tr>
+<tr>
+<td class="row tCenter">
+<input type="button" onclick="allSelect()" value="全 选" class="submit  ">
+<input type="button" onclick="InverSelect()" value="反 选" class="submit  ">
+<input type="button" onclick="allUnSelect()" value="全 否" class="submit ">
+<input type="button" onclick="saveAccess()" value="保 存" class="submit  ">
+<input type="hidden" name="groupId" VALUE="{$Think.get.id}" >
+<input type="hidden" name="module" value="Node">
+<input type="hidden" name="ajax" VALUE="1">
+</td>
+</tr>
+<tr>
+<td height="5" class="bottomTd">
+</td>
+</tr>
+</tbody></table>
+</div>
+</form>
+<include file="Public:footer" /> 

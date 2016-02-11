@@ -1,0 +1,84 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="Public:header" />
+
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<script>
+function showmsg(id){
+  //alert(id);
+	art.dialog.open('__MODULE__?c=Member_sq&a=show&id='+id,{lock:false,title:'查看申请信息',width:800,height:600,yesText:'关闭',background: '#000',opacity: 0.87});
+}
+</script>
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">申请列表</div>
+<!--  功能操作区域  -->
+<div class="operate" >
+
+<!-- 查询区域 -->
+<div class="fRig">
+<FORM METHOD="GET" ACTION="__URL__">
+</div>
+<!-- 高级查询区域 -->
+<div  id="searchM" class="search cBoth" >
+
+<TABLE cellpadding="1" cellspacing="2" width="100%">
+
+<TR>
+	<TD class="tRight">ID：</TD>
+	<TD><INPUT TYPE="text" NAME="id" class="small" value="{$id}"></TD>
+	<TD class="tRight">用户名：</TD>
+	<TD><INPUT TYPE="text" NAME="username" class="small" value="{$username}"></TD>
+	<TD><html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /></TD>
+</TR>
+</TABLE>
+</div>
+</FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+<tr><td height="5" colspan="12" class="topTd" ></td></tr>
+<tr class="row" >
+  <th width="13%"><a href="javascript:sortBy('id','1','index')" title="按照编号升序排列 ">用户名</a></th>
+  <th>申请类型</th>
+  <th>申请信息</th>
+  <th>状态</th>
+</tr>
+<volist name="list" id="vo">
+<tr class="row">
+  <td>{$vo.member_name}</td>
+  <td>
+  {$vo.type|rs='1#会员#black@2#战略合作商#blue@3#合作商#red@4#分销商'}
+  </td>
+  <td>
+  <eq name="vo.status" value="0">
+  <a href="javascript:showmsg('{$vo.id}');">查看信息并操作</a>
+  <else/>
+  {$vo.remark} <a href="javascript:showmsg('{$vo.id}');">查看信息</a>
+  </eq>
+  </td>
+  <td>{$vo.status|rs='0#待审核@1#审核通过#blue@-1#驳回#red'}</td>
+</tr>
+</volist>
+</table>
+<!-- Think 系统列表组件结束 -->
+
+</div>
+<!--  分页显示区域 -->
+<div class="page">{$page}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" />

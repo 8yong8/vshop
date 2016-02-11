@@ -1,0 +1,43 @@
+
+<div class="content">
+<div class="title">属性修改[ <A HREF="__URL__">返回列表</A> ]</div>
+
+<FORM METHOD=POST id="form1" action="__URL__/edit/">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="name" value="{$vo.name}"></TD>
+</TR>
+<!--
+<TR>
+	<TD class="tRight" >保留条数：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  NAME="keep" value="{$vo.keep}"></TD>
+</TR>
+-->
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT class="small bLeft" NAME="status">
+	  <option value="1"<eq name="vo.status" value="1">
+	  selected = "selected"
+	</eq>>启用</option>
+	  <option value="0"<eq name="vo.status" value="0">
+	  selected = "selected"
+	</eq>>禁用</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<input type="hidden" name="id" value="{$vo.id}" />
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>

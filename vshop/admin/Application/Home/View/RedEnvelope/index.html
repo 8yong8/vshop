@@ -1,0 +1,51 @@
+<include file="Public:header" />
+<script>
+ function sent(){
+   location.href = "__APP__/Red_envelope_sent/add";
+ }
+</script>
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">会员：</TD>
+			<TD><INPUT TYPE="text" NAME="member_name" class="small" value="{$member_name}" class="J_check"></TD>
+
+			<TD><html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /></TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				  <div class="datagrid-view">					
+					<myhtml:list id="checkList" name="user" style="list" checkbox="true" action="false" datasource="list" show="id:编号|8%,title:标题,pay:价格,member_name:获得者,from_name:来源,create_time|toDate='Y-m-d H#i#s':领取时间"  order_fields="id" align_left="title"  actionlist="status|showStatus=$user['id'],edit:编辑" />
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

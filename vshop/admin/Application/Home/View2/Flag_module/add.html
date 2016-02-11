@@ -1,0 +1,70 @@
+<include file="Public:header" />
+<style>
+TABLE.add TD INPUT {
+  margin-right: 2px;
+}
+</style>
+<script>
+ function showremark(){
+   var obj = document.getElementById('remark');
+   if(obj.style.display == "none"){
+     obj.style.display = "block";
+   }else{
+     obj.style.display = "none";
+   } 
+ }
+</script>
+<div class="content">
+<div class="title">新增属性[ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >模块：</TD>
+	<TD class="tLeft" >
+	<volist name="nodes" id="node" key="k">
+	<input name="nodes[]" value="{$node['id']}" type="checkbox">{$node['title']}&nbsp;
+	<php>
+	if($k%6==0){
+	  echo "<br>";
+	}
+	</php>
+	</volist>
+	</TD>
+</TR>
+
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >属性：</TD>
+	<TD class="tLeft" >
+	<volist name="flags" id="flag" key="k">
+	<input name="flags[]" value="{$flag['id']}" type="checkbox">{$flag['name']}&nbsp;
+	<php>
+	if($k%6==0){
+	  echo "<br>";
+	}
+	</php>
+	</volist>
+	</TD>
+</TR>
+
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+<include file="Public:footer" /> 

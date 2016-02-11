@@ -1,0 +1,62 @@
+
+<load href ="__PUBLIC__/Css/style.css" />
+<load href="__PUBLIC__/Js/jquery.js" />
+<load href='__PUBLIC__/Js/artDialog/skins/chrome.css' />
+<load href="__PUBLIC__/Js/artDialog/jquery.artDialog.js" />
+<load href="__PUBLIC__/Js/artDialog/plugins/iframeTools.js" />
+
+<script>
+
+  function ajax_submit(){
+	jQuery.ajax({
+	  type:'POST',
+	  url:'__URL__/edit',
+	  data:$('#form1').serialize(),
+	  success:function(html){
+        /*jQuery.each(parent.art.dialog.dialogList, function (index, item) {
+            item.close();
+        });*/
+	  }
+	})
+	return false;
+  }
+
+</script>
+<style>
+.content1 {
+  padding: 0 18px;
+  background: #f1f1f1;
+  height: 100%;
+  width:800px;
+}
+</style>
+<div class="content" style="width:300px;">
+<div class="title">晒单信息</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit" onsubmit="return ajax_submit();">
+<TABLE cellpadding=3 cellspacing=3>
+<TR>
+	<TD class="tRight" >会员信息：</TD>
+	<TD class="tLeft" >
+	{$vo.member_name}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >晒单缩略图：</TD>
+	<TD class="tLeft" >
+	<img src="{$vo.lit_pic}" width="100px;">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >晒单内容：</TD>
+	<TD class="tLeft" >
+	{$vo.content}
+	</TD>
+</TR>
+
+</TABLE>
+</FORM>
+</div>
+</div>
+<!-- 主页面结束 -->

@@ -1,0 +1,149 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<style type="text/css">
+/**********日历样式开始********************/
+#calendar_container {
+	width:160px;
+	border:1px solid #06C;
+}
+#calendar {
+	border-collapse:collapse;
+	background-color:#FFF;
+	width:160px;
+	height:120px;
+	margin:0px auto;
+	cursor:default;
+}
+#calendar td {
+	font-size:12px;
+	text-align:center;
+	vertical-align:middle;
+	font-family:"宋体";
+}
+#calendar thead {
+	background-color:#999;
+	color:#FFF;
+}
+#calendar caption {
+	background-color:#06C;
+}
+#calendar a{
+	color:#F90;
+	margin:0 5px;
+	text-decoration:none;
+}
+#calendar #prev_month,#calendar #next_month {
+	font-size:18px;
+	margin:0;
+}
+#calendar #c_today {
+	background-color:#036;
+	color:#FFF;
+}
+#calendar .over {
+	background-color:#CCC;
+}
+#calendar .keydate {
+	color:#06F;
+}
+</style>
+<script type="text/javascript" defer="defer" src="__PUBLIC__/js/JC/Basic.js"></script>
+<script type="text/javascript" defer="defer" src="__PUBLIC__/js/JC/JCalendar.js"></script>
+<script>
+ window.onload = function(){
+ 	var j = new JCalendar();
+	j.setYears(2008,2030);
+	j.bind('dydkf_btime',"bottom");
+	j.bind('dydkf_etime',"bottom");
+	j.bind('dedkf_btime',"bottom");
+	j.bind('dedkf_etime',"bottom");
+ }
+
+  //图片预览
+function yulan(file,id) {
+  if(file.value.indexOf(".jpg")<0 && file.value.indexOf(".jpeg")<0 &&   file.value.indexOf(".gif")<0 && file.value.indexOf(".png")<0 && file.value.indexOf(".JPG")<0 && file.value.indexOf(".JPEG")<0 &&   file.value.indexOf(".GIF")<0 && file.value.indexOf(".PNG")<0){
+		alert('您选择的不是图片文件');
+		return false;
+	}
+	if(navigator.userAgent.indexOf("Mozilla/5.")>-1){
+	    document.getElementById(id).innerHTML = "<img src='"+file.files[0].getAsDataURL()+"' width='328px'>";
+		CheckFileSize(file.files[0].getAsDataURL(),id);
+	}else{
+	  file.select();
+	  var img = document.selection.createRange().text;
+	  document.getElementById(id).innerHTML = "<img src='"+img+"' width='328px'>";
+	}
+}
+</script>
+<div id="main" class="main">
+<div class="content">
+<div class="title"><font color="red">{$cityname}</font>团购列表页广告位[ <A HREF="__URL__">返回列表</A> ]
+<volist name="ac_sites" id="ac_site">
+<eq name="ac_site.key" value="$Think.get.webset">
+<font color="red">[{$ac_site.name}]</font>
+<else/>
+<a href="__URL__/{$Think.const.ACTION_NAME}/webset/{$ac_site.key}">[{$ac_site.name}]</a> 
+</eq>
+</volist>
+</div>
+<div class="list" >
+<TABLE cellpadding=0 cellspacing=0  id="checkList" class="list" >
+<FORM METHOD=POST id="form1" action="__URL__/pageinsert/" enctype="multipart/form-data">
+<tr><td height="5" colspan="7" class="topTd" ></td></tr>
+<tr class="row" >
+  <th width="15%" align="center">名称</th>
+  <th width="8%">标题</th>
+  <th>开始时间</th>
+  <th>结束时间</th>
+  <th>URL连接</th>
+  <th>图片上传</th>
+  <th>图片显示</th>
+</tr>
+
+<TR>
+	<TD class="tRight" >第一宽幅(242*96)：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="dydkf_title" value="{$ads['dydkf']['title']}"></TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="small" NAME="dydkf_btime" id="dydkf_btime" value="{$ads['dydkf']['btime']|toDate='Y-m-d'}"></TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="small" NAME="dydkf_etime" id="dydkf_etime" value="{$ads['dydkf']['etime']|toDate='Y-m-d'}"></TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium" NAME="dydkf_url" id="dydkf_url" value="{$ads['dydkf']['url']}"></TD>
+	<TD class="tLeft" ><input type="file" onchange="yulan(this,'dydkf_yulan')" name="dydkf_pic"></TD>
+	<TD align="center"><div id="dydkf_yulan">
+	<neq name="ads['dydkf']['pic']" value="">
+	<img src="{$ads['dydkf']['pic']}" width="128px">
+	</neq>
+	</div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >第二宽幅(242*96)：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="dedkf_title" value="{$ads['dedkf']['title']}"></TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="small" NAME="dedkf_btime" id="dedkf_btime" value="{$ads['dedkf']['btime']|toDate='Y-m-d'}"></TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="small" NAME="dedkf_etime" id="dedkf_etime" value="{$ads['dedkf']['etime']|toDate='Y-m-d'}"></TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium" NAME="dedkf_url" id="dedkf_url" value="{$ads['dedkf']['url']}"></TD>
+	<TD class="tLeft" ><input type="file" onchange="yulan(this,'dedkf_yulan')" name="dedkf_pic"></TD>
+	<TD align="center"><div id="dedkf_yulan">
+	<neq name="ads['dedkf']['pic']" value="">
+	<img src="{$ads['dedkf']['pic']}" width="128px">
+	</neq>
+	</div></TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+<tr><td height="5" colspan="7" class="bottomTd"></td></tr>
+</TABLE>
+</FORM>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="../Public/footer" /> 

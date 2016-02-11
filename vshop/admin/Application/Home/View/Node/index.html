@@ -1,0 +1,88 @@
+<include file="Public:header" />
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		<present name="nodeName">[{$nodeName}] </present><eq name="level" value="1">应用</eq><eq name="level" value="2">模块</eq><eq name="level" value="3">操作</eq>列表 <span style="font-weight:normal">[ 分组:&nbsp;<volist name="groupList" id="tag"><a href="__URL__/index/group_id/{$key}">{$tag}</a>&nbsp;</volist><a href="__URL__">所有</a> ] </span>
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	<div class="guanli">
+	  <FORM METHOD=get ACTION="__URL__">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">标题：</TD>
+			<TD><INPUT TYPE="text" NAME="title" class="medium" value="{$title}"></TD>
+			<TD>
+			<INPUT TYPE="hidden" NAME="pid" value="{$Think.get.pid}">
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </FORM>
+	</div>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="restore" value="排序" click="sort()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="no" value="禁用" click="forbid()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="ok" value="通过" click="resume()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="optimize" value="更新缓存" click="cache()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+				  <div class="datagrid-view">
+					<myhtml:list id="checkList" name="node" style="list" checkbox="true" action="true" datasource="list" show="id:编号|10%,name:名称:child,title:显示名:edit,sort:序号,is_display|rs='1#显示#blue@0#不显示#red':显示,status|getStatus:状态" order_fields="id,name" align_left='name' actionlist="edit:编辑:id" />
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

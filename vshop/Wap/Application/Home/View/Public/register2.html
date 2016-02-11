@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no" name="format-detection" />
+ 
+<meta name="author" content="">
+
+<link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet" />
+ 
+<link href="__PUBLIC__/css/css.css" rel="stylesheet" /> 
+<title>用户注册</title>
+
+</head>
+
+<body style="background:#faf1e9;"> 
+
+<div class="container">
+<header><div class="reg_top">注册
+
+
+  <a href="javascript:history.go(-1);">取消</a>
+
+  </div></header>
+
+  
+ 
+<selection>
+<div class="reg_cont">
+<form method="post" action="" onsubmit="return false;">
+  <ul>
+    <li>请输入您的手机号码,并获取验证码</li>
+       <li> <span><button id="show_msg">获取验证码</button></span><input type="text" id="tel" name="tel" placeholder="输入手机号码"></li>
+       <li><input type="text" id="verify" name="verify" placeholder="输入验证码"> </li>
+        <li><input type="text" name="username" id="username" value="{$username}" placeholder="昵称"> </li>
+          <li><input type="password" name="psw" id="psw" placeholder="输入密码"> </li>
+            <li> <button>完成</button> </li>
+  </ul>
+  
+</form>
+
+  </div>
+  </selection>
+  </div>
+
+  
+<script src="__PUBLIC__/js/jquery.min.js"></script>
+<link href="__PUBLIC__/js/artDialog/skins/blue.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/js/artDialog/jquery.artDialog.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/artDialog/plugins/iframeTools.js"></script>
+<script>
+var time1 = '';
+function sentmsm(){
+    var tel = $('#tel').val();
+	if(tel.length!=11){
+		art.dialog({
+		    id:'asv',
+			time: 2,
+			content: '手机格式错误'
+		});
+		return false;
+	}
+	$.ajax({
+		dataType:'json',
+		type: "POST",
+		data:'tel='+tel,
+		url:'__APP__?m=Public&a=reg_sms',
+		error: function(request) {
+			alert("Connection error");
+		},
+		success: function(data) {
+		  //alert(data.notice);
+		  if(data.status==0){
+			art.dialog({
+				time: 2,
+				content: data.notice
+			});
+		  }else{
+		    $('#show_msg').val(60);
+			$('#show_msg').unbind("click");
+			time1 = setInterval(GetRTime,1000);
+		  }
+		}
+	});							
+}
+
+function GetRTime(){
+  var s = parseInt($('#show_msg').val());
+  if(s==1){
+    $('#show_msg').val('重新发送');
+    clearInterval(time1);
+    $('#show_msg').click(function(){
+       sentmsm();
+    });
+  }else{
+    $('#show_msg').val(s-1);
+  }
+}
+$(document).ready(function(){
+  $('#show_msg').click(function(){
+     sentmsm();
+  });
+});
+
+</script>
+
+</body>
+</html>

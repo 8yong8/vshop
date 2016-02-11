@@ -1,0 +1,109 @@
+<include file="Public:header" />
+<script>
+
+ function radioClicked(val){
+   if(val==1){
+     $('#attr_values').attr('disabled',false);
+	 $('#attr_values').css('background-color','white');
+   }else{
+     $('#attr_values').attr('disabled',true);
+	 $('#attr_values').css('background-color','#ccc');
+   }
+ }
+</script>
+<style>
+TABLE.add TD INPUT {
+  height: 24px;
+  padding-left: 6px;
+  line-height: 24px;
+  color: #333;
+  border: 1px solid #ccc;
+  margin-right: 2px; 
+}
+</style>
+<div class="content">
+<div class="title">属性修改[ <A HREF="__URL__">返回列表</A> ] [ <A HREF="__URL__/index/cat_id/{$vo.cat_id}">返回分类属性</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<FORM METHOD=POST id="form1" action="__URL__/edit/">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >属性名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="attr_name" value="{$vo.attr_name}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >所属商品类型：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="cat_id">
+	  <volist name="cats" id="cat">
+	  <option value="{$cat.id}" <eq name="vo.cat_id" value="$cat.id">selected</eq>>{$cat.name}</option>
+	  </volist>
+	</SELECT>	
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >能否进行检索：</TD>
+	<TD class="tLeft" >
+	  <fieldset>
+          <input type="radio" name="attr_index" value="0" <eq name="vo.attr_index" value="0">checked="true"</eq>  />
+          不需要检索 <input type="radio" name="attr_index" value="1"  <eq name="vo.attr_index" value="1">checked="true"</eq> />
+          关键字检索 <input type="radio" name="attr_index" value="2"  <eq name="vo.attr_index" value="2">checked="true"</eq> />
+          范围检索<br /><span class="notice-span" style="display:block"  id="noticeindex">不需要该属性成为检索商品条件的情况请选择不需要检索，需要该属性进行关键字检索商品时选择关键字检索，如果该属性检索时希望是指定某个范围时，选择范围检索。</span>
+	  </fieldset>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >属性是否可选：</TD>
+	<TD class="tLeft" >
+	  <fieldset>
+          <input type="radio" name="attr_type" value="0" <eq name="vo.attr_type" value="0">checked="true"</eq>  /> 唯一属性 
+		  <input type="radio" name="attr_type" value="1"  <eq name="vo.attr_type" value="1">checked="true"</eq>/> 单选属性
+		  <input type="radio" name="attr_type" value="2"  <eq name="vo.attr_type" value="2">checked="true"</eq>/> 复选属性
+		  <br /><span class="notice-span" style="display:block"  id="noticeAttrType">选择"单选/复选属性"时，可以对商品该属性设置多个值，同时还能对不同属性值指定不同的价格加价，用户购买商品时需要选定具体的属性值。选择"唯一属性"时，商品的该属性值只能设置一个值，用户只能查看该值。单选需设置库存</span>
+	  </fieldset>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >该属性值的录入方式：</TD>
+	<TD class="tLeft" >
+	  <fieldset>
+          <input type="radio" name="attr_input_type" value="0"  <eq name="vo.attr_input_type" value="0">checked="true"</eq>  onclick="radioClicked(0)"/>手工录入
+		  <input type="radio" name="attr_input_type" value="1"   <eq name="vo.attr_input_type" value="1">checked="true"</eq> onclick="radioClicked(1)"/>从下面的列表中选择（一行代表一个可选值）        <input type="radio" name="attr_input_type" value="2"   <eq name="vo.attr_input_type" value="2">checked="true"</eq> onclick="radioClicked(0)"/>多行文本框
+	  </fieldset>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="label">可选值列表：</TD>
+	<TD>
+	  <textarea name="attr_values" id="attr_values" cols="30" rows="8" <neq name="vo.attr_input_type" value="1">disabled style="background-color:#ccc"</neq>>{$vo.attr_values}</textarea>
+	</TD>
+</TR>
+
+
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT class="small bLeft" NAME="status">
+	  <option value="1">启用</option>
+	  <option value="0">禁用</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<input type="hidden" name="id" value="{$vo.id}" />
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

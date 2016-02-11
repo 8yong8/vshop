@@ -1,0 +1,143 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<script>
+//搜索会员
+function get_members(){
+  var key = jQuery("#key").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/get_members",
+	data:"key="+key,
+	success:function(msg){
+	 //alert(msg);
+	 var objs = eval('('+msg+')');
+	 var html = '<select name="member_id" id="member_id"><option value="0">选择</option>';
+	 for(i=0;i<objs.length;i++){
+	   if(i==0){
+	     html += '<option value='+objs[i].id+' selected>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }else{
+	     html += '<option value='+objs[i].id+'>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }
+	 }
+	 html += '</select>';
+	 jQuery('#cidspan').html(html);
+	}
+  })
+}
+</script>
+<div id="main" class="main" >
+<div class="content">
+<div class="title">编辑信息[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3>
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">
+		&nbsp;对象：</TD>
+	<TD  style="width:450px;">
+		{$vo.realname}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付方式：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="payment_mode">
+		<OPTION VALUE="1" <eq name="vo.payment_mode" value="1">SELECTED</eq>>1</OPTION>
+		<OPTION VALUE="2" <eq name="vo.payment_mode" value="线下支付">SELECTED</eq>>线下支付</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付单位：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" NAME="payment_company" value="{$vo.payment_company}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付交易号：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" NAME="pay_order_id" value="{$vo.pay_order_id}"> 支付宝生成的交易号
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >我方交易号：</TD>
+	<TD class="tLeft" >
+	 {$vo.order_id}&nbsp;我方生成的<a href="__MODULE__/Order/index/" target="_blank" style="color:red">`订单号`</a>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易类型：</TD>
+	<TD class="tLeft" >
+	<?php
+	  if($vo['pay_type']==1){
+	    echo '充值';
+	  }else if($vo['pay_type']==2){
+	    echo '消费';
+	  }else if($vo['pay_type']==3){
+	    echo '提现';
+	  }else if($vo['pay_type']==4){
+	    echo '回购';
+	  }else if($vo['pay_type']==5){
+	    echo '售出';
+	  }
+	?>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易金额：</TD>
+	<TD class="tLeft" >
+	{$vo.pay}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易内容：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="content" ROWS="10" COLS="30">{$vo.content}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >备注：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="remark" ROWS="10" COLS="30">{$vo.remark}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="status">
+	  <option value="1" <eq name="vo.status" value="1">SELECTED</eq>>已支付</option>
+	  <option value="0" <eq name="vo.status" value="0">SELECTED</eq>>未支付</option>
+	  <option value="-1" <eq name="vo.status" value="-1">SELECTED</eq>>审核不通过</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

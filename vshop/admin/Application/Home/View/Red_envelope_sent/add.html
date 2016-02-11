@@ -1,0 +1,41 @@
+<include file="Public:header" />
+<script>
+var hb_num = {$hb_num};
+function change(){
+  var pay = $('#pay').val();
+  var all_pay = hb_num*pay;
+  $('#all_pay').text(all_pay);
+}
+</script>
+<div class="content">
+<div class="title">发送红包[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >总红包积分：</TD>
+	<TD class="tLeft" >{$hb_num}(个)</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >发放总价：</TD>
+	<TD class="tLeft" ><span id="all_pay">0</span>(元)</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >数量：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  NAME="pay" id="pay" onchange="change();"></TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

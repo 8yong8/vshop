@@ -1,0 +1,77 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<script>
+function typeck(){
+  var type = $('#type').val();
+  if(type=='radio' || type=='checkbox'){
+    $('#options').show();
+  }else{
+    $('#options').hide();
+  }
+
+}
+</script>
+<div id="main" class="main" >
+<div class="content">
+<div class="title">新增表单信息 [ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/forminsert/" enctype="multipart/form-data" onsubmit="return ck();">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="large bLeftRequire" NAME="title" >
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >类型：</TD>
+	<TD class="tLeft" >
+	<select name="type" id="type" onchange="typeck()">
+	  <option value="text">文本框</option>
+      <option value="radio">单选</option>
+	  <option value="checkbox">复选框</option>
+	  <option value="textarea">文本域</option> 
+	</select>
+	</TD>
+</TR>
+
+<TR id="options" style="display:none">
+	<TD class="tRight" >选项：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="large bLeftRequire" NAME="options" >
+	<font color="red">半角逗号分开</font>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >默认值：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="small bLeftRequire" NAME="defaultvalue" >
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >说明：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="msg" ROWS="5" COLS="30"></TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="../Public/footer" /> 

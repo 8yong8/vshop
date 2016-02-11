@@ -1,0 +1,178 @@
+<include file="Public:header" />
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/laydate/laydate.js"></script>
+<script>
+$(function() {
+	var start = {
+		elem: '#btime',
+		format: 'YYYY-MM-DD',
+		//min: laydate.now(), //设定最小日期为当前日期
+		max: '2099-06-16 23:59:59', //最大日期
+		istime: false,
+		istoday: true,
+		choose: function(datas){
+			 end.min = datas; //开始日选好后，重置结束日的最小日期
+			 end.start = datas //将结束日的初始值设定为开始日
+		}
+	};
+	var end = {
+		elem: '#etime',
+		format: 'YYYY-MM-DD',
+		//min: laydate.now(),
+		max: '2099-06-16 23:59:59',
+		istime: false,
+		istoday: true,
+		choose: function(datas){
+			start.max = datas; //结束日选好后，重置开始日的最大日期
+		}
+	};
+	laydate(start);
+	laydate(end);
+});
+</script>
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">订单编号：</TD>
+			<TD><INPUT TYPE="text" NAME="order_id" class="small" value="{$order_id}"></TD>
+			<TD class="tRight">会员：</TD>
+			<TD><INPUT TYPE="text" NAME="member_name" class="small" value="{$member_name}"></TD>
+			<TD class="tRight">交易分类：</TD>
+			<TD>
+			  <SELECT NAME="pay_type">
+				<OPTION VALUE="">选择</OPTION>
+				<OPTION VALUE="1" <eq name="pay_type" value="1">SELECTED</eq>>充值</OPTION>
+				<OPTION VALUE="2" <eq name="pay_type" value="2">SELECTED</eq>>消费</OPTION>
+				<OPTION VALUE="3" <eq name="pay_type" value="3">SELECTED</eq>>提现</OPTION>
+				<OPTION VALUE="4" <eq name="pay_type" value="4">SELECTED</eq>>收入</OPTION>
+				<OPTION VALUE="5" <eq name="pay_type" value="5">SELECTED</eq>>退款</OPTION>
+			  </SELECT>
+			</TD>
+			<TD class="tRight">状态：</TD>
+			<TD>
+			  <SELECT NAME="status">
+				<OPTION VALUE="">选择</OPTION>
+				<OPTION VALUE="0" <eq name="pay_type" value="0">SELECTED</eq>>未完成支付</OPTION>
+				<OPTION VALUE="1" <eq name="pay_type" value="1">SELECTED</eq>>已完成支付</OPTION>
+				<OPTION VALUE="-1" <eq name="pay_type" value="-1">SELECTED</eq>>未通过</OPTION>
+			  </SELECT>
+			</TD>
+			<TD class="tRight">开始日期：</TD>
+			<TD><INPUT TYPE="text" NAME="btime" id="btime" class="width120" value="{$btime}"></TD>
+			<TD class="tRight">结束日期：</TD>
+			<TD><INPUT TYPE="text" NAME="etime" id="etime" class="width120" value="{$etime}"></TD>
+			<TD><html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /></TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="no" value="状态禁用" click="forbid()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="ok" value="状态通过" click="resume()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+					<td>
+					  <a href="javascript:void(0)" class="l-btn l-btn-small l-btn-plain" group="" id="export"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">导出</span><span class="l-btn-icon icon-export">&nbsp;</span></span></a>
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<table cellspacing="0" cellpadding="0" class="list" id="checkList">
+					   <tbody>
+						<tr class="row">
+							<th>ID</th>
+							<th>用户</th>
+							<th>支付订单号</th>
+							<th>交易订单号</th>
+							<th>支付模式</th>
+							<th>支付公司</th>
+							<th>交易类型</th>
+							<th>交易金额</th>
+							<th>余额</th>
+							<th>交易内容</th>
+							<th>申请时间</th>
+							<th>完成时间</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+						<volist name='list' id='vo'>
+						<tr class="row">
+							<td>{$vo.id}</td>
+							<td><a href="__MODULE__/Member/edit/id/{$vo.member_id}">{$vo.member_name}</a></td>
+							<td>{$vo.pay_order_sn}</td>
+							<td><a href="__MODULE__/Order/index/order_id/{$vo.order_id}" target="_blank">{$vo.order_sn}</a></td>
+							<td>{$vo.payment_mode|rs='1#在线支付@2#货到付款'}</td>
+							<td>{$vo.payment_company}</td>
+							<td>{$vo.pay_type|rs='1#充值#blue@2#消费#red@3#提现#3f8813@4#收入#BF80FF@5#退款#FF944D'}</td>
+							<td>{$vo.amount}</td>
+							<td>{$vo.balance}</td>
+							<td>{$vo.content}</td>
+							<td>{$vo.create_time|toDate='Y-m-d H#i#s'}</td>
+							<td>{$vo.pay_time|toDate='Y-m-d H#i#s'}</td>
+							<td>{$vo.status|rs='0#未完成#red@1#已支付#blue@-1#未通过'}</td>
+							<td>
+							<a href="__URL__/edit/id/{$vo.id}">编辑</a>
+							<!--<a href="__URL__/look/id/{$vo.id}" target="_blank">查看详情</a>-->
+							</td>
+						</tr>
+						</volist>
+					  </tbody>
+					</table>
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

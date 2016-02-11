@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="robots" content="nofollow" />
+<TITLE>『后台管理平台』 </TITLE>
+<load href ="__PUBLIC__/Css/style.css" />
+<load href ="__PUBLIC__/Css/page.css" />
+<load href="__PUBLIC__/Js/Base.js" />
+<load href ="__PUBLIC__/Js/Common.js" />
+<load href="__PUBLIC__/Js/jquery.js" />
+<load href="__PUBLIC__/Js/Ajax/ThinkAjax.js" />
+<load href="__PUBLIC__/Js/Util/ImageLoader.js" />
+<script>
+jQuery.noConflict();
+	jQuery(function(){
+		jQuery(".top_menu").click(
+			function(){
+			  jQuery(this).next().toggle();
+			})
+	})
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+//指定当前组模块URL地址
+var ROOT = '__ROOT__';
+var URL = '__URL__';
+var APP	 =	 '__APP__';
+var PUBLIC = '__PUBLIC__';
+ThinkAjax.image = [	 '__PUBLIC__/Images/loading2.gif', '__PUBLIC__/Images/ok.gif','__PUBLIC__/Images/update.gif' ]
+ImageLoader.add("__PUBLIC__/Images/bgline.gif","__PUBLIC__/Images/bgcolor.gif","__PUBLIC__/Images/titlebg.gif");
+ImageLoader.startLoad();
+
+//图片预览
+function yulan(file,id) {
+  if(file.value.indexOf(".jpg")<0 && file.value.indexOf(".jpeg")<0 &&   file.value.indexOf(".gif")<0 && file.value.indexOf(".png")<0 && file.value.indexOf(".JPG")<0 && file.value.indexOf(".JPEG")<0 &&   file.value.indexOf(".GIF")<0 && file.value.indexOf(".PNG")<0){
+		alert('您选择的不是图片文件');
+		return false;
+	}
+	if(navigator.userAgent.indexOf("Mozilla/5.")>-1){
+	    document.getElementById(id).innerHTML = "<img src='"+file.files[0].getAsDataURL()+"' width='128px'>";
+		CheckFileSize(file.files[0].getAsDataURL(),id);
+
+	}else{
+      //var newPreview = document.getElementById(id);
+      //newPreview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = file.value;
+	  file.select();
+	  var img = document.selection.createRange().text;
+	  document.getElementById(id).innerHTML = "<img src='"+img+"' width='128px'>";
+	}
+}
+</SCRIPT>
+</HEAD>
+
+<body>
+<!-- 头部区域 -->
+

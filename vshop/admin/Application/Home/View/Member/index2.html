@@ -1,0 +1,118 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="Public:header" />
+
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<script>
+ function uponline(){
+   window.location.href = "__URL__/uponline";
+ }
+
+ function look(id){
+   var url = '__URL__/look/id/'+id;
+   window.open(url) 
+ }
+
+ function addold(){
+   window.location.href = "__URL__/addold";
+ }
+</script>
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">用户列表</div>
+<!--  功能操作区域  -->
+<div class="operate" >
+<html:imageBtn name="add" value="新增" click="add()" style="impBtn hMargin fLeft shadow" />
+
+<html:imageBtn name="delete" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+
+<!-- 查询区域 -->
+<div class="fRig">
+<FORM METHOD="GET" ACTION="__URL__">
+</div>
+<!-- 高级查询区域 -->
+<div  id="searchM" class="search cBoth" >
+
+<TABLE cellpadding="1" cellspacing="2" width="100%">
+
+<TR>
+	<TD class="tRight">ID：</TD>
+	<TD><INPUT TYPE="text" NAME="id" class="small" value="{$id}"></TD>
+	<TD class="tRight">用户名：</TD>
+	<TD><INPUT TYPE="text" NAME="username" class="small" value="{$username}"></TD>
+	<TD class="tRight">用户类型：</TD>
+	<TD>
+	<SELECT NAME="utype">
+		<OPTION VALUE="0" SELECTED>全部</OPTION>
+		<OPTION VALUE="1" <eq name="utype" value="1">SELECTED</eq> >普通用户</OPTION>
+		<OPTION VALUE="2" <eq name="utype" value="2">SELECTED</eq> >战略合作商</OPTION>
+		<OPTION VALUE="3" <eq name="utype" value="3">SELECTED</eq> >合作商</OPTION>
+		<OPTION VALUE="4" <eq name="utype" value="4">SELECTED</eq> >分销商</OPTION>
+		<OPTION VALUE="5" <eq name="utype" value="5">SELECTED</eq> >代理商</OPTION>
+	</SELECT>
+	</TD>
+	<TD><html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /></TD>
+</TR>
+</TABLE>
+</div>
+</FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+
+<!-- Think 系统列表组件开始 -->
+<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+<tr><td height="5" colspan="12" class="topTd" ></td></tr>
+<tr class="row" >
+  <th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+  <th width="3%"><a href="javascript:sortBy('id','1','index')" title="按照编号升序排列 ">编号</a></th>
+  <th>类型</th>
+  <th>等级</th>
+  <th width="10%">用户名</th>
+  <th width="3%">真实名</th>
+  <th>城市</th>
+  <th>注册时间</th>
+  <th>可用余额</th>
+  <th>冻结余额</th>
+  <th>状态</th>
+  <th>操作</th>
+</tr>
+<volist name="list" id="vo">
+<tr class="row" onmouseover="over(event)" onmouseout="out(event)" onclick="change(event)" >
+  <td><input type="checkbox" name="key"	value="{$vo.id}"></td>
+  <td>{$vo.id}</td>
+  <td>{$vo.utype|rs='1#会员#black@2#战略合作商#blue@3#合作商#red@4#分销商@5#代理商#purple'}</td>
+  <td>
+  会员等级:{$vo.lv_name} 
+  <neq name="vo.utype" value="1">
+  商家等级:{$vo.bus_lv_name}
+  </neq>
+  </td>
+  <td><a href="__URL__/edit/id/{$vo.id}" target="_blank">{$vo.username}</a></td>
+  <td>{$vo.realname}</td>
+  <td>{$vo.province} - {$vo.city} - {$vo.district}</td>
+  <td>{$vo.create_time|toDate='Y-m-d'}</td>
+  <td>{$vo.balance}</td>
+  <td>{$vo.frozen}</td>
+  <td>{$vo.status|rs='0#待审核#red@1#审核通过'}</td>
+  <td>
+	&nbsp;<a href="javascript:edit('{$vo.id}')">编辑</a>&nbsp;
+	&nbsp;<a href="__APP__/Record/index/member_id/{$vo.id}" target="_balnk">交易记录查看</a>&nbsp;
+
+	<a href="__URL__/memmsg_edit/id/{$vo.id}" target="_balnk">其他信息</a>&nbsp;
+	<eq name="vo.utype" value="5">
+	<a href="__URL__/agent_edit/id/{$vo.id}" target="_balnk">代理商信息</a>&nbsp;
+	</eq>
+  </td>
+</tr>
+</volist>
+</table>
+
+</div>
+<!--  分页显示区域 -->
+<div class="page">{$page}</div>
+<include file="Public:footer" />

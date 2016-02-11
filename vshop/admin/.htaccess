@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+#ErrorDocument 403 http://www.137home.com/error
+#ErrorDocument 404 http://www.137home.com/error
+</IfModule>

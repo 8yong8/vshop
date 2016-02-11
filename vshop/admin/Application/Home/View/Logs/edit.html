@@ -1,0 +1,27 @@
+<include file="Public:header" />
+
+<div class="content">
+<div class="title">编辑 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>" enctype="multipart/form-data">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >信息：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="msg" ROWS="10" COLS="30">{$vo.msg}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

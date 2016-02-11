@@ -1,0 +1,91 @@
+<include file="Public:header" />
+<script language="JavaScript">
+
+function resetPwd(){
+	var pass = $('#resetPwd').val();
+	$.ajax({
+	  type:'POST',
+	  url:'__URL__/resetPwd/',
+	  data:'id={$vo.id}&password='+encodeURIComponent(pass),
+	  success:function(msg){
+		if(msg==1){
+		  //alert('密码已修改为'+encodeURIComponent(pass));
+		  art.dialog({
+			time: 1.5,
+			content: '密码已修改为'+encodeURIComponent(pass)
+		  });
+		}else{
+		  art.dialog({
+			time: 1.5,
+			content: msg
+		  });
+		}
+	  }
+	})
+}
+
+function checkName(){
+  var account = $('#account').val();
+	$.ajax({
+	  type:'POST',
+	  url:'__URL__/checkAccount/',
+	  data:'account='+account,
+	  success:function(msg){
+		  art.dialog({
+			time: 2.5,
+			height: '80px',
+			content: msg
+		  });
+	  }
+	});
+
+}
+</script>
+<div class="content">
+<div class="title">新增后台用户 [ <a href="__URL__">返回列表</a> ]</div>
+<table cellpadding=3 cellspacing=3 class="add">
+<form method='post' id="form1" action="__URL__/add?<?php echo time(); ?>" >
+<tr>
+	<td class="tRight" >用户名：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeftRequire"  check='Require' warning="用户名不能为空" id="account" name="account" value="{$vo.account}"><input type="button" value="检测帐号" onclick="checkName()" class="button"></td>
+</tr>
+<tr>
+	<td class="tRight" >密码：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="password" value=""></td>
+</tr>
+
+<tr>
+	<td class="tRight" >昵称：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="nickname" value=""></td>
+</tr>
+
+<tr>
+	<td class="tRight" >编辑名：</td>
+	<td class="tLeft" ><input name="editorname"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >Email：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="email"></td>
+</tr>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft"><SELECT class="small bLeft"  name="status">
+	<option value="1">启用</option>
+	<option value="0">禁用</option>
+	</SELECT></td>
+</tr>
+<tr>
+	<td class="tRight tTop">备  注：</td>
+	<td class="tLeft"><TEXTAREA class="large bLeft"  name="remark" rows="5" cols="57"></textarea></td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+	<input type="submit" value="保 存" class="button">
+	</td>
+</tr>
+</table>
+</form>
+<include file="Public:footer" />

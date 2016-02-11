@@ -1,0 +1,104 @@
+<include file="Public:header" />
+<SCRIPT LANGUAGE="JavaScript">
+function findarts( id ){
+  jQuery('#flist a').attr('class','blue');
+  jQuery('#flag_'+id).attr('class','red');
+  jQuery('#flagid').val(id);
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/findarts',
+	data:"id="+id,
+	success:function(msg){
+	  //alert(msg);
+	  if(msg!=null){
+	     //alert(msg);
+		 var objs = eval('('+msg+')');
+		 var html = '';
+		 for(i=0;i<objs.length;i++){
+			html += '<TR><TD>'+objs[i].id+'</TD><TD>'+objs[i].title+'</TD><TD>'+objs[i].webset+'</TD><TD>'+objs[i].create_time+'</TD><TD> <input name="sort" value="'+objs[i].sort+'" old="'+objs[i].sort+'" aid="'+objs[i].id+'"> </TD></TR>';
+		 }
+		 jQuery('#last').nextAll().remove();
+		 jQuery('#last').after(html);
+	  }else{
+		jQuery('#last').after('');
+	  }
+	}
+  })  
+}
+
+function check(){
+  var str = '';
+  jQuery('#artlist input').each(function(){
+	if(jQuery(this).val()!=jQuery(this).attr('old')){
+	  str += jQuery(this).attr('aid')+':'+jQuery(this).val()+'#';
+	}
+  })
+  str = str.substr(0, str.length-1);
+  jQuery('#dostr').val(str);
+  if(str){
+    return true;
+  }else{
+    alert('请修改');
+    return false;
+  }
+  return false;
+}
+$(function(){
+  var height = $('#artlist').outerHeight();
+  $('#flaglist').css('height',height);
+
+})
+</SCRIPT>
+<div class="content">
+<div class="title">排序</div>
+
+<FORM METHOD=POST name = 'form1' action = "__URL__/saveSort" onsubmit="return check()">
+	<!-- Think 系统列表组件开始 -->
+	<table id="artlist" class="list add" cellpadding=0 cellspacing=0 style="width:80%;margin-top:10px;float:left" >
+	<tr class="row" >
+		<th>编号</th>
+		<th width="58%">标题</th>
+		<th>排序</th>
+		<th>操作</th>
+	</tr>
+	<volist name="list" id="art" mod="2">
+	<TR class="datagrid-row <eq name="mod" value="1">datagrid-row-alt</eq>">
+	  <TD>{$art.id}</TD>
+	  <TD style="text-align:left;padding-left:10px;">{$art.title}</TD>
+	  <TD><input name="sort" value="{$art['sort']}" old="{$art.sort}" aid="{$art.id}"></TD>
+	  <TD><a href="__URL__/edit/id/{$art.id}" target="_blank">编辑<a></TD>
+	</TR>
+	</volist>
+	<TR>
+	  <TD colspan="5">
+	  <div style="width:300px;float:left;text-align:left;padding-left:10px;">
+		<INPUT TYPE="hidden" name="flagid" id="flagid" value="{$Think.get.fid}">
+		<INPUT TYPE="hidden" name="dostr" id="dostr">
+		<input type="submit" value="确 定" class="button" /> 
+		<span><font color="red">排序设置0为删除</font></span>		  
+	  </div>
+	  <div class="page" style="500px;">{$page}</div>
+	  </TD>
+	</TR>
+	</table>
+</FORM>
+
+<!--右侧标签导航-->
+<FORM METHOD=get name = 'form1' action = "__URL__/sort">
+<TABLE class="list" id="flaglist" cellpadding=0 cellspacing=0 style="width:15%;margin-top:10px;">
+	<volist name="flags" id="flag">
+	<TD width="20" valign="top" style="align:center;BORDER: silver 1px solid;">
+	<div style="margin-top:2px;padding-left:5px;" align="left"><a href="__URL__/sort/fid/{$flag.id}"
+	<eq name="fid" value="$flag.id">
+	class="red"
+	<else/>
+	class="blue"
+	</eq>
+	id="flag_{$flag.id}">
+	{$flag.name}
+	</a></div>
+	</TD>
+	</volist>
+</TABLE>
+</FORM>
+<include file="Public:footer" />

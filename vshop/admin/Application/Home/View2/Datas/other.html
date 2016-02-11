@@ -1,0 +1,207 @@
+<include file="Public:header" />
+<div class="content">
+    <div class="site">
+        {:C('site_name')} {$board_title} > 其他数据分析
+    </div>
+	<div class="line_white"></div>
+    <dl class="gzzt clearfix mt10">
+        <dt>数据<br />类别</dt>
+        <dd>
+            <div class="boxl fl">
+				<volist name="datas_menu" id="d_menu">
+            	<span><a href="__URL__/{$d_menu.action}"><b><eq name="ACTION_NAME" value="$d_menu.action"><font>{$d_menu.name}</font><else/>{$d_menu.name}</eq></b></a></span>
+				</volist>
+            </div>
+        </dd>
+    </dl>
+    <dl class="gzzt clearfix mt10">
+        <dt>今日<br />注册</dt>
+        <dd>
+            <div class="boxl fl">
+            	<span><b>产品数：</b><font>{$t_prod_count}</font></span>
+            	<span>文章数：<b>{$t_art_count}</b></span>
+            	<span>优惠券使用数：<b>{$t_coupon_use}</b></span>
+            	<span>收藏数：<b>{$t_collect_count}</b></span>
+            </div>
+        </dd>
+    </dl>
+	<dl class="charts mt10">
+    	<dt>
+    		<form action="__URL__/{$Think.ACTION_NAME}" method="get" name="form_select" onsubmit="return checkform()">
+    		<p>
+    			<a href="__URL__/{$Think.ACTION_NAME}/days/7" <?php if ($days==7): ?>class="hover"<?php endif ?>>最近7天</a>
+    			<a href="__URL__/{$Think.ACTION_NAME}/days/30" <?php if ($days==30): ?>class="hover"<?php endif ?>>最近30天</a>
+    			<a href="__URL__/{$Think.ACTION_NAME}/days/31" <?php if ($days==31): ?>class="hover"<?php endif ?>>本月</a>
+    			<input type="hidden" name="days" value="-1"/>
+    			<span>自定义时间段:</span>
+    			<input type="text" name="btime" id="btime" value="{$Think.get.btime}" class="time_input2 input_ind  sDatepicker " style="width: 120px;" onclick="laydate({istime: false, format: 'YYYY-MM-DD'})"/><em style="margin-right: 8px;">~</em>
+    			<input type="text" name="etime" id="etime" value="{$Think.get.etime}" class="time_input2 input_ind  sDatepicker " style="width: 120px;" onclick="laydate({istime: false, format: 'YYYY-MM-DD'})"/>
+    			<input type="submit" class="button_search" value="确定" />
+    		</p>
+    		</form>
+    		<strong>概况</strong>
+    		<b title="选择时间周期内有效产品数">产品数：</b><font>{$prod_count}</font>
+			<b title="选择时间周期内文章数">文章数：</b><font>{$art_count}</font>
+			<b title="选择时间周期内优惠券使用数">优惠券使用数：</b><font>{$coupon_use}</font>
+			<b title="选择时间周期内收藏数">收藏数：</b><font>{$collect_count}</font>
+			</span>
+    	</dt>
+        <dd id="container" style="min-width: 220px; height: 520px; margin: 0 auto;margin:10px 10px;"></dd>
+    </dl>
+    <script type="text/javascript">
+    	function checkform() {
+    		var flag=checkDateTime($('#start').val(),$('#end').val());
+	        if (flag==1)
+	        {
+	         alert("开始日期>结束日期");
+	         return false;
+	        }else if (flag==0){
+	         alert("开始日期==结束日期");
+	         return false;
+	        }
+    	}
+    </script>
+    <dl class="blue_table mt10">
+    	<dt><strong>详细数据</strong></dt>
+        <dd>
+        	<table id="sell_list">
+            	<tr>
+                	<th>时间</th>
+                    <th>产品数</th>
+                    <th>文章数</th>
+                    <th>优惠券使用</th>
+                    <th>收藏数</th>
+                </tr>
+				<volist name="list" id="vo">
+				<tr>
+					<td>{$vo.create_time|toDate='Y-m-d'}</td>
+					<td>{$vo.prod_count}</td>
+					<td>{$vo.art_count}</td>
+					<td>{$vo.coupon_use}</td>
+					<td>{$vo.collect_count}</td>
+				</tr>
+				</volist>
+            </table>
+        </dd>
+    </dl>
+    <div class="page fr" id="page">{$pages}</div>
+    <div class="clear"></div>
+    <include file="Public:footer" />
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/laydate/laydate.js"></script>
+<link href="__ROOT__/../js/echarts/asset/css/font-awesome.min.css" rel="stylesheet">
+<script src="__ROOT__/../js/echarts/js/echarts.js"></script>
+<script>
+//日期选择
+var days = '7';
+var n = Math.ceil(days / 8);
+var sell_days = <?php echo json_encode($sell_days) ?>;
+$(function() {
+require.config({
+            paths: {
+                echarts: '__ROOT__/../js/echarts/js'
+            }
+        });
+
+require(
+            [
+                'echarts',
+                'echarts/chart/line',   //折线图 
+				'echarts/chart/bar',    //柱形图
+                'echarts/chart/pie'		//饼图
+            ],
+            function (ec) {
+                var myChart = ec.init(document.getElementById('container'));
+                myChart.setOption(option);
+            }
+        );
+
+option = {
+    title : {
+        text: '数据分析',
+		backgroundColor:'rgba(11,23,34,0)',
+		borderColor: 'red',
+		textStyle : {
+			fontSize: 18,
+			fontWeight: 'bolder',
+			color: '#3E98C5'
+		},
+		//link:'__MODULE__'
+        subtext: '{$subtext}'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+	/*
+    tooltip : {
+        show: true,
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },	
+	*/
+    legend: {
+        data:[{$names}]
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: false},
+            dataView : {show: false, readOnly: false},
+            magicType : {show: true, type: ['bar', 'line','stack', 'tiled']},
+            restore : {show: true},
+            saveAsImage : {show: true},
+        },
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            //boundaryGap : false,
+            data : [{$times}]
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {$datastr}
+    ]
+};
+
+});
+$.urlParam = function(name, url){
+	var url = url || window.location.href;
+	var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(url);
+	if(!results) return false;
+	return results[1] || 0;
+}
+$("#page a").live('click', function() {
+    var urlstr = $(this).attr('href').toString();
+    var page = $.urlParam('page', urlstr);
+    if(page != false) {
+    	get_sell_list(page);
+    }
+    return false;
+});
+function get_sell_list(page) {
+	var data = <?php echo json_encode($_GET); ?>;
+	data.page = page;
+	$.getJSON("<?php echo U('public_dayselllist') ?>", data, function(ret) {
+		$("#page").html(ret.pages);
+		var _html = '';
+		$.each(ret.lists, function(i, n) {
+			_html += '<tr>' + 
+			'<td>'+i+'</td>' + 
+			'<td>'+n.real_amount+'</td>' +
+			'<td>'+n.order_total+'</td>' +
+			'<td>'+ (n.order_total - n.order_effect) +'</td>' +
+			'<td>'+n.order_effect+'</td>' +
+			'<td>'+n.user_cust_transaction+'</td>'
+			+ '</tr>';
+		});
+		$("#sell_list tr:gt(0)").remove();
+		$("#sell_list tr:first").after(_html);
+	});
+}
+</script>
+</html>

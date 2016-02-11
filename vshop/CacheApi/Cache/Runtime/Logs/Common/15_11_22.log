@@ -1,0 +1,240 @@
+[ 2015-11-22T21:12:59+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=t2s35uck1nw552zuyxswb51nntxefe7a&time_stamp=1448197979&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:13:01+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=i7yn922ivfwft478now1920yz6kqjdfs&time_stamp=1448197981&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:13:02+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=pseu3900lzh11tubtm6b3vdcj1nj5dn3&time_stamp=1448197982&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:13:03+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=7x2wvrpxhjxjfvbh9s1v5075dn99t6p5&time_stamp=1448197983&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:14:29+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=9d0p5we4fflkpczsf11qt8cjrvpy5fx0&time_stamp=1448198069&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:14:45+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=eroutncacikk0et6pgkmabkmp9dyema7&time_stamp=1448198085&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:14:45+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&name=pvs&nonce_str=lvt78wm108krtqsklpahkorxdhmowytq&time_stamp=1448198085&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+ERR: 无法加载模块:Region
+
+[ 2015-11-22T21:14:45+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&name=cities&nonce_str=ganibcibmcs64vr838pn7du25h4yq15c&time_stamp=1448198085&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+ERR: 无法加载模块:Region
+
+[ 2015-11-22T21:14:45+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&name=counties&nonce_str=o2n7tv2ldt3ia6yvb5jkzol27uktrqac&time_stamp=1448198085&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+ERR: 无法加载模块:Region
+
+[ 2015-11-22T21:14:47+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=khm2j4cm1ubs639otjoy2aq3q94sjd7p&time_stamp=1448198087&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:15:35+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=bzo7wxiza6d0n9ktorgfpldm31zdlokn&time_stamp=1448198135&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:15:46+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=ash9lq2j3wb17ji0gz3m7zkp35hlwawr&time_stamp=1448198146&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:15:52+08:00 ] ::1 /guoji/vshop/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&name=pvs&nonce_str=xroc7wrrhjkemlfmeh4e2epxx3f7mtac&time_stamp=1448198146&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+ERR: 无法加载模块:Region
+
+[ 2015-11-22T21:16:56+08:00 ] ::1 /guoji/vshop/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&name=pvs&nonce_str=xroc7wrrhjkemlfmeh4e2epxx3f7mtac&time_stamp=1448198146&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:Region
+
+[ 2015-11-22T21:17:01+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=tpbkxcvjmd5q0y8o7aqxux3dnr6ikjz0&time_stamp=1448198221&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:24:09+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=1dt0aq8ot6szh29qb4xn5ze3q45q13yi&time_stamp=1448198649&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:24:10+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=barlootijv5ofl2tjwsr0b8wym9oycy6&time_stamp=1448198650&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:25:51+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=sdel2gy4fqdds3jbtrem4dibepr3wg8v&time_stamp=1448198751&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:25:52+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=inix01duxsgdj890il5ohj2274ku4pjv&time_stamp=1448198752&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:25:52+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=mx8tbzkggxozz2nxkijzhhwu0sn83quw&time_stamp=1448198752&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:26:15+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=mzwnx1qlisgxqzaoqp6hnp7yyamktgiq&time_stamp=1448198775&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:27:42+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=c2byq0gi7znh6k4du28qd500iwj5wejt&time_stamp=1448198862&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:28:36+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=wgp2o36p7n4nw31yh0r10moooaofqtay&time_stamp=1448198916&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:29:00+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=hte941pe4sl5r7vmbkg54ycqs63hknh8&time_stamp=1448198940&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:29:52+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=qg0nhoo88eamsap2yczjddytgf4bktuz&time_stamp=1448198992&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:30:16+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=kihcdvkv1w2cjt8vewijdzc9jzfyllrj&time_stamp=1448199016&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:31:16+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=n7waw8chsimx7v6y4qe5idgisqo8hu4s&time_stamp=1448199076&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:31:17+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=odaooprpt0od1qbkunk4p6ig4ri3xk9y&time_stamp=1448199077&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:33:29+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=sayt4rnw034bgdxyspjmb50i4kej0hg7&time_stamp=1448199209&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:35:09+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=thyskmegp1w38sqrko0qhjneb4747akt&time_stamp=1448199309&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:35:10+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=gie3pc53fzq3c6nlq3xl1rx8ua6pu8qa&time_stamp=1448199310&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:35:12+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=vchkb8blcgcdgd0n91omxotwei3zanfd&time_stamp=1448199312&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:35:49+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=xtl24gxrsw8tjuvwqnhdmjj5yn5j0vy5&time_stamp=1448199349&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:35:53+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=miml73rbrhgf5glx158q8xmmj1htvtta&time_stamp=1448199352&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:35:54+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=e1kwwjib60dwdw5n0g5imm88h0oqmgk9&time_stamp=1448199354&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:36:27+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=t759d41khfh7zxpduouf5nti542prviy&time_stamp=1448199387&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:36:28+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=lwvgg09zg9jxrycrbynsefy7fsesytd8&time_stamp=1448199388&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:36:28+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=vkpp10rtiw5qmpxxl91vhafa3o5vmmkd&time_stamp=1448199388&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:36:28+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=k4if9p6py4o49ki0k5q3jg2ho7tlfxwi&time_stamp=1448199388&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+ERR: 无法加载模块:Local
+
+[ 2015-11-22T21:36:28+08:00 ] 127.0.0.1 /guoji/vshop/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=7uo6m9cgj9tc4pbnllfhiw80eyube5ow&time_stamp=1448199388&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+ERR: 无法加载模块:Local
+

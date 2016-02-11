@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
+<load href ="__PUBLIC__/js/common.js" />
+<load href='__PUBLIC__/js/artDialog/skins/blue.css' />
+<load href="__PUBLIC__/js/artDialog/jquery.artDialog.js" />
+<load href="__PUBLIC__/js/artDialog/plugins/iframeTools.js" />
+<title>发货</title>
+<style>
+.content2 {
+  padding: 0 18px;
+  height: 100%;
+}
+</style>
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+
+</head>
+<body>
+<div class="content2" style="height:480px;">
+<div class="title">编辑物流信息</div>
+<FORM METHOD=POST id="form1" action="__URL__/deliver?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">
+		&nbsp;购买者：</TD>
+	<TD  style="width:450px;">
+		{$vo.member_name} | {$vo.realname}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付方式：</TD>
+	<TD class="tLeft" >
+	{$vo.payment_mode|rs='1#在线支付@2#线下支付/到付'}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >订单号：</TD>
+	<TD class="tLeft" >
+	<a href="__MODULE__/Order/index/order_id/{$vo.order_id}" target="_blank" style="color:red">{$vo.order_sn}</a>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易类型：</TD>
+	<TD class="tLeft" >
+	{$vo.type|rs='1#商品@2#1元云购@3#兑换商品@4#拍卖@5#众筹'}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易金额：</TD>
+	<TD class="tLeft" >
+	{$vo.total_fee}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >物流公司：</TD>
+	<TD class="tLeft" >
+	<select name="shipping_id">
+		<volist name="shippings" id="ship">
+		<option value="{$ship.id}" <eq name="shipping.shipping_id" value="$ship.id">selected</eq> >{$ship.name}</option>
+		</volist>
+	</select>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >物流单号：</TD>
+	<TD class="tLeft" >
+	<input type="text" name="shipping_no" id="shipping_no" value="{$shipping.shipping_no}">
+	</TD>
+</TR>
+
+
+<TR>
+	<TD class="tRight" >备注：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="memo" ROWS="5" COLS="20">{$shipping.memo}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="hidden" NAME="delivery_status" value="1">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+<!--
+<script>
+// 返回数据到主页面
+
+function returnHomepage(){
+
+	var origin = artDialog.open.origin;
+
+	var dom = origin.document.getElementById('td_{$Think.get.id}');
+
+	dom.innerHTML = '<input type="button" value="确认收货"  onclick=\'order_update("receipt","shipping_status",2,<?php echo $vo['id']; ?>);\' class="button">';
+	setTimeout("art.dialog.close()", 1000 );
+}
+<eq name="Think.get.suc" value="1">
+returnHomepage();
+</eq>
+</script>
+-->

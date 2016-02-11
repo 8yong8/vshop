@@ -1,0 +1,14 @@
+<include file="Public:header" />
+<div class="menu">
+   <div class="btn_left"><a class="back2" href="javascript:history.go(-1);"><img src="__PUBLIC__/images/menu_back.png"></a></div>
+    <div class="tit">帮助中心</div>
+</div>
+<div class="help">
+   <ul>
+  <volist name="list" id="news"> 
+       <li><a href="__URL__/lists/?pid={$news['id']}">{$news['title']}</a></li>
+  </volist>
+   </ul>
+</div>
+
+<include file="Public:footer" />

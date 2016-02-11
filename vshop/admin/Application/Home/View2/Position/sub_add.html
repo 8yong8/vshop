@@ -1,0 +1,146 @@
+<include file="Public:header" />
+<load href ="__PUBLIC__/js/apply/position.js" />
+<div class="content">
+<div class="title"> 新增[ <a href="__URL__/substance/id/{$Think.get.id}">返回列表</a> ]</div>
+<form method='post'  id="form1" action='__URL__/sub_add?<?php echo time(); ?>' enctype="multipart/form-data">
+<table cellpadding=3 cellspacing=3 class="add">
+
+<TR>
+	<TD class="tRight" >父节点：</TD>
+	<TD class="tLeft" >
+	<select name="pid" id="pid">
+	<volist name="list" id="type">
+	<option value="{$type[id]}" <eq name="Think.get.id" value="$type[id]">selected</eq> >
+	{$type.node_name}</option>
+	</volist>
+	</select>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><input type="text" class="medium bLeftRequire"  name="title"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight tTop">缩略图：</TD>
+	<TD class="tLeft">
+	<div>
+		<input type="file" id="lit_pic" name="lit_pic" onchange="yulan(this,'show1')">
+		<div id="show1">
+		</div>
+	</div>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft">
+	<SELECT class="small bLeft"  name="status">
+	  <option value="1">启用</option>
+	  <option value="0">禁用</option>
+	</SELECT>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight tTop">关联：</td>
+	<td class="tLeft">
+	<SELECT name="data_type" id="data_type" onchange="change()">
+	  <option value="">选择</option>
+	  <option value="product_list">产品列表</option>
+	  <option value="product_detail">产品详情</option>
+	  <option value="article_list">文章列表</option>
+	  <option value="article_detail">文章详情</option>
+	</SELECT>	
+	</td>
+</tr>
+<script>
+//关联修改
+function change(){
+  var val = $('#data_type').val();
+  if(val=='product_list'){
+	  $('.list').show();
+	  $.ajax({
+		type:"POST",
+		dataType:'json',
+		url: APP+"/Product_category/lists",
+		data:"ajax=1",
+		error: function(request) {
+			art.dialog({
+				time: 1,
+				content: '系统繁忙'
+			});
+		},
+		success:function(obj){
+		  //alert(obj);
+		  var _html = '';
+		  for(var i=0;i<obj.length;i++){
+		    _html += '<option value="'+obj[i].id+'">'+obj[i].node_name+'</option>';
+		  }
+		  $('#cate_id').html(_html);
+		}
+	  })  
+  }else if(val=='article_list'){
+      $('.list').show();
+	  $.ajax({
+		type:"POST",
+		dataType:'json',
+		url: APP+"/Classify/lists",
+		data:"ajax=1",
+		error: function(request) {
+			art.dialog({
+				time: 1,
+				content: '系统繁忙'
+			});
+		},
+		success:function(obj){
+		  //alert(obj);
+		  var _html = '';
+		  for(var i=0;i<obj.length;i++){
+		    _html += '<option value="'+obj[i].id+'">'+obj[i].node_name+'</option>';
+		  }
+		  $('#cate_id').html(_html);
+		}
+	  })
+  }else{
+    $('.list').hide();
+  }
+
+}
+</script>
+<TR class="list hide">
+	<TD class="tRight" >分类：</TD>
+	<TD class="tLeft" >
+	<select name="params[cate_id]" id="cate_id">
+	<volist name="types" id="type">
+	<option value="{$type[id]}" <eq name="vo[params][cat_id]" value="$type[id]">selected</eq> >
+	{$type.node_name}</option>
+	</volist>
+	</select>	
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >ID：</TD>
+	<TD class="tLeft" ><input type="text" class="medium bLeftRequire" name="params[id]"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >url：</TD>
+	<TD class="tLeft" >
+	<input type="text" class="large bLeftRequire"  name="url">
+	<span style="margin-left:-1px">跳转url;留空则根据配置跳转</span>
+	</TD>
+</TR>
+
+<TR>
+	<td></td>
+	<td>
+	<INPUT TYPE="hidden" NAME="position_id" value="{$Think.get.id}">
+	<input type="submit" value="保存" class="button">	
+	</td>
+</TR>
+</table>
+</form>
+<include file="Public:footer" /> 

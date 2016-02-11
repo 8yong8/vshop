@@ -1,0 +1,32 @@
+<html><head><meta http-equiv='Content-Type' content='text/html; charset=gb2312'><title>{$title}</title></head><body><script language='javascript'>function checkform()
+{var i,temp,count,maxamout,minamout
+flag=true;
+if (document.myform.name.value=='')
+{flag=false;
+alert('姓名不能为空');
+document.myform.name.focus();
+return flag}
+if (document.myform.tel.value=='')
+{flag=false;
+alert('电话/手机：不能为空');
+document.myform.tel.focus();
+return flag}
+if (isNaN(myform.tel.value))
+{alert('请用数字填写电话/手机：');
+flag=false;
+document.myform.tel.focus();
+return flag}
+if (document.myform.address.value=='')
+{flag=false;
+alert('楼盘地址：不能为空');
+document.myform.address.focus();
+return flag}
+if (document.myform.num.selectedIndex==0)
+{flag=false;alert('请选择参与人数：');
+document.myform.num.focus();return flag}
+if (document.myform.learn.selectedIndex==0)
+{flag=false;alert('请选择从何种途径得知：');
+document.myform.learn.focus();return flag}
+
+return flag }</script><form name='myform' method='post' action='{$Think.config.VOTE_SITE_URL}/index.php/Public/subnew' onSubmit='return checkform()'><INPUT TYPE="hidden" NAME="bh" value="{$bh}"><FONT size=2>姓&nbsp;&nbsp;&nbsp;&nbsp; 名：</FONT><INPUT class=s2 name="name"><BR><FONT size=2>电话/手机：</FONT><INPUT class=s2 name="tel"><BR><FONT size=2>楼盘地址： </FONT><INPUT class=s2 name="address"><BR><FONT size=2>参与人数： </FONT><SELECT name="num"><OPTION selected value="">-----请选择-----</OPTION><OPTION value="1">1</OPTION><OPTION value="2">2</OPTION><OPTION value="3">3</OPTION><OPTION value="4">更多</OPTION></SELECT><BR><FONT size=2>从何种途径得知：</FONT><SELECT name="learn"><OPTION selected value=未选择>-----请选择-----</OPTION><OPTION value="报纸广告">报纸广告</OPTION><OPTION value="网站广告">网站广告</OPTION><OPTION value="电视广">电视广告</OPTION><OPTION value="宣传单页">宣传单页</OPTION><OPTION value="商场广告">商场广告</OPTION><OPTION value="朋友介绍">朋友介绍</OPTION></SELECT><BR><FONT size=2>备注：输入您中意的品牌<BR></FONT><INPUT class=s2 name="comments"><BR>
+<P align=center><INPUT value=报名 type=submit name=Submit><FONT size=2> </FONT></P></form></body></html>

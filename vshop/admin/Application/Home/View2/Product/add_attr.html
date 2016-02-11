@@ -1,0 +1,125 @@
+<include file="Public:header" />
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function val_add(id){
+  var obj = $('#'+id);
+  var html = '<span><br/><a href="javascript:;" onclick="val_del(this);"><img src="__PUBLIC__/images/minus.png"></a>'+obj.html()+'</span>';
+  var last_obj = obj.parent().find('span:last-child');
+  last_obj.after(html);
+  var obj2 =  obj.parent().find('span:last-child');
+  $(obj2).children().get(2).remove();//删除第三个节点
+  //alert($(obj2).children().length);
+  if($(obj2).children().length==8){
+    var id =  Math.random()*100000000000000000;
+	$(obj2).children().eq(4).val('');
+	$(obj2).children().eq(4).attr('id','pic_'+id);
+	$(obj2).children().eq(5).attr('onclick',"PicUpload('pic_"+id+"',300,300)");
+	$(obj2).children().eq(7).remove();
+  }
+}
+
+function val_del(obj){
+  $(obj).parent().remove();
+}
+
+//删除商品属性
+function product_attr_del(id,obj){
+  var parent = $(obj).parent();
+  if (window.confirm('确实要删除选择项吗？删除将不可恢复')){
+	$.ajax({
+		cache: true,
+		dataType:'json',
+		type: "POST",
+		url:URL+"/product_attr_del/id/"+id+"/time/"+new Date().getTime(),
+		data:'id='+id,
+		async: false,
+		error: function(request) {
+			art.dialog({
+				time: 2,
+				content: '系统繁忙'
+			});
+		},
+		success: function(data) {
+			if(data.error_code==0){
+				/*
+				if(data.notice!=null){
+					art.dialog({
+						id: 'ajax_del',
+						time: 2,
+						content: data.notice
+					});
+				}
+				*/
+				parent.remove();
+			}else{
+				art.dialog({
+					id: 'ajax_del',
+					time: 2,
+					content: data.notice
+				});
+			}
+		}
+	});
+  }
+}
+
+function goods_type_change(){
+  var tid = jQuery("#tid").val();
+  $.ajax({
+    type:"POST",
+	url: URL+"/get_attr",
+	data:"product_id={$Think.get.id}&tid="+tid,
+	success:function(html){
+	  $('#attr_list').html(html);
+	}
+  })
+}
+function check(){
+  return true;
+}
+</SCRIPT>
+
+<div class="content">
+<div class="title">新增属性 [ <A HREF="__URL__">返回列表</A> ] [ <A HREF="__URL__/goods_list/id/{$_GET['id']}">添加规格</A> ] </div>
+<FORM METHOD=POST id="form1" action="__URL__/insert_attr?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+
+<TR>
+	<TD class="tRight" >
+		商品类型：
+	</TD>
+	<TD class="tLeft">
+	  <select name="tid" id="tid" onchange="goods_type_change();">
+		 <volist name="product_types" id="producttype">
+		 <option value="{$producttype.id}" <eq name="cat_id" value="$producttype.id">selected</eq> >
+		 {$producttype.name}</option>
+		 </volist>
+		 <option value="-1">无属性</option>
+	  </select>		
+	</TD>
+</TR>
+<TBODY id="attr_list">
+<volist name="attrs" id="attr">
+<TR>
+	<TD class="tRight" >
+		{$attr.attr_name}：
+	</TD>
+	<TD class="tLeft">
+	    {$attr.content}
+	</TD>
+</TR>
+</volist>
+</TBODY>
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="hidden" NAME="product_id" value="{$Think.get.id}">
+	<INPUT TYPE="submit" value="保 存" class="button" >
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

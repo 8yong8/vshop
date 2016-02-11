@@ -1,0 +1,241 @@
+<include file="Public:header" />
+<style>
+.detail-panel .panel-package {
+	background-color: #f3f3f3;
+	margin-bottom: 32px;
+	position: relative;
+	border-radius: 3px
+}
+
+.detail-panel .panel-package .arrow {
+	position: absolute;
+	left: 35px;
+	top: -26px;
+	width: 0;
+	height: 0;
+	border: 13px solid #fff;
+	z-index: -1;
+	border-bottom-width: 13px;
+	border-bottom-color: #f3f3f3
+}
+
+.detail-panel .panel-package .arrow-0,.detail-panel .panel-package .arrow-1 {
+	left: 35px
+}
+
+.detail-panel .panel-package .arrow-2,.detail-panel .panel-package .arrow-3,.detail-panel .panel-package .arrow-4,.detail-panel .panel-package .arrow-25 {
+	left: 290px
+}
+
+.detail-panel .panel-package .arrow-6,.detail-panel .panel-package .arrow-7,.detail-panel .panel-package .arrow-8 {
+	left: 550px
+}
+
+.detail-panel .panel-package .arrow-5 {
+	left: 808px
+}
+
+.detail-panel .panel-package .tips {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	color: #ee5051
+}
+
+.detail-panel .panel-package .icon-delay {
+	float: left;
+	margin-right: 8px;
+	vertical-align: middle;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(//gtd.alicdn.com/tps/i4/TB1PbhDHpXXXXceaXXXoq9FFpXX-18-18.png) no-repeat left top
+}
+
+.detail-panel .panel-package .package-title {
+	margin: 0 14px 0 25px;
+	padding: 14px 0 14px 12px;
+	font-size: 18px;
+	border-bottom: 1px solid #e7e7e7;
+	font-family: "Hiragino Sans GB","Microsoft YaHei"
+}
+
+.detail-panel .panel-package .package-title em {
+	color: #ff5a00;
+	font-style: normal;
+	margin: 0 5px;
+	padding: 0
+}
+
+.detail-panel .panel-package .package-exception {
+	width: 420px;
+	margin: 0 auto;
+	height: 280px;
+	font-size: 22px;
+	line-height: 1.2em
+}
+
+.detail-panel .panel-package .package-exception .pic {
+	margin-top: 60px;
+	width: 120px;
+	height: 160px;
+	float: left;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.detail-panel .panel-package .package-exception .text {
+	margin-top: 110px;
+	margin-left: 10px;
+	float: left
+}
+
+.package-status {
+	padding: 18px 0 0 0
+}
+
+.package-status .status-list {
+	margin: 0;
+	padding: 0;
+	margin-left: 12px;
+	margin-top: -9px;
+	padding-left: 10px;
+	list-style: none;
+	line-height: 30px;
+	font-size: 12px
+}
+
+.package-status .status-list li {
+	height: 30px;
+	border-left: 1px solid #d9d9d9
+}
+
+.package-status .status-list li:before {
+	content: '';
+	border: 3px solid #f3f3f3;
+	background-color: #d9d9d9;
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	margin-left: -6px;
+	margin-right: 10px
+}
+
+.package-status .status-list .date {
+	font-weight: 700;
+	margin-right: 8px;
+	font-family: Arial
+}
+
+.package-status .status-list .time {
+	margin-right: 28px;
+	margin-left: 5px
+}
+
+.package-status .status-list .week {
+	font-weight: 700
+}
+
+.package-status .status-list .latest:before {
+	background-color: #fe4300;
+	border-color: #f8e9e4
+}
+
+.package-status .status-list em {
+	color: #ff4207
+}
+
+.package-status .status-list .hidden {
+	display: inline
+}
+
+.package-status .status-box {
+	overflow: hidden
+}
+
+.package-status .status-action {
+	text-align: right;
+	color: #ff4200;
+	padding-right: 10px
+}
+
+.package-status .status-action .action-handler {
+	cursor: pointer
+}
+
+.package-status .status-info {
+	margin-top: -10px;
+	margin-left: 22px;
+	margin-right: 10px;
+	background-color: #f3f3f3;
+	overflow: hidden;
+	line-height: 28px;
+	color: #959595;
+	text-align: right
+}
+
+.package-status .status-info .info-inner {
+	margin-top: 20px;
+	margin-left: 18px;
+	border-top: 1px solid #e8e8e8;
+	height: 28px
+}
+
+.package-status .status-list em.normal {
+	font-weight: 400
+}
+
+.package-status .status-list .text {
+	display: inline-block;
+	width: 653px;
+	vertical-align: text-top;
+	line-height: 1.3em
+}
+
+.package-status .status-list li {
+	height: auto;
+	min-height: 30px
+}
+
+.package-status .status-list .date {
+	width: 62px
+}
+
+.package-status .status-list .week {
+	width: 24px
+}
+
+.package-status .status-list .time {
+	width: 48px
+}
+
+</style>
+<div class="content">
+<div class="title">物流修改[ <A HREF="__URL__">返回列表</A> ]</div>
+  <div class="detail-panel"> 
+
+	  <div class="panel-package"> 
+	   <div class="arrow arrow-$circle.current"></div> 
+	   <!--<div class="tips"><i class="icon-delay"></i>由于台风影响将会派送延期很抱歉！</div> --> 
+	   <h3 class="package-title"> {$list.message} </h3> 
+	   <div class="package-status"> 
+		<div class="status-box" id="status_list">
+		 <ul id="J_listtext2" class="status-list">
+		  <volist name="list.data" id="vo">
+		  <li <eq name="key" value="list.count">class="latest"</eq>><span class="date">{$vo.time}</span><span class="week">{$vo.time|strtotime|toDate='N'|rs='1#周一@2#周二@3#周三@4#周四@5#周五@6#周六@7#周日'}</span><span class="time">{$vo.time|strtotime|toDate='H#i#s'}</span><span class="text">{$vo.context}</span></li>
+		  </volist>
+		 </ul>
+		</div> 
+		<!--如果已经签收--> 
+		<div class="status-info"> 
+		 <div class="info-inner" id="J_tipinfo">
+		   以上信息已经过优化处理，如需查看快递公司原文信息 
+		  <a class="J_textchage" data-text="J_listtext1" href="javascript:void(0)">请点击</a> 
+		 </div> 
+		</div> 
+	   </div> 
+	  </div>
+
+
+<include file="Public:footer" /> 

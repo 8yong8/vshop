@@ -1,0 +1,41 @@
+	<div class="copy"><span class="line_white"></span>Powered by vion 0.5 版权所有 © 2013-2015 vion，并保留所有权利。</div>
+  </div><!--content结束-->
+</div>
+</body>
+</html>
+<script>
+$(".z_side").click(function() {
+    $("iframe").attr("src", $(this).attr("data"));
+});
+/*
+if (top.location !== self.location) {
+    top.location = self.location;
+}
+*/
+//$(".side a[name!='disabled']").eq(0).addClass('hover').click();
+
+//左侧side中的hover 效果
+$(function(){
+	$(".side li a").click(function(){
+		if($(this).hasClass('disabled')) return false;
+		$(".side li a").removeClass("hover");
+		$(this).addClass("hover");
+	});
+});
+/**
+ * 显示和收起后台导航
+ */
+$(".ico_left").toggle(function(){
+			$(".side").animate({left:"-200px"});
+			$("#Container").animate({left:"0"});
+			$(".welcome").animate({paddingLeft:"10px"});
+			$(this).children().attr('src','__PUBLIC__/images/ico_8a.png');
+		},
+		function(){
+			$(".side").animate({left:"0px"});
+			$("#Container").animate({left:"200px"});
+			$(".welcome").animate({paddingLeft:"65px"});
+			$(this).children().attr('src','__PUBLIC__/images/ico_8.png');
+		}
+	  );
+</script>

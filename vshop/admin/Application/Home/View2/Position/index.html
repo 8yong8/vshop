@@ -1,0 +1,118 @@
+<include file="Public:header" />
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > <a href="__URL__">{$node_title}</a>
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	<div class="guanli">
+	  <FORM METHOD=get ACTION="__URL__">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">标题：</TD>
+			<TD><INPUT TYPE="text" NAME="title" class="medium" value="{$title}"></TD>
+			<TD>
+			<INPUT TYPE="hidden" NAME="pid" value="{$Think.get.pid}">
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </FORM>
+	</div>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<neq name="parent" value="">
+				<div class="handle mt10" style="margin-bottom:10px;">
+        		<span class="fr"><a href="__URL__/index/pid/{$parent.pid}">返回</a></span>
+				<strong>父节点：<font color="red">{$parent.title}</font></strong>
+				</div>
+				</neq>
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add({$Think.get.pid})" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+
+				    <td>
+					  <myhtml:imageBtn name="no" value="禁用" click="forbid()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="ok" value="通过" click="resume()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+				  <div class="datagrid-view">
+					<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+					<tr class="row" >
+					  <th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+					  <th width="5%">
+					  <eq name="sort" value="1">
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-desc" style="text-align: center;" onclick="javascript:sortBy('id','1','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  <else/>
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-asc" style="text-align: center;" onclick="javascript:sortBy('id','0','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  </a>
+					  </eq>
+					  </th>
+					  <th width="15%">名称</th>
+					  <th width="8%">排序</th>
+					  <th width="15%">子节点数量</th>
+					  <th width="35%">描述</th>
+					  <th>状态</th>
+					  <th>操作</th>
+					</tr>
+					<volist name="list" id="vo" mod="2">
+					<tr class="datagrid-row <eq name="mod" value="1">datagrid-row-alt</eq>">
+					  <td><input type="checkbox" name="key"	value="{$vo.id}"></td>
+					  <td>{$vo.id}</td>
+					  <td><a href="__URL__/index/pid/{$vo.id}">{$vo.title}</a></td>
+					  <td><span onclick="field_value_update(this,'sort',{$vo.id})">{$vo.sort}</span></td>
+					  <td>{$vo.child_num}</td>
+					  <td>{$vo.info}</td>
+					  <td>{$vo.status|rs='0#禁用#red@1#启用#blue'}</td>
+					  <td style="text-align:left;height:auto;">
+						&nbsp;<a href="javascript:;"  onclick="edit('{$vo.id}')">编辑</a>&nbsp;
+						&nbsp;<a href="__URL__/index/pid/{$vo.id}">子节点
+						&nbsp;<a href="__URL__/substance/id/{$vo.id}" target="_balnk">内容查看</a>&nbsp;
+						<a href="__URL__/sub_add/id/{$vo.id}" target="_balnk">添加内容</a>&nbsp;
+					  </td>
+					</tr>
+					</volist>
+					</table>
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

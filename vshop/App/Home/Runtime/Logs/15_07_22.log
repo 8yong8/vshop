@@ -1,0 +1,187 @@
+[ 2015-07-22T19:24:46+08:00 ] 127.0.0.1 /guoji/yunwang/api/index.php/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002753s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003077s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005193s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.003989s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003860s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 54 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 62 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 66 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.001824s ]
+NOTIC: [8] Undefined variable: voList D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 47 行.
+
+[ 2015-07-22T21:39:15+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=12233
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003023s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003305s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001978s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003929s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.009159s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php on line 261 and defined D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 1482 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 1490 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 1493 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 1501 行.
+SQL: SELECT `id`,`order_id` FROM `zy_order` LIMIT 1   [ RunTime:0.000194s ]
+NOTIC: [8] Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 264 行.
+
+[ 2015-07-22T21:39:47+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=12233
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002271s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002377s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004080s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.005279s ]
+SQL: SELECT `id`,`order_id` FROM `zy_order` WHERE ( `id` = 12233 ) LIMIT 1   [ RunTime:0.000183s ]
+
+[ 2015-07-22T21:44:58+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=12233
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002681s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002860s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001877s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003422s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.005428s ]
+SQL: SELECT `id`,`order_id` FROM `zy_order` WHERE ( `id` = 12233 ) LIMIT 1   [ RunTime:0.000236s ]
+
+[ 2015-07-22T21:45:21+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001964s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002054s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002479s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005300s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.003804s ]
+SQL: SELECT `id`,`order_id` FROM `zy_order` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000188s ]
+
+[ 2015-07-22T21:48:25+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002040s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002122s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002323s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003418s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.005951s ]
+SQL: SELECT `id`,`order_id`,`total_free` FROM `zy_order` WHERE ( `id` = 1 ) AND ( `member_id` = 107 ) LIMIT 1   [ RunTime:0.000214s ]
+
+[ 2015-07-22T21:48:26+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001892s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001974s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001771s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003537s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.005600s ]
+SQL: SELECT `id`,`order_id`,`total_free` FROM `zy_order` WHERE ( `id` = 1 ) AND ( `member_id` = 107 ) LIMIT 1   [ RunTime:0.000214s ]
+
+[ 2015-07-22T21:48:26+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002086s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002202s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001815s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003371s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.006073s ]
+SQL: SELECT `id`,`order_id`,`total_free` FROM `zy_order` WHERE ( `id` = 1 ) AND ( `member_id` = 107 ) LIMIT 1   [ RunTime:0.000232s ]
+
+[ 2015-07-22T21:48:26+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001890s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003530s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.005831s ]
+SQL: SELECT `id`,`order_id`,`total_free` FROM `zy_order` WHERE ( `id` = 1 ) AND ( `member_id` = 107 ) LIMIT 1   [ RunTime:0.000226s ]
+
+[ 2015-07-22T21:54:23+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002068s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002164s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002585s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004017s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.003697s ]
+SQL: SELECT `id`,`order_id`,`total_free` FROM `zy_order` WHERE ( `id` = 1 ) AND ( `member_id` = 107 ) LIMIT 1   [ RunTime:0.000257s ]
+NOTIC: [8] Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 269 行.
+
+[ 2015-07-22T22:13:17+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?order_id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002012s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002102s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002641s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003474s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.005777s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 260 行.
+SQL: SELECT `id`,`title`,`order_id`,`total_free` FROM `zy_order` WHERE ( `id` = null ) AND ( `member_id` = 107 ) LIMIT 1   [ RunTime:0.000191s ]
+
+[ 2015-07-22T22:14:20+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?order_id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001893s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001973s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001819s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003961s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.004102s ]
+SQL: SELECT `id`,`title`,`order_id`,`total_free` FROM `zy_order` WHERE ( `order_id` = '1' ) AND ( `member_id` = 107 ) LIMIT 1   [ RunTime:0.000192s ]
+
+[ 2015-07-22T22:14:30+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/alipay?order_id=20150715524848481270
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002076s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002232s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004187s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.003651s ]
+SQL: SELECT `id`,`title`,`order_id`,`total_free` FROM `zy_order` WHERE ( `order_id` = '20150715524848481270' ) AND ( `member_id` = 107 ) LIMIT 1   [ RunTime:0.000199s ]
+NOTIC: [8] Use of undefined constant DOMAIN_NAME - assumed 'DOMAIN_NAME' D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 269 行.
+

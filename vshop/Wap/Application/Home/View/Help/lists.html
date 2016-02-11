@@ -1,0 +1,31 @@
+<include file="Public:header" />
+<eq name="list" value="">
+<script>
+art.dialog({ 
+    lock: true,
+    background: '#600', // 背景色
+    opacity: 0.87,	// 透明度
+    content: '信息不存在或审核未通过',
+    icon: 'error',
+    ok: function () { 
+        //art.dialog({ content: '再来一个锁屏', lock: true});
+        window.location.href='__ROOT__/';
+        return false;
+    },
+    cancel: false
+});
+</script> 						 
+</eq>
+<div class="menu">
+   <div class="btn_left"><a class="back2" href="__URL__"><img src="__PUBLIC__/images/menu_back.png"></a></div>
+    <div class="tit">{$parent.title}</div>
+</div>
+<div class="help">
+   <ul>
+  <volist name="list" id="news"> 
+       <li><a href="__URL__/detail/?id={$news['id']}">{$news['title']}</a></li>
+  </volist>
+   </ul>
+</div>
+
+<include file="Public:footer" />

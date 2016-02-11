@@ -1,0 +1,2240 @@
+[ 2015-09-11T08:55:38+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Config&name=config&time_stamp=1441932938&version=1.0&sign=3bda381eec8a6b7817b4880c1596c0ba&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002388s ]
+
+[ 2015-09-11T08:56:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933000&version=1.0&sign=fc72196a734cb130b81eb2ad8b7bac06&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+
+[ 2015-09-11T08:58:44+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933124&version=1.0&sign=b7f4ad111966274f980994607de7848a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002110s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006212s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000388s ]
+
+[ 2015-09-11T08:59:04+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441933144&version=1.0&sign=d4c098deba4e36c597f44b1b95b66e58&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003078s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004930s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005424s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000552s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+
+[ 2015-09-11T08:59:04+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441933144&version=1.0&sign=4b5fa90ff7e2e730909bb370b205a401&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002010s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005317s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004925s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002542s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+
+[ 2015-09-11T08:59:04+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441933144&version=1.0&sign=ac279b0af920ebf34eb193c334eef397&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002860s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004929s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005020s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.025826s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+
+[ 2015-09-11T08:59:50+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933190&version=1.0&sign=a677cbd9533c6a875f80ce87fffc89e4&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001749s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005243s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000393s ]
+
+[ 2015-09-11T09:01:38+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933298&version=1.0&sign=70c8438719332d348a2680ae99c07e2f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002940s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005374s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000375s ]
+
+[ 2015-09-11T09:01:46+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933306&version=1.0&sign=c33a7d9a5e2935543c6b3aa09570c063&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001942s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005775s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000334s ]
+
+[ 2015-09-11T09:02:08+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933328&version=1.0&sign=fcc27cfe8d73712c72c8a70ba82e407f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002475s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005219s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000585s ]
+
+[ 2015-09-11T09:02:21+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933341&version=1.0&sign=2b435c7c7217ee19e13cd0d7a7c87316&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005535s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000404s ]
+
+[ 2015-09-11T09:02:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933357&version=1.0&sign=47c0deb8b21fda401ac9a03044c11731&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002600s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005346s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000365s ]
+
+[ 2015-09-11T09:02:43+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933357&version=1.0&sign=47c0deb8b21fda401ac9a03044c11731&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006024s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000389s ]
+
+[ 2015-09-11T09:03:18+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933357&version=1.0&sign=47c0deb8b21fda401ac9a03044c11731&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001998s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005255s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000501s ]
+
+[ 2015-09-11T09:03:22+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933357&version=1.0&sign=47c0deb8b21fda401ac9a03044c11731&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002611s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006256s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000485s ]
+
+[ 2015-09-11T09:03:33+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933357&version=1.0&sign=47c0deb8b21fda401ac9a03044c11731&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002067s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005172s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005187s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000584s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T09:06:00+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441933357&version=1.0&sign=47c0deb8b21fda401ac9a03044c11731&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002566s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005766s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000401s ]
+
+[ 2015-09-11T09:38:23+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441935503&version=1.0&sign=9ebc61cbc34e4e1c9ce157672281e076&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002463s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006408s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.004983s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000592s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T09:38:35+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441935515&version=1.0&sign=00e6b6dfe3d23cbc376d53f481e299aa&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002032s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005209s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.004973s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000509s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T09:38:59+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441935539&version=1.0&sign=6d454098a869c13cd7699c0942fe7b99&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001865s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006340s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005233s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000516s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T09:46:10+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441935970&version=1.0&sign=49204538082e97cd3f915b2da768d57b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002077s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005163s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.006441s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000583s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T09:54:31+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441936471&version=1.0&sign=9cb866e4e14c9d8c534264fae35141d1&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002401s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006051s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005755s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000527s ]
+NOTIC: [8] Undefined variable: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T10:32:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441938749&version=1.0&sign=981bb18a619956b6c70718206632cf4f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003003s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006831s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.004918s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T10:32:35+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441938755&version=1.0&sign=db6648770c401fe476a03c748c2305f4&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002309s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005263s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005441s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000649s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T10:33:15+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441938794&version=1.0&sign=baf26e0a86a79321399d5d82b823bd69&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005243s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005340s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000788s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T10:37:19+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441939038&version=1.0&sign=cdb3cabb2678d40592f33a9ad947160e&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005317s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005094s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000649s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T10:48:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441939717&version=1.0&sign=85d7c48243cbea17a4d8ed6274283b6d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005907s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005250s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T10:48:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441939736&version=1.0&sign=7c261e71e360b3ffe081817d546a31b7&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001815s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004985s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005267s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000551s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T10:49:31+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441939771&version=1.0&sign=560cb796eee83c20b7b797e79e792962&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002613s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005374s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.007237s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000501s ]
+
+[ 2015-09-11T10:49:33+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441939773&version=1.0&sign=f36e7f941e18f274c14f03a95b62b496&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005111s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005100s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000460s ]
+
+[ 2015-09-11T10:49:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441939774&version=1.0&sign=dce7765ad905c66f050011d37e80c013&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005222s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005626s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000457s ]
+
+[ 2015-09-11T10:49:35+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441939775&version=1.0&sign=e4caa3c18e45dbd0fbb482869668d2d1&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005610s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005009s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000447s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000566s ]
+
+[ 2015-09-11T14:11:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441951894&version=1.0&sign=b6189ff2bcfe387f2988a9bb0d331b07&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003930s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.207309s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.211164s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001071s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.190333s ]
+
+[ 2015-09-11T14:11:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441951897&version=1.0&sign=b57e51a5bc6ed541d099c7aa184baad5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001608s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005317s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005123s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.001297s ]
+
+[ 2015-09-11T14:11:38+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441951897&version=1.0&sign=b57e51a5bc6ed541d099c7aa184baad5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001878s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.029488s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.011584s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000867s ]
+
+[ 2015-09-11T14:11:50+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441951910&version=1.0&sign=9b715703add45bb0548f6894edf381e6&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005621s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005094s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000481s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000715s ]
+
+[ 2015-09-11T14:11:52+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441951912&version=1.0&sign=c07b99e8a48f17a3ac22d4a96d592bb6&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005776s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004795s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 56 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000636s ]
+
+[ 2015-09-11T14:14:45+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441952085&version=1.0&sign=0f4aeefc4c61c7054e22b6c1970dafdb&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003932s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005724s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.006207s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000528s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T14:16:14+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441952174&version=1.0&sign=ab4b18bfdeadc395ca3d534019c5c63c&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003103s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005874s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005304s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000571s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T14:38:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetConfig&appid=201586485090108670&m=Config&time_stamp=1441953534&version=1.0&sign=1413a84fefa90c529243e42e101846e1&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001801s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006896s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `zy_config` [ RunTime:0.005126s ]
+SQL: SELECT * FROM `zy_config` WHERE ( `status` = 1 )  [ RunTime:0.000553s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\ConfigAction.class.php 第 24 行.
+
+[ 2015-09-11T14:40:07+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441953607&version=1.0&sign=fc7dc186158fb799abcded13b52574f9&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005693s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.006202s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000694s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:40:09+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441953609&version=1.0&sign=2ab472fb78f1cd5a414417e00f433417&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005013s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005138s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000553s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:40:35+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441953635&version=1.0&sign=49ab8f66612ac6edcb3c6e51718050ee&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005133s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005711s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:42:21+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441953741&version=1.0&sign=07a042eaced6264b0b1c09bfa6012722&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001968s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006357s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005395s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000735s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+
+[ 2015-09-11T14:43:06+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441953786&version=1.0&sign=67e1d6c741fe8fe29dbd395262c9c222&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002064s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005334s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005305s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000711s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:43:16+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441953796&version=1.0&sign=546167f931f25587a7253125c51e166f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002725s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005681s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.007003s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000600s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+
+[ 2015-09-11T14:47:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441954074&version=1.0&sign=2e443944cfe688ede3be0acb1ca044fa&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003640s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006830s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005305s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000557s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:47:55+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441954074&version=1.0&sign=c642b0892b598bebc621c463b5ae0abe&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002262s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005500s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005369s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002501s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:47:55+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441954075&version=1.0&sign=137e930683e76cf198782d952646967a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002526s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006113s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005350s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.039093s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:50:57+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441954257&version=1.0&sign=56062b33526a3089d553dbb5995a9fed&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002701s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005570s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005779s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000556s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:50:57+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441954257&version=1.0&sign=80846c830af64aad5e6327a31850b755&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001967s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005460s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005592s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002882s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:50:57+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441954257&version=1.0&sign=e1444c4b40e00b70231316660d432407&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006057s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005227s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.027164s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:57:11+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441954630&version=1.0&sign=b243bcf8bdae0e4d2b1b40cf37862c87&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002076s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005067s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005846s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000548s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:57:11+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441954631&version=1.0&sign=fce8aa2abc91e6f047062124a60e1127&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002533s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005189s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005055s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002843s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:57:11+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441954631&version=1.0&sign=b195e8263916ed081fef0860a93578e1&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002036s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005336s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005390s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.026053s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:57:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441954657&version=1.0&sign=7992c04035bd747acd60fcc5ada064bf&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002713s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005253s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004827s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:57:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441954657&version=1.0&sign=992fd2f8927a7ed0b5eda1265fa0e517&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005451s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005220s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002584s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:57:38+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441954657&version=1.0&sign=e63d3ac464daf657b291cab01234db48&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005084s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004982s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.025982s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:58:28+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441954708&version=1.0&sign=fb453302924529b5ed51e3f297ff350c&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001980s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005620s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004974s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000523s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+
+[ 2015-09-11T14:58:28+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441954708&version=1.0&sign=d72f90fad8a0cab5d05ff26b9a8bf0ee&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001999s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005467s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005201s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002518s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 38 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 41 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T14:58:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441954708&version=1.0&sign=c437306468a2f2f533782394f1451eab&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001917s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005039s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005169s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.026482s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 56 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 59 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:00:01+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441954801&version=1.0&sign=2b6c058017c0a0d1694a2798b6b8d281&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002101s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005106s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005085s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000747s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:00:01+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441954801&version=1.0&sign=e150ed3192845a90f24ccc704a4f5c34&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005194s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004988s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002725s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 38 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 41 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:00:01+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441954801&version=1.0&sign=12c7d765fab0b3dda312db0ef5ed80cc&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001872s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005495s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004941s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.026758s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 56 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 59 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:00:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441954854&version=1.0&sign=79bfa8e718a528d4ef6c002185143ce7&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002531s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005932s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005183s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000558s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:00:55+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441954854&version=1.0&sign=b2c4b5ee70882f723e68e96da67c675d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005336s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004990s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002737s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:00:55+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441954855&version=1.0&sign=0a2c8b8ba0b331834b069b6650a5b581&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005045s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004938s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.026444s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:05:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441955134&version=1.0&sign=b8483d1e3a47218ae1114c595b6b6484&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002350s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005261s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005055s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:05:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441955134&version=1.0&sign=7cb35b3f372e34a43eb8e8c72bb28b0c&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005489s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004968s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002978s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 38 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 41 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:05:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441955134&version=1.0&sign=5f77499d0cfd787f7213fc5a62053f2d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005025s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005805s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.025373s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 56 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 59 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:05:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441955156&version=1.0&sign=48307da65457eaf6481161f1f37d8b75&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002606s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005681s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004943s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:05:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441955156&version=1.0&sign=c53e6a5ceec92ec5b357731e6900b011&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002003s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005515s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005141s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 2 ) ORDER BY sort asc,id asc  [ RunTime:0.002725s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:05:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441955156&version=1.0&sign=d8ea450aa67a38c566e64fcba63ede60&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005189s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004803s ]
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 3 ) ORDER BY sort asc,id asc  [ RunTime:0.025811s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 59 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:08:38+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441955317&version=1.0&sign=45f289fedd6ce5db26ae4a1dc0554912&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005036s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005416s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 24 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:08:38+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441955318&version=1.0&sign=2f51c29b1d673a92aad5b47494f70bd1&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005314s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005185s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 47 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:08:38+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441955318&version=1.0&sign=e178a144b4a043ce0ed1ded919e2f30d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002965s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005554s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005100s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 67 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 70 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:09:00+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetPvs&appid=201586485090108670&m=Region&time_stamp=1441955340&version=1.0&sign=a233e96e3a0e73a0a5064445a18411ff&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001557s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005335s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005292s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 24 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:09:00+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCities&appid=201586485090108670&m=Region&time_stamp=1441955340&version=1.0&sign=878e67f9454e832aca3762f6dde3594b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005269s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005010s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 47 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:09:00+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=SetCounties&appid=201586485090108670&m=Region&time_stamp=1441955340&version=1.0&sign=afa697ae3ce9022c03882ff3ea3b713b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001703s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006136s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004872s ]
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 67 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 70 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 40 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 44 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 45 行.
+
+[ 2015-09-11T15:09:28+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441955368&version=1.0&sign=05b4f80d0cbf9f7c7ed92a6bb23d6455&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001997s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005061s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005156s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: filename D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Driver\Cache\CacheFile.class.php 第 58 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000447s ]
+
+[ 2015-09-11T15:36:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441956989&version=1.0&sign=c8184b04af455f14f295a4369a5bd52a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002053s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006486s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000371s ]
+
+[ 2015-09-11T15:36:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441956989&version=1.0&sign=c8184b04af455f14f295a4369a5bd52a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002282s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005346s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000349s ]
+
+[ 2015-09-11T15:36:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441956989&version=1.0&sign=c8184b04af455f14f295a4369a5bd52a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005679s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000347s ]
+
+[ 2015-09-11T15:37:01+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957021&version=1.0&sign=c760ac826786c06f14b9c18006e80c46&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002068s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005603s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000399s ]
+
+[ 2015-09-11T15:37:30+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957042&version=1.0&sign=3862a367b25459cf9330220a3dcbc101&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003096s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005880s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000396s ]
+
+[ 2015-09-11T15:38:06+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957042&version=1.0&sign=3862a367b25459cf9330220a3dcbc101&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005946s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000385s ]
+ERR: 参数错误或者未定义:name
+
+[ 2015-09-11T15:38:24+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957104&version=1.0&sign=fb9097606ebf8105609561b7a5ac2254&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001752s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005421s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000380s ]
+ERR: 参数错误或者未定义:name
+
+[ 2015-09-11T15:38:25+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957104&version=1.0&sign=fb9097606ebf8105609561b7a5ac2254&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005190s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000372s ]
+ERR: 参数错误或者未定义:name
+
+[ 2015-09-11T15:38:25+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957105&version=1.0&sign=48cd7417a571b05f0a0884b351fdfdbc&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005300s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000432s ]
+ERR: 参数错误或者未定义:name
+
+[ 2015-09-11T15:38:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957121&version=1.0&sign=6a02f18ce771134000ae02067b35dd5f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005335s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000383s ]
+ERR: 参数错误或者未定义:name
+
+[ 2015-09-11T15:40:11+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957211&version=1.0&sign=aa2b1f891c8d621e334cb36d97ecbca1&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006147s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:40:33+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957232&version=1.0&sign=e213a8069617f9b7eacf53ca2097405e&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006386s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000384s ]
+
+[ 2015-09-11T15:40:49+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957249&version=1.0&sign=9d6fba6950bbe825d10b8396db329862&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001911s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005475s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000357s ]
+
+[ 2015-09-11T15:40:58+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957258&version=1.0&sign=bc5c0349e401f93c43da6f42b36bf295&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001713s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005522s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000348s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 14 行.
+
+[ 2015-09-11T15:41:16+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957276&version=1.0&sign=2783d6a419163423873a6ee9bf3856de&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005413s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000380s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 14 行.
+
+[ 2015-09-11T15:41:31+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957291&version=1.0&sign=47388a2b6dd876cc2a9fc0786558cc36&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006457s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 14 行.
+
+[ 2015-09-11T15:45:11+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957511&version=1.0&sign=3985c8082e75d1fd0dbd493d51d1ea1b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002200s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005638s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000427s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:45:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957541&version=1.0&sign=4eac0864c1008af117a567103adcbd57&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001938s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005262s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000439s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:45:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957541&version=1.0&sign=4eac0864c1008af117a567103adcbd57&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005715s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:45:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957541&version=1.0&sign=4eac0864c1008af117a567103adcbd57&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005760s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000361s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:45:52+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957552&version=1.0&sign=cb66ede66559ad506e913d4231da736a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006552s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:47:55+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957675&version=1.0&sign=8b97296db52405a7ac81a5d888a50f79&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006316s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000465s ]
+
+[ 2015-09-11T15:50:42+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957842&version=1.0&sign=3b0d54e8c41fe726b073789e58daba57&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005568s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000461s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined variable: return D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 21 行.
+
+[ 2015-09-11T15:50:55+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957855&version=1.0&sign=0423ec9c1566ddaa35676b99185a078a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005169s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000335s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined variable: return D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 21 行.
+
+[ 2015-09-11T15:51:05+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957865&version=1.0&sign=a3888bb07780e6effcea39b0a4b26029&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005161s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined variable: return D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 21 行.
+
+[ 2015-09-11T15:51:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957896&version=1.0&sign=cbd73400c0fd9aca860af71b9c441cb6&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005709s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:51:51+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957911&version=1.0&sign=fc921241be30aa74420b678ff5a5ad59&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005608s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000365s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:52:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957922&version=1.0&sign=3bc9739d9b20ab64bafa8469d415bb41&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005841s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000385s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:52:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957922&version=1.0&sign=3bc9739d9b20ab64bafa8469d415bb41&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005764s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:52:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957922&version=1.0&sign=3bc9739d9b20ab64bafa8469d415bb41&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005407s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000363s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:52:24+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&time_stamp=1441957944&version=1.0&sign=a486413cc8819c30f4161d2bd97bb9a9&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002384s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000378s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T15:52:52+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441957971&version=1.0&sign=bc757a53756f261d48b741b54072b8e2&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005100s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005302s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 57 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000449s ]
+
+[ 2015-09-11T15:52:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441957976&version=1.0&sign=23effd6b31ba6dbda25a8f1f23d815fb&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005169s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004993s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 57 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000357s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000474s ]
+
+[ 2015-09-11T15:52:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=GetChannel&appid=201586485090108670&m=Region&name=pvs&time_stamp=1441957976&version=1.0&sign=23effd6b31ba6dbda25a8f1f23d815fb&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005885s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.004940s ]
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 57 行.
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000376s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000498s ]
+
+[ 2015-09-11T15:54:42+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958082&version=1.0&sign=949986dd779bd19879acfdd82fdee4da&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005772s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000367s ]
+
+[ 2015-09-11T15:57:13+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958233&version=1.0&sign=976be97d7d5b19c6ad7d3345c1f9655a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001824s ]
+NOTIC: [2048] Declaration of LocalAction::GetCache() should be compatible with that of CommonAction::GetCache() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005109s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000563s ]
+
+[ 2015-09-11T15:57:22+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958242&version=1.0&sign=c1b97ec4052de00187776309c16c920f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001866s ]
+NOTIC: [2048] Declaration of LocalAction::GetCache() should be compatible with that of CommonAction::GetCache() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005172s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000396s ]
+
+[ 2015-09-11T15:57:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958257&version=1.0&sign=e3b9a20900e7cc55314ef053c7feaaa8&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+NOTIC: [2048] Declaration of LocalAction::GetCache() should be compatible with that of CommonAction::GetCache() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005469s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000388s ]
+
+[ 2015-09-11T15:57:45+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958265&version=1.0&sign=1d2e540f7f890e6dc6cf52f0aaf379a5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002146s ]
+NOTIC: [2048] Declaration of LocalAction::GetCache() should be compatible with that of CommonAction::GetCache() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006573s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000393s ]
+
+[ 2015-09-11T15:57:52+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958272&version=1.0&sign=ccf9ff6649db717ea329f157ce0732ae&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001745s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005076s ]
+
+[ 2015-09-11T15:57:59+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958279&version=1.0&sign=727b6f9ee54b1a108cdea6fe8aba2162&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005019s ]
+
+[ 2015-09-11T15:58:00+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958280&version=1.0&sign=421e89ea1c1ef9ca9f3e27b2b5389e37&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005438s ]
+
+[ 2015-09-11T15:58:00+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958280&version=1.0&sign=421e89ea1c1ef9ca9f3e27b2b5389e37&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005858s ]
+
+[ 2015-09-11T15:58:45+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958325&version=1.0&sign=093b72ba3c28b6378af1fb68df9435eb&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001668s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005950s ]
+
+[ 2015-09-11T15:59:06+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958346&version=1.0&sign=e20515f371d7d1f5c9ba3963c4342039&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005907s ]
+
+[ 2015-09-11T15:59:26+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958366&version=1.0&sign=222c1fd1abfaa3daf7a4bdfca2834e17&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001752s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005087s ]
+
+[ 2015-09-11T16:00:19+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958419&version=1.0&sign=b5cec08ef7d1368924f8db21db384725&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005105s ]
+
+[ 2015-09-11T16:00:43+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958443&version=1.0&sign=122233d51844213d4a652d2d5e7a9a37&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005398s ]
+
+[ 2015-09-11T16:04:15+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958655&version=1.0&sign=9aec33c955f1b053e4dbfb807eee0f65&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005735s ]
+
+[ 2015-09-11T16:04:17+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958657&version=1.0&sign=f9d36c9cefb1dee11c339359347f59a5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005688s ]
+
+[ 2015-09-11T16:04:17+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958657&version=1.0&sign=f9d36c9cefb1dee11c339359347f59a5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005276s ]
+
+[ 2015-09-11T16:04:18+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441958658&version=1.0&sign=a24753f3bb986cf4a46322e35d116549&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004951s ]
+
+[ 2015-09-11T16:10:15+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959015&version=1.0&sign=625869c96b28b54101abc9b0a940a65f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002734s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005375s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005320s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000526s ]
+
+[ 2015-09-11T16:10:16+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959016&version=1.0&sign=cc7049f0d82c3d1999ef7c982b853561&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002110s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005658s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005350s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000595s ]
+
+[ 2015-09-11T16:10:17+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959016&version=1.0&sign=cc7049f0d82c3d1999ef7c982b853561&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001906s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005707s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005649s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000582s ]
+
+[ 2015-09-11T16:10:36+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959036&version=1.0&sign=a60419aca8799adcd8fbe312428e864f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001744s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005753s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005380s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000530s ]
+
+[ 2015-09-11T16:10:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959037&version=1.0&sign=a9965e9c4c7e478e552f07fabdaae5fc&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005432s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005325s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000524s ]
+
+[ 2015-09-11T16:11:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959062&version=1.0&sign=133431ad97dfccf77aacead1dbe748d3&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005698s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005312s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000559s ]
+
+[ 2015-09-11T16:13:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959182&version=1.0&sign=1774a408babe5cae95403b1372cb17f5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002109s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005517s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005100s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000519s ]
+
+[ 2015-09-11T16:13:25+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959205&version=1.0&sign=61b57abd8ff58378c22b848c5b589c58&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001922s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005637s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.007883s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000749s ]
+
+[ 2015-09-11T16:13:26+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959206&version=1.0&sign=88dfc3770f6e501e60cf59d62cdb97a7&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005602s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005437s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000541s ]
+
+[ 2015-09-11T16:13:39+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959219&version=1.0&sign=4a30926c2a166278a9f0e631a2199594&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002177s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005405s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005340s ]
+NOTIC: [8] Undefined index: json_data D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\RegionAction.class.php 第 16 行.
+SQL: SELECT * FROM `zy_region` WHERE ( `area_type` = 1 ) ORDER BY sort asc,id asc  [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 12 行.
+
+[ 2015-09-11T16:15:27+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959327&version=1.0&sign=3358504ade932413a4b624ed5af7bbe9&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005691s ]
+
+[ 2015-09-11T16:15:36+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959336&version=1.0&sign=fad13f2bd6dd59dd052e48bc8b8f5782&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005360s ]
+
+[ 2015-09-11T16:15:43+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959343&version=1.0&sign=c5a55c8eaca8f585791f936db86eae35&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005920s ]
+
+[ 2015-09-11T16:25:20+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441959920&version=1.0&sign=f52eea756edb3d940dc19047e70d5520&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002106s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006159s ]
+
+[ 2015-09-11T16:32:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&time_stamp=1441960322&version=1.0&sign=32cd5de76344732033b461610b116599&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005298s ]
+
+[ 2015-09-11T16:32:27+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960347&version=1.0&sign=2ed17ba532a88c1892a98ec92f76b94c&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005880s ]
+
+[ 2015-09-11T16:32:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960374&version=1.0&sign=ccb36857c5c3de6933bdbbdf2d3320ef&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005521s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005144s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T16:32:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=cities&time_stamp=1441960374&version=1.0&sign=fac102f51eff39d72d2c9bad75383754&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005492s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005224s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T16:32:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=counties&time_stamp=1441960374&version=1.0&sign=b5ff3f942bbe0587ad85616302c9570e&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005876s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005673s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T16:36:16+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960576&version=1.0&sign=850829f03200e4b05a2eaba144b10f3a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002405s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006469s ]
+
+[ 2015-09-11T16:37:03+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005262s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:37:40+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005169s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:37:51+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001930s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005306s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:37:51+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005133s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:37:52+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002008s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005133s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:37:53+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005260s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:38:46+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005393s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:38:47+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005605s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:38:47+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006603s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:38:48+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006311s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:38:48+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005055s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:38:48+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005796s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:38:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002819s ]
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005419s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000344s ]
+
+[ 2015-09-11T16:39:07+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960615&version=1.0&sign=3cb693a4b11c93e9ba0ec08001201b3b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002440s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005511s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:39:26+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960766&version=1.0&sign=e8318cd3572036cad3ef8ef5ec41e1cb&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002472s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005415s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005421s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T16:39:26+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=cities&time_stamp=1441960766&version=1.0&sign=4e6f7d689f90d8693012ce3f0d9ce772&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002302s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005409s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005657s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T16:39:26+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=counties&time_stamp=1441960766&version=1.0&sign=4760c72352f8dc7e42acf4b7e0c656d4&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002121s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005595s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `zy_region` [ RunTime:0.005351s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-11T16:39:42+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960782&version=1.0&sign=ad3645f55d26f8d085fd20654fff2011&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005106s ]
+
+[ 2015-09-11T16:40:01+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005317s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:40:25+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005883s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 36 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 37 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 38 行.
+
+[ 2015-09-11T16:40:38+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005380s ]
+
+[ 2015-09-11T16:40:39+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002302s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005539s ]
+
+[ 2015-09-11T16:40:40+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005447s ]
+
+[ 2015-09-11T16:41:07+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+
+[ 2015-09-11T16:41:08+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+
+[ 2015-09-11T16:41:08+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+
+[ 2015-09-11T16:41:31+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005593s ]
+
+[ 2015-09-11T16:41:31+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002370s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005975s ]
+
+[ 2015-09-11T16:41:32+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005653s ]
+
+[ 2015-09-11T16:41:44+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002091s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006456s ]
+
+[ 2015-09-11T16:42:03+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002517s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+
+[ 2015-09-11T16:42:04+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+
+[ 2015-09-11T16:42:04+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001786s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+
+[ 2015-09-11T16:42:04+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001853s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+
+[ 2015-09-11T16:42:27+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005699s ]
+
+[ 2015-09-11T16:42:28+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005426s ]
+
+[ 2015-09-11T16:42:28+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002328s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005517s ]
+
+[ 2015-09-11T16:42:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005668s ]
+
+[ 2015-09-11T16:42:35+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005443s ]
+
+[ 2015-09-11T16:42:35+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002648s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.007253s ]
+
+[ 2015-09-11T16:43:04+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001987s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005487s ]
+
+[ 2015-09-11T16:43:05+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002138s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005416s ]
+
+[ 2015-09-11T16:43:05+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002228s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005876s ]
+
+[ 2015-09-11T16:43:06+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002922s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005847s ]
+
+[ 2015-09-11T16:43:10+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005442s ]
+NOTIC: [8] Undefined variable: vo D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 10 行.
+
+[ 2015-09-11T16:43:11+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001746s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005695s ]
+NOTIC: [8] Undefined variable: vo D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 10 行.
+
+[ 2015-09-11T16:43:15+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001734s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005300s ]
+NOTIC: [8] Undefined variable: vo D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 12 行.
+
+[ 2015-09-11T16:43:15+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001765s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005501s ]
+NOTIC: [8] Undefined variable: vo D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 12 行.
+
+[ 2015-09-11T16:43:16+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002652s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005366s ]
+NOTIC: [8] Undefined variable: vo D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\CommonAction.class.php 第 12 行.
+
+[ 2015-09-11T16:43:19+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002450s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006416s ]
+
+[ 2015-09-11T16:43:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005921s ]
+
+[ 2015-09-11T16:43:42+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002212s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006327s ]
+
+[ 2015-09-11T16:43:42+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001934s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005717s ]
+
+[ 2015-09-11T16:43:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002409s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005605s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000399s ]
+
+[ 2015-09-11T16:43:57+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001906s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006010s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000341s ]
+
+[ 2015-09-11T16:43:57+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003808s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005535s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000365s ]
+
+[ 2015-09-11T16:43:57+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005295s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000374s ]
+
+[ 2015-09-11T16:44:19+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005514s ]
+
+[ 2015-09-11T16:44:20+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005685s ]
+
+[ 2015-09-11T16:44:20+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005650s ]
+
+[ 2015-09-11T16:44:20+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005483s ]
+
+[ 2015-09-11T16:44:20+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005367s ]
+
+[ 2015-09-11T16:44:21+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005667s ]
+
+[ 2015-09-11T16:44:21+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001904s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005247s ]
+
+[ 2015-09-11T16:44:30+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002446s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005462s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000390s ]
+
+[ 2015-09-11T16:44:47+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961087&version=1.0&sign=92dbec887d163fde2e2518e9ea7a1568&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005438s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 21 行.
+
+[ 2015-09-11T16:44:47+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=cities&time_stamp=1441961087&version=1.0&sign=b1491a1f498bba2a86c9050534cf3dab&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002760s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005666s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000368s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 21 行.
+
+[ 2015-09-11T16:44:47+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=counties&time_stamp=1441961087&version=1.0&sign=42802414e74bd8c01c9345969a938968&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006123s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000356s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 21 行.
+
+[ 2015-09-11T16:45:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961101&version=1.0&sign=25d1774560193d55a2f910ad79c1687b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005579s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000526s ]
+
+[ 2015-09-11T16:45:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961102&version=1.0&sign=e4092bc72c35d18554edbf3df6fe4bf0&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002014s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005574s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000367s ]
+
+[ 2015-09-11T16:45:03+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961103&version=1.0&sign=ca7691c3a2196513466ebc98588d572b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005431s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000361s ]
+
+[ 2015-09-11T16:45:03+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961103&version=1.0&sign=ca7691c3a2196513466ebc98588d572b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001761s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005441s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000387s ]
+
+[ 2015-09-11T16:45:33+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961133&version=1.0&sign=cae4c15fd587de67dbd5baa0441d5ec7&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005932s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000359s ]
+
+[ 2015-09-11T16:45:49+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961149&version=1.0&sign=79c25d13db91bebc967c7141875d664d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005826s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000349s ]
+
+[ 2015-09-11T16:45:50+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961149&version=1.0&sign=79c25d13db91bebc967c7141875d664d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005765s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000380s ]
+
+[ 2015-09-11T16:46:03+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005158s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000343s ]
+
+[ 2015-09-11T16:46:25+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002228s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006378s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000391s ]
+
+[ 2015-09-11T16:46:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006012s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000418s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 66 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 67 行.
+NOTIC: [2] unlink(D:\wamp\www\guoji\yunwang\Cache/d41d8cd98f00b204e9800998ecf8427e.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Driver\Cache\CacheFile.class.php 第 161 行.
+
+[ 2015-09-11T16:46:50+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441960788&version=1.0&sign=dd17e7ea5a218bf756e554aed6462735&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006344s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001286s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 66 行.
+NOTIC: [8] Undefined index: module D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 67 行.
+NOTIC: [8] Undefined index: dir D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 68 行.
+NOTIC: [2] unlink(D:\wamp\www\guoji\yunwang\Cache/d41d8cd98f00b204e9800998ecf8427e.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Driver\Cache\CacheFile.class.php 第 161 行.
+
+[ 2015-09-11T16:47:04+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Del&appid=201586485090108670&m=Local&name=pvs&time_stamp=1441961224&version=1.0&sign=de2192a6b25488e584c703a39c204b01&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002007s ]
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005425s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000398s ]
+

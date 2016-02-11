@@ -1,0 +1,169 @@
+<include file="Public:header" />
+<SCRIPT LANGUAGE="JavaScript">
+function get_category(){
+    var pid = $('#toptid').val();
+	$.ajax({
+	   type: "POST",
+	   dataType:'json',
+	   url: "__URL__/get_category",
+	   data: "pid="+pid,
+	   success: function(objs){
+	     //alert(objs);
+		 html = '';
+		 for(i=0;i<objs.length;i++){			
+			if(i==0){
+			   html += '<option value='+objs[i].id+' selected>'+objs[i].name+'</option>';
+			}else{
+			   html += '<option value='+objs[i].id+'>'+objs[i].name+'</option>';	
+			}
+		 }
+		 $('#tid').html(html);
+	   }
+	}); 
+}
+</SCRIPT>
+<style>
+.tRight{
+  /*border:1px red solid;*/
+  width:120px;
+}
+</style>
+<div class="content">
+<div class="title">添加数据 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+
+<TR>
+	<TD class="tRight" >
+		<font color="red">*</font>商品名称：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="name" id="name" value="{$vo.name}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		副标题：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="subtitle" id="subtitle" value="{$vo.subtitle}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		&nbsp;分类 ：</td>
+	<TD>
+	  <select name="toptid" id="toptid" onchange="get_category();">
+		 <volist name="types" id="producttype">
+		 <option value="{$producttype.id}" <eq name="vo.tid" value="$producttype.id">selected</eq> >
+		 {$producttype.name}</option>
+		 </volist>
+	  </select>
+	  <select name="tid" id="tid">
+		 <volist name="types2" id="producttype">
+		 <option value="{$producttype.id}" <eq name="vo.tid" value="$producttype.id">selected</eq> >
+		 {$producttype.name}</option>
+		 </volist>
+	  </select>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		&nbsp;状态 ：</TD>
+	<TD>
+		<SELECT NAME="status">
+			<OPTION VALUE="0" <eq name="vo.status" value="0">SELECTED</eq>>未审核</OPTION>
+			<OPTION VALUE="1" <eq name="vo.status" value="1">SELECTED</eq>>审核通过</OPTION>
+		</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		<font color="red">*</font>商品总价格：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="money" id="money" value="{$vo.money}"> 元
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		<font color="red">*</font>云购单次价格：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="yunjiage" id="yunjiage" value="1"> 元
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		<font color="red">*</font>最大期数：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="maxqishu" id="maxqishu" value="{$vo.maxqishu}"> 期,	   期数上限为65535期,每期揭晓后会根据此值自动添加新一期商品！
+	</TD>
+</TR>
+
+<neq name="flags" value="">
+<TR>
+	<TD width="90">
+		&nbsp;自定义属性：</TD>
+	<TD colspan="4">
+		<table id="f_flag" border="0">
+			<TR>
+				<TD>
+			<volist name="flags" id="flag" key="k">
+			<input name="flags[]" value="{$flag['id']}" type="checkbox"
+			<php>
+			if($vo['flags']){
+			  $ar = explode(',',$vo['flags']);
+			  if(array_search($flag['id'],$ar)!==false){
+				echo 'checked="checked"';
+			  }
+			}
+			</php>	
+			>{$flag['name']}&nbsp;
+			<php>
+			if($k%5==0){
+			  echo "<br>";
+			}
+			</php>
+			</volist>		
+				</TD>
+			</TR>
+	   </table>
+	</TD>
+</TR>
+</neq>
+<TR id="pic">
+	<TD class="tRight" >
+		<font color="red">*</font>推荐图：
+	</TD>
+	<TD class="tLeft">
+		<input type="file" name="lit_pic" id="lit_pic" onchange="yulan(this,'show1')">
+		<div id="show1">
+		</div>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight tTop">内 容：</TD>
+	<TD class="tLeft" colspan="2">
+	<myhtml:editor type="KINDEDITOR"  id="content" name="content" width="650px" height="345px" items="base">{$vo.content}</myhtml:editor>
+	</TD>
+</TR>
+
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button" >
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

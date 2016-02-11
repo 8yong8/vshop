@@ -1,0 +1,740 @@
+[ 2015-07-13T19:19:22+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002040s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002166s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002041s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004368s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003803s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.001817s ]
+
+[ 2015-07-13T19:19:40+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001474s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001593s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002940s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003949s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001437s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003617s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000301s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000615s ]
+
+[ 2015-07-13T19:20:15+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003932s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004129s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003344s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003266s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000357s ]
+
+[ 2015-07-13T19:20:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003707s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003292s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003273s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004453s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000314s ]
+
+[ 2015-07-13T19:21:03+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001414s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003396s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003246s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000281s ]
+
+[ 2015-07-13T19:21:13+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002316s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002439s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003399s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003662s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000732s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_id,c.product_id,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000337s ]
+
+[ 2015-07-13T19:22:09+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000699s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003414s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003969s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000164s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000659s ]
+
+[ 2015-07-13T19:22:20+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000732s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003392s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.003095s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000292s ]
+
+[ 2015-07-13T20:45:41+08:00 ] 127.0.0.1 /guoji/yunwang/api/Cart/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002521s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001977s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.006556s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `zy_cart` [ RunTime:0.004096s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_cart` LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageno D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CartAction.class.php 第 17 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.001026s ]
+
+[ 2015-07-13T21:38:09+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001675s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002018s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+ERR: 模板不存在[./Home/Tpl/Public/error.html]
+
+[ 2015-07-13T21:38:43+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002307s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002406s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+ERR: 模板不存在[./Home/Tpl/Public/error.html]
+
+[ 2015-07-13T21:39:18+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000735s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+ERR: 模板不存在[./Home/Tpl/Public/error.html]
+
+[ 2015-07-13T21:39:19+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001264s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+ERR: 模板不存在[./Home/Tpl/Public/error.html]
+
+[ 2015-07-13T21:39:19+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001458s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+ERR: 模板不存在[./Home/Tpl/Public/error.html]
+
+[ 2015-07-13T21:39:48+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001763s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001863s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003632s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003418s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) ORDER BY id desc  [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.005316s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') )  [ RunTime:0.000544s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 27 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 56 行.
+ERR: 模板不存在[./Home/Tpl/Order/confirm.html]
+
+[ 2015-07-13T21:41:07+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001856s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003680s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000547s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.004732s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) ORDER BY id desc  [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.003475s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') )  [ RunTime:0.000456s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 40 行.
+
+[ 2015-07-13T21:41:20+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000816s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004183s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001312s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.004384s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) ORDER BY id desc  [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.003409s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') )  [ RunTime:0.000459s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 40 行.
+
+[ 2015-07-13T21:51:18+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002623s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002734s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002502s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005106s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003289s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.003198s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') )  [ RunTime:0.000461s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 23 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 41 行.
+
+[ 2015-07-13T21:51:43+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002023s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002203s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003412s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000455s ]
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: nums D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.005516s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.003637s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') )  [ RunTime:0.000570s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN ('') ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 23 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 41 行.
+
+[ 2015-07-13T22:08:49+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002778s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003066s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004381s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003732s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: item_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.003382s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 32 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 498 行.
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN () )  [ RunTime:0.000115s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN () ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 36 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 54 行.
+
+[ 2015-07-13T22:17:18+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002549s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002661s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002105s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005279s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.004396s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000562s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: item_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.004510s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 30 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 498 行.
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN () )  [ RunTime:0.000134s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN () ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 34 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 52 行.
+
+[ 2015-07-13T22:17:24+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002354s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002576s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001959s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003766s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.004027s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000708s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: item_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.003836s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 30 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 498 行.
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN () )  [ RunTime:0.000118s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN () ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 34 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 52 行.
+
+[ 2015-07-13T22:17:24+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003336s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003584s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005221s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.005591s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000569s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: item_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `zy_goods` [ RunTime:0.004976s ]
+ERR: 1146:Table 'yunwang.zy_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zy_goods`
+NOTIC: [8] Undefined index: ids D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 30 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 498 行.
+SQL: SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN () )  [ RunTime:0.000143s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `id`,`member_id`,`member_name`,`realname`,`product_name`,`subtitle`,`price`,`inventory`,`lit_pic`,`price`,`tid`,`is_dm`,`is_buyback` FROM `zy_goods` WHERE ( `id` IN () ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 34 行.
+NOTIC: [8] Undefined variable: list2 D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 52 行.
+
+[ 2015-07-13T22:17:35+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002510s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002705s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005846s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003723s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004630s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000427s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: product_type D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.004574s ]
+SQL: SELECT DISTINCT  `cat_id` FROM `zy_attribute` WHERE ( `attr_type` = 1 )  [ RunTime:0.000388s ]
+
+[ 2015-07-13T22:17:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003039s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003228s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002082s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003667s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003547s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.005293s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: product_type D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003633s ]
+SQL: SELECT DISTINCT  `cat_id` FROM `zy_attribute` WHERE ( `attr_type` = 1 )  [ RunTime:0.000351s ]
+
+[ 2015-07-13T22:17:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003635s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003745s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001997s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003795s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003653s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004947s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000246s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: product_type D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003811s ]
+SQL: SELECT DISTINCT  `cat_id` FROM `zy_attribute` WHERE ( `attr_type` = 1 )  [ RunTime:0.000357s ]
+
+[ 2015-07-13T22:17:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003688s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003834s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002060s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005298s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003870s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003775s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: product_type D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003644s ]
+SQL: SELECT DISTINCT  `cat_id` FROM `zy_attribute` WHERE ( `attr_type` = 1 )  [ RunTime:0.000363s ]
+
+[ 2015-07-13T22:18:00+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003037s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003321s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002266s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004081s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.004467s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003845s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003555s ]
+SQL: SELECT DISTINCT  `cat_id` FROM `zy_attribute` WHERE ( `attr_type` = 1 )  [ RunTime:0.000323s ]
+
+[ 2015-07-13T22:18:00+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001574s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002599s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003910s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003580s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004514s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003877s ]
+SQL: SELECT DISTINCT  `cat_id` FROM `zy_attribute` WHERE ( `attr_type` = 1 )  [ RunTime:0.000337s ]
+
+[ 2015-07-13T22:18:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001669s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001760s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002343s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005904s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.004620s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003748s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000150s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003532s ]
+SQL: SELECT DISTINCT  `cat_id` FROM `zy_attribute` WHERE ( `attr_type` = 1 )  [ RunTime:0.000349s ]
+
+[ 2015-07-13T22:18:28+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001720s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002092s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003844s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003853s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004407s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000354s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003691s ]
+SQL: SELECT DISTINCT  `cat_id` FROM `zy_attribute` WHERE ( `attr_type` = 1 ) AND ( `cat_id` = 9 )  [ RunTime:0.000340s ]
+
+[ 2015-07-13T22:18:43+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001878s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002056s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002101s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003851s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003980s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004324s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003546s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_attribute` WHERE ( `attr_type` = 1 ) AND ( `cat_id` = 9 ) LIMIT 1   [ RunTime:0.000291s ]
+
+[ 2015-07-13T22:18:44+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001568s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002638s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004462s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.005494s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004907s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.004004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_attribute` WHERE ( `attr_type` = 1 ) AND ( `cat_id` = 9 ) LIMIT 1   [ RunTime:0.000290s ]
+
+[ 2015-07-13T22:18:45+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001747s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002099s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003825s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003694s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.005062s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000298s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_attribute` WHERE ( `attr_type` = 1 ) AND ( `cat_id` = 9 ) LIMIT 1   [ RunTime:0.000298s ]
+
+[ 2015-07-13T22:18:55+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001595s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002241s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003717s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.004116s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004139s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003480s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_attribute` WHERE ( `attr_type` = 1 ) AND ( `cat_id` = 10 ) LIMIT 1   [ RunTime:0.000174s ]
+
+[ 2015-07-13T22:18:56+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001762s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001880s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002153s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003758s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003651s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004736s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003554s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_attribute` WHERE ( `attr_type` = 1 ) AND ( `cat_id` = 10 ) LIMIT 1   [ RunTime:0.000203s ]
+
+[ 2015-07-13T22:19:00+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&product_id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001864s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002026s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002670s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003606s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003819s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.005132s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 19 行.
+SQL: SELECT `id`,`name`,`sn`,`lit_pic`,`price`,`product_type` FROM `zy_product` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: num D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `zy_attribute` [ RunTime:0.003697s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_attribute` WHERE ( `attr_type` = 1 ) AND ( `cat_id` = 11 ) LIMIT 1   [ RunTime:0.000196s ]
+
+[ 2015-07-13T22:29:49+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&cart_ids=1,2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002881s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003153s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003439s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003636s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000696s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: item_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 37 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) AND ( a.id IN ('1','2') ) ORDER BY id desc  [ RunTime:0.001194s ]
+
+[ 2015-07-13T22:31:37+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order/confirm?&cart_ids=1,2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003112s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003322s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003611s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `zy_member_address` [ RunTime:0.003862s ]
+SQL: SELECT * FROM `zy_member_address` WHERE ( `member_id` = 107 ) AND ( `default` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000887s ]
+NOTIC: [8] Undefined index: product_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: item_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 37 行.
+SQL: SELECT a.*,b.lit_pic,b.price,c.product_attr,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_cart` as a LEFT JOIN `zy_product` as b on a.product_id=b.id LEFT JOIN `zy_product_item` as c on a.item_id=c.id WHERE ( a.member_id = '107' ) AND ( a.id IN ('1','2') ) ORDER BY id desc  [ RunTime:0.000541s ]
+

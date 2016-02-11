@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="robots" content="nofollow" />
+<TITLE>『后台管理平台』 </TITLE>
+<load href ="__PUBLIC__/Css/style.css" />
+<load href ="__PUBLIC__/Css/page.css" />
+<load href ="__PUBLIC__/Js/jquery.js" />
+<script src ="__PUBLIC__/Js/My97DatePicker/WdatePicker.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+//指定当前组模块URL地址
+var ROOT = '__ROOT__';
+var URL = '__URL__';
+var APP	 =	 '__MODULE__';
+var PUBLIC = '__PUBLIC__';
+</script>
+</HEAD>
+
+<body>
+<!-- 头部区域 -->
+<div id="header" class="header">
+<div class="headTitle" style="margin:8pt 10pt">  后台管理 您好，{$Think.session.nickname}!
+<volist name="ac_sites" id="ac_site">
+<eq name="ac_site.key" value="$Think.session.ac_site">
+<font color="red">[{$ac_site.name}]</font>
+<else/>
+<a href="__MODULE__/Public/setsite/city/{$ac_site.key}">[{$ac_site.name}]</a>  
+</eq>
+</volist>
+
+</div>
+	<!-- 功能导航区 -->
+	<div class="nav">
+            <A HREF="__MODULE__/Index/index/">首 页</A> | 
+            <A HREF="__MODULE__/Index/clear_cache/">清除缓存</A> | 
+            <A HREF="__MODULE__/Public/logout/">退 出</A>
+        </div>
+</div>
+<include file="../Public/menu" />

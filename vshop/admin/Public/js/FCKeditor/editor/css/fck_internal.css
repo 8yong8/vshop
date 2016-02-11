@@ -1,0 +1,22 @@
+﻿html
+{
+min-height: 100%;
+}
+table.FCK__ShowTableBorders, table.FCK__ShowTableBorders td, table.FCK__ShowTableBorders th
+{
+border: #7AC4EA 1px solid;
+}
+form
+{
+border: 1px dotted #FF0000;
+padding: 2px;
+}
+.FCK__Media
+{
+border: darkgray 1px solid;
+background-position: center center;
+background-image: url(images/fck_medialogo.gif);
+background-repeat: no-repeat;
+width: 80px;
+height: 80px;
+}

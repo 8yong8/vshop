@@ -1,0 +1,33 @@
+<include file="Public:header" />
+<script>
+var p = 1;
+var product_id = '{$Think.get.product_id}';
+var grade = '{$grade}';
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/apply/feedback.js"></script>
+<div class="menu2">
+   <a class="back2" href="__APP__/Product/detail?id={$Think.get.product_id}"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">商品评价</div>
+</div>
+<div class="goods_bbs">
+   <div class="bbs_nav">
+     <ul>
+        <li <eq name="grade" value="">class="cur"</eq>><a href="__APP__/Feedback/?product_id={$Think.get.product_id}">全部</a></li>
+        <li <eq name="grade" value="3">class="cur"</eq>><a href="__APP__/Feedback/?product_id={$Think.get.product_id}&grade=3">好评</a></li>
+        <li <eq name="grade" value="2">class="cur"</eq>><a href="__APP__/Feedback/?product_id={$Think.get.product_id}&grade=2">中评</a></li>
+        <li <eq name="grade" value="1">class="cur"</eq>><a href="__APP__/Feedback/?product_id={$Think.get.product_id}&grade=1">差评</a></li>
+     </ul>
+   </div>
+   <div class="bbs_list">
+	   <volist name="list" id="feedback">
+       <div class="bl_box">
+          <div class="blbox_tt"><span class="star{$feedback.grade}"></span><em>{$feedback.member_name|name_hide}</em>{$feedback.create_time}</div>
+          <div class="blbox_info">{$feedback.content}</div>
+       </div>
+	   </volist>
+   </div>
+   <gt name="page_count" value="1">
+   <div class="bbs_more"><a href="javascript:get_more();">+点击加载更多评价...</a></div>
+   </gt>
+</div>
+<include file="Public:footer" />

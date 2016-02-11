@@ -1,0 +1,60 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<style>
+select.multiSelect{width:100%; border:0px; padding:0px; margin:0px; overflow:hidden; background:white; font:100%/1.0em Arial,Helvetica,sans-serif; color:#444}
+</style>
+<include file="Public:header" />
+<!-- 菜单区域  -->
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<load href="__PUBLIC__/Js/Util/JTree.js" />
+<load href="__PUBLIC__/Js/prototype.js" />
+<load href="__PUBLIC__/Js/mootools.js" />
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title"> 应用授权 [ <a href="__URL__">返回</a> ]</div>
+<!--  功能组区域  -->
+<script language="JavaScript">
+<!--
+function saveAccess(){
+ThinkAjax.sendForm('form1','__URL__/setApp/');
+}
+//-->
+</script>
+<div id="result" class="result none"></div>
+<load href="__PUBLIC__/Js/Form/MultiSelect.js" />
+<form method='post' id="form1">
+<table class="select" style="width:265px" align="center">
+<tr><td height="5" colspan="3" class="topTd" ></td></tr>
+<tr><Th class="tCenter">应用授权 | <a href="__URL__/module/groupId/{$Think.get.groupId}">模块授权</a> | <a href="__URL__/action/groupId/{$Think.get.groupId}">操作授权</a>
+</Th></tr>
+<tr><Td class="tRight">当前组：<html:select name="groupId" style="medium" change="location.href = '?groupId='+this.options[this.selectedIndex].value;" first="选择组" options="groupList" selected="selectGroupId" />
+</Td></tr>
+<tr><td>
+<html:select id="groupAppId" name="groupAppId[]" options="appList" selected="groupAppList"  multiple="true" style="multiSelect" size="15" />
+</td>
+</tr>
+<tr>
+<td  class="row tCenter" >
+<input type="button" onclick="allSelect()" value="全 选" class="submit  ">
+<input type="button" onclick="InverSelect()" value="反 选" class="submit  ">
+<input type="button" onclick="allUnSelect()" value="全 否" class="submit ">
+<input type="button" onclick="saveAccess()" value="保 存" class="submit  ">
+<input type="hidden" name="groupId" VALUE="{$Think.get.id}" >
+<input type="hidden" name="module" value="Node">
+<input type="hidden" name="ajax" VALUE="1">
+</td>
+</tr>
+<tr>
+<td height="5" class="bottomTd" >
+</td>
+</tr>
+</table>
+</form>
+
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+

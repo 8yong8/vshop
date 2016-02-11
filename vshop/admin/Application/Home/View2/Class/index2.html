@@ -1,0 +1,64 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="Public:header" />
+<script>
+ function GiveCache(){
+   location.href = "__URL__/giveCache";
+ }
+
+  function typeset(id){
+    window.location.href = "__URL__/typeset/id/"+id;
+  }
+</script>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">后台分类列表</div>
+<!--  功能操作区域  -->
+<div class="operate" >
+<html:imageBtn name="add" value="新增" click="add()" style="impBtn hMargin fLeft shadow" />
+<html:imageBtn name="edit" value="编辑" click="edit()" style="impBtn hMargin fLeft shadow" />
+<html:imageBtn name="sort" value="排序" click="sort()" style="impBtn hMargin fLeft shadow" />
+<div class="impBtn hMargin fLeft shadow" ><input type="button" name="sort" value="状态通过" onclick="resume()" class="imgButton" style="width:90px"></div>
+
+<div class="impBtn hMargin fLeft shadow" ><input type="button" name="sort" value="状态禁用" onclick="forbid()" class="imgButton" style="width:90px"></div>
+<html:imageBtn name="delete" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+<!-- 查询区域 -->
+<div class="fRig">
+<FORM METHOD="GET" ACTION="__URL__">
+<div class="fLeft"><span id="key"><INPUT TYPE="text" NAME="name" title="标题查询" class="medium" ></span></div>
+<html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" />
+</div>
+<!-- 高级查询区域 -->
+<div  id="searchM" class=" none search cBoth" >
+<TABLE cellpadding="1" cellspacing="2" width="100%">
+<TR>
+	<TD class="tRight">分类：</TD>
+	<TD><INPUT TYPE="text" NAME="email" class="medium " ></TD>
+	<TD class="tRight">内容：</TD>
+	<TD><INPUT TYPE="text" NAME="name" class="large " ></TD>
+</TR>
+</TABLE>
+</div>
+</FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<html:list id="checkList" name="user" style="list" checkbox="true" action="true" datasource="list" show="id:编号|8%,name:名称:edit" actionlist="status|showStatus=$user['id'],edit:编辑,typeset:排版" /> 
+</div>
+<!--  分页显示区域 -->
+<div class="page">{$page}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" />  

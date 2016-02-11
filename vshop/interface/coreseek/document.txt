@@ -1,0 +1,3 @@
+cd D:\wamp\www\gongsi\obj1\interface\coreseek/bin
+indexer.exe -c D:\wamp\www\gongsi\obj1\interface\coreseek/etc/137_mysql.conf article_index --rotate
+searchd.exe -c D:\wamp\www\gongsi\obj1\interface\coreseek/etc/137_mysql.conf

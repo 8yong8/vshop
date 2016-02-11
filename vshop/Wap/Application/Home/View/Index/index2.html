@@ -1,0 +1,284 @@
+<include file="Public:header" />
+<!--大图-->
+<div class="banner_k">
+	<div class="banner"><img src="__PUBLIC__/images/banner.png" width="1100" height="321" /></div>
+</div>
+<!--大图end-->
+
+<!--在线竞拍-->
+<!--
+<div class="online_k">
+	<div class="online_sell">
+		<div class="onlineSell_top">
+			<div class="onlineSell_title">在线竞拍</div>
+			<div class="onlineSell_more"><a href="__APP__/Auction">更多竞拍>></a></div>
+		</div>
+
+		<div class="onlineSell_nr">
+		        <volist name="auctions" id="auction">
+				<div class="onlineSell_nrk">
+					<div class="onlineSell_nrkPic"><a href="__APP__/Auction/detail/id/{$auction.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank"><img src="{$auction.lit_pic}" width="250px;" height="250px;"></a></div>
+					<div class="onlineSell_nrktext">
+						<div class="onlineSell_textL">
+							<div class="onlineSell_textL_t">{$auction.product_name}</div>
+							<div class="onlineSell_textL_P">当前价<span class="onlineSell_Price" id="price_{$auction.id}">￥{$auction.realprice}</span></div>
+							<div class="onlineSell_textL_time">
+							<?php if($auction['starttime']>time()){  ?>
+							距开始
+							<?php  }else{ ?>
+							距结束
+							<?php } ?>							
+							<span class="onlineSell_time" id="time_{$auction.id}">拍卖已结束</span></div>
+							<script>
+							dotime('{$auction.id}',<?php 
+							if($auction['starttime']>time()){
+							  echo $auction['starttime']-time();
+							}else{
+							  echo $auction['endtime']-time();
+							}
+							?>);
+							</script>
+						</div>
+						<div class="onlineSell_textR">
+							<div class="onlineSell_textR_bg">
+									<div class="onlineSell_times" id="auctioncount_{$auction.id}">{$auction.auctioncount}</div>
+									<div class="onlineSell_Rwz">次出价</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</volist>
+
+		</div>
+
+
+</div>
+</div>
+-->
+<!--在线竞end拍-->
+<!--咨询新闻[[-->
+
+
+
+<div class="art_new">
+	<div class="art_new_in">
+		<!--新闻头部[[-->
+		<div class="art_new_top">
+				<div class="onlineSell_title">艺术品资讯</div>
+				<div class="onlineSell_more"><a href="__APP__/News">更多新闻>></a></div>
+		</div>
+		<!--新闻头部]]-->
+		<!--新闻体[[-->
+		<div class="art_new_contain">
+				<dl class="art_detail">
+					<dt><a href="__APP__/News/detail/id/{$arts['0']['id']}" target="_blank"><img src="{$arts['0']['lit_pic']}" width="123px;" height="123px;"></a></dt>
+					<dd>
+						<div class="artIn">
+							<h3 class="art_title">{$arts['0']['title']}</h3>
+							<p class="art_desc">{$arts['0']['content']|str_cut='128'}</p>
+						</div>
+					</dd> 
+					<p class="timeTag">{$arts['0']['create_time']|toDate='Y-m-d H:i:s'}</p>
+				</dl>
+				<ul class="art_list">
+				  <volist name="arts" id="art" key="k">
+				    <gt name="k" value="1">
+					<li>
+						<p class="art_list_in"><a href="__APP__/News/detail/id/{$art.id}" target="_blank">{$art.title}</a><span>{$art.create_time|toDate='Y-m-d H:i:s'}</span></p>
+					</li>
+					</gt>
+				  </volist>
+				</ul>
+
+		</div>
+		<!--新闻体]]-->
+	</div>
+
+</div>
+
+
+<!--咨询新闻]]-->
+<!--楼层[[-->
+<div class="floor">
+	<!--1楼[[-->
+	<div class="f floor1">
+		<div class="floor_l">
+			<div class="floor_l_t">F1&nbsp;&nbsp;中国国画</div>
+			<img src="__PUBLIC__/images/f1.jpg">
+		</div>
+		<div class="floor_r">
+			<ul class="floor_r_nav">
+				<li class="active" tag-id="n1">热门推荐</li>
+				<li tag-id="n2">名家名画</li>
+				<li tag-id="n3">人物画</li>
+				<li tag-id="n4">山水画</li>
+				<li tag-id="n5">花鸟画</li>
+				<li tag-id="n6">当代水墨画</li>
+				<li class="more"><a href="__APP__/Goods/lists/toptid/1" target="_blank">更多</a></li>
+			</ul>
+			<div class="floor_r_wrapper">
+			<div class="floor_r_scroll">
+			<ul class="floor_r_contain" tag-id="c1">
+		        <volist name="hua_hots" id="hua_hot" target="_blank">
+				<a href="__APP__/Goods/detail/id/{$hua_hot.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$hua_hot.lit_pic}"></div>
+					<p id="pro_tit">{$hua_hot.product_name}</p>
+					<p id="pro_pri">￥{$hua_hot.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c2">
+		        <volist name="mjmhs" id="mjmh" target="_blank">
+				<a href="__APP__/Goods/detail/id/{$mjmh.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$mjmh.lit_pic}"></div>
+					<p id="pro_tit">{$mjmh.product_name}</p>
+					<p id="pro_pri">￥{$mjmh.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c3">
+		        <volist name="rwhs" id="rwh" target="_blank">
+				<a href="__APP__/Goods/detail/id/{$rwh.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$rwh.lit_pic}"></div>
+					<p id="pro_tit">{$rwh.product_name}</p>
+					<p id="pro_pri">￥{$rwh.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c4">
+		        <volist name="sshs" id="ssh" target="_blank">
+				<a href="__APP__/Goods/detail/id/{$ssh.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$ssh.lit_pic}"></div>
+					<p id="pro_tit">{$ssh.product_name}</p>
+					<p id="pro_pri">￥{$ssh.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c5">
+		        <volist name="hnhs" id="hnh" target="_blank">
+				<a href="__APP__/Goods/detail/id/{$hnh.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$hnh.lit_pic}"></div>
+					<p id="pro_tit">{$hnh.product_name}</p>
+					<p id="pro_pri">￥{$hnh.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c6">
+		        <volist name="smhs" id="smh" target="_blank">
+				<a href="__APP__/Goods/detail/id/{$smh.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$smh.lit_pic}"></div>
+					<p id="pro_tit">{$smh.product_name}</p>
+					<p id="pro_pri">￥{$smh.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--1楼层]]-->
+<!--2楼层[[-->
+<div class="f floor1">
+		<div class="floor_l">
+			<div class="floor_l_t" style="background:#ffa042">F2&nbsp;&nbsp;书法</div>
+			<img src="__PUBLIC__/images/f2.jpg">
+		</div>
+		<div class="floor_r">
+			<ul class="floor_r_nav">
+				<li class="active" tag-id="n1">热门推荐</li>
+				<li tag-id="n2">横幅</li>
+				<li tag-id="n3">竖幅</li>
+				<li tag-id="n4">斗方</li>
+				<li tag-id="n5">对联</li>
+				<li tag-id="n6">册画</li>
+				<li class="more"><a href="__APP__/Goods/lists/toptid/2" target="_blank">更多</a></li>
+			</ul>
+			<div class="floor_r_wrapper">
+			<div class="floor_r_scroll">
+			<ul class="floor_r_contain" tag-id="c1">
+		        <volist name="sf_hots" id="sf_hot">
+				<a href="__APP__/Goods/detail/id/{$sf_hot.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$sf_hot.lit_pic}"></div>
+					<p id="pro_tit">{$sf_hot.product_name}</p>
+					<p id="pro_pri">￥{$sf_hot.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c2">
+		        <volist name="hengfus" id="hengfu">
+				<a href="__APP__/Goods/detail/id/{$hengfu.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$hengfu.lit_pic}"></div>
+					<p id="pro_tit">{$hengfu.product_name}</p>
+					<p id="pro_pri">￥{$hengfu.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c3">
+		        <volist name="shufus" id="shufu">
+				<a href="__APP__/Goods/detail/id/{$shufu.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$shufu.lit_pic}"></div>
+					<p id="pro_tit">{$shufu.product_name}</p>
+					<p id="pro_pri">￥{$shufu.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c4">
+		        <volist name="doufangs" id="doufang">
+				<a href="__APP__/Goods/detail/id/{$doufang.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$doufang.lit_pic}"></div>
+					<p id="pro_tit">{$doufang.product_name}</p>
+					<p id="pro_pri">￥{$doufang.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c5">
+		        <volist name="duilians" id="duilian">
+				<a href="__APP__/Goods/detail/id/{$duilian.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$duilian.lit_pic}"></div>
+					<p id="pro_tit">{$duilian.product_name}</p>
+					<p id="pro_pri">￥{$duilian.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			<ul class="floor_r_contain" tag-id="c6">
+		        <volist name="cehua" id="cehua">
+				<a href="__APP__/Goods/detail/id/{$cehua.id}<neq name='user' value=''>/share_id/{$user.id}</neq>" target="_blank">
+				<li>
+					<div class="pro_img" img-src="{$cehua.lit_pic}"></div>
+					<p id="pro_tit">{$cehua.product_name}</p>
+					<p id="pro_pri">￥{$cehua.price}元</p>
+				</li>
+				</a>
+				</volist>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--2楼层]]-->
+</div>
+<!--楼层]]-->
+</div>
+<include file="Public:footer" />

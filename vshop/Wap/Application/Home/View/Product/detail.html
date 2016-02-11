@@ -1,0 +1,230 @@
+<include file="Public:header" />
+
+<link type="text/css" href="__PUBLIC__/css/imgbox.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.touchSlider.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+	},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+	});
+	
+	$dragBln = false;
+	
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e){
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	});
+	
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	});
+	
+	$(".main_image a").click(function(){
+		if($dragBln) {
+			return false;
+		}
+	});
+	
+	timer = setInterval(function(){
+		$("#btn_next").click();
+	}, 5000);
+	
+	$(".main_visual").hover(function(){
+		clearInterval(timer);
+	},function(){
+		timer = setInterval(function(){
+			$("#btn_next").click();
+		},5000);
+	});
+	
+	$(".main_image").bind("touchstart",function(){
+		clearInterval(timer);
+	}).bind("touchend", function(){
+		timer = setInterval(function(){
+			$("#btn_next").click();
+		}, 5000);
+	});
+	
+});
+
+</script>
+
+<script type="text/javascript">
+
+var item_id;//产品id
+var type = 1;//1购物车下单 2立即购买 默认购物车
+var stock = {$vo.stock};//库存
+var product_id = '{$vo.id}';
+<neq name="data" value="">
+var startTime = new Date().getTime();
+var keys = eval('({$keys})');				//所有产品属性
+var data = eval('({$data})');				//所有产品
+<else/>
+function sent(){
+	if(type==1){
+		$.ajax({
+			cache: true,
+			dataType:'json',
+			type: "POST",
+			url:'__APP__/Cart/add',
+			data:'product_id={$vo.id}&num='+$('#shu').val(),
+			async: false,
+			error: function(request) {
+				showMessage('系统繁忙',1500);
+				/*
+				art.dialog({
+					time: 1.5,
+					content: '系统繁忙'
+				});
+				*/
+			},
+			success: function(data) {
+				//alert(data);return;
+				if(data.error_code==0){
+					showMessage('添加购物车成功',1500);
+					setTimeout(function(){
+						document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';			
+					},1500);
+
+					return;
+				}else{
+					showMessage(data.notice,1500);
+				}
+			}
+		});	
+	}else{
+	  window.location.href = ROOT+'/Order/confirm?product_id={$vo.id}&num='+$('#shu').val();
+	}
+}
+</neq>
+</script>
+
+<neq name="data" value="">
+<script type="text/javascript" src="__PUBLIC__/js/apply/sku.js"></script>
+</neq>
+<script type="text/javascript" src="__PUBLIC__/js/apply/product.js"></script>
+
+</head>
+
+<body>
+
+<div class="viewport">
+<div class="buy">
+	<neq name="favorite" value="">
+    <a class="sc" id="favorite" href="javascript:;" onclick="favorite(2,'Product',{$favorite.id})"></a>
+	<else/>
+	<a class="ysc" id="favorite" href="javascript:;" onclick="favorite(1,'Product',{$vo.id})"></a>
+	</neq>
+    <input type="button" value="立即购买" class="gbtn" onclick="set_type(2);">
+    <input type="button" value="加入购物车" class="gwc" onclick="set_type(1);">
+</div>
+<div id="light" class="white_info">
+    <div class="close2"><a href="javascript:void(0);" onClick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"></a></div> 
+    <div class="g_info">
+       <div class="gimg"><img src="{$vo.lit_pic}"></div>
+	   <div class="ginfo">
+           <p>￥<span id="price">{$vo.price}</span></p>
+           <span id="stock">库存{$vo.stock}件</span><br>
+		   <neq name="attrs" value="">
+		   <span id="spec">请选择<volist name="attrs" id="attr"> &nbsp;&nbsp;{$attr.atrr_name}</volist>
+		   </span>
+		   </neq>
+       </div>
+    </div>
+    <div class="g_ch">
+	   <volist name="attrs" id="attr" key="k">
+       <div class="g_size">
+          <div class="g_ch_tt">{$attr.atrr_name}</div>
+          <ul>
+			 <volist name="attr.val" id="attr_val">
+			 <li><input type="button" class="sku" attr_id="{$attr_val.id}" value="{$attr_val.val}" attr_name="{$attr.atrr_name}" /></li>
+			 </volist>
+          </ul>
+       </div>
+	   </volist>
+       <div class="g_num">
+            <div class="num_left">数 量</div>
+            <div class="num_right">
+                 <input type="button" class="jj" value="-" onclick="update_num(1);">
+                 <input type="text" class="shu" id="shu" value="1"  onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" >
+                 <input type="button" class="jj" value="+" onclick="update_num(2);">
+            </div>
+       </div>
+    </div>
+    <div class="g_sure"><input type="button" value="确 定" class="ok" onclick="sent();return;document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="close"></div>
+</div>
+<div id="fade" class="black_over"></div>  
+<div class="top">
+    <div class="logo"></div>
+    <div class="top_menu">
+       <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+       </ul>
+    </div>
+</div>
+<div class="menu2">
+   <a class="back2" href="__APP__/Product/lists"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">商品详情</div>
+</div>
+<!--图片展示开始-->
+<div class="goods_img">
+     <div class="main_visual">
+	<div class="flicking_con">
+		<volist name="vo.imgs" id="img" key="k">
+		<a href="#">{$i+1}</a>
+		</volist>
+	</div>
+	<div class="main_image">
+		<ul>
+			<volist name="vo.imgs" id="img" key="k">
+			<li><img src="{$img.url|get_thumb='200'}"></li>
+			</volist>
+		</ul>
+	</div>
+</div>
+<div class="clear"></div>
+</div>
+<!--图片展示开始结束-->
+<div class="goods_info">
+   <div class="goods_name">{$vo.name}</div>
+   <div class="goods_price">￥{$vo.price}<em>￥{$vo.market_price}</em></div>
+   <div class="huodong">
+      <neq name="pm" value=""><div class="hd_st1">{$pm.info}</div></neq>
+      <eq name="vo.is_free_shipping" value="1"><div class="hd_st2">本商品是包邮商品</div></eq>
+   </div>
+   <div class="promise">
+      <ul>
+         <li><span class="a">100%正品</span></li>
+         <li><span class="b">厂家直供</span></li>
+         <li><span class="c">7天包退换</span></li>
+      </ul>
+   </div>
+   <div class="others">
+      <ul>
+         <li><a class="tv" href="__APP__/Product/imageText?id={$vo.id}">图文详情</a></li>
+         <li><a class="pj" href="__APP__/Feedback/index?product_id={$vo.id}">商品评价</a></li>
+      </ul>
+   </div>
+</div>
+<include file="Public:footer" />

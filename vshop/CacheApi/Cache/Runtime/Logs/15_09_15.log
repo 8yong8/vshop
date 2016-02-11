@@ -1,0 +1,1281 @@
+[ 2015-09-15T22:32:32+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=nfpu3904x74gwlkc2hc4xns0twq8b7bc&time_stamp=1442327552&version=1.0&sign=d212225dd31f1e7ba9da04bf1e20c132&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006958s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Driver\Cache\CacheFile.class.php 第 46 行.
+NOTIC: [2] file_put_contents(D:\wamp\www\guoji\yunwang\Cache/Product/000/00/00/10/detail.php) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: No such file or directory D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Driver\Cache\CacheFile.class.php 第 142 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 21 行.
+
+[ 2015-09-15T22:39:09+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=7iyf7faaces61kb74znbsun6hubprgun&time_stamp=1442327949&version=1.0&sign=b1f0285bd10f66590d54231b6c0359ec&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001943s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004873s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000898s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Driver\Cache\CacheFile.class.php 第 46 行.
+NOTIC: [2] file_put_contents(D:\wamp\www\guoji\yunwang\Cache/Product/000/00/00/10/detail.php) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: No such file or directory D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Driver\Cache\CacheFile.class.php 第 142 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 21 行.
+
+[ 2015-09-15T22:40:08+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=e1pl7kavfr518f8bye07of1l4qrgg05j&time_stamp=1442328008&version=1.0&sign=f1793d563222331282a5826616e0e757&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002093s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+
+[ 2015-09-15T22:40:15+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=y5kbrlj89knywwqr4y6sjofk1kirstya&time_stamp=1442328015&version=1.0&sign=96dd959414359d4ec14dabd4686852fd&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003957s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000200s ]
+
+[ 2015-09-15T22:40:22+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=aek6zlv6k1rk2s9qcvyd5iveo84m06o8&time_stamp=1442328022&version=1.0&sign=b86f0ceb4c505838b11b85f3978711f2&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001907s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003864s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000189s ]
+
+[ 2015-09-15T22:40:57+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=j280xgwthsyynh4dquz66exl6orcaoyp&time_stamp=1442328057&version=1.0&sign=822fd07aae43bb1ee8a2522fc0f7722b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003534s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004003s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-15T22:41:48+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pvs&nonce_str=5qfvilvrwv0vnn70rnem12bo5j4gpvze&time_stamp=1442328108&version=1.0&sign=973fcbbb5d7d6fc4152018275beecd85&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004063s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-15T22:42:11+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pvs&nonce_str=wabdhuvjifrlm29hv7qyoem9y7udsgxo&time_stamp=1442328131&version=1.0&sign=1014b0960264530dfbddefe012fde035&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 22 行.
+
+[ 2015-09-15T22:43:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=u6rw2vapey5txatxbnf9dsd7i7px4oq7&time_stamp=1442328217&version=1.0&sign=ddb70a5d87219f0c633b677f7e7fad81&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006774s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:47:58+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=rodtcczmbmp8621wnwcvwoqszcik64wf&time_stamp=1442328478&version=1.0&sign=63b9731a51af437c01e5fd5d1dc7beec&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001837s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004486s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000549s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:48:23+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=rthrb90ehbznjfozaoyt21uhddr2xy6w&time_stamp=1442328503&version=1.0&sign=47a4988e3928bff95b476a7a5dab6c66&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004143s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:48:44+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=u521gv762cyz1r5wggu4u5k5eo0sjhr3&time_stamp=1442328524&version=1.0&sign=4342775bfa7569908f2e0ff9a6b116cc&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.007014s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:49:11+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=uxdl0qzkkkbl46iwfhzjpyl6cxeyb8dc&time_stamp=1442328551&version=1.0&sign=d0ad717d7b20cdfb4b3e4820f07875a2&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004368s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:50:08+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=5kxgcd1r0qcy9z4uqfihsn1h7lfcjt4c&time_stamp=1442328607&version=1.0&sign=55a9ab2764ca461a93f4df49508dc8de&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005364s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:50:24+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=e412hh8yoszghhmqc31w59zyrzml8qhi&time_stamp=1442328624&version=1.0&sign=b0771bd4feab6fc2a8a244223211b45d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005282s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:50:46+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=zpvblzqjmtv2iqr7p5t4adb4yjoq3q78&time_stamp=1442328646&version=1.0&sign=0163f8a164ce55d7558692e3d3f3f17a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006692s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000281s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:51:51+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=g8w7ldzerup3scsigzrcets2i8mdbmsj&time_stamp=1442328711&version=1.0&sign=548e529d6a9585519ba2c6cfb0204c0d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005821s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:52:24+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=egnbwm0bek0yf4p0u4oaue2r01aksxf5&time_stamp=1442328744&version=1.0&sign=aeae954fea32ac33384c1a9f47f18f08&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004175s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:52:36+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=eo7jo8oqygow7w5zxvzbe7po3tzs4ovq&time_stamp=1442328756&version=1.0&sign=5c758da5470ed4d0b90b5590794c963e&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005856s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:53:05+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=k9evwcm3y7sk8ejx6vwlbldnnb8uhumi&time_stamp=1442328785&version=1.0&sign=ff58162bf0a3a1e0b3e3d3f92be2a9e8&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001626s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005950s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:54:15+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=1pea5jbj91pvokgyeeldk3i55e083dle&time_stamp=1442328854&version=1.0&sign=ea04e8cff205e0581370fc6f9d8e7e81&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003980s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000318s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T22:59:35+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=7fzf6c1fyx7zj2tyb2cle6s7i4e0k7b6&time_stamp=1442329175&version=1.0&sign=3bfa3be2683fc4d8cac63e22981f020b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002018s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006760s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:07:18+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=cwdk3ijoxkrsgctuxdnev54mnx60db0x&time_stamp=1442329638&version=1.0&sign=0574724edcb00e18985e0c3ef25e13ab&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004790s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:08:44+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=ov5sst7xs5q5vey80fazlf2qo4vs8qhx&time_stamp=1442329724&version=1.0&sign=8c22352b78f0b042bd4673ce62dadca7&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004221s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:08:59+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=20q725pyjsgobn28x6istdifyrnms6q5&time_stamp=1442329739&version=1.0&sign=47d3b228eb83bd48ac654f2c24915e46&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003932s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:11:08+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=nfyuhw43ctzfszpzgw2eqpt4fsl50msa&time_stamp=1442329868&version=1.0&sign=6d332ab6954387293072b0d0f14c1d73&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004610s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:11:24+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=ky7yq8pfvkqarso4g5l0bb51uhoa4r7t&time_stamp=1442329884&version=1.0&sign=18dee442f4b197e253667b7765e68d80&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003843s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:12:31+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=xozc87wo3r4gtajsgksgcb5fqx4hc2te&time_stamp=1442329951&version=1.0&sign=1cfcf89cd1d6b38ae19a7ae3946771ac&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004877s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 502 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 502 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 502 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:12:36+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=8oy5g56j2ikgji8fquuzy4szyrmy05qw&time_stamp=1442329956&version=1.0&sign=29f08a5772d10d1933ddf569c491d1e9&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002290s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006017s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001303s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:12:51+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=zr1umm2vcjsztih4t39imsrvuk5cg5ld&time_stamp=1442329971&version=1.0&sign=bdcdcf95f9938e4127779d26cbad1cef&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002008s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006170s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:13:06+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=9jmlnzpvgrck8hedldqw31qclcij4ris&time_stamp=1442329986&version=1.0&sign=355a345a8b3767f8a408913336a31be0&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005107s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:13:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=5njt2zs1ao2mc500tpj5qfla37vvyj53&time_stamp=1442330009&version=1.0&sign=863814b68d339227d9130810ebbb1d2d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002298s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005248s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:13:30+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=7xnsv2q7hf221h4w1h9qpjturl91xc9l&time_stamp=1442330010&version=1.0&sign=cd07269408800d4edfa3eaf381325e9e&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002571s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004321s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 500 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:13:40+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=6mnqn572yh6rtmcvnrz0quqbh8z4ksx5&time_stamp=1442330020&version=1.0&sign=a4becfa4986ab0a3bacf5977f0639295&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001677s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003883s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:13:46+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=c30ygiaeq7j2dmr0drtwg6vknvxl9rqu&time_stamp=1442330026&version=1.0&sign=e621093d7380bb274ff5dd74ca12df91&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000984s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:13:59+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=s7f5l1tevtxtaht4rh71uivg3kbtt71n&time_stamp=1442330039&version=1.0&sign=397b3207a3bb7d88cafe7bd801f02a2b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005968s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:14:01+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=4b31r639zl7gz6gw46w7eg58hnzv16rz&time_stamp=1442330041&version=1.0&sign=0d4d6cd914bb1e787dc37a551529f9dc&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004065s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:14:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=s8wanrhk67o8iys2uvdd9w6bmrxkvzt4&time_stamp=1442330074&version=1.0&sign=2ff8dfaa4e271d05dd8b38aa4789d4f1&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006226s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000223s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:14:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=ew979e2nu71ai4lit2nsk8fie23f1hie&time_stamp=1442330081&version=1.0&sign=06690b4db9faed3e49acde5d40e72eee&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003918s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:15:06+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=2tebkrnqyy2iupbrzs4ijjn7neijz8tr&time_stamp=1442330106&version=1.0&sign=07e1c62843d784291411d1521189a3c5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004276s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000358s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:15:10+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=hbfank86ln707ckwpq9cvpsbm71h8cfy&time_stamp=1442330110&version=1.0&sign=c6e5fec8818f1ca231bb3eaf8653008b&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005595s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:15:12+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=has8mivmwncfw6fixb001wp7chhplfi1&time_stamp=1442330111&version=1.0&sign=867526fed44c194fd139d8af4b67d306&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006069s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:15:13+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=ngdy7anfz8k2vwcedauyzl4sfwtsuuv4&time_stamp=1442330113&version=1.0&sign=366f9be2d82ebcdccda5e74b42a6ff27&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006269s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:15:21+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=xvy3l8jx6zi47lillsfy3btfidm0p6e3&time_stamp=1442330121&version=1.0&sign=e590671e4b2a61e5990f670675bef04c&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001668s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003931s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:15:24+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=ttdhi69rgnut3mzxc30wuv9bqvh1ghj2&time_stamp=1442330124&version=1.0&sign=54aef122dd9f14cd256939637a2a1674&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006200s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:15:45+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=yj8ml0wqa5ixhl4tvij00a2nx1niwptr&time_stamp=1442330145&version=1.0&sign=fe6da08b238d133e9fa78c78084d55fe&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004160s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:16:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=95uq31uy6t90j0q31fmf22fjsnpjgzz8&time_stamp=1442330162&version=1.0&sign=354e6e7872c56b3c9a04451679c11821&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006527s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:16:05+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=c9tb2ttx1yn5sbqx3clgp0wp4ykhmcn9&time_stamp=1442330165&version=1.0&sign=4cebae2f7e39efdcc60ad4d9dec19cee&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.008693s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000250s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:16:27+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=4npm7bvan4h6odqpz6k0u6yzxqty2s4z&time_stamp=1442330187&version=1.0&sign=35223e24cd7fd7c7ed1ce7a0294c129a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005290s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+
+[ 2015-09-15T23:16:31+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=xn4xqyufl0t5z213zef8ysv1ptmw268w&time_stamp=1442330191&version=1.0&sign=550e8e1e74e7c346e5e059dab08aa89d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004274s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001039s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+
+[ 2015-09-15T23:16:43+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=4uy6ir0tmd58qsrg3irl0kbky632i52w&time_stamp=1442330202&version=1.0&sign=1a3806a2b571c1cc9fe4a8c5e59c65b5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004269s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: dg D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 503 行.
+
+[ 2015-09-15T23:18:25+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=7to2mmbih55rlfzwd3id038ckptgifn3&time_stamp=1442330305&version=1.0&sign=96c4c120eea90dd8216acf6d31447ad3&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001802s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004197s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001191s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory D:\wamp\www\guoji\yunwang\include\function.inc.php 第 501 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:18:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=d7edr9jpqxyng453b6hcolof38ve2e7u&time_stamp=1442330334&version=1.0&sign=95af725d4043557ed9d868f0c7d1078a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005569s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:29:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=lgy9ybs8dsdefn6884hjqsv5bfgju6fz&time_stamp=1442330996&version=1.0&sign=de5dc449bed69305b8dbd9e66eb1d008&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005369s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000232s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:29:56+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=oz9yinlzwpykb124eon8t22vbjkwydld&time_stamp=1442330996&version=1.0&sign=8afecb5fec880a748cd3fa056edc7b81&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004322s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:33:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=i9t3878pgbd3xmz3um757h4pqnvz2wge&time_stamp=1442331217&version=1.0&sign=baa63a6cbccd03026af20b1aa2103ced&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.007485s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:33:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=ikzr1r2j2lvl36371fz401c1lych8x5q&time_stamp=1442331217&version=1.0&sign=55de6e13d8d1edfd9ad0b4263da167be&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004444s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:33:53+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=qpfufflu41abvotdwbhlc55fvj651t8v&time_stamp=1442331233&version=1.0&sign=78f2b970ab807acbbc9074961ef42234&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006553s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:33:53+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=rltnf2w280isnlu2lwd48knyzhaw9em4&time_stamp=1442331233&version=1.0&sign=90ce16c6ff302638770ceb9acc547ea3&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001696s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.010913s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000307s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:34:18+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=tegfizw8jh47lalr89xhtnpb2hd6teaq&time_stamp=1442331258&version=1.0&sign=6b9e8b639af915dc67214e96db2f17ce&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004524s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:34:18+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=swe58fzavp3pdy55745wa7a8xuiha8lh&time_stamp=1442331258&version=1.0&sign=f0e1d6ac66854ff152a73e5ea35fce8f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005850s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:39:59+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=wa7w80d309banvdusa5f6jtpj88p77h5&time_stamp=1442331599&version=1.0&sign=84d857544bc8d6f23b40f98181dd8cc9&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.008353s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:39:59+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=fxqo4wh8vb46ot3ap5yj5tk7gsi6jqf7&time_stamp=1442331599&version=1.0&sign=70c4f69cf21483e8116b23966c2ed098&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.007479s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:40:32+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=6pgj46spuhxshgzmydmf56nuefia1uxg&time_stamp=1442331632&version=1.0&sign=119b791af5799dec508d0cf6585cf63c&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004115s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:40:32+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=f7likurezpiobg6mbyrbtnvyjy1crsdk&time_stamp=1442331632&version=1.0&sign=b9704449ae2c8919711dcff31a68c5c7&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004287s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000634s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:41:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=vimvltgl79cf8na90s8ubnpmc8sj6pz1&time_stamp=1442331662&version=1.0&sign=4bbbe028058a09bc84e3a6302ad14b0a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004067s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-15T23:41:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=0op3gxffglqp9pd2unu6hg3sqyi0jc5d&time_stamp=1442331662&version=1.0&sign=09f700ab2bf6a039a76024eef1fea629&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003964s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-15T23:41:51+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=4moeloklcd1e7b2tt1811iu3hmkf8df4&time_stamp=1442331711&version=1.0&sign=a557476d123b9f8114d2150fdc84b9fe&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001772s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005888s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:41:51+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=xuuj00i8q6sopcs02tcc06ovjd3jdj0c&time_stamp=1442331711&version=1.0&sign=c831e1813633c60c8969e322216e9271&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005787s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:42:20+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=ge1mextxd0u0q2jj97c111428vmkxavl&time_stamp=1442331740&version=1.0&sign=774326189c75cc12aeb36c5cfd5b4aae&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004316s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000678s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:42:20+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=3i3snrkl5tr7k3xo1pvha7a9a1adk0i6&time_stamp=1442331740&version=1.0&sign=27c23cba0b2dc7b6342f8062ef672a41&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001775s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006390s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:43:08+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=lutwntn7x8144x6yqeqd7zwkxsay77am&time_stamp=1442331788&version=1.0&sign=5d33039d611c9ca19dfdd60cf17a61c5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003973s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:43:08+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=h0jazlj1w0qlbsepi0vabmx33lsvwzgk&time_stamp=1442331788&version=1.0&sign=f0dbb5bf79ebf245803cdfa248fff869&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003925s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:43:42+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=4ztijhlsapnu8ugvw7k6e4cleb4kqxdj&time_stamp=1442331822&version=1.0&sign=f2452f8f42fe9556d7024ceac3f4b9d8&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003345s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.008456s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:43:42+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=am2q6d7472ejgn3ztvddwayvzb83kah2&time_stamp=1442331822&version=1.0&sign=78374489882cb74d725f46fc32ce8808&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004344s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000292s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:44:00+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=ggf3r1za775t3cpzikxk25aji8cg1y4e&time_stamp=1442331840&version=1.0&sign=773cac1b888841d6928a9d4e77529c5d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004873s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:44:00+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=cznej5jhotwkudjm5npmlt62hotkd34g&time_stamp=1442331840&version=1.0&sign=16fb433cb6e6197c8ec80100685b2287&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006088s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:44:13+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=d5kctm5x2xag20ecpkk4xqijr5x2qb22&time_stamp=1442331853&version=1.0&sign=793969b91de9056e0d8d2ab743ea3b52&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004065s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:44:13+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=mkqc1gjcl8j7id0ldvdybndl2svj1zfy&time_stamp=1442331853&version=1.0&sign=d3b4e178b31c7b2079d6a8ef7aab53d1&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003941s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:44:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=1jqe0awoe6vq3dkn58av698sc4bvkk58&time_stamp=1442331874&version=1.0&sign=ed6bc86fbe0fab5ea7b7ad9205736d8c&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006944s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:44:34+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=l4xyugkdtxiyojby4qmngkieqzr7wnil&time_stamp=1442331874&version=1.0&sign=f906906ed2f6a1c32147d7c8af78be24&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004098s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:45:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=oacyzbztq26leetbchp1oq5tm665b5dr&time_stamp=1442331941&version=1.0&sign=9d6ea67478f99913a782d82f8a08afb9&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004161s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-15T23:45:41+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=c0rjoymq9va2vof4sbzo539oe9si82br&time_stamp=1442331941&version=1.0&sign=53281e5e5c723823c1d78a81344ebe2e&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004112s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+
+[ 2015-09-15T23:46:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=9qehg931315b6lqo6e8bez56ouubyt8o&time_stamp=1442331997&version=1.0&sign=f2582ad33ff4e241ebe495ee776f0ee4&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004360s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000347s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:46:37+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=v9520af8y5x3a2xhx1ngv68hl88b0tlj&time_stamp=1442331997&version=1.0&sign=ebd9948043d0fedbf458d481fb153889&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006623s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:47:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=kctm0cv886l7bb39g98rh4k558h6op4c&time_stamp=1442332049&version=1.0&sign=cbe78c342000d9e36c93f8c197ce03f4&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004292s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:47:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=suqgfbniqoprq2kqgds5jat29g8bbe62&time_stamp=1442332049&version=1.0&sign=95fa26eaad4d501d65d18596219ed1f7&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001457s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004242s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:47:47+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=1ac0u2jzqj9z2mvnbnzv43e55fkbaqyc&time_stamp=1442332067&version=1.0&sign=da67e271fa79f67b8ce0e8ec628d9b3d&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.003902s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:47:48+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=z6hw25omw6e9nvyi1uj78bbdyumxf0wk&time_stamp=1442332067&version=1.0&sign=de3018da4a01698d1d78dcc670826ea9&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006753s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:49:32+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=gphhasnv16tus7hazccuoblxawi027ya&time_stamp=1442332172&version=1.0&sign=11a53c3d8f219f41ed7e307852b6c950&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004598s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000361s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:49:32+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=fln8b6u39rls4f6cv14c1p18ko3nmid5&time_stamp=1442332172&version=1.0&sign=c25fd915a95201dcd9d0d50bd6ca6e56&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004474s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000285s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:50:55+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pics&nonce_str=ryz616eekuejrpt8iaibrq5g9894exck&time_stamp=1442332255&version=1.0&sign=1e4c64d5436090a48cdc6fd8155a6c9f&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004305s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.001045s ]
+
+[ 2015-09-15T23:52:29+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pics&nonce_str=1zh9uryuhec2yilu5qutj2fvmjs1dqjo&time_stamp=1442332348&version=1.0&sign=fd369327ddb2e8a072848ee91016eb6a&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002325s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004295s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000319s ]
+
+[ 2015-09-15T23:52:32+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pics&nonce_str=4gj7seyak6ru4lrh57mmmojuz2bqdjdx&time_stamp=1442332352&version=1.0&sign=093c36bc605ca6a30edcf803fe7752c5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004229s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000198s ]
+
+[ 2015-09-15T23:52:50+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pics&nonce_str=x2dg8ydbt17znlz8qzng8yk6ye1aas08&time_stamp=1442332370&version=1.0&sign=cb9f951c1ea385893ac0acb528a94bca&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.006611s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000200s ]
+
+[ 2015-09-15T23:56:02+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=pics&nonce_str=yick2f6stbdys9wj8azgd1cxa330bjd3&time_stamp=1442332562&version=1.0&sign=08c4358368d947a31d40d54af53ff0fb&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001853s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004289s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000547s ]
+
+[ 2015-09-15T23:59:44+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=6hylj34ico03so709j031x3t4oo4c6yq&time_stamp=1442332784&version=1.0&sign=5adddcbe78a0e1f2569a096c0a76d6ab&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001832s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005747s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:59:44+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=kj995rpnbwol5v06iqcwca85xsdeoy06&time_stamp=1442332784&version=1.0&sign=96911ce6b34b7712a5eb728bc67e88fa&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.004445s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:59:54+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=detail&nonce_str=l59o7iecrbhwlaka1dd5aaruiyh83lfl&time_stamp=1442332794&version=1.0&sign=5b065a05b035fadf3b30b90be3b30df5&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001931s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005099s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+
+[ 2015-09-15T23:59:55+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Set&appid=201586485090108670&m=Local&name=pics&nonce_str=vg9rf6jac2rjjzxcpmwtrvqnc6sy5tjd&time_stamp=1442332794&version=1.0&sign=de2af4c040413c8cdd052d5d3255b157&sign_type=MD5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001801s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
+NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.005469s ]
+SQL: SELECT * FROM `zy_api` WHERE ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: expire D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: from D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 23 行.
+

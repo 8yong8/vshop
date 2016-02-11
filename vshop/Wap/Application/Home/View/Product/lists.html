@@ -1,0 +1,152 @@
+<include file="Public:header" />
+<script>
+var cat_id;//1级分类
+var cat_id2;//2级分类
+var cat_id3;//3级分类
+var brand_id = '';//品牌
+var size = '';//尺码
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/apply/product.js"></script>
+<div id="light" class="white_content"> 
+    <div class="shaixuanlist_tt">
+       <div class="nav">高级筛选</div>
+       <a href="javascript:void(0)" onclick="$('#light').hide();$('#fade').hide();" class="close"></a>
+    </div>
+    <div class="sx_list">
+		<neq name="kw" value="">
+        <div class="sx_list_tj cate_list">
+           <div class="sxtj_left">关键词：</div>
+           <div class="sxtj_right">
+              <ul id="cate_id">
+				 <li>
+				 <a href="{$self_url|resetUrl='kw'}" class="cur"  >{$kw}</a>
+				 </li>
+              </ul>
+           </div>
+        </div>
+		</neq>
+		<!--
+        <div class="sx_list_tj" id="area_div">
+           <div class="sxtj_left">区域：</div>
+           <div class="sxtj_right2">
+              <ul id="area">
+                 <li><a href="javascript:;" onclick="set_val('area',0);" id="area_0" value="0" <eq name="area" value='0'>class="cur"</eq>>免费区</a></li>
+                 <li><a href="javascript:;" onclick="set_val('area',1);" id="area_1" value="1" <eq name="area" value='1'>class="cur"</eq>>消费区</a></li>
+              </ul>
+           </div>
+        </div>
+		-->
+		<neq name="catList" value="">
+        <div class="sx_list_tj cate_list">
+           <div class="sxtj_left">分类：</div>
+           <div class="sxtj_right2">
+              <ul id="cat_id">
+				 <volist name="catList" id="cat">
+				 <li><a href="javascript:;" onclick="set_val('cat_id',{$cat.id});" id="cat_id_{$cat.id}" <eq name="cat_id" value="$cat.id">class="cur"</eq>  value="{$cat['id']}">{$cat.name}</a></li>
+				 </volist>
+              </ul>
+           </div>
+        </div>
+		</neq>
+		<neq name="catList2" value="">
+        <div class="sx_list_tj cate_list">
+           <div class="sxtj_left">分类：</div>
+           <div class="sxtj_right2">
+              <ul id="cat_id2">
+			     <volist name="catList2" id="cat">
+				 <li><a href="javascript:;" onclick="set_val('cat_id2',{$cat.id});" id="cat_id2_{$cat.id}" <eq name="cat_id2" value="$cat.id">class="cur"</eq>  value="{$cat['id']}">{$cat.name}</a></li>
+				 </volist>
+              </ul>
+           </div>
+        </div>
+		</neq>
+		<neq name="catList3" value="">
+        <div class="sx_list_tj cate_list">
+           <div class="sxtj_left">分类：</div>
+           <div class="sxtj_right2">
+              <ul id="cat_id3">
+			     <volist name="catList3" id="cat">
+				 <li><a href="javascript:;" onclick="set_val('cat_id3',{$cat.id});" id="cat_id3_{$cat.id}" <eq name="cat_id3" value="$cat.id">class="cur"</eq>  value="{$cat['id']}">{$cat.name}</a></li>
+				 </volist>
+              </ul>
+           </div>
+        </div>
+		</neq>
+        <div class="sx_list_tj">
+           <div class="sxtj_left">品牌：</div>
+           <div class="sxtj_right2">
+              <ul id="brand_id">
+				 <volist name="brands" id="brand">
+				 <li><a href="javascript:;" onclick="set_val('brand_id',{$brand.id});" id="brand_id_{$brand.id}" {if $brand_id==$brand['id']}class="cur"{/if} value="{$brand['id']}">{$brand.brand_name}</a></li>
+				 </volist>
+              </ul>
+           </div>
+        </div>
+		<!--
+        <div class="sx_list_tj">
+           <div class="sxtj_left">尺码：</div>
+           <div class="sxtj_right">
+              <ul id="size">
+			     {foreach $sizes as $lsize}
+                 <li><a href="javascript:;" onclick="set_val('size',{$lsize});" id="size_{$lsize}" {if $size==$lsize}class="cur"{/if}>{$lsize}</a></li>
+				 {/foreach}
+              </ul>
+           </div>
+        </div>
+		-->
+		<?php if( $area || $brand_id || $cate_id || $kw){ ?>
+        <div class="sx_list_tj">
+           <div class="sxtj_left">搜索条件：</div>
+           <div class="sxtj_right">
+              <ul>
+				 <li><a href="__APP__/Product/list">取消搜索条件</a></li>
+              </ul>
+           </div>
+        </div>
+		<?php } ?>
+        <div class="qd_btn"><input type="submit" value="确 定" class="ok" onclick="$('#light').hide();$('#fade').hide();search();" class="close"></div>
+    </div>
+</div> 
+<div id="fade" class="black_overlay"> 
+</div> 
+<div class="menu">
+   <a class="back" href="javascript:;" onclick="history.go(-1)"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">商品列表</div>
+   <a class="goods_sx" href="javascript:;" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="__PUBLIC__/images/menu_sx.png"></a>
+</div>
+<div class="shaixuan">
+   <ul>
+      <li <eq name="order" value='weight'>class="cur"</eq>>
+	  <span>
+	  <a href="{$self_url|resetUrl='order,sort,p'}&order=weight<eq name="order" value='weight'><eq  name="sort" value='desc'>&sort=asc<else/>&sort=desc</eq></eq>" <eq name="order" value='weight'><eq  name="sort" value='asc'>class="down"<else/>class="up"</eq></eq> >推荐</a>
+	  </span>
+	  </li>
+      <li <eq name="order" value='price'>class="cur"</eq>>
+	  <span><a href="{$self_url|resetUrl='order,sort,p'}&order=price<eq name="order" value='price'><eq  name="sort" value='desc'>&sort=asc<else/>&sort=desc</eq></eq>" <eq name="order" value='price'><eq  name="sort" value='asc'>class="down"<else/>class="up"</eq></eq> >价格</a></span>
+	  </li>
+      <li <eq name="order" value='sale_num'>class="cur"</eq>>
+	  <span><a href="{$self_url|resetUrl='order,sort,p'}&order=sells<eq name="order" value='sale_num'><eq  name="sort" value='desc'>&sort=asc<else/>&sort=desc</eq></eq>" <eq name="order" value='sale_num'><eq  name="sort" value='asc'>class="down"<else/>class="up"</eq></eq> >销量</a></span>
+	  </li>
+      <li <eq name="order" value='new'>class="cur"</eq>>
+	  <span><a href="{$self_url|resetUrl='order,sort,p'}&order=new<eq name="order" value='create_time'><eq  name="sort" value='desc'>&sort=asc<else/>&sort=desc</eq></eq>" <eq name="order" value='create_time'><eq  name="sort" value='asc'>class="down"<else/>class="up"</eq></eq> >最新</a></span>
+	  </li>
+   </ul>
+</div>
+<div class="goodslist">
+    <ul>
+	   <volist name="list"  id="product" key="i">
+       <li><span><a href="__URL__/detail?id={$product.id}"><img src="{$product.lit_pic}" width="100%"><p>{$product.name}</p><p class="price">{$product.price}<em>￥{$product.market_price}</em></p></a></span></li>
+	   </volist>
+    </ul>
+</div>
+<div class="clear"></div>
+<neq name="page_count" value="">
+<div class="page">
+    <ul>
+       <li><a href="{$self_url|resetUrl='p'}&p={$prev_page}" class="up">上一页</a></li>
+       <li><a href="javascript:;" class="all">{$pageno}/{$page_count}</a></li>
+       <li><a href="{$self_url|resetUrl='p'}&p={$next_page}" class="next">下一页</a></li>
+    </ul>
+</div>
+</neq>
+<include file="Public:footer" />

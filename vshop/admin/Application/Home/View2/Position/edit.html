@@ -1,0 +1,69 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title"> 新增[ <a href="__URL__">返回列表</a> ] [<a href="__URL__/index/pid/{$vo.pid}">返回上级</a> ]</div>
+<form method='post'  id="form1" action='__URL__/edit?<?php echo time(); ?>' enctype="multipart/form-data">
+<table cellpadding=3 cellspacing=3 class="add">
+
+<TR>
+	<TD class="tRight" >父节点：</TD>
+	<TD class="tLeft" >
+	<span id="cid_span">
+	<select name="cid" id="cid" onchange="cid_change();">
+	<option value="0" <eq name="vo.pid" value="0">selected</eq> >
+	请选择</option>
+	<volist name="list" id="type">
+	<option value="{$type[id]}" <eq name="vo.pid" value="$type[id]">selected</eq> >
+	{$type.node_name}</option>
+	</volist>
+	</select>
+	</span>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight" >名称：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeftRequire"  name="title" value="{$vo.title}"></td>
+</tr>
+
+<TR>
+	<TD class="tRight tTop">缩略图：</TD>
+	<TD class="tLeft">
+	<div>
+		<input type="file" id="lit_pic" name="lit_pic" onchange="yulan(this,'show1')">
+		<div id="show1">
+		<neq name="vo.lit_pic" value="">
+		<img src="{$vo.lit_pic}" style="max-width:300px;max-height:500px;" class="J_preview" data-bimg="{$vo.lit_pic}">
+		</neq>
+		</div>
+	</div>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft">
+	<SELECT class="small bLeft"  name="status">
+	  <option value="1" <eq name="vo.status" value="1">SELECTED</eq>>启用</option>
+	  <option value="0" <eq name="vo.status" value="0">SELECTED</eq>>禁用</option>
+	</SELECT>
+	</td>
+</tr>
+<tr>
+	<td class="tRight tTop">描 述：</td>
+	<td class="tLeft"><TEXTAREA class="large bLeft" name="info"  rows="5" cols="57">{$vo.info}</textarea></td>
+</tr>
+<tr>
+	<td></td>
+	<td><div style="width:85%;margin:5px">
+	<input type="hidden" name="id" value="{$vo.id}">
+	<div class="impBtn fLeft">
+	<input type="submit" value="保存" class="button">	
+	</div>
+	</div></td>
+</tr>
+</table>
+</form>
+<script>
+$('.J_preview').preview(); //查看大图
+</script>
+<include file="Public:footer" /> 

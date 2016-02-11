@@ -1,0 +1,28 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title">新增会员卡[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>" enctype="multipart/form-data">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >卡号：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="code" ></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >密码：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  NAME="psw"></TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

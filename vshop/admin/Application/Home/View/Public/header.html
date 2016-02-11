@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="x-ua-compatible"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$head_title}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
+<style>
+body{
+ background:#f1f1f1;
+}
+</style>
+<!--[if IE 6]>
+<script type="text/javascript" src="__PUBLIC__/js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+
+<load href ="__PUBLIC__/js/common.js" />
+<load href='__PUBLIC__/js/artDialog/skins/chrome.css' />
+<load href="__PUBLIC__/js/artDialog/jquery.artDialog.js" />
+<load href="__PUBLIC__/js/artDialog/plugins/iframeTools.js" />
+<tagLib name="myhtml" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/icon.css">
+<?php if(ACTION_NAME=='index' && MODULE_NAME!='Config'){ ?>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/EasyUI/themes/haidaoblue/easyui.css">
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/hd_default_config.js"></script>
+<?php } ?>
+<SCRIPT LANGUAGE="JavaScript">
+//指定当前组模块URL地址
+var ROOT = '__ROOT__';
+var URL = '__URL__';
+var APP	 =	 '__APP__';
+var PUBLIC = '__PUBLIC__';
+var uid = '<?php echo $_SESSION[C("USER_AUTH_KEY")]; ?>';
+var hash = '{$hash}';
+//图片预览
+function yulan(file,div_id){
+  var div_id = div_id ? div_id : 'preview';
+  var img_id = div_id+'imghead';
+  var MAXWIDTH  = 200;
+  var MAXHEIGHT = 200;
+  var div = document.getElementById(div_id);
+  if (file.files && file.files[0])
+  {
+    div.innerHTML = '<img id='+img_id+'>';
+    var img = document.getElementById(img_id);
+    img.onload = function(){
+      var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+      img.width = rect.width;
+      img.height = rect.height;
+      img.style.marginLeft = rect.left+'px';
+      img.style.marginTop = rect.top+'px';
+    }
+    var reader = new FileReader();
+    reader.onload = function(evt){img.src = evt.target.result;}
+    reader.readAsDataURL(file.files[0]);
+  }
+  else
+  {
+    var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+    file.select();
+    var src = document.selection.createRange().text;
+    div.innerHTML = '<img id='+img_id+'>';
+    var img = document.getElementById(img_id);
+    img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+    var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+    status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+    div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;margin-left:"+rect.left+"px;"+sFilter+src+"\"'></div>";
+  }
+}
+
+function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+    var param = {top:0, left:0, width:width, height:height};
+    if( width>maxWidth || height>maxHeight )
+    {
+        rateWidth = width / maxWidth;
+        rateHeight = height / maxHeight;
+        if( rateWidth > rateHeight )
+        {
+            param.width =  maxWidth;
+            param.height = Math.round(height / rateWidth);
+        }else
+        {
+            param.width = Math.round(width / rateHeight);
+            param.height = maxHeight;
+        }
+    }
+    param.left = Math.round((maxWidth - param.width) / 2);
+    param.top = Math.round((maxHeight - param.height) / 2);
+    return param;
+}
+</SCRIPT>
+</head>
+<body>
+<div class="header">
+    <div class="logo fl" style="padding:0px;margin:0px;">
+		<img src="__PUBLIC__/images/logo.png" alt="" height="60px;"/>
+	</div>
+    <div class="menu-box">
+        <div class="menu-left-bg"></div>
+        <div class="top_menu fl">
+			<volist name="menu1" id="item">
+			<a href='__ROOT__/index.php?c={$item['nlist'][0]['name']}{$item['nlist'][0]['param_str']}' <eq name="item.show" value="1">class='hover'</eq> >{$item.cname}</a>
+			</volist>
+			</div>
+        <div class="menu-right-bg"></div>
+    </div>
+    <div class="help">
+        <a href="__ROOT__/index.php?m=Cache&a=clear"><img src="__PUBLIC__/images/ico_1.png" alt="" />更新缓存</a>
+        <a href="javascript:;"><img src="__PUBLIC__/images/ico_2.png" alt="" />帮助</a>
+    </div>
+    <div class="clear"></div>
+    <div class="welcome">
+        <a href="javascript:void(0)">欢迎您 <?php echo $_SESSION['account'];  ?></a>|
+        <a href="__ROOT__/index.php?c=Index&a=uc_sup_infoxg" target="mainFrame">更改密码</a>|
+        <a href="__ROOT__/index.php" target="_blank">网站前台</a>|
+        <a href="__ROOT__/index.php?c=Public&a=logout">退出系统</a>|
+    </div>
+</div>
+
+<include file="Public:left_side" />

@@ -1,0 +1,45 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<div id="main" class="main" >
+<div class="content">
+<div class="title">省信息编辑[ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/update/">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="标题不能为空" NAME="pv" value="{$vo.pv}"></TD>
+</TR>
+<TR>
+	<TD class="tRight" >英文名：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="标题不能为空" NAME="pv_ab" value="{$vo.pv_ab}"></TD>
+</TR>
+<TR>
+	<TD class="tRight tTop">状态：</TD>
+	<TD class="tLeft">
+	<select name="status">
+	  <option value="1" <eq name="vo.status" value="1">selected="selected"</eq>>启动</option>
+	  <option value="0" <eq name="vo.status" value="0">selected="selected"</eq>>禁用</option>
+	</select>
+	</TD>
+</TR>
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<input type="hidden" name="id" value="{$vo.id}" />
+	<INPUT TYPE="submit" value="保 存" class="button">
+	<INPUT TYPE="reset" class="button" value="清 空" >
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="../Public/footer" /> 

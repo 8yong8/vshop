@@ -1,0 +1,93 @@
+<include file="Public:header" />
+<load href ="__PUBLIC__/js/apply/position.js" />
+<div class="content">
+<div class="title"> 新增[ <a href="__URL__/substance/id/{$vo.position_id}">返回列表</a> ]</div>
+<form method='post'  id="form1" action='__URL__/sub_edit?<?php echo time(); ?>' enctype="multipart/form-data">
+<table cellpadding=3 cellspacing=3 class="add">
+
+<TR>
+	<TD class="tRight" >父节点：</TD>
+	<TD class="tLeft" >
+	{$vo.position_name}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><input type="text" class="medium bLeftRequire"  name="title" value="{$vo.title}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight tTop">缩略图：</TD>
+	<TD class="tLeft">
+	<div>
+		<input type="file" id="lit_pic" name="lit_pic" onchange="yulan(this,'show1')">
+		<div id="show1">
+		<neq name="vo.lit_pic" value="">
+		<img src="{$vo.lit_pic}" style="max-width:300px;max-height:500px;" class="J_preview" data-bimg="{$vo.lit_pic}">
+		</neq>
+		</div>
+	</div>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft">
+	<SELECT class="small bLeft"  name="status">
+	  <option value="1" <eq name="vo.status" value="1">SELECTED</eq>>启用</option>
+	  <option value="0" <eq name="vo.status" value="0">SELECTED</eq>>禁用</option>
+	</SELECT>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight tTop">关联：</td>
+	<td class="tLeft">
+	<SELECT name="data_type" id="data_type" onchange="change()">
+	  <option value="product_list" <eq name="vo.data_type" value="product_list">SELECTED</eq>>产品列表</option>
+	  <option value="product_detail" <eq name="vo.data_type" value="product_detail">SELECTED</eq>>产品详情</option>
+	  <option value="article_list" <eq name="vo.data_type" value="article_list">SELECTED</eq>>文章列表</option>
+	  <option value="article_detail" <eq name="vo.data_type" value="article_detail">SELECTED</eq>>文章详情</option>
+	</SELECT>	
+	</td>
+</tr>
+
+<TR class="list" <eq name="types" value="">style="display:none"</eq>>
+	<TD class="tRight" >分类：</TD>
+	<TD class="tLeft" >
+	<select name="params[cat_id]" id="cat_id">
+	<volist name="types" id="type">
+	<option value="{$type[id]}" <eq name="vo[params][cat_id]" value="$type[id]">selected</eq> >
+	{$type.node_name}</option>
+	</volist>
+	</select>	
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >ID：</TD>
+	<TD class="tLeft" ><input type="text" class="medium bLeftRequire"  name="params[id]" value="{$vo.params.id}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >url：</TD>
+	<TD class="tLeft" >
+	<input type="text" class="large bLeftRequire"  name="url" value="{$vo.url}">
+	<span style="margin-left:-1px">跳转url;留空则根据配置跳转</span>
+	</TD>
+</TR>
+
+<TR>
+	<td></td>
+	<td>
+	<input type="hidden" name="id" value="{$vo.id}">
+	<input type="submit" value="保存" class="button">	
+	</td>
+</TR>
+</table>
+</form>
+<script>
+$('.J_preview').preview(); //查看大图
+</script>
+<include file="Public:footer" /> 

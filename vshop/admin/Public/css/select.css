@@ -1,0 +1,169 @@
+
+INPUT.sort {
+	BACKGROUND-IMAGE: url(../images/activity.gif)
+}
+
+select.multiSelect {
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  height:100%;
+  overflow: hidden;
+  background: white;
+  font: 100%/1.0em Arial,Helvetica,sans-serif;
+  color: #444;
+  /*border:1px red solid;*/
+}
+
+select option {
+  font-size:14px;
+}
+
+TABLE.select TD {
+  BORDER-BOTTOM: silver 1px solid;
+  BORDER-LEFT: silver 1px solid;
+  PADDING-BOTTOM: 3px;
+  PADDING-LEFT: 3px;
+  PADDING-RIGHT: 3px;
+  VERTICAL-ALIGN: top;
+  PADDING-TOP: 3px;
+  background: white;
+}
+
+TABLE TD.topTd {
+  BORDER-BOTTOM: gray 1pt solid;
+  BACKGROUND: url(../images/select/bgline.gif) repeat-x;
+  margin-BOTTOM:10px;
+}
+.fLeft {
+	FLOAT: left
+}
+.tCenter {
+  TEXT-ALIGN: center;
+}
+.tRight {
+  TEXT-ALIGN: right;
+}
+INPUT.submit {
+  BORDER-BOTTOM: gray 1px solid;
+  BORDER-LEFT: gray 1px solid;
+  BACKGROUND: url(../images/select/idx_btnbg.gif) #f1f1f1 repeat-x center 50%;
+  HEIGHT: 25px;
+  COLOR: #333;
+  BORDER-TOP: gray 1px solid;
+  CURSOR: pointer;
+  BORDER-RIGHT: gray 1px solid;
+  padding:0px;
+  margin:2px;
+  width:45px;
+}
+
+input.small:hover{
+  BACKGROUND: url(../images/select/idx_btnbg.gif) #f1f1f1 repeat-x center 50%;
+}
+
+.customMultipleSelect {
+	OVERFLOW: auto
+}
+
+.customMultipleSelect_option {
+  BORDER-BOTTOM: #eee 1px solid;
+  PADDING-BOTTOM: 5px;
+  MARGIN: 0px;
+  PADDING-LEFT: 5px;
+  PADDING-RIGHT: 5px;
+  FONT: 14px Tahoma;
+  PADDING-TOP: 5px;
+}
+TABLE.select TH {
+  BORDER-BOTTOM: silver 1px solid;
+  BORDER-LEFT: silver 1px solid;
+  PADDING-BOTTOM: 3px;
+  PADDING-LEFT: 3px;
+  PADDING-RIGHT: 3px;
+  VERTICAL-ALIGN: top;
+  PADDING-TOP: 3px;
+  HEIGHT:20px;
+}
+
+TABLE TH {
+  BACKGROUND: #cdd;
+}
+user agent stylesheetth {
+  font-weight: bold;
+}
+
+TABLE.select {
+  BORDER-BOTTOM: gray 1px solid;
+  TEXT-ALIGN: left;
+  BORDER-LEFT: gray 1px solid;
+  PADDING-BOTTOM: 3px;
+  MARGIN: 3px 0px;
+  PADDING-LEFT: 3px;
+  WIDTH: 500px;
+  PADDING-RIGHT: 3px;
+  BORDER-COLLAPSE: collapse;
+  CLEAR: both;
+  BORDER-TOP: gray 1px solid;
+  BORDER-RIGHT: gray 1px solid;
+  PADDING-TOP: 3px;
+}
+
+
+select.multiSelect{width:100%; border:0px; padding:0px; margin:0px; overflow:hidden; background:white; font:100%/1.0em Arial,Helvetica,sans-serif; color:#444}
+TABLE.order {
+	BORDER-BOTTOM: gray 1px solid; 
+	TEXT-ALIGN: left; 
+	BORDER-LEFT: gray 1px solid; 
+	PADDING-BOTTOM: 3px; 
+	MARGIN: 3px 0px; 
+	PADDING-LEFT: 3px; 
+	WIDTH: 260px; 
+	PADDING-RIGHT: 3px; 
+	BORDER-COLLAPSE: collapse; 
+	CLEAR: both; 
+	BORDER-TOP: gray 1px solid; 
+	BORDER-RIGHT: gray 1px solid; 
+	PADDING-TOP: 3px
+}
+
+
+TABLE.order INPUT.submit {
+  BORDER-BOTTOM: gray 1px solid;
+  BORDER-LEFT: gray 1px solid;
+  BACKGROUND: url(../images/select/idx_btnbg.gif) #f1f1f1 repeat-x center 50%;
+  HEIGHT: 25px;
+  COLOR: #333;
+  BORDER-TOP: gray 1px solid;
+  CURSOR: pointer;
+  BORDER-RIGHT: gray 1px solid;
+  padding:0px;
+  margin:2px;
+  width:65px;
+}
+
+select option {
+  font-size:14px;
+}
+
+TABLE.order TD {
+  BORDER-BOTTOM: silver 1px solid;
+  BORDER-LEFT: silver 1px solid;
+  PADDING-BOTTOM: 3px;
+  PADDING-LEFT: 3px;
+  PADDING-RIGHT: 3px;
+  VERTICAL-ALIGN: top;
+  PADDING-TOP: 3px;
+}
+
+TABLE.order TH {
+  BORDER-BOTTOM: silver 1px solid;
+  BORDER-LEFT: silver 1px solid;
+  PADDING-BOTTOM: 3px;
+  PADDING-LEFT: 3px;
+  PADDING-RIGHT: 3px;
+  VERTICAL-ALIGN: top;
+  PADDING-TOP: 3px;
+  BACKGROUND: #cdd;
+}

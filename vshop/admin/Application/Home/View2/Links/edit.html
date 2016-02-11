@@ -1,0 +1,73 @@
+<include file="Public:header" />
+
+<div class="content">
+<div class="title">新增连接[ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>" enctype="multipart/form-data">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="name"  value="{$vo.name}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >类型：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="type">
+	  <OPTION VALUE="1" <eq name="vo.type" value="1">
+	  selected = "selected"
+	</eq>>文字连接</OPTION>
+	  <OPTION VALUE="2" <eq name="vo.type" value="2">
+	  selected = "selected"
+	</eq>>图片连接</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight" >图片：</TD>
+	<TD class="tLeft" ><input type="file" onchange="yulan(this,'yulan')" name="logo"><div id="yulan">
+	<neq name="vo.logo" value="">
+    <img src="{$vo.logo}">
+	</neq>
+	</div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >连接地址：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="url" value="{$vo.url}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >备注：</TD>
+	<TD class="tLeft" ><TEXTAREA NAME="memo" ROWS="5" COLS="33">{$vo.memo}</TEXTAREA></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT class="small bLeft" NAME="status">
+	  <option value="1"<eq name="vo.status" value="1">
+	  selected = "selected"
+	</eq>>启用</option>
+	  <option value="0"<eq name="vo.status" value="0">
+	  selected = "selected"
+	</eq>>禁用</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

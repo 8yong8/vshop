@@ -1,0 +1,79 @@
+[ 2015-07-10T22:55:00+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001523s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004953s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003972s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.003755s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000193s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.004776s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000471s ]
+NOTIC: [8] Undefined variable: all_ids D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 142 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 498 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN () ) ORDER BY b.id asc  [ RunTime:0.000139s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) ORDER BY b.id asc' at line 1
+ [ SQL语句 ] : SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN () ) ORDER BY b.id asc 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 145 行.
+NOTIC: [8] Undefined variable: attrs D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 155 行.
+NOTIC: [8] Undefined variable: attrs D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 157 行.
+NOTIC: [8] Undefined variable: specval D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 164 行.
+NOTIC: [8] Undefined variable: attrs_new D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 165 行.
+
+[ 2015-07-10T22:55:40+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001396s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001479s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004277s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.005588s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.004510s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.003972s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000236s ]
+
+[ 2015-07-10T22:59:08+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001679s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005972s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004050s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.004632s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.004168s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000275s ]
+
+[ 2015-07-10T23:01:37+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002530s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002696s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002101s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004239s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004226s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.003731s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.003624s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000227s ]
+

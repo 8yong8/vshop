@@ -1,0 +1,77 @@
+<include file="Public:header" />
+<!-- 主体内容  -->
+<div class="content">
+<div class="title"> 分类排版 [ <a href="__URL__">返回</a> ]</div>
+<!--  功能组区域  -->
+<script language="JavaScript">
+function runto(){
+  var id = $('#cid').val();
+  window.location.href = "__URL__/typeset/id/"+id;
+}
+
+function save(){
+  var ids = '';
+  $("input:checked").each(function(i){
+	ids += jQuery(this).val()+',';
+  })
+  ids = ids.substring(0,ids.length-1);
+  //alert(ids);
+  //return false;
+  $.ajax({
+    type:"POST",
+	url:URL+'/savelayout',
+	data:"ids="+ids+"&cid={$Think.get.id}",
+	success:function(msg){
+	  //alert(msg);
+		art.dialog({
+			time: 2,
+			//follow: document.getElementById('cid'),
+			content: msg
+		});
+	}
+  })
+  //alert(ids);
+}
+</script>
+<load href="__PUBLIC__/Js/Form/MultiSelect.js" />
+<load href="__PUBLIC__/css/select.css" />
+<form method='post' id="form1">
+<table class="select" style="width:265px;margin-top:30px;" align="center" >
+<tr><td height="5" colspan="3" class="topTd" ></td></tr>
+<tr><Th class="tCenter">后台排版</Th></tr>
+<tr><Td class="tLeft">&nbsp;&nbsp;当前模块：
+	<select name="cid" id="cid" onchange="runto();">
+	<volist name="clist" id="type">
+	<option value="{$type['id']}" <eq name="Think.get.id" value="$type['id']">selected</eq>>{$type['name']}</option>
+	</volist>
+	</select>
+</Td></tr>
+<tr><td>
+	<select name="nid" id="nid" multiple="multiple" class="multiSelect" size="15">
+	<volist name="nlist" id="node">
+	 <?php  if(in_array($node['id'],$list)){ ?>
+	  <option value='<?php echo $node['id']; ?>' selected ><?php echo $node['title'];?></option>
+	 <?php }else{ ?> 
+      <option value="{$node['id']}" <eq name="node.disabled" value="1">disabled="true"</eq>>{$node['title']}</option>
+	 <?php } ?>
+	</volist>
+	</select>
+</td>
+</tr>
+<tr>
+<td  class="row tCenter" >
+<input type="button" onclick="allSelect()" value="全 选" class="submit  ">
+<input type="button" onclick="InverSelect()" value="反 选" class="submit  ">
+<input type="button" onclick="allUnSelect()" value="全 否" class="submit ">
+<input type="button" onclick="save()" value="保 存" class="submit  ">
+<input type="hidden" name="cid" VALUE="{$Think.get.id}" >
+</td>
+</tr>
+<tr>
+<td height="5" class="bottomTd" >
+</td>
+</tr>
+</table>
+</form>
+</div>
+<include file="Public:footer" />  

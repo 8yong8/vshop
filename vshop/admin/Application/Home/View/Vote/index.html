@@ -1,0 +1,114 @@
+{// 引入标签库 }
+<tagLib name="html" />
+{// 加载头部公共文件 }
+<include file="Public:header" />
+<SCRIPT language=JavaScript src="__PUBLIC__/Js/ymPrompt.js"></SCRIPT>
+
+<link rel="stylesheet" id='skin' type="text/css" href="__PUBLIC__/Css/skin/qq/ymPrompt.css" />
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+<script>
+ function uponline(){
+   window.location.href = "__URL__/uponline";
+ }
+
+ function look(id){
+   var url = '__URL__/look/id/'+id;
+   window.open(url) 
+ }
+
+ function look1(id){
+   var url = '__URL__/look1/id/'+id;
+   window.open(url) 
+ }
+
+ function listoption(id){
+   window.location.href = "__URL__/listoption/id/"+id;
+ }
+
+/*
+function getcode( id ){
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/getcode',
+	data:"id="+id,
+	success:function(msg){
+	   var objs = eval('('+msg+')');
+	   var html = '<iframe frameborder=0 height=190 marginheight=0 marginwidth=0 scrolling=no src="{$Think.config.VOTE_SITE_URL}/cache_html/'+objs.webset+'/'+objs.bh+'.html" width=255></iframe>';
+	   ymPrompt.alert({message:'<TEXTAREA ROWS="5" COLS="30">'+html+'</TEXTAREA>',title:'信息提示页面'});
+	}
+  })  
+
+}
+*/
+function getcode( id ){
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/getcode',
+	data:"id="+id,
+	success:function(msg){
+	   var objs = eval('('+msg+')');
+	   var html = '<iframe frameborder=0 marginheight=0 marginwidth=0 scrolling=no src="{$Think.config.VOTE_SITE_URL}/index.php?m=Form&a=show&id='+id+'" width=255 height=190></iframe>';
+	   ymPrompt.alert({message:'<TEXTAREA ROWS="5" COLS="30">'+html+'</TEXTAREA>',title:'信息提示页面'});
+	}
+  })  
+
+}
+</script>
+<!-- 主体内容  -->
+<div class="content" >
+<div class="title">大型团购列表</div>
+<!--  功能操作区域  -->
+<div class="operate" >
+<html:imageBtn name="add" value="新增" click="add()" style="impBtn hMargin fLeft shadow" />
+
+<html:imageBtn name="delete" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+
+<!-- 查询区域 -->
+<div class="fRig">
+<FORM METHOD="GET" ACTION="__URL__">
+</div>
+<!-- 高级查询区域 -->
+<div  id="searchM" class="search cBoth" >
+
+<TABLE cellpadding="1" cellspacing="2" width="100%">
+
+<TR>
+	<TD class="tRight">ID：</TD>
+	<TD><INPUT TYPE="text" NAME="id" class="small" value="{$id}"></TD>
+	<TD class="tRight">标题：</TD>
+	<TD><INPUT TYPE="text" NAME="title" class="small" value="{$title}"></TD>
+	<TD class="tRight">城市：</TD>
+	<TD>
+	<SELECT name="webset">
+	  <OPTION value="">选择城市</OPTION>
+	<volist name="ac_sites" id="site">
+	<option value="{$site.key}" <eq name="site.key" value="$webset">
+	  selected = "selected"
+	</eq>>{$site.name}</option>
+	</volist>
+	</SELECT>
+	</TD>
+	<TD><html:imageBtn type="submit" name="search" value="查询" style="impBtn hMargin fLeft shadow" /></TD>
+</TR>
+</TABLE>
+</div>
+</FORM>
+</div>
+<!-- 功能操作区域结束 -->
+
+<!-- 列表显示区域  -->
+<div class="list" >
+<html:list id="checkList" name="user" style="list" checkbox="true" action="true" datasource="list" show="id:编号|8%,name:标题|20%:edit,webset|sitename=$webset:地区,reg|rs='0#无需注册#red@1#需注册':状态,create_time|toDate='Y-m-d H#i#s':添加时间,btime|toDate='Y-m-d H#i#s':开始时间,etime|toDate='Y-m-d H#i#s':结束时间,createname:录入者" actionlist="edit:编辑,look1:旧版用户查看,look:报名用户查看,listoption:选项列表,getcode:获取代码" /> 
+</div>
+<!--  分页显示区域 -->
+<div class="page">{$page}</div>
+<!-- 列表显示区域结束 -->
+</div>
+<!-- 主体内容结束 -->
+</div>
+<!-- 主页面结束 -->
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" />  

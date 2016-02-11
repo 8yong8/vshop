@@ -1,0 +1,77 @@
+<include file="Public:header" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.raty.js"></script>
+<div class="menu">
+   <a class="back" href="__APP__/Order/list?status=3"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">评价订单</div>
+</div>
+
+<FORM METHOD=POST ACTION="__APP__/Order/feedback" id="feedback">
+<div class="order_over">
+	<volist name="list" id="item">
+    <div class="pj_box">
+       <div class="pjb_info">
+          <div class="pjb_img"><img src="{$item.lit_pic}"></div>
+          <div class="pjb_name">
+             <p class="pjb_pr">￥{$item.price} * {$item.num}</p>
+             <p>{$item.product_name}</p>
+          </div>
+       </div>
+	   <eq name="item.is_rate" value="0">
+       <div class="pjb_box">
+           <div class="pjb_tt">满意度评价</div>
+           <div class="pjb_star">
+              <div class="ico_star" id="sp_{$item.id}"></div>
+           </div>
+           <div class="pjb_txt">
+			  <INPUT TYPE="hidden" NAME="product_id[]" value="{$item.product_id}">
+			  <INPUT TYPE="hidden" NAME="item_id[]" value="{$item.id}">
+              <textarea name="content[]" placeholder="您的评价能为其他买家提供参考噢！"></textarea>
+           </div>
+       </div>
+	   <else/>
+       <div class="pjb_box">
+           <div class="pjb_tt">满意度评价 <font color="red">【已评价】</font></div>
+           <div class="pjb_star">
+              <div id="sp_{$item.id}">
+			  <?php 
+			  for($i=1;$i<=5;$i++){
+			     if($i<=$item['grade']){
+				   echo '<img alt="$i" src="__PUBLIC__/images/pj_st_on.png">&nbsp;';
+				 }else{
+				   echo '<img alt="$i" src="__PUBLIC__/images/pj_st_no.png">&nbsp;';
+				 }
+			  }
+			 ?>
+			  </div>
+           </div>
+           <div class="pjb_txt">
+              {$item.content}
+           </div>
+       </div>
+	   </eq>
+    </div>
+	</volist>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+    <div class="pj_btn mgt15">
+	<!--
+	<input type="submit" class="i_btn" value="提交">
+	-->
+
+	<input type="button" class="i_btn" value="提交" onclick="send('feedback','__APP__/Order/feedback');">
+
+
+	</div>
+</div>
+</FORM>
+
+<script>
+$('.ico_star').raty({
+  path    : '__PUBLIC__',
+  //half         : true,
+  scoreName    : 'grade[]',
+  score        : 5
+  //starOff : 'off.png',
+  //starOn  : 'on.png'
+});
+</script>
+<include file="Public:footer" /> 

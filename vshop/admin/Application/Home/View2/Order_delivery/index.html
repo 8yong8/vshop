@@ -1,0 +1,73 @@
+<include file="Public:header" />
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">订单号：</TD>
+			<TD><INPUT TYPE="text" NAME="order_id" value="{$order_id}"></TD>
+			<TD class="tRight">商品订单ID：</TD>
+			<TD><INPUT TYPE="text" NAME="detail_id" value="{$detail_id}"></TD>
+			<TD class="tRight">类型：</TD>
+			<TD><SELECT class="small bLeft" NAME="type">
+			<option value="">选择</option>
+			<option value="1" <eq name="type" value="1">SELECTED</eq>>发货</option>
+			<option value="2" <eq name="type" value="2">SELECTED</eq>>退货</option>
+			</SELECT></TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+				    <!--
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+					-->
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<myhtml:list id="checkList" name="user" style="list" checkbox="true" action="true" datasource="list" show="id:编号|8%,order_sn:订单号:edit|order_id,type|rs='1#发货#blue@2#退货#red':类型,shipping_company:快递公司,shipping_no:快递单号,memo:信息" order_fields="id,attr_type" actionlist="edit:编辑,look:物流查看" />  
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

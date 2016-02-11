@@ -1,0 +1,83 @@
+<include file="Public:header" />
+<script language="JavaScript">
+
+function resetpwd(){
+    var pass	 =	 $('#resetPwd').val();
+	if(pass.length<4){
+	  alert('密码必须大于3位');
+	  return;
+	}
+	$.ajax({
+	  type:'POST',
+	  dataType:'json',
+	  url:'__URL__/resetPwd/',
+	  data:'id={$vo.id}&password='+encodeURIComponent(pass),
+	  success:function(obj){
+		if(obj.error_code==0){
+		  //alert('密码已修改为'+encodeURIComponent(pass));
+			  art.dialog({
+				time: 2,
+				content: obj.notice
+			  });
+		}else{
+		  //alert(msg);
+			  art.dialog({
+				time: 2,
+				content: obj.notice
+			  });
+		}
+	  }
+	})
+}
+</script>
+<div class="content">
+<div class="title">编辑帐号 [ <a href="__URL__">返回列表</a> ]</div>
+<table cellpadding=3 cellspacing=3 class="add">
+<tr>
+	<td class="tRight">重置密码：</td>
+	<td class="tLeft" ><input type="text" name="resetPwd" id="resetPwd"> <INPUT type="button" value="重置密码" onclick="resetpwd()" class="button" style="height:25px"></td>
+</tr>
+<tr>
+	<td class="tRight" colspan="2"><hr></td>
+</tr>
+<form method='post' id="form1" action="__URL__/edit?<?php echo time(); ?>">
+<tr>
+	<td class="tRight" >用户名：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeftRequire"  check='^\S+$' warning="用户名不能为空,且不能含有空格" name="account" value="{$vo.account}"></td>
+</tr>
+<tr>
+	<td class="tRight" >昵称：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="nickname" value="{$vo.nickname}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >编辑名：</td>
+	<td class="tLeft" ><input name="editorname" value="{$vo.editorname}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >Email：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="email" value="{$vo.email}"></td>
+</tr>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft"><SELECT class="small bLeft"  name="status">
+	<option <eq name="vo.status" value="1" >selected</eq> value="1">启用</option>
+	<option <eq name="vo.status" value="0" >selected</eq> value="0">禁用</option>
+	</SELECT></td>
+</tr>
+<tr>
+	<td class="tRight tTop">备  注：</td>
+	<td class="tLeft"><TEXTAREA class="large bLeft"  name="remark" rows="5" cols="57">{$vo.remark}</textarea></td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<input type="submit" value="保 存" class="button">
+	</td>
+</tr>
+</table>
+</form>
+<include file="Public:footer" />

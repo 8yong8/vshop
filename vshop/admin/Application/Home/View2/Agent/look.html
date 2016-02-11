@@ -1,0 +1,52 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<script>
+function show(id){
+  $('#'+id).toggle();
+}
+
+function oCopy(){
+obj = document.getElementById('duanxin');
+obj.select(); 
+js=obj.createTextRange(); 
+js.execCommand("Copy")
+alert("复制成功!"); 
+} 
+
+</script>
+<div id="main" class="main" >
+<div class="content">
+<style>
+#zx td{
+  border:1px red solid;
+}
+</style>
+  <div class="title">代理申请详情 [ <A HREF="__URL__">返回列表</A> ]</div>
+	<TABLE cellpadding=3 cellspacing=3 id="zx">
+	<TR>
+	<TH>编号</TH><td>{$vo.id}</td>
+	</TR>
+	<TR>
+	<TH>姓名</TH><td>{$vo.name}</td>
+	</TR>
+	<TR>
+	<TH>联系电话</TH>
+	<td>{$vo.tel}</td>
+	</TR>
+	<TR>
+	<TH>IP</TH><td>{$vo.ip}</td>
+	</TR>
+	<TR>
+	<TH>IP来源</TH><td>{$vo.from}</td>
+	</TR>
+	<TR>
+	<TH>提交时间</TH><td>{$vo.create_time|toDate='Y-m-d H:i:s'}</td>
+	</TR>
+	</TABLE>
+  </div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

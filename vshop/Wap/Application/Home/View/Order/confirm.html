@@ -1,0 +1,90 @@
+<include file="Public:header" />
+<script>
+var type = '<neq name="cart_ids" value="">1<else/>2</neq>';
+var cart_ids = '{$cart_ids}';
+var product_id = '{$product_id}';
+var item_id = '{$item_id}';
+var item_num = '{$item_num}';
+var total_fee = '{$vo.total_fee}';//订单总价
+var consignee_id = '{$vo.consignee.id}';
+var sp_id = "<neq name='promotions' value=''>{$promotions[0]['id']}<else/>0</neq>";
+var sp_price = "<neq name='promotions' value=''>{$promotions[0]['award_value']}<else/>0</neq>";//促销优惠
+var coupon_price = "0";//红包优惠
+var shipping_price = "{$shipping_fee}";//邮费
+var tax = 0;//税 0不要 1:要
+var tax_rate = '{$tax_rate}';//率
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/apply/order.js"></script>
+<div class="menu">
+   <a class="back" href="__APP__/Cart/lists"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">订单详情</div>
+</div>
+<div class="order">
+	<neq  name="vo.consignee" value="">
+    <div class="adress">
+        <a href="__APP__/Consignee/?id={$vo.consignee.id}&from_url={$self_url|urlencode}"><p class="s_name" value="{$vo.consignee.id}"><em>收货人：{$vo.consignee.name}</em>{$vo.consignee.mobile}</p><p class="s_adress"><span>收货地址：</span><i>{$vo.consignee.province} {$vo.consignee.city} {$vo.consignee.district} {$vo.consignee.addr}</i></p></a>
+    </div>
+	<else/>
+    <div class="adress_no"><a href="__APP__/Consignee/add?&from_url={$self_url|urlencode}">你还未添加任何地址，请先添加地址</a></div>
+	</neq>
+    <div class="o_list">
+	  <volist name="vo.data" id="item">
+       <div class="o_box">
+           <div class="o_price">￥{$item.price}</div>
+           <div class="o_img"><a href="__APP__/Product/detail?id={$item.product_id}" target="_blank"><img src="{$item.lit_pic}"></a></div>
+           <div class="o_name"><p>{$item.name}</p>数量：{$item.num}</div>
+       </div>
+	   </volist>
+       <div class="o_aa">共{$vo.data|count}件商品，合计：<em>￥{$vo.total_fee}</em></div>
+    </div>
+    <div class="o_fp">
+       <div class="fp_or"><input type="radio" class="radio" id="tax" onclick="fp();">发票</div>
+       <div class="fp_info" id="tax_msg" style="display:none">
+           <div class="o_left">发票信息</div>
+           <div class="o_right">
+              <ul>
+                 <li><input type="text" value="" placeholder="发票抬头：张三" class="o_txt" name="tax_title" id="tax_title"></li>
+                 <li><input type="text" value="" placeholder="发票内容" class="o_txt" name="tax_content" id="tax_content"></li>
+              </ul>
+           </div>
+        </div>
+    </div>
+    <div class="o_bz">
+      <div class="bz_info">
+           <div class="o_left">备注</div>
+           <div class="o_bzr"><input type="text" value="" placeholder="给卖家留言" class="o_txt" name="memo" id="memo"></div>
+      </div>
+    </div>
+	<neq name="coupons" value="">
+    <div class="o_hb">
+         <div class="hb_list" id="coupon">
+            <ul>
+			   <volist name="coupons" id="coupon">
+               <li><a href="javascript:void(0)" onClick="hb({$coupon.id},{$coupon.value});" >{$coupon.info}；{$coupon.deadline|toDate='Y-m-d H#i#s'} 前可使用 ：{$coupon.value}元</a></li>
+			   </volist>
+               <li><a href="javascript:void(0)" onClick="hb(0,0);" >不使用红包</a></li>
+            </ul>
+         </div>
+         <a href="javascript:void(0)" onClick="$('#coupon').toggle();" class="hb"><span id="coupon_user_id" value="0"></span></a>使用红包
+    </div>
+	</neq>
+	<neq name="promotions" value="">
+    <div class="o_hb">
+         <div class="hb_list" id="prom">
+            <ul>
+			   <volist name="promotions" id="promotion">
+               <li><a href="javascript:void(0)" onClick="cuxiao({$promotion.id},{$promotion.award_value},'{$promotion.info}');" >{$promotion.info}</a></li>
+			   </volist>
+            </ul>
+         </div>
+         <a href="javascript:void(0)" onClick="$('#prom').toggle();" class="hb"><span id="sp_id" value="{$promotions[0]['id']}" title="{$promotions[0]['info']}">{$promotions[0]['info']}</span></a>促销活动
+    </div>
+	</neq>
+
+    <div class="o_hb">
+         <a href="javascript:void(0)" class="hb"><span>{$shipping_fee}元</span></a>邮费
+    </div>
+
+    <div class="o_qr">实付：<span id="total_fee">{$total_fee}</span> 元   <input type="button" value="确认" class="o_ok" onclick="sent();"></div>
+</div>
+<include file="Public:footer" />

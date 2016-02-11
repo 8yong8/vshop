@@ -1,0 +1,185 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<div id="main" class="main" >
+<div class="content">
+<script language="javascript" src="__PUBLIC__/Js/jquery.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+var imgurl = "{$imgurl}";
+//获取标签信息
+function gettags(){  
+  $.ajax({
+    type:"POST",
+	url:URL+'/getfolders',
+	data:"dir="+dir+"&vname="+vname+"&p="+p,
+	success:function(msg){
+	 $('#img').html(msg);
+	}
+  })
+}
+
+//缩略图
+function insertsl(dir){
+  var imgdir = dir;
+  $('#litpic').val(imgurl+imgdir);
+  var img = "<img src='"+imgurl+imgdir+"' width='200px'>";
+  $('#showimg').html(img);
+  InsertHTML("<img src='"+imgurl+imgdir+"'>");
+}
+
+//分类信息
+function gettype( o ){
+  var webset = o.value;
+  if(webset==''){
+    return false;
+  }
+  $.ajax({
+    type:"POST",
+	url:URL+'/gettype',
+	data:"webset="+webset,
+	success:function(msg){
+	 var objs = eval('('+msg+')');
+	 var html = '<select name="cid">';
+	 for(i=0;i<objs.length;i++){
+		html += '<option value='+objs[i].id+'>'+objs[i].name+'</option>';
+	 }
+	 html += '</select>';
+	 $('#cid').html(html);
+	}
+  })
+}
+
+function ck(){
+  if($('#title').val()==''){
+    alert('标题必须填写!');
+    return false;
+  }
+  return true;
+}
+
+</SCRIPT>
+<div class="title">新增旧文章 [ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/insert/" enctype="multipart/form-data" onsubmit="return ck();">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="title" ID="title"></TD>
+</TR>
+<TR>
+	<TD class="tRight" >URL：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="url" ID="url"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">城市：</TD>
+	<TD class="tLeft">
+	<SELECT class="small bLeft" NAME="webset" onchange="gettype(this)">
+	<volist name="ac_sites" id="site">
+	<option value="{$site.key}" <eq name="site.key" value="$webset">
+	  selected = "selected"
+	</eq>>{$site.name}</option>
+	</volist>
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight" >分类：</TD>
+	<TD class="tLeft" >
+	<span id="cid">
+	<select name="cid" >
+	<volist name="types" id="type">
+	<option value="{$type['id']}" <eq name="Think.session.art_cid" value="$type['id']">selected</eq>>{$type['name']}</option>
+	</volist>
+	</select>
+	</span>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight" >属性：</TD>
+	<TD class="tLeft" >
+	<volist name="flags" id="flag" key="k">
+	<input name="flags[]" value="{$flag['id']}" type="checkbox">{$flag['name']}&nbsp;
+	<php>
+	if($k%6==0){
+	  echo "<br>";
+	}
+	</php>
+	</volist>
+	</TD>
+</TR>
+<script>
+  function show(id){
+    $('#'+id).show(); 
+  }
+
+  function hide(){
+    $('#'+id).hide();  
+  }
+</script>
+<TR>
+	<TD class="tRight tTop">缩略图：</TD>
+	<TD class="tLeft">
+<script>
+  function showhide(){
+    $('#more').toggle();
+  }
+</script>
+	<input type="button" class="button" value="显示多缩略图" onclick="showhide()">
+	<div>
+	像素:325*430(首页焦点图,设计师焦点图)  <input type="file" id="litpic" name="litpic" onchange="yulan(this,'show1')">
+	<div id="show1"></div>
+	</div>
+	<div>
+	像素:135*100(地板子频道焦点,卫浴子频道焦点等)  <input type="file" id="litpic2" name="litpic2" onchange="yulan(this,'show2')">
+	<div id="show2"></div>
+	</div>
+	<div id="more" style="display:none">
+	    <div>
+	    像素:515*325(商城首页焦点)  <input type="file" id="litpic3" name="litpic3" onchange="yulan(this,'show3')">
+	    <div id="show3"></div>
+	    </div>
+		<div>
+		像素:350*110(首页访谈,装修知识)  <input type="file" id="litpic4" name="litpic4" onchange="yulan(this,'show4')">
+		<div id="show4"></div>
+		</div>
+		<div>
+		像素:115*135(商城奢侈品,名家邀约)  <input type="file" id="litpic5" name="litpic5" onchange="yulan(this,'show5')">
+		<div id="show5"></div>
+		</div>
+		<div>
+		像素:235*270(地板子频道焦点,卫浴子频道焦点等)  <input type="file" id="litpic6" name="litpic6" onchange="yulan(this,'show6')">
+		<div id="show6"></div>
+		</div>
+		<div>
+		像素:170*155(地板子频道焦点,卫浴子频道焦点等)  <input type="file" id="litpic7" name="litpic7" onchange="yulan(this,'show7')">
+		<div id="show7"></div>
+		</div>
+		<div>
+		像素:130*175(设计师页高端访谈)  <input type="file" id="litpic8" name="litpic8" onchange="yulan(this,'show8')">
+		<div id="show8"></div>
+		</div>
+		<div>
+		像素:160*180(文章终端页推荐)  <input type="file" id="litpic9" name="litpic9" onchange="yulan(this,'show9')">
+		<div id="show9"></div>
+		</div>
+	</div>
+	</TD>
+</TR>
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="hidden" NAME="writer" value="{$Think.session.nickname}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="../Public/footer" /> 

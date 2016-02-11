@@ -1,0 +1,69 @@
+<include file="Public:header" />
+
+<div class="content">
+    <div class="site">
+        {:C('site_name')} <a href="#">{$board_title}</a> > {$node_title}
+    </div>
+    <span class="line_white"></span>
+    <?php if (file_exists(DOC_ROOT.'install/')): ?>
+        <div class="tisi mt5" tips-id="09">系统检测到存在安装向导目录[install]。为了安全起见，建议您尽快删除或重命名。<a href="javascript:;" class="closetips" title="关闭后24小时内将不再显示">X</a></div>
+    <?php endif ?>
+    <dl class="box fl mt10">
+        <dt><strong>今日统计概况</strong></dt>
+        <dd>
+            <ul class="odd1">
+                <li><span>￥ {$real_amount} 元</span>销售总额：</li>
+                <li><span>{$total_order} 个</span>订单数量：</li>
+                <li><span> {$withdraw} 笔</span>提现申请：</li>
+                <li><span>{$reg} 人</span>今日新增会员：</li>
+                <li><span>{$feedback} 条</span>今日新增商品评论：</li>
+            </ul>
+        </dd>
+    </dl>
+    <dl class="box fr mt10">
+        <dt><strong>订单处理情况</strong></dt>
+        <dd>
+            <ul class="odd2">
+                <li><span><a href="{:U('Order/index',array('status'=>0))}" target="_blank" title="未处理订单总数"><i>{$dqr_count}</i></a> 个</span>未处理订单总数：</li>
+                <li><span><a href="{:U('Order/index',array('delivery_status'=>1,''=>0))}"  target="_blank" title="待发货订单总数"><i>{$dfh_count}</i></a> 个</span>待发货订单总数：</li>
+                <li><span><a href="__ROOT__/index.php?c=user&c=member_consult&a=lists" title="商品咨询总数"><?php echo $order_count['consult_total'] ?></a> 条</span>商品咨询总数：</li>
+                <li><span><a href="__ROOT__/index.php?c=user&c=member_consult&a=lists" title="未处理咨询总数"><i><?php echo $order_count['consult_reply'] ?></i></a> 条</span>未处理咨询总数：</li>
+                <li><span><a href="{:U('Order/index',array('status'=>2))}" title="已完成订单总数">{$wc_count}</a>个</span>已完成订单总数：</li>
+            </ul>
+        </dd>
+    </dl>
+    <dl class="box fl mt10">
+        <dt><strong>商品信息统计</strong></dt>
+        <dd>
+            <ul class="odd3">
+                <li><span><a href="{:U('Product/index',array('status'=>1))}" title=""><i>{$p_count}</i></a> 件</span>上架商品总数：</li>
+                <li><span><a href="{:U('Product/index',array('jg'=>1))}" title=""><i>{$jg_count}</i></a> 件</span>商品库存警告：</li>
+                <li><span><a href="<?php echo U('Goods/Goods/lists',array('label'=>2)) ?>" title=""><i><?php echo $goods_count['goods_message'] ?></i></a> 件</span>商品缺货登记：</li>
+                <li><span><i>{$ct_count}</i> 张</span>今日发放优惠券：</li>
+                <li><span><i>{$cu_count}</i> 张</span>今日使用优惠券：</li>
+            </ul>
+        </dd>
+    </dl>
+    <dl class="box fr mt10">
+        <dt><strong>系统信息</strong></dt>
+        <dd>
+            <ul class="odd4">
+                <li><span>THinkphp {$Think.version}</span>程序版本：</li>
+                <li><span><?php echo $sys_info['os'] ?> / PHP v<?php echo $sys_info['phpv'] ?></span>服务器系统及PHP：</li>
+                <li><span><?php echo $sys_info['web_server'] ?></span>服务器软件：</li>
+                <li><span><?php echo $sys_info['mysqlv'] ?></span>服务器MySQL版本：</li>
+                <li><span><?php echo $sys_info['mysqlsize'] ?> MB</span>当前数据库尺寸：</li>
+            </ul>
+        </dd>
+    </dl>
+    <div class="clear"></div>
+<script>
+$(function(){
+    $(".odd1 li:even").css("background","#fff");
+    $(".odd2 li:even").css("background","#fff");
+    $(".odd3 li:even").css("background","#fff");
+    $(".odd4 li:even").css("background","#fff");
+    $(".odd5 li:even").css("background","#fff");
+});
+</script>
+<include file="Public:footer" />

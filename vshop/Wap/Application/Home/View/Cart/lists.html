@@ -1,0 +1,37 @@
+<include file="Public:header" />
+<div class="qujiesuan">
+    <div class="c_all" id="check_all"></div>
+    <!--<div class="c_no"></div>-->
+    <span id="msg"><em>全选</em> 合计： {$total_fee} 元
+    <input type="button" value="去结算（{$count}）" class="gjiesuan">
+	</span>
+</div>
+<div class="menu2">
+   <a class="back2" href="__ROOT__/Product"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">购物车</div>
+   <a href="javascript:;" onclick="item_del();" class="webtxt">删除</a>
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/js/apply/cart.js"></script>
+
+<div class="car">
+   <volist name="list" id="cart">
+   <div class="car_box">
+      <div class="owe_on" item_id="{$cart.item_id}" item_price="{$cart.price}" cart_id='{$cart.id}'></div>
+      <div class="clist_info">
+          <div class="cprice"><em>￥{$cart.price}</em>x{$cart.num}</div>
+          <div class="clist_img"><a href="__ROOT__/Product/detail?id={$cart.product_id}" alt="{$cart.name}" title="{$cart.name}"><img src="{$cart.lit_pic}"></a></div>
+          <div class="clist_name">
+              <p><a href="__ROOT__/Product/detail?id={$cart.product_id}">{$cart.name}</a></p>
+              <p class="hui">{$cart.spec}&nbsp;</p>
+              <div class="clist_num">
+                 <input type="button" class="jj" value="-" onclick="update_num(1,{$cart.id})">
+                 <input type="text" class="shu" id="shu{$cart.id}" value="{$cart.num}" stock="{$cart.stock}" onchange="amount_update();" onkeyup="if($.isNumeric(value)==false){value=this.stock};">
+                 <input type="button" class="jj" value="+" onclick="update_num(2,{$cart.id})"> 
+              </div>
+          </div>
+      </div>
+   </div>
+   </volist>
+</div>
+<include file="Public:footer" />

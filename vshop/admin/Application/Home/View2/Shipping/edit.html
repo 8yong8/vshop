@@ -1,0 +1,162 @@
+<include file="Public:header" />
+<style>
+li, ol li, ul li, dl dt dd {
+  list-style-type: none;
+  vertical-align: middle;
+}
+</style>
+<div class="content">
+<div class="title">编辑数据 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1"  action="__URL__/edit?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD class="tRight" >公司：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="用户名不能为空" NAME="name" value="{$vo.name}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >英文名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="code" value="{$vo.code}">
+	<span>留空则默认使用中文全拼</span>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >官方网址：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="web_url" value="{$vo.web_url}">
+	<span>留空则默认使用中文全拼</span>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight">客服电话：</TD>
+	<TD class="tLeft"><INPUT TYPE="text" class="medium bLeftRequire" NAME="phone" value="{$vo.phone}">
+	<span>官方网址</span>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >保价费率：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="insure" value="{$vo.insure}">
+	<span>物品保价时收取的保价费，0未不可保价</span>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		&nbsp;到付支持 ：</TD>
+	<TD>
+		<SELECT NAME="support_cod">
+			<OPTION VALUE="0" <eq name="vo.support_cod" value="0">SELECTED</eq>>不支持</OPTION>
+			<OPTION VALUE="1" <eq name="vo.support_cod" value="1">SELECTED</eq>>支持</OPTION>
+		</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		&nbsp;默认 ：</TD>
+	<TD>
+		<SELECT NAME="is_select">
+			<OPTION VALUE="0" <eq name="vo.default" value="0">SELECTED</eq>>否</OPTION>
+			<OPTION VALUE="1" <eq name="vo.default" value="1">SELECTED</eq>>是</OPTION>
+		</SELECT>
+	</TD>
+</TR>
+<TR>
+    <TD></TD>
+	<TD style="width:92%;font-size:12px;">
+	  <dl class="blue_table mt10"> 
+	   <dt style="height:42px; background: none repeat scroll 0 0 #E8F5FC;"> 
+		<img src="__PUBLIC__/images/area_add.png" style="padding:10px;float:left;cursor: pointer; " onclick="addrow(this, 0, 0)" /> 
+		<span class="add" style="float:left;line-height: 44px;">点击添加区域模板，为每个区域设置对应的配送费用</span> 
+	   </dt> 
+	   <div> 
+		<input type="hidden" name="delivery_region[delete]" />
+		<table class="border_table"> 
+		 <thead> 
+		  <!--商品标题模板--> 
+		  <tr> 
+		   <th style="width:25%;">配送区域</th> 
+		   <th>配送费用</th> 
+		   <th>续重费用</th>
+		   <th>操作</th> 
+		  </tr> 
+		 </thead> 
+		 <tbody> 
+		  <volist name="srlist" id="sr" mod="2">
+		  <tr class="area_item <eq name="mod" value="1">even<else/>odd</eq>" data-id="{$sr.id}" style="height: 30px;" id="{$sr.id}"> 
+		   <td><span style="float: left; color: #0F0F0F;text-indent: 30px;" class="area_val">{$sr.region_id|get_province_name}</span></td> 
+		   <td> <span class="btnArea" style="color:#2d689f;margin-left: -50px;cursor:pointer" onclick="_dialog(this)">编辑区域</span> 
+		   <input class="small" name="shipping_region[edit][{$sr.id}][fw_price]" type="text" value="{$sr.fw_price}" onchange="$('#up_status_{$sr.id}').val(1);"/>
+		   <input type="hidden" name="shipping_region[edit][{$sr.id}][area_id]" value="{$sr.region_id}" />
+		   <input type="hidden" id="up_status_{$sr.id}" name="shipping_region[edit][{$sr.id}][up_status]" value="0" /> 
+		   </td> 
+		   <td>
+		   <input class="small" name="shipping_region[edit][{$sr.id}][aw_price]" type="text" value="{$sr.aw_price}" onchange="$('#up_status_{$sr.id}').val(1);"/>
+		   </td>
+		   <td><a href="javascript:void(0)" onclick="removeRow(this,{$sr.id})">删除</a></td>
+		  </tr> 
+		  </volist>
+
+		 </tbody> 
+		</table> 
+	   </div> 
+	  </dl>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >说明：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="desc" ROWS="8" COLS="25">{$vo.desc}</TEXTAREA>
+	</TD>
+</TR>
+
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="hidden" name="id" value="{$vo.id}" >
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+
+</FORM>
+<script>
+var ids = Array(), vals = Array();
+var ischked = false;
+var item_id = 0;
+var region_conf = '';
+var region_tid = '';
+<?php if ($region_conf){ ?>
+region_conf = <?php echo $region_conf ?>;
+<?php } ?>
+<?php if ($region_tid){ ?>
+region_tid = <?php echo $region_tid ?>;
+<?php } ?>
+var region_this = Array();
+var in_ischk = '';
+var in_item = '';
+var num = parseInt(Math.random() * 1000000);
+</script>
+<load href ="__PUBLIC__/js/apply/shipping.js" />
+<div id="testID" style="display: none;">
+	<div class="fendd clearfix" style="margin-right: 10px;">
+		<div class="bgef hover" data-level="0">
+		<volist name="zone_lists" id="zone">
+			<li class="li_1" data-areaid="{$zone.id}" onclick="getShowBox(this)"><span id="{$zone.id}">{$zone.name}</span></li>
+		</volist>
+		</div>
+		<!--二级菜单出现添加hover样式-->
+		<div class="bgef hover" data-level="1">
+		</div>
+		<div class="bgef hover" data-level='2'>
+		</div>
+		<div class="bgef hover" data-level='3'>
+		</div>
+	</div>
+</div>
+
+<include file="Public:footer" /> 

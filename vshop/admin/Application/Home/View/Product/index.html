@@ -1,0 +1,275 @@
+<include file="Public:header" />
+<script>
+
+//查看产品图
+function album( sourceid ){
+  window.location.href = "__URL__/album/sourceid/"+sourceid;
+}
+
+function look(id){
+    window.location.href="__APP__/Auction_log/index/aid/"+id;
+}
+
+function runguo(action){
+    window.location.href="__URL__/"+action;
+} 
+var pid;
+function Timing(id){
+  pid = id;
+  var html = '年:<input id="year" value="<?php echo date("Y"); ?>"><br/>月:<input id="month"  value="<?php echo date("m"); ?>"><br/>日:<input id="day"  value="<?php echo date("d"); ?>"><br/>';
+  html+= '小时:<select id="hour">';
+  for(i=0;i<24;i++){
+    html+= '<option value="'+i+'">'+i+'</option>';
+  }
+  html+= '</select>';
+  html+= '分:<select id="minute">';
+  for(i=0;i<60;i++){
+    html+= '<option value="'+i+'">'+i+'</option>';
+  }
+  html+= '</select>';
+  html+= '秒:<select id="second">';
+  for(i=0;i<60;i++){
+    html+= '<option value="'+i+'">'+i+'</option>';
+  }
+  html+= '</select>';
+  ymPrompt.succeedInfo({message:html,width:400,height:260,title:'定时时间设置',handler:handler});
+}
+function handler(tp){
+  if(tp=='close'){
+	return false;
+  }  
+  var year = jQuery('#year').val();
+  var month = jQuery('#month').val();
+  var day = jQuery('#day').val();
+  var hour = jQuery('#hour').val();
+  var minute = jQuery('#minute').val();
+  var second = jQuery('#second').val();
+  var parameter = "pid="+pid+"&year="+year+"&month="+month+"&day="+day+"&hour="+hour+"&minute="+minute+"&second="+second;
+  //alert(parth);return false;
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/set_timing',
+	data:parameter,
+	success:function(msg){
+	  alert(msg);
+	}
+  })
+}
+
+function auction(pid){
+  //alert(pid);
+  window.location.href="__APP__/Auction/add/pid/"+pid;
+}
+
+function add_attr(id){
+  window.location.href="__URL__/add_attr/id/"+id;
+}
+
+function prom(s){
+  keyValue = getSelectCheckboxValues();
+  if(!keyValue){
+    alert('请先选择商品');
+	return;
+  }
+  window.location.href="__URL__/prom/id/"+keyValue+'/s/'+s;
+}
+</script>
+
+	<!-- 内容区 -->
+	<div class="content">
+		<div class="site">
+			{:C('site_name')} {$board_title} > {$node_title}
+		</div>
+		<span class="line_white"></span>
+	<div class="goods mt10">
+		<div class="guanli">
+		<FORM METHOD=get ACTION="__URL__">
+			<span style="margin-right: 10px;">按分类查看</span>
+			<select id="cat_id" name="cat_id" class="easyui-combobox combobox-f combo-f textbox-f" data-options="editable:false,panelHeight:'auto'" style="height: 26px;width:120px; display: none;" >
+				<option value="">分类选择</option>
+				<volist name="category" id="cate">
+				<option value="{$cate.id}" <eq name="cat_id" value="$cate.id">selected</eq> >{$cate.node_name}</option>
+				</volist>
+			</select>
+
+			<span style="margin-right: 10px;margin-left: 5px;">按品牌查看</span>
+
+			<select id="brand_id" NAME="brand_id" class="easyui-combobox combobox-f combo-f textbox-f" data-options="editable:false,panelHeight:'auto'" style="height: 26px; display: none;" >
+				<option value="">品牌选择</option>
+				<volist name="brands" id="brand">
+				<option value="{$brand.id}" <eq name="brand_id" value="$brand.id">selected</eq>>{$brand.name}</option>
+				</volist>
+			</select>
+
+			
+			<span style="margin-right: 10px;margin-left: 5px;">商品状态</span>
+			<select id="status" NAME="status" class="easyui-combobox combobox-f combo-f textbox-f" data-options="editable:false,panelHeight:'auto'" style="height: 26px; display: none;" >
+			  <option value="">全选</option>
+			  <option value="1" <eq name="status" value="1">selected</eq>>上架</option>
+			  <option value="0" <eq name="status" value="0">selected</eq>>下架</option>
+			</select>
+
+			<span style="margin-right: 10px;margin-left: 5px;">警告状态：</span>
+
+			<SELECT NAME="jg">
+				<OPTION VALUE="" <eq name="Think.get.jg" value="">SELECTED</eq>>全部</OPTION>
+				<OPTION VALUE="0" <eq name="Think.get.jg" value="0">SELECTED</eq>>正常商品</OPTION>
+				<OPTION VALUE="1" <eq name="Think.get.jg" value="1">SELECTED</eq>>库存警告商品</OPTION>
+			</SELECT>
+
+			<span style="margin-right: 10px;margin-left: 5px;">搜索</span>
+			<input id="keyword" name="keyword" class="easyui-textbox textbox-f" style="width: 210px; height: 26px; display: none;" prompt="输入商品名称/货号/条码" textboxname="keyword">
+			<input type="submit" value="提交" class="button_search">
+			</a>
+		</FORM>
+		</div>
+	<dl class="mt10">
+		<dt><p>
+			<a href="__ROOT__/index.php?m=Product&a=index" <eq name="status" value="">class="hover"</eq>>全部商品</a>
+			<a href="__ROOT__/index.php?m=Product&a=index&status=0" <eq name="status" value="0">class="hover"</eq>>下架商品</a>
+			<!--
+			<a href="__ROOT__/index.php?m=Product&a=index&status=2">缺货商品</a>
+			<a href="__ROOT__/index.php?m=Product&a=index&status=3">库存警告</a>
+			<a href="__ROOT__/index.php?m=Product&a=index&status=4">回收站</a></p>
+			-->
+		</dt>
+
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<table id="order_list_grid" style="width:100%"></table> 
+			</div>
+			<div id="mm1" class="easyui-menu" style="width:90px!important;">
+					<!--
+					<div>恢复商品</div>
+					<div>销毁商品</div>
+					-->
+					<div onclick="prom(1);">设为促销</div>
+					<div onclick="prom(0);">取消促销</div>
+					<!--
+					<div>设为热卖</div>
+					<div>设为新品</div>
+					<div>取消热卖</div>
+					<div>取消新品</div>
+					-->
+					<div onclick="resume();">商品上架</div>
+					<div onclick="forbid();">商品下架</div>
+			 </div>
+			<div class="clear"></div>
+		</dd>
+
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <a href="javascript:add();" class="l-btn l-btn-small l-btn-plain" group="" id="addrow">
+					  <span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">添加</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+				    <td>
+					<a href="javascript:foreverdel();" class="l-btn l-btn-small l-btn-plain" id="delrows"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">删除</span><span class="l-btn-icon icon-del">&nbsp;</span></span>
+					</a>
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+					<td>
+					  <myhtml:imageBtn name="import" value="排序" click="sort()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+					<td>
+					  <a href="javascript:void(0)" class="l-btn l-btn-small l-btn-plain" group="" id="import"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">导入</span><span class="l-btn-icon icon-import">&nbsp;</span></span></a>
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+					<td>
+					  <a href="javascript:void(0)" class="l-btn l-btn-small l-btn-plain" group="" id="export"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">导出</span><span class="l-btn-icon icon-export">&nbsp;</span></span></a>
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+					
+					<td>
+					<a href="javascript:void(0)" class="easyui-menubutton" data-options="iconCls:'icon-more',menu:'#mm1',menuAlign:'right',hasDownArrow:false">批量操作
+					<span class="l-btn-icon icon-alledit">&nbsp;</span>
+					</a>
+					</td>
+					
+					<td><div class="datagrid-btn-separator"></div></td>
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<!-- Think 系统列表组件开始 -->
+					<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+					<!--<tr><td height="5" colspan="12" class="topTd" ></td></tr>-->
+					<tr class="row" >
+					  <th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+					  <th width="5%">
+					  <eq name="sort" value="1">
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-desc" style="text-align: center;" onclick="javascript:sortBy('id','1','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  <else/>
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-asc" style="text-align: center;" onclick="javascript:sortBy('id','0','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  </a>
+					  </eq>
+					  </th>
+					  <th>商品</th>
+					  <th>分类</th>
+					  <th>价格</th>
+					  <th>库存</th>
+					  <th>促销活动</th>
+					  <th>添加时间</th>
+					  <th>状态</th>
+					  <th>操作</th>
+					</tr>
+					<volist name="list" id="vo" mod="2">
+					<tr class="datagrid-row <eq name="mod" value="1">datagrid-row-alt</eq>"  >
+					  <td><input type="checkbox" name="key"	value="{$vo.id}"></td>
+					  <td>{$vo.id}</td>
+					  <td style="text-align:left;height:auto;padding-left:8px;">{$vo.name}</td>
+					  <td>{$vo.cat_name}</td>
+					  <td>{$vo.price}</td>
+					  <td>{$vo.stock}</td>
+					  <td>{$vo.is_pm|rs='0#否@1#是#red'} 【<a href="__URL__/prom_list/prom_id/{$vo.id}" target="_blank">查看</a>】 </td>
+					  <td>
+					  {$vo.create_time|toDate='Y-m-d H#i#s'}
+					  </td>
+					  <td>{$vo.status|rs='0#下架#red@1#上架#blue'}</td>
+					  <td style="text-align:left;height:auto;">
+					  <eq name="vo.status" value="1">
+					  <a href="javascript:forbid({$vo.id})">下架</a>&nbsp;
+					  <else/>
+					  <a href="javascript:resume({$vo.id})">上架</a>&nbsp;
+					  </eq>
+					  <a href="javascript:edit('{$vo.id}')">编辑</a>&nbsp;
+					  <a href="__URL__/album/sourceid/{$vo.id}">图片编辑</a>&nbsp;
+					  </td>
+					</tr>
+					</volist>
+					</table>
+					<!-- Think 系统列表组件结束 -->
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+		 
+
+<!-- /内容区 -->
+</div>
+
+<include file="Public:footer" />  

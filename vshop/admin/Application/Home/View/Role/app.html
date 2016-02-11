@@ -1,0 +1,64 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title"> <eq name="level" value="1">项目</eq><eq name="level" value="2">模块</eq><eq name="level" value="3">操作</eq>排序  [ <a href="__URL__">返回列表</a> ]</div>
+<script language="JavaScript">
+function allSelect(){
+	var	colInputs = document.getElementsByTagName("input");
+	for	(var i=0; i < colInputs.length; i++)
+	{
+		colInputs[i].checked= true;
+	}
+}
+function allUnSelect(){
+	var	colInputs = document.getElementsByTagName("input");
+	for	(var i=0; i < colInputs.length; i++)
+	{
+		colInputs[i].checked= false;
+	}
+}
+
+function InverSelect(){
+	var	colInputs = document.getElementsByTagName("input");
+	for	(var i=0; i < colInputs.length; i++)
+	{
+		colInputs[i].checked= !colInputs[i].checked;
+	}
+}
+function saveAccess(){
+  sendForm('form1','__URL__/setApp/');
+}
+
+</script>
+
+<load href="__PUBLIC__/js/Form/MultiSelect.js" />
+<load href="__PUBLIC__/css/select.css" />
+<form method='post' name = 'form1' id="form1">
+<div align="left" style="margin-left:30px;margin-top:20px;">
+<table class="select" style="width:265px" align="center">
+<tbody><tr><td height="5" colspan="3" class="topTd"></td></tr>
+<tr><th class="tCenter">应用授权 | <a href="__APP__/Role/module/groupId/2">模块授权</a> | <a href="__APP__/Role/action/groupId/2">操作授权</a>
+</th></tr>
+<tr><td class="tRight">当前组：<myhtml:select name="groupId" style="medium" change="location.href = '?groupId='+this.options[this.selectedIndex].value;" first="选择组" options="groupList" selected="selectGroupId" />
+</td></tr>
+<tr><td>
+<myhtml:select id="groupAppId" name="groupAppId[]" options="appList" selected="groupAppList"  multiple="true" style="multiSelect" size="15" />
+</td>
+</tr>
+<tr>
+<td class="row tCenter">
+<input type="button" onclick="allSelect()" value="全 选" class="submit  ">
+<input type="button" onclick="InverSelect()" value="反 选" class="submit  ">
+<input type="button" onclick="allUnSelect()" value="全 否" class="submit ">
+<input type="button" onclick="saveAccess()" value="保 存" class="submit  ">
+<input type="hidden" name="groupId" value="{$Think.get.groupId}">
+<input type="hidden" name="module" value="Node">
+</td>
+</tr>
+<tr>
+<td height="5" class="bottomTd">
+</td>
+</tr>
+</tbody></table>
+</div>
+</form>
+<include file="Public:footer" /> 

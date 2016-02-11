@@ -1,0 +1,28 @@
+<div class="side">
+    <div class="head">
+		<?php if(!$_SESSION['logo']){ ?>
+        <img src="__PUBLIC__/images/head.jpg" width="43" height="43" alt="" />
+		<?php }else{ ?>
+		<img src="<?php echo $_SESSION['logo'];?>" width="43" height="43" alt="" />
+		<?php } ?>
+
+    </div>
+    <h3><img src="__PUBLIC__/images/ico_6.png" />管理员</h3>
+    <ul>
+		<volist name="left_nlist" id="node">
+        <li><a href='__ROOT__/index.php?c={$node.name}{$node.param_str}' name='' class='n{$node.id} z_side <eq name="Think.MODULE_NAME" value="$node.name">hover</eq>'>{$node.title}</a></li>
+		</volist>
+	</ul>
+</div>
+
+<div id="Container" style="min-width: 1000px;">
+    <div class="ico_left"><img src="__PUBLIC__/images/ico_8.png" /></div>
+	<!--
+    <iframe id="mainFrame" style="min-width: 1000px;" name="mainFrame" frameborder="0" src="" width="100%" height="100%" >
+    </iframe>
+	-->
+<style type="text/css">
+/* 关闭消息提示x按钮 */
+.tisi .closetips{float:right;margin-right:10px;color:#636363;}
+.tisi .closetips:hover {color:red;text-decoration:none;}
+</style>

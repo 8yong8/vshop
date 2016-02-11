@@ -1,0 +1,50 @@
+<include file="Public:header" />
+
+<div class="content">
+<div class="title">新增连接[ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>" enctype="multipart/form-data">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="name" ></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >类型：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="type">
+	  <OPTION VALUE="1">文字连接</OPTION>
+	  <OPTION VALUE="2">图片连接</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight" >图片：</TD>
+	<TD class="tLeft" ><input type="file" onchange="yulan(this,'yulan')" name="logo"><div id="yulan"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >连接地址：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="url" ></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >备注：</TD>
+	<TD class="tLeft" ><TEXTAREA NAME="memo" ROWS="10" COLS="41"></TEXTAREA></TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

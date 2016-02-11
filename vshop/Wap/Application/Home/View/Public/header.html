@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>{$headerTitle}</title>
+<meta name="keywords" content="{$headerKeywords}" />
+<meta name="description" content="{$headerDescription}" />
+
+<link rel="stylesheet" rev="stylesheet" href="__PUBLIC__/css/meixie.css">
+<link rel="stylesheet" rev="stylesheet" href="__PUBLIC__/css/login.css">
+<link rel="stylesheet" rev="stylesheet" href="__PUBLIC__/css/member.css">
+<link type="image/gif" href="/favicon.gif" rel="shortcut icon">
+<link type="image/gif" href="/favicon.gif" rel="bookmark">
+<script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+
+<link href="__PUBLIC__/js/artDialog/skins/twitter.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/js/artDialog/jquery.artDialog.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/artDialog/plugins/iframeTools.js"></script>
+<script>
+var ROOT = '__ROOT__';
+var URL = '__URL__';
+var APP	 =	 '__APP__';
+var PUBLIC = '__PUBLIC__';
+</script>
+</head>
+<body>
+<div class="viewport">
+<div class="wdl" id="notice_msg">您还未登录，请登录！</div>
+<div class="top">
+    <a href="__ROOT__/"><div class="logo"><img src="__PUBLIC__/images/logo.png"></div></a>
+    <div class="top_menu">
+       <ul>
+
+          <li><a href="__APP__?m=Search&a=top10"><img src="__PUBLIC__/images/top_s.png"></a></li>
+
+          <li>
+		   <a href="javascript:;"><img src="__PUBLIC__/images/top_e.png"></a>
+		  </li>
+
+          <li>
+		   <neq name="user" value="">
+		   <a href="__APP__/Member"><img src="__PUBLIC__/images/top_m.png"></a>
+		   <else/>
+		   <a href="__APP__/Public/login"><img src="__PUBLIC__/images/top_m.png"></a>
+		   </neq>		  
+		  </li>
+
+          <li>
+		   <neq name="user" value="">
+		   <a href="__APP__/Cart/lists"><img src="__PUBLIC__/images/top_g.png"></a>
+		   <else/>
+		   <a href="__APP__/Public/login"><img src="__PUBLIC__/images/top_g.png"></a>
+		   </neq>		  
+		  </li>
+
+       </ul>
+    </div>
+</div>

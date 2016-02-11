@@ -1,0 +1,49 @@
+<include file="Public:header" />
+<script>
+ function showremark(){
+   var obj = document.getElementById('remark');
+   if(obj.style.display == "none"){
+     obj.style.display = "block";
+   }else{
+     obj.style.display = "none";
+   } 
+ }
+</script>
+
+<div class="content">
+<div class="title">新增属性[ <A HREF="__URL__">返回列表</A> ]</div>
+
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="name" ></TD>
+</TR>
+<!--
+<TR>
+	<TD class="tRight" >保留条数：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  NAME="keep"></TD>
+</TR>
+-->
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT class="small bLeft" NAME="status">
+	  <option value="1">启用</option>
+	  <option value="0">禁用</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

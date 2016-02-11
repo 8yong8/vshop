@@ -1,0 +1,100 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<load href="__PUBLIC__/Js/WdatePicker/WdatePicker.js" />
+<div id="main" class="main" >
+<div class="content">
+<div class="title">新增广告 [ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return ck();">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  NAME="title"></TD>
+</TR>
+<!--
+<TR>
+	<TD class="tRight" >版面：</TD>
+	<TD class="tLeft" >
+	<select name="pagename">
+	 <volist name="pagenames" id="pagename">
+	 <option value="{$pagename.name}" <eq name="pagename" value="$pagename.name">selected</eq> >
+	 {$pagename.name}</option>
+	 </volist>
+	</select>
+	</TD>
+</TR>
+-->
+<TR>
+	<TD class="tRight" >位置：</TD>
+	<TD class="tLeft" >
+	<select name="keycode">
+	 <volist name="tagnames" id="tagname" >
+	 <option value="{$key}" <eq name="name" value="$tagname.name">selected</eq> >
+	 {$tagname.name}</option>
+	 </volist>
+	</select>
+	</TD>
+</TR>
+<!--
+<TR>
+	<TD class="tRight" >
+		开始时间：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="starttime" id="starttime" value="{$vo.starttime|toDate='Y-m-d H:i:s'}" onclick="WdatePicker();">
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight" >
+		结束时间：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="endtime" id="endtime" value="{$vo.endtime|toDate='Y-m-d H:i:s'}" onclick="WdatePicker();">
+	</TD>
+</TR>
+-->
+<TR>
+	<TD class="tRight">URL地址：</TD>
+	<TD class="tLeft">
+	<input type="text" name="url" id="url" value="{$vo.url}">
+	必须带http://
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight">图片：</TD>
+	<TD class="tLeft"><input type="file" onchange="yulan(this,'tu')" name="pic"><div id="tu"></div>
+	<!--<font color="red">图片要求:为157*118像素</font>-->
+	</TD>
+</TR>
+
+
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT class="small bLeft" NAME="status">
+	  <option value="1">启用</option>
+	  <option value="0">禁用</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="hidden" NAME="hash" value="{$hash}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

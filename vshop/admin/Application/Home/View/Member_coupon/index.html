@@ -1,0 +1,88 @@
+<include file="Public:header" />
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/laydate/laydate.js"></script>
+<script>
+function cache(){
+  window.location.href = '__URL__/GiveCache/ts/1';  
+}
+</script>
+
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <div class="guanli">
+	  <FORM METHOD=get ACTION="__URL__">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">会员：</TD>
+			<TD><INPUT TYPE="text" NAME="member_name" class="small" value="{$member_name}"></TD>
+			<TD class="tRight">优惠券ID：</TD>
+			<TD><INPUT TYPE="text" NAME="coupon_id" class="small" value="{$coupon_id}"></TD>
+			<TD class="tRight">状态：</TD>
+			<TD>
+			<SELECT NAME="status">
+				<OPTION VALUE="" <eq name="status" value="">SELECTED</eq>>全部
+				<OPTION VALUE="0" <eq name="status" value="0">SELECTED</eq>>未使用
+				<OPTION VALUE="1" <eq name="status" value="1">SELECTED</eq>>已使用
+				<OPTION VALUE="-1" <eq name="status" value="-1">SELECTED</eq>>已过期
+			</SELECT>
+			</TD>
+			<TD class="tRight">开始日期：</TD>
+			<TD><INPUT TYPE="text" NAME="btime" id="btime" class="medium" value="{$btime}" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})"></TD>
+
+			<TD class="tRight">结束日期：</TD>
+			<TD><INPUT TYPE="text" NAME="etime" id="etime" class="medium" value="{$etime}" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})"></TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </FORM>	  
+	  </div>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<myhtml:list id="checkList" name="user" style="list" checkbox="true" action="true" datasource="list" show="id:编号|8%,title:名称|20%:edit,member_name:会员,create_time|toDate='Y-m-d H#i#s':领取时间,use_time|toDate='Y-m-d H#i#s':使用时间,etime|toDate='Y-m-d H#i#s':到期时间,status|rs='0#未使用#blue@1#已使用#brown@-1#过期#red':状态" order_fields="id" align_left='info' actionlist="edit:编辑" />  
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+
+<include file="Public:footer" />  

@@ -1,0 +1,22 @@
+<include file="Public:header" />
+<div class="menu">
+   <a class="back" href="__APP__/Wallet"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">明细</div>
+</div>
+<div class="menber">
+    <div class="mingxi">
+       <ul>
+		  <volist name="list" id="vo">
+		  <li>
+		    <p class="zt"><em>{$vo.payment_mode|rs='1#在线支付@2#货到付款'}</em>{$vo.create_time|toDate='Y-m-d H:i:s'}</p>
+			<?php if($vo['pay_type']==1 || $vo['pay_type']==4){ ?>
+		    <p class="jeb"><em>余额:{$vo.balance}</em>-{$vo.amount}</p>
+			<?php }else{ ?>
+			<p class="jea"><em>余额:{$vo.balance}</em>{$vo.amount}</p>
+			<?php } ?>
+		  </li>
+		  </volist>
+       </ul>
+    </div>
+</div>
+<include file="Public:footer" />

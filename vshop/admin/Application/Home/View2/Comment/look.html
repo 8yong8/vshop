@@ -1,0 +1,43 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<div id="main" class="main" >
+<div class="content">
+<script language="javascript" src="__PUBLIC__/Js/jquery.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<div class="title">详细信息查看 [ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/update/" enctype="multipart/form-data" onsubmit="return ck();">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+
+<TR>
+	<TD class="tRight" >来源：</TD>
+	<TD class="tLeft" >
+	{$vo.source|rs='Auction#拍卖品@Goods#商品'}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >评论用户：</TD>
+	<TD class="tLeft" >
+	{$vo.member_name}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight tTop">内 容：</TD>
+	<TD class="tLeft"><TEXTAREA ROWS="22" COLS="82">{$vo.message}</TEXTAREA></TD>
+</TR>
+
+</TABLE>
+</FORM>
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

@@ -1,0 +1,19 @@
+<include file="Public:header" />
+<div class="menu">
+   <a class="back" href="__APP__/Wallet"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">我的优惠券</div>
+   <a href="#" class="nav_bz">使用规则</a>
+</div>
+<div class="content">
+	<volist name="list" id="coupon">
+    <div class="hb_box <?php if ($coupon['etime']<time() || $coupon['status']==1){ echo 'hb_no'; } ?>">
+        <div class="hb_je"><em>￥</em>{$coupon.value}</div>
+        <div class="hb_xx">
+           <p>全店通用</p>
+           <p>有效时间：至{$coupon.etime|toDate='Y-m-d'}</p>
+           <p>使用条件：{$coupon.info}</p>
+        </div>
+    </div>
+	</volist>
+</div>
+<include file="Public:footer" />

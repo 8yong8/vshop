@@ -1,0 +1,72 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<div id="main" class="main" >
+<div class="content">
+<script>
+function delmember(id){
+  var aa= window.confirm("你确定要删除嘛,删除将不可恢复。");
+  if(aa){
+	  jQuery.ajax({
+		type:"POST",
+		url:URL+'/delmember',
+		data:"id="+id,
+		success:function(msg){
+		  if(msg==1){
+		    jQuery('#tr_'+id).remove();
+		  }else{
+			alert(msg);
+		  }
+		}
+	  }) 
+  }
+}
+</script>
+<style>
+#looks td{
+  border:1px red solid;
+}
+</style>
+<div class="title">报名用户列表 [ <A HREF="__URL__">返回列表</A> ]</div>
+
+<a href="__URL__/excelDown/id/{$Think.get.id}">下载导出excel</a> (共<?php echo count($list); ?>人)
+
+<eq name="Think.session.ac_site" value="xm">
+<a href="__URL__/addmember/id/{$Think.get.id}">添加报名会员</a> 
+</eq>
+<TABLE cellpadding=3 cellspacing=3 id="looks">
+<volist name="titles" id="title">
+<TH>{$title}</TH>
+</volist>
+<!--<TH>团购活动</TH>
+<TH>姓名</TH>
+<TH>电话</TH>-->
+<TH>IP</TH>
+<TH>会员名</TH>
+<TH>报名时间</TH>
+<volist name="list" id="mem">
+<TR id="tr_{$mem.id}">
+  <?PHP
+    for($i=1;$i<=count($titles);$i++){
+	  echo "<TD>".$mem['content'][$i]."</TD>";
+	}
+  ?>
+  <TD>{$mem.ip}</TD>
+  <TD>{$mem.member_name}</TD>
+  <TD>{$mem.create_time}
+  <eq name="vo.webset" value="xm">
+      <!--<a href="__URL__/editmember/id/{$mem.id}">编辑</a>-->
+	  <a href="javascript:viod(0);" onclick="delmember('{$mem.id}');">删除</a>
+  </eq>
+  </TD>
+</TR>
+</volist>
+</TABLE>
+
+</div>
+<div class="page">{$page}</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

@@ -1,0 +1,43 @@
+<include file="Public:header" />
+
+<div class="content">
+	<style>
+		#Validform_msg{display: none}
+	</style>
+	<div class="site">
+		{:C('site_name')} <a href="#">帐号设置</a> > 编辑帐号
+	</div>
+	<span class="line_white"></span>
+	<div class="install tabs mt10">
+		<dl>
+			<dt><a href="javascript:" class="hover">站点信息</a></dt>
+			<form name="form" method="post" action="__URL__/uc_sup_infoxg_save/" enctype="multipart/form-data">
+				<dd>
+					<ul class="web p0">
+						<li> <strong>用户名：{$_SESSION['account']}</strong>
+						</li>
+						<li> <strong>昵称：{$_SESSION['nickname']}</strong>
+						</li>
+
+						<li> <strong>头像：</strong>
+						<input type="file" id="logo" name="logo" onchange="yulan(this,'show2')"> 大小43*43
+						<div id="show2">
+						<neq name="_SESSION['logo']" value="">
+						<img src="{$_SESSION['logo']}" width="260px">
+						</neq>
+						</li>
+
+						<li> <strong>Email：</strong>
+							<input type="text" class="text_input" name="email" value="{$_SESSION['email']}" />
+						</li>
+						<li> <strong>密码：</strong>
+							<input type="text" class="text_input" name="password" />
+						</li>
+					</ul>
+				</dd>
+				<div class="input1">
+					<input type="submit" value="提交" class="button_search">
+				</div>
+			</form>
+		</dl>
+<include file="Public:footer" /> 

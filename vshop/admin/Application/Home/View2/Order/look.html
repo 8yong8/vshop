@@ -1,0 +1,87 @@
+<include file="Public:header" />
+<script>
+function show(id){
+  $('#'+id).toggle();
+}
+
+function oCopy(){
+obj = document.getElementById('duanxin');
+obj.select(); 
+js=obj.createTextRange(); 
+js.execCommand("Copy")
+alert("复制成功!"); 
+} 
+
+</script>
+<div class="content">
+<style>
+#zx td{
+  border:1px red solid;
+}
+</style>
+  <div class="title">订单详细数据 [ <A HREF="__URL__">返回列表</A> ]</div>
+	<TABLE cellpadding=3 cellspacing=3 id="zx" class="add">
+	<TR>
+	<TH>编号</TH><td>{$vo.id}</td>
+	</TR>
+	<TR>
+	<TH>订单号</TH><td>{$vo.order_id}</td>
+	</TR>
+	<TR>
+	<TH>产品</TH>
+	<td>
+	{$goods}
+	<!--
+	<volist name="details" id="detail">
+	<a href="{:C('SITE_URL')}/index.php/{$detail.source}/detail/id/{$detail.sourceid}">{$detail.product_name}</a>&nbsp;&nbsp;
+	</volist>
+	-->
+	</td>
+	</TR>
+	<TR>
+	<TH>收货人姓名</TH><td>{$vo.recipient}</td>
+	</TR>
+	<TR>
+	<TH>收货地址</TH><td>{$vo.address}</td>
+	</TR>
+	<TR>
+	<TH>邮编</TH><td>{$vo.zip_code}</td>
+	</TR>
+	<TR>
+	<TH>联系方式</TH><td>{$vo.mobile}</td>
+	</TR>
+	<TR>
+	<TH>卖家信息</TH>
+	<td>
+	<eq name="user" value="">
+	{:C('company_name')}
+	<else/>
+	姓名:{$user_msg.realname} | 电话:{$user_msg.tel}/{$user_msg.phone}
+	</eq>
+	</td>
+	</TR>
+	<TR>
+	<TH>IP</TH><td>{$vo.ip}</td>
+	</TR>
+	<TR>
+	<TH>下单时间</TH><td>{$vo.create_time|toDate='Y-m-d H:i:s'}</td>
+	</TR>
+
+	<TR>
+	<TH>订单总金额</TH><td>{$vo.total_free}</td>
+	</TR>
+
+	<TR>
+	<TH>订购商品总数量</TH><td>{$vo.total_num}</td>
+	</TR>
+
+	<TR>
+	<TH>备注</TH><td>{$vo.memo}</td>
+	</TR>
+
+	<TR>
+	<TH>是否受理</TH><td>{$vo.status|rs='0#未支付#red@1#已支付#blue@2#完成交易#blue'}</td>
+	</TR>
+
+	</TABLE>
+<include file="Public:footer" /> 

@@ -1,0 +1,86 @@
+<include file="Public:header" />
+<script>
+//搜索会员
+function get_members(){
+  var key = jQuery("#key").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/get_members",
+	data:"key="+key,
+	success:function(msg){
+	 var objs = eval('('+msg+')');
+	 var html = '<select name="member_id" id="member_id"><option value="0">选择</option>';
+	 for(i=0;i<objs.length;i++){
+	   if(i==0){
+	     html += '<option value='+objs[i].id+' selected>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }else{
+	     html += '<option value='+objs[i].id+'>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }
+	 }
+	 html += '</select>';
+	 jQuery('#cidspan').html(html);
+	}
+  })
+}
+function memchange(){
+  var member_id = jQuery("#member_id").val();
+  var pay_type = jQuery("#pay_type").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/create_order",
+	data:"member_id="+member_id+"&pay_type="+pay_type,
+	success:function(msg){
+	  jQuery('#order_id').val(msg);
+	}
+  })
+}
+</script>
+<div class="content">
+<div class="title">新增信息[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">
+		&nbsp;对象：</TD>
+	<TD  style="width:550px;">
+		&nbsp;&nbsp;搜索：<input id="key" style="width:100px;"> <INPUT TYPE="button" value="搜索" class="button" onclick="get_members();">
+		<span id="cidspan">
+		<select name="member_id" id="member_id" onchange="memchange();">
+		  <option value="">选择</option>
+		  <volist name="members" id="member">
+		  <option value="{$member.id}" <eq name="member.id" value="$vo.member_id">selected</eq>>{$company.name}</option>
+		  </volist>
+		</select>
+		</span>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >数量：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  NAME="score">
+	<br/><font color="red"><strong>（如果是扣除，写负数如：-100）</strong>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >内容：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="desc" ROWS="10" COLS="30"></TEXTAREA>
+	<br>如：论坛活跃份子,给予鼓励积分。
+	</TD>
+</TR>
+
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

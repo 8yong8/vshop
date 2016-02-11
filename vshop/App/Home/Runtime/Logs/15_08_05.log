@@ -1,0 +1,19 @@
+[ 2015-08-05T18:43:29+08:00 ] 127.0.0.1 /guoji/yunwang/api/index.php/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003981s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004137s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003519s ]
+NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 570 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005620s ]
+SQL: SELECT b.id,b.username,b.realname,b.mobile,b.province,b.city,b.district,b.pv_id,b.ct_id,b.dist_id,b.logo,b.last_login_time,b.baiduUserId,b.mb_system,b.status,c.balance,c.frozen,c.points FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id LEFT JOIN `zy_member_wallet` as c on a.member_id=c.member_id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `zy_order` [ RunTime:0.003572s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_order` WHERE ( `member_id` = 107 ) AND ( `status` = 0 ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_order` WHERE ( `member_id` = 107 ) AND ( `status` = 1 ) AND ( `shipping_status` = 0 ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_order` WHERE ( `member_id` = 107 ) AND ( `status` = 1 ) AND ( `shipping_status` = 1 ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_order` WHERE ( `member_id` = 107 ) AND ( `status` = 2 ) AND ( `shipping_status` = 2 ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_order` WHERE ( `is_refund` = 1 ) LIMIT 1   [ RunTime:0.000137s ]
+

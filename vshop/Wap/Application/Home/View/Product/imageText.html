@@ -1,0 +1,9 @@
+<include file="Public:header" />
+<div class="menu2">
+   <a class="back2" href="__APP__/Product/detail?id={$vo.id}"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">图文详情</div>
+</div>
+<div class="goods_all_info">
+{$vo.content|stripcslashes|htmlspecialchars_decode}
+</div>
+<include file="Public:footer" />

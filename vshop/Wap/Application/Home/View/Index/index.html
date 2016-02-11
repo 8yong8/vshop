@@ -1,0 +1,66 @@
+<include file="Public:header" />
+<div class="home_menu">
+   <ul>
+      <li><a href="__ROOT__/"><img src="__PUBLIC__/images/home_menu_01.png" width="100%"></a></li>
+      <li><a href="__ROOT__/Product/lists"><img src="__PUBLIC__/images/home_menu_02.jpg" width="100%"></a></li>
+      <li><a href="__ROOT__/Product/lists?tag=1"><img src="__PUBLIC__/images/home_menu_03.jpg" width="100%"></a></li>
+      <li><a href="__ROOT__/Product/brand"><img src="__PUBLIC__/images/home_menu_04.jpg" width="100%"></a></li>
+   </ul>
+</div>
+
+  <volist name="positions[10]"  id="position">
+  <div class="ad mgt15"><a href="{$position.url}"><img src="{$position.lit_pic}" width="100%"></a></div>
+  </volist>
+
+  <volist name="positions[11]"  id="position" key="k">
+  <div class="ad  bbb"><a href="{$position.url}"><img src="{$position.lit_pic}" width="100%"></a></div>
+  </volist>
+
+  <volist name="positions[12]"  id="position" key="k">
+  <div class="ad  mgt15"><a href="{$position.url}"><img src="{$position.lit_pic}" width="100%"></a></div>
+  </volist>
+
+  <volist name="positions[13]"  id="position" key="k">
+  <div class="ad  bbb"><a href="{$position.url}"><img src="{$position.lit_pic}" width="100%"></a></div>
+  </volist>
+
+  <volist name="positions[14]"  id="position" key="k">
+  <div class="ad  mgt15"><a href="{$position.url}"><img src="{$position.lit_pic}" width="100%"></a></div>
+  </volist>
+
+  <volist name="positions[15]"  id="position" key="k">
+  <div class="ad  bbb"><a href="{$position.url}"><img src="{$position.lit_pic}" width="100%"></a></div>
+  </volist>
+<div class="home_kd">
+  <ul>
+	 <volist name="positions[16]"  id="position" key="k">
+     <li><a href="{$position.url}" class="l"><img src="{$position.lit_pic}" width="100%"></a></li>
+	 </volist>
+  </ul>
+</div>
+<neq name="positions[17]" value="">
+<div class="f_kd">
+   <div class="kd_tit">品牌推荐</div>
+   <div class="kd_box">
+     <ul>
+	 <volist name="positions[17]"  id="position" key="i">
+	 <?php if ($i%4==0 && $i!=0){ ?>
+	 </ul>
+	 <ul>
+	 <?php } ?>
+	 <?php if (($i+1)%4==0 && $i!=0){ ?>
+	 <li><a href="{$position.url}"  class="brw">{$brand.title}</a></li>
+	 <?php }else { ?>
+	 <li><a href="{$position.url}">{$brand.title}</a></li>
+	 <?php } ?>
+	 </volist>
+	 </ul>
+   </div>
+   <!--
+   <div class="kd_more">
+   <a href="#">显示更多</a>
+   </div>
+   -->
+</div>
+</neq>
+<include file="Public:footer" />

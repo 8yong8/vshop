@@ -1,0 +1,211 @@
+@charset "utf-8";
+/*公用*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+font {
+    font-size: 12px;
+}
+
+body {
+    background-color: #fcfcfc;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li, ol li, ul li, dl dt dd {
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+input {
+    vertical-align: middle;
+    width: auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: normal;
+}
+
+input, button, select, textarea {
+    outline: none;
+}
+
+.w1024 {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+span {
+    display: inline-block;
+}
+
+.h60 {
+    height: 60px;
+    width: 100%;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+/*head*/
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 60px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 10;*/
+    position: relative;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.menu {
+    margin-left: 20px;
+}
+
+.menu li {
+    float: left;
+    margin-left: 24px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.menu li a {
+    display: inline-block;
+    height: 60px;
+    color: #606060;
+}
+
+.menu li a.hover, .menu li a:hover, .menu li {
+    color: #158cd5;
+}
+
+/*login,register*/
+.loginbox {
+    margin-right: 45px;
+}
+
+.loginbox li {
+    float: left;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.loginbox li a {
+    display: inline-block;
+    width: 66px;
+    height: 31px;
+
+}
+
+.login {
+    margin-right: 20px;
+}
+
+.login a {
+    color: #333333;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 5px;
+    background-color: #d1d1d1;
+}
+
+.login a:hover {
+    background-color: #dddddd;
+}
+
+.register {
+    margin-right: 20px;
+}
+
+.register a {
+    color: #ffffff;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 5px;
+    background-color: #009cde;
+}
+
+.register a:hover {
+    background-color: #00a9ec;
+}
+
+/*footer*/
+.footer {
+    background-color: #474747;
+    height: 232px;
+    min-width: 1024px;
+    width: 100%;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-top: 35px;
+}
+
+.footer p {
+    cursor: pointer;
+    color: #7c7c7c;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.tell, .qq, .emall, .weixin {
+    margin-right: 75px;
+}
+
+.haidaoyun_app {
+    margin-top: 15px;
+    background: url(../images/haidaoyun_app.png) no-repeat center;
+    width: 93px;
+    height: 93px;
+}
+
+.container {
+    margin-top: 40px;
+    color: #7c7c7c;
+}
+

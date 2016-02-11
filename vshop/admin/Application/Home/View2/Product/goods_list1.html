@@ -1,0 +1,221 @@
+<include file="Public:header" />
+<SCRIPT LANGUAGE="JavaScript">
+var product_id = '{$vo.id}';
+
+function check(){
+  return true;
+}
+
+</SCRIPT>
+<style>
+.web2 td span{
+  /*margin-top:13px;*/
+  width:100%;
+  /*border:1px red solid;*/
+}
+
+.web2 td input{
+  padding:0px;
+  margin:0px;
+}
+
+.blue_table table tr {
+  height: 40px;
+  line-height: 30px;
+  border-top: 1px solid #aadaff;
+}
+
+.blue_table input {
+  width: 50%;
+}
+</style>
+<div class="content">
+<div class="title">货品列表 [ <A HREF="__URL__">返回列表</A> ] <font color="red">[ <A HREF="__URL__/goods_list/id/{$_GET['id']}/mb/2"><font color="red">切换模式</font></A> ]</font></div>
+
+<FORM METHOD=POST id="form1" action="__URL__/product_add?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+	<ul class="web2 p1">
+	<li>
+		<sTRong>规格数据：</sTRong>
+		<dl class="blue_table mt10">
+			<dt style="height:42px; background: none repeat scroll 0 0 #E8F5FC;"><img src="__PUBLIC__/images/spec_add.png" onclick="selSpec({$vo.product_type})" style="padding:10px;float:left;cursor: pointer;">
+			<span class="add" style="float:left;line-height: 22px;;cursor: pointer;padding-left: 50px;margin-top:13px;">点击添加商品规格可为不同规格的商品指定不同的库存和和价格，方便用户选择购买</span>
+			<span class="delete_checked_goods" onclick="delChecked()">多选删除</span>
+			<span class="change_all_goods">批量修改</span>
+			<img src="__PUBLIC__/images/input_8.png" onclick="delAll()" style="padding:10px;float:right;cursor: pointer;">
+			</dt>
+			<div>
+				<table class="border_table">
+					<thead id="goodsBaseHead">
+					<TR>
+					<th width="5%"><label id="select_all"><input type="checkbox"> 全选</label></th>
+						<th width="15%">商品条码</th>
+						<th width="15%">商品货号</th>
+						<volist name="attribute" id="attribute_value">
+						<th>{$attribute_value.attr_name}</th>
+						</volist>						
+						<th width="5%">库存</th>
+						<th width="10%">销售价格</th>
+						<th width="10%">图片</th>
+						<!--
+						<th width="10%">市场价格</th>
+						<th width="10%">成本价格</th>
+						-->
+						<th>操作</th>
+					</TR>
+					</thead>
+
+					<tbody id="goodsBaseBody">
+					<volist name="list" id="product">
+					<TR id="tr_{$product.id}" data-id="{$product.id}">
+					  <TD><input type="checkbox" name="key" value="{$product.id}"></TD>
+					  <TD>
+					  <INPUT TYPE="text" NAME="spec_barcode[{$product.id}]" value="{$product.barcode}" placeholder="请输入条形码">
+					  <!--
+					  <span onclick="field_value_update(this, 'barcode', {$product.id})">{$product.barcode|default='请输入商品条码！'}</span>
+					  -->
+					  </TD>
+					  <TD>
+					  <INPUT TYPE="text" NAME="spec_sn[{$product.id}]" value="{$product.sn}" placeholder="请输入货号">
+					  <!--
+					  <span onclick="field_value_update(this, 'sn', {$product.id})" style="width:500px;">{$product.sn}</span>
+					  -->
+					  </TD>
+					  <volist name="product.product_attr" id="goods_attr">
+					  <TD scope="col"><div align="center">{$goods_attr.attr_value}</div></TD>
+					  </volist>
+					  <TD>
+					  <INPUT TYPE="text" NAME="spec_stock[{$product.id}]" value="{$product.stock}">
+					  <!--
+					  <span onclick="field_value_update(this, 'stock', {$product.id})">{$product.stock}</span>
+					  -->
+					  </TD>
+					  <TD>
+					  <INPUT TYPE="text" NAME="spec_price[{$product.id}]" value="{$product.price}">
+					  <!--
+					  <span onclick="field_value_update(this, 'price', {$product.id})">{$product.price}</span>
+					  --></TD>
+					  <TD>
+					  <INPUT TYPE="text" NAME="spec_pic[{$product.id}]" id="pic_{$product.id}" value="{$product.lit_pic}">
+						<font class="uplogo" style="cursor: pointer;left:300px;line-height: 22px;" onclick="PicUpload('pic_{$product.id}',300,300)">选择</font>
+						<font class="uplogo" style="cursor: pointer;line-height: 22px;left:330px;" onclick="viewImg('pic_{$product.id}')">预览</font>
+					  </TD>
+					  <TD>
+					  <a href="javascript:void(0)" onclick="product_del({$product.id},{$product.product_id});">删除</a>
+					  </TD>
+					</TR>
+					<INPUT TYPE="hidden" NAME="item_id[]" value="{$product.id}">
+					</volist>
+					</tbody>
+				</table>
+			</div>
+		</dl>
+	</li>    
+	</ul>
+<div class="submit">
+	<INPUT TYPE="hidden" NAME="product_id" value="{$vo.id}">
+	<input type="submit" class="button_search" value="提交">
+	<a href="__URL__">返回</a>
+</div>
+<!--批量编辑商品信息弹窗-->
+<div id="batcheditGoods" class="BatchEditingMoney">
+	<ul>
+		<li class="w85"><strong>库存</strong></li>
+		<li class="w85"><strong>销售价格</strong></li>
+		<!--
+		<li class="w85"><strong>市场价格</strong></li>
+		<li class="w85"><strong>成本价格</strong></li>
+		-->
+	</ul>
+	<ul>
+		<li class="w85"><input type="text" name="number_change" value="+0" /></li>
+		<li class="w85"><input type="text" name="price_change" value="+0.00" /></li>
+		<!--
+		<li class="w85"><input type="text" name="_market_price_change" value="+0.00" /></li>
+		<li class="w85"><input type="text" name="_cost_price_change" value="+0.00" /></li>
+		-->
+	</ul>
+	<p>小提示：此处修改的值将对所有商品值进行加减修改如:+10 -5<br>库存必须是整数  价格可带两位小数</p>
+</div>
+</FORM>
+<script>
+//默认货号
+var defaultProductNo = "{$vo.sn}";
+var default_sn = '{$vo.sn}';
+var default_number = '1';
+var default_price = '{$vo.price}';
+var products = {$list_json};
+//批量修改信息
+$('.change_all_goods').click(function(){
+	art.dialog({
+		padding: '0px ',
+		id: 'BatchEditingMoney',
+		background: '#ddd',
+		opacity: 0.3,
+		title: '批量编辑商品信息',
+		content: document.getElementById('batcheditGoods'),
+		ok:function() {
+			var number_change 	= $('[name="number_change"]').val();
+			var price_change 		= $('[name="price_change"]').val();
+			var num_reg = /^[-\+]?\d*$/;
+			var price_reg = /^[-\+]?\d+(\.\d{2})?$/;
+			if(!(num_reg.test(number_change)) || !(price_reg.test(price_change))){
+				alert('请输入正确的数字!');
+				return false;
+			}
+			//库存
+			$('#goodsBaseBody [name^="stock"]').each(function(index,data){
+				num = parseInt($(this).val()) + parseInt(number_change);
+				num = num < 0 ? 0 : num;
+				$(this).val(num);
+			})
+			//销售价
+			$('#goodsBaseBody [name^="price"]').each(function(index,data){
+				num = Number($(this).val()) + Number(price_change);
+				num = num < 0 ? 0 : num;
+				$(this).val(num.toFixed(2));
+			})
+
+			$('[name="number_change"]').val('+0');
+			$('[name="price_change"]').val('+0.00');
+			return true;
+		},
+		cancel:true
+	});
+});
+// 全选
+$(window).load(function(){
+	$('#select_all').on('click',"input",function() {
+		if ($(this).is(':checked') == true) {
+			$("input[name='key']").each(function() {
+				$(this).attr("checked",true);
+			});
+		} else {
+			$("input[name='key']").each(function() {
+				$(this).attr("checked",false);
+			});
+		}                
+	});
+	$("input[name='key']").click(function() {
+		if($(this).attr("checked")){
+			$(this).attr("checked","true");
+		}else{
+			$(this).removeAttr("checked");
+		}
+		var num= 0;
+		$("input[name='key']").each(function() {
+			if($(this).attr("checked")){
+				num++;
+			}
+		});
+		if(num==$("input[name='key']").length){
+			$('#select_all').children('input').attr("checked","true");
+		}else{
+			$('#select_all').children('input').removeAttr("checked");
+		}
+	});
+})
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/apply/product.js"></script>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

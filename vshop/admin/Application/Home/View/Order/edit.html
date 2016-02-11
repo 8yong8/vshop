@@ -1,0 +1,402 @@
+<include file="Public:header" />
+<load href ="__PUBLIC__/js/apply/order.js" />
+<script type="text/javascript">
+
+</script>
+<style>
+#Validform_msg{display: none}
+label{min-width: 90px;display:inline-table}
+.list_order span{padding: 0 5px;}
+.list_order span a{padding: 0 0px;}
+</style>
+<div class="content">
+    <div class="title">编辑信息[ <A HREF="__URL__">返回列表</A> ]</div>
+    <span class="line_white"></span>
+    <div class="list_order">
+        <div class="handle mt10">
+        	<span class="fr"><a href="javascript:" onclick="view_log('{$vo['order_sn']}')">查看订单操作日志</a></span>
+                <strong>订单操作：</strong>
+                <!-- 
+                确认订单：[先发货后支付 || [先支付后发货 && 已支付]] && 未确认
+                -->
+                <a href="javascript:;" <?php if(($vo['payment_mode'] == 2 || ($vo['payment_mode'] == 1 && $vo['pay_status'] == 1)) && $vo['status'] == 0){ ?> onclick="order_update('confirm_order','status',1,<?php echo $vo['id']; ?>,location.reload());"<?php }else{ ?> class="disabled"<?php } ?>>确认订单</a>
+                <!-- 
+                确认付款：[先发货后支付 && 已发货 && 未支付] || [先支付后发货 && 待支付 && 待发货]
+                -->
+                <a href="javascript:;"<?php if ((($vo['pay_type'] == 2 && $vo['delivery_status'] == 1 && $vo['pay_status'] == 0) || ($vo['payment_mode'] == 1 && $vo['pay_status'] == 0 && $vo['delivery_status'] == 0)) && $vo['status'] == 0){ ?> onclick="order_update('payment','pay_status',1,<?php echo $vo['id']; ?>,location.reload());"<?php }else{ ?> class="disabled"<?php } ?>>确认付款</a>
+                <!-- 
+                确认发货：[先发货后支付 || [先支付后发货 + 已支付]] && 已确认 && 待发货 
+                -->
+                <a href="javascript:;" <?php if (($vo['payment_mode'] == 2 || ($vo['payment_mode'] == 1 && $vo['pay_status'] == 1)) && $vo['status'] == 1 && $vo['delivery_status'] == 0 ){?>  onclick="deliver(<?php echo $vo['id']; ?>);" <?php }else{ ?> class="disabled"<?php } ?>>发货</a>
+                <!-- 
+                确认完成：[先发货后支付 || 先支付后发货 && 已支付] &&  已确认 &&  已发货
+                -->
+                <a href="javascript:;"<?php if (($vo['pay_type'] == 1 || ($vo['pay_type'] == 0 && $vo['pay_status'] == 1)) && $vo['status'] == 1 && $vo['delivery_status'] == 1 ): ?> onclick="order_update('receipt','status',2,<?php echo $vo['id']; ?>,location.reload())"<?php else: ?> class="disabled"<?php endif ?>>确认完成</a>
+
+                <a href="javascript:;" onclick="del({$vo.id});">关闭订单</a>
+
+				<strong>退款：</strong>{$vo.is_refund|rs='1#有退款#red@0#木有#blue'}
+        </div>
+        <div class="details clearfix mt10">
+            <div class="sub mt15 fr">
+                <a id="print_order" href="javascript:;" data-id="<?php echo $vo['id']; ?>" style="">打印订单</a>
+				<neq name="prev" value="">
+                	<a href="__URL__/edit/id/{$prev.id}">上一单</a>
+                <else/>
+                    <a>没有了</a>
+                </neq>
+				<neq name="next" value="">
+                	<a href="__URL__/edit/id/{$next.id}">下一单</a>
+                <else/>
+                    <a>没有了</a>
+                </neq>
+                <a href="__URL__/">返回订单列表</a>
+            </div>
+            <strong>订单<br />详情</strong>
+            <span>订单号：{$vo.order_sn}</span>
+            <span>订单状态：
+                <b>
+				    {$vo.status|rs='0#未确认@1#确认订单@2#完成交易#red@-1#订单关闭#red'}
+					{$vo.pay_status|rs='0#未支付@1#已支付'}
+					{$vo.delivery_status|rs='0#未发货@1#已发货'}
+                </b>
+            </span>
+            <span>订单类型：<img src="__PUBLIC__/images/ico_d_{$vo.source}.png" alt="" /></span>
+        </div>
+		<?php if($vo['pay_status']==1 || $vo['payment_mode']==2){ ?>
+        <div class="details clearfix mt10">
+            <strong>支付<br />详情</strong>
+            <span>
+			支付方式：{$vo.payment_mode|rs='1#在线支付#blue@2#货到付款#blue'}
+			支付公司：<font color="blue">{$vo.payment_company}</font>
+			支付渠道：<font color="blue">{$vo.payment_channel}</font>
+			</span>
+        </div>
+		<?php } ?>
+        <div class="detaxx">
+            <table>
+                <tr>
+                    <th>应付订单金额</th>
+                    <th>&nbsp;</th>
+                    <th>商品总额</th>
+                    <th>&nbsp;</th>
+                    <th>配送费用</th>
+                    <th>&nbsp;</th>
+                    <th>发票税额</th>
+                    <th>&nbsp;</th>
+                    <th>保价费用</th>
+                    <th>&nbsp;</th>
+                    <th>商品折扣</th>
+                    <th>&nbsp;</th>
+                    <th>优惠券减免</th>
+                    <th>&nbsp;</th>
+                    <th>使用积分抵扣</th>
+                </tr>
+                <tr>
+                    <td><font>{$vo.actual_paid}</font></td>
+                    <td><b>=</b></td>
+                    <td><b>{$vo.total_fee}</b></td>
+                    <td><b>+</b></td>
+                    <td><b>{$vo.shipping_fee}</b></td>
+                    <td><b>+</b></td>
+                    <td><b>{$vo.tax_fee}</b></td>
+                    <td><b>+</b></td>
+                    <td><b>{$vo.insure_fee}</b></td>
+                    <td><b>-</b></td>
+                    <td><b>{$vo.discount_fee}</b></td>
+                    <td><b>-</b></td>
+                    <td><b>{$vo.coupons_fee}</b></td>
+                    <td><b>-</b></td>
+                    <td><b>{$vo.score_fee}</b></td>
+                </tr>
+				<?php if($vo['bond']!=0 || $vo['balance_pay']!=0){ ?>
+                <tr>
+                    <td colspan="16" style="text-align:left;padding-left:65px;">定金/保证金：<font>{$vo.bond}</font>&nbsp;&nbsp;&nbsp;余额支付：<font>{$vo.balance_fee}</font></td>
+                </tr>
+				<?php } ?>
+            </table>
+            <ul>
+                <li>
+                    <strong>客户订单留言：</strong>
+					{$vo.memo|default='--'}
+                </li>
+                <li class="none">
+                    <span><a href="javascript:" <?php if ((($vo['payment_mode'] == 2 && $vo['delivery_status'] == 1 && $vo['pay_status'] == 0) || ($vo['payment_mode'] == 1 && $vo['pay_status'] == 0 && $vo['delivery_status'] == 0)) && $vo['status'] == 0){ ?> id="editMoney"<?php }else{ ?> onclick="alert('当前订单状态不允许修改价格');"<?php } ?>>编辑费用信息</a></span>
+                    <strong>发票信息：</strong>
+					抬头：{$vo.tax_title|default='--'}
+					内容：{$vo.tax_content|default='--'}
+                </li>
+            </ul>
+        </div>
+		<gt name="vo.discount_fee" value="0">
+        <dl class="blue_table mt10">
+            <dt>
+            	<strong>减免信息</strong>
+            </dt>
+            <dd>
+                <table>
+                    <tr>
+                        <th>类型</th>
+                        <th>名称</th>
+                        <th>信息</th>
+                    </tr>
+					<volist name="prom_list" id="prom">
+                    <tr>
+                        <td>{$prom.prom_type|rs='order#订单优惠'}</td>
+                        <td>{$prom.name}</td>
+                        <td>{$prom.award_type}</td>
+                    </tr>
+					</volist>
+                </table>
+            </dd>
+        </dl>
+		</gt>
+		<gt name="vo.coupons_fee" value="0">
+        <dl class="blue_table mt10">
+            <dt>
+            	<strong>优惠券信息</strong>
+            </dt>
+            <dd>
+                <table>
+                    <tr>
+                        <th>名称</th>
+                        <th>信息</th>
+                        <th>优惠</th>
+                    </tr>
+					<volist name="coupon_list" id="coupon">
+                    <tr>
+                        <td>{$coupon.title}</td>
+                        <td>{$coupon.info}</td>
+                        <td>{$coupon.award_value}</td>
+                    </tr>
+					</volist>
+                </table>
+            </dd>
+        </dl>
+		</gt>
+        <dl class="blue_table mt10">
+            <dt>
+            	<strong>收货人信息</strong>
+            	<!--<span><a href="javascript:" onclick="editaccept()">编辑用户信息</a></span>-->
+            </dt>
+            <dd>
+                <table>
+                    <tr>
+                        <th>会员号</th>
+                        <th>收货人</th>
+                        <th>手机号</th>
+                        <th>邮编</th>
+                        <th>详细地址</th>
+                    </tr>
+                    <tr>
+                        <td>{$vo.member_name}</td>
+                        <td>{$vo.recipient}</td>
+                        <td>{$vo.mobile}</td>
+                        <td>{$vo.zip_code}</td>
+                        <td>{$vo.address}</td>
+                    </tr>
+                </table>
+            </dd>
+        </dl>
+        <dl class="blue_table mt10">
+            <dt>
+            	<strong>支付配送方式</strong>   
+            </dt>
+            <dd>
+                <table>
+                    <tr>
+                        <td>
+                        <p>支付方式：{$vo.payment_mode|rs='1#在线支付@2#货到付款'}</p>
+						</td>
+                    </tr>
+                    <tr>
+                        <td><p>配送方式：{$shipping.shipping_company}
+                            <eq name="vo.delivery_status" value="1">
+								<!--
+                                <a href="__APP__/Order_delivery/look/id/{$shipping.id}" target="_blank" onclick="kuaidi('{$shipping.id}');">查询订单发货情况</a> 
+								-->
+                                <a href="javascript:;" onclick="kuaidi('{$shipping.id}');">查询订单发货情况</a> 
+                            </eq>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </dd>
+        </dl>
+        <dl class="blue_table mt10">
+            <dt>
+            	<strong>商品信息</strong>
+            	</dt>
+            <dd>
+                <table>
+                    <tr>
+                        <!--<th>商品条码</th>-->
+                        <th>商品名称</th>
+                        <th>商品属性</th>
+                        <th>商品单价</th>
+                        <th>购买数量</th>
+                        <th>商品总价</th>
+						<th>状态</th>
+                    </tr>
+					<volist name="items" id="item">
+                    <tr>
+                        <td>{$item.product_name}</td>
+                        <td>{$item.spec}</td>
+                        <td>{$item.price}</td>
+                        <td>{$item.num}</td>
+                        <td><?php echo (number_format($item['price'] * $item['num'], 2, '.', '')); ?></td>
+                        <td id="item_{$item.id}">
+						<?php if($item['status']==1 || $item['status']==2 || $vo['payment_mode']==2){ ?> 
+							<?php if($item['refund_status']==0){ ?>
+							<strong>{$item.status|rs='1#已支付@2#完成交易'}</strong>
+							<a href="javascript:;" onclick="order_update('apply','is_refund',1,{$item.id});"><font class="red">申请退款</font></a>
+							<?php }else if($item['refund_status']==1 && $vo['delivery_status']==0){ ?>
+							<strong>申请退款</strong>
+							<a href="javascript:;" onclick="order_update('nd_agree','refund_status',4,{$item.id});"><font class="red">同意退款(未发货)</font></a>
+							<?php }else if($item['refund_status']==1 && $vo['delivery_status']>0){ ?>
+							<strong>申请退款</strong>
+							<a href="javascript:;" onclick="order_update('yd_agree','refund_status',2,{$item.id},location.reload());"><font class="red">同意退款(已发货)</font></a>
+							<a href="javascript:;" onclick="order_update('refuse','is_refund',1,{$item.id},location.reload());"><font color="blue">拒绝退款</font></a>
+							<?php }else if($item['refund_status']==2){ ?>
+							<strong>等待退货</strong>
+							<?php }else if($item['refund_status']==3){ ?>
+							<strong>退货中，等待确认</strong>
+							<a href="javascript:;" onclick="kuaidi('{$item.delivery_id}');">查看物流</a>
+							<a href="javascript:;" onclick="order_update('return_goods','refund_status',4,{$item.id});"><font class="red">确认退货</font></a>
+							<?php }else if($item['refund_status']==4){ ?>
+							<strong>退货完成，等待退款</strong>
+							<a href="javascript:;" onclick="return_refund({$item.id},<?php echo $item['num']*$item['price']; ?>);"><font class="red">确认退款</font></a>
+							<?php }else if($item['refund_status']==5){ ?>
+							<strong><font color="blue">完成退款</font></strong>
+							<?php } ?>
+						<?php } ?>
+						<strong>{$item.status|rs='-1#关闭'}</strong>
+						</td>
+                    </tr>
+                    </volist>
+                </table>
+            </dd>
+        </dl>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+         <include file="Public:footer" /> 
+    </div>
+</div>
+
+<!--编辑费用信息弹窗-->
+<div id="editMoneybox" class="editMoneybox">
+
+	<ul>
+		<li class="w85">应付订单金额</li>
+		<li class="w85"></li>
+		<li class="w85">折扣率(%)</li>
+		<li class="w85"></li>
+		<li class="w155">实付订单金额</li>
+	</ul>
+	<ul>
+		<li class="w85"><span class="red3">{$vo.actual_paid}</span></li>
+		<li class="w85"> X </li>
+		<li><input type="text" name="discount"/></li>
+		<li class="w85"> = </li>
+		<li><input type="text" name="actual_paid"/></li>
+	</ul>
+
+	<p>小提示：您可以直接调整订单的最终付款价格，输入实付订单金额货折扣率均可</p>
+</div>
+<script type="text/javascript">
+var real_amount = '{$vo.actual_paid}';
+$("#editMoney").click(function() {
+	art.dialog({
+		padding: '0px ',
+		id: 'editMoneybox',
+		background: '#ddd',
+		opacity: 0.3,
+		title: '编辑费用信息',
+		content: document.getElementById('editMoneybox'),
+		ok:function() {
+			var actual_paid = $("input[name=actual_paid]").val();
+			//alert(actual_paid);return;
+			$.post('__APP__?m=Order&a=edit_price', {
+				order_id: '{$vo.order_id}',
+				oldPrice:'{$vo.actual_paid}',
+				actual_paid:actual_paid
+			}, function(ret) {
+			    //alert(ret);
+				if(ret.error_code == 0) {
+					window.location.reload();
+					return true;
+				} else {
+					alert(ret.notice);
+					return false;
+				}
+			}, 'JSON');
+			return false;
+		},
+		cancel:true
+	});
+});
+
+//监控价格修改
+$(document).ready(function(){
+	$('input[name=discount]').on('keypress keyup blur', function(){
+		var discount = $(this).val();
+		alert(discount);
+		var money = (real_amount * discount / 100).toFixed(2);
+		$("input[name=actual_paid]").attr('value', money);
+	})
+	$('input[name=actual_paid]').on('keypress keyup blur', function(){
+		var money = $(this).val();
+		var discount = ((money / real_amount) * 100).toFixed(2);
+		$("input[name=discount]").attr('value', discount);
+	})
+});
+
+//打印
+$('#print_order').bind('click',function(){
+    var order_id = $(this).attr('data-id');
+    if (order_id < 1) alert('您的订单号有误！');
+    location.href = "<?php echo U('Order/print_order') ?>?" + '&order_id=' + order_id;
+})
+
+//物流跟踪 
+function kuaidi(id) {
+	$.get(APP+'?m=Order_delivery&a=look&ajax=1', {
+		id:id
+	}, function(_html) {
+	
+		art.dialog({
+			id:'kuaidi',
+			title:'物流详情&nbsp;',
+			fixed:true,
+			lock:true,
+			content:_html,
+			ok:true
+		});
+	});
+}
+
+//确认退款
+function return_refund(id,amount) {
+	var _html = '<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>"><TABLE class="add"><TR><TD class="tRight" >支付方式：</TD><TD class="tLeft" ><SELECT NAME="payment_mode"><OPTION VALUE="在线支付" <eq name="vo.payment_mode" value="在线支付">SELECTED</eq>>在线支付</OPTION><OPTION VALUE="线下支付" <eq name="vo.payment_mode" value="线下支付">SELECTED</eq>>线下支付</OPTION></SELECT></TD></TR><TR><TD class="tRight" >支付单位：</TD><TD class="tLeft" ><SELECT NAME="payment_company"><OPTION VALUE="支付宝" <eq name="vo.payment_company" value="支付宝">SELECTED</eq>>支付宝支付</OPTION><OPTION VALUE="微信支付" <eq name="vo.payment_company" value="微信支付">SELECTED</eq>>微信支付</OPTION><OPTION VALUE="余额支付" <eq name="vo.payment_company" value="余额支付">SELECTED</eq>>余额支付</OPTION></SELECT></TD></TR><TR><TD class="tRight" >支付交易号：</TD><TD class="tLeft" ><INPUT TYPE="text" NAME="pay_order_sn"> 如有`交易号`请使用交易号,查账用.</TD></TR><TR><TD class="tRight" >交易金额：</TD><TD class="tLeft" ><INPUT TYPE="text" NAME="amount" value="'+amount+'" readonly="readonly"></TD></TR><TR><TD class="tRight" >备注：</TD><TD class="tLeft" ><TEXTAREA NAME="memo" ROWS="10" COLS="30"></TEXTAREA></TD></TR><INPUT TYPE="hidden" NAME="id" value="'+id+'"></TABLE></FORM>'; 
+	art.dialog({
+		id:'kuaidi',
+		title:'退款确认&nbsp;',
+		fixed:true,
+		lock:true,
+		content:_html,
+		ok:function(){
+		  var status = sendForm('form1','__URL__/return_refund');
+		  //alert(status);
+		  dialog_close();
+		  if(status==true){
+		    $('#item_'+id).html('<strong><font color="blue">完成退款</font></strong>');
+		  }
+		  //return false;
+		}
+	});
+}
+</script>

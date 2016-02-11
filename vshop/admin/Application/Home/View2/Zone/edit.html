@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
+<load href ="__PUBLIC__/js/common.js" />
+<load href='__PUBLIC__/js/artDialog/skins/blue.css' />
+<load href="__PUBLIC__/js/artDialog/jquery.artDialog.js" />
+<load href="__PUBLIC__/js/artDialog/plugins/iframeTools.js" />
+<title>编辑区域</title>
+<style>
+.content2 {
+  padding: 0 18px;
+  height: 50%;
+}
+</style>
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+
+</head>
+<body>
+<div class="content2" style="height:300px;">
+<style type="text/css">
+input.dialog{height:0; height:0; font-size:0; line-height:0; border:none}
+.edit_areabox{display: block;}
+input{
+  padding:0px;
+  margin:0px;
+}
+TABLE.add TD INPUT {
+  height: 24px;
+  padding-left: 0px;
+  line-height: 24px;
+  color: #333;
+  border: 1px solid #ccc;
+  margin-right: 2px;
+}
+</style>
+<FORM METHOD=POST id="form1" action="__CONTROLLER__/edit?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2">
+	<div class="edit_areabox">
+		<div class='edit_areabox_1'>
+			<span class="edit_areabox_1_T">地区名称</span>
+			<input type="text" name="name" value="<?php echo $vo['name'] ?>" /> 请选择下列包含的区域
+		</div>
+		<!--选择省份-->
+		<div class="edit_areabox_city">
+		<?php foreach ($region_lists as $region): ?>
+			<li <?php if (in_array($region['area_id'], $regionids)){ ?>class="disabled"<?php } ?>>
+				<label><input type="checkbox" name="provinces[]" id="area_id_<?php echo $region['id'];?>" value="<?php echo $region['id'] ?>"<?php if (in_array($region['id'], $provinces)){ ?> checked<?php } ?><?php if (in_array($region['id'], $regionids)){ ?>disabled<?php } ?>/>
+				<span><?php echo $region['area_name'] ?></span></label>
+			</li>
+		<?php endforeach ?>
+		</div>
+	</div>
+	</TD>
+</TR>
+<TR>
+	<TD></TD>
+	<TD>
+	<input type="hidden" name="id" value="{$vo.id}" />
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</body>
+</html>

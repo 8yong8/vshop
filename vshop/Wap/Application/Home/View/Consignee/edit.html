@@ -1,0 +1,50 @@
+<include file="Public:header" />
+<script type="text/javascript" src="__PUBLIC__/js/region.js" charset="UTF-8" p="{$vo.pv_id}" c1="{$vo.ct_id}" c2="{$vo.dist_id}"  id="js_region"></script>
+<FORM METHOD=POST ACTION="" id="consignee_update" onsubmit="return check();">
+<div class="menu">
+   <a class="back" href="<neq name="from_url" value="">{$from_url}<else/>__APP__/Consignee</neq>"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">修改收货地址</div>
+</div>
+<div class="menber">
+   <div class="cdz_box">
+      <ul>
+         <li><span>收货人</span><div class="cdz_info"><input type="text" value="{$vo.name}" name="name" id="name" class="cdz_txt"></div></li>
+         <li><span>手机号</span><div class="cdz_info"><input type="text" value="{$vo.mobile}" class="cdz_txt" id="mobile" name="mobile"></div></li>
+		 <li id="select_region"></li>
+         <li><span>详细地址</span><div class="cdz_info"><textarea id="addr" name="addr">{$vo.addr}</textarea></div></li>
+         <li><span>邮　编</span><div class="cdz_info"><input type="text" value="{$vo.zip_code}" class="cdz_txt" id="zip_code" name="zip_code"></div></li>
+      </ul>
+      <div class="cdz_mr"><input type="checkbox" name="default" value="1" <eq name="vo.default" value="1">checked</eq>>设为默认地址</div>
+	  <INPUT TYPE="hidden" NAME="from_url" value="{$from_url}">
+	  <INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+      <div class="cdz_btn"><input type="submit" value="保存" class="btn_bc"></div>
+   </div>
+</div>
+</FORM>
+<script>
+function check(){
+  var name = $('#name').val();
+  var mobile = $('#mobile').val();
+  var addr = $('#addr').val();
+  var zip_code = $('#zip_code').val();
+  if(!name){
+    showMessage('收件人必须',1000);
+    return false;
+  }
+  if(!mobile){
+    showMessage('手机号必须',1000);
+    return false;
+  }
+  if(!addr){
+    showMessage('地址必须',1000);
+    return false;
+  }
+  if(!zip_code){
+    showMessage('邮编必须',1000);
+    return false;
+  }
+  send('consignee_update','__APP__/Consignee/edit');
+  return false;
+}
+</script>
+<include file="Public:footer" />

@@ -1,0 +1,129 @@
+<include file="Public:header" />
+<script>
+ function sent(){
+   location.href = "__APP__/Red_envelope_sent/add";
+ }
+</script>
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">会员：</TD>
+			<TD><INPUT TYPE="text" NAME="member_name" class="small" value="{$member_name}" class="J_check"></TD>
+			<TD class="tRight">状态：</TD>
+			<TD>	
+			<select name="status">
+			 <option value="" >状态选择</option>
+			 <option value="1" <eq name="status" value="1">selected</eq> >
+			 正常</option>
+			 <option value="0" <eq name="status" value="0">selected</eq> >
+			 取消</option>
+			</select>
+			</TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="no" value="禁用" click="forbid()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="ok" value="通过" click="resume()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+					<tr class="row" >
+					  <th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+					  <th width="8%">
+					  <eq name="sort" value="1">
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-desc" style="text-align: center;" onclick="javascript:sortBy('id','1','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  <else/>
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-asc" style="text-align: center;" onclick="javascript:sortBy('id','0','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  </a>
+					  </eq>
+					  </th>
+					  <th>价格</th>
+					  <th>数量</th>
+					  <th>已领数量</th>
+					  <th>未领数量</th>
+					  <th>总价</th>
+					  <th>添加时间</th>
+					  <th>状态</th>
+					</tr>
+					<volist name="list" id="vo">
+					<tr class="row">
+					  <td><input type="checkbox" name="key"	value="{$vo.id}"></td>
+					  <td>{$vo.id}</td>
+					  <td>{$vo.pay}</td>
+					  <td>{$vo.hb_num}</td>
+					  <td>{$vo.yl_num}</td>
+					  <td>{$vo.wl_num}</td>
+					  <td>
+					  <?php echo $vo['pay']*$vo['hb_num'];  ?>
+					  </td>
+					  <td>
+					  {$vo.create_time|toDate='Y-m-d H#i#s'}
+					  </td>
+					  <td>{$vo.status|rs='0#关闭#red@1#正常#blue'}</td>
+					</tr>
+					</volist>
+					</table>
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

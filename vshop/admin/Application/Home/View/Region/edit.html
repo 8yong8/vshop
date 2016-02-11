@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
+<load href ="__PUBLIC__/js/common.js" />
+<load href='__PUBLIC__/js/artDialog/skins/blue.css' />
+<load href="__PUBLIC__/js/artDialog/jquery.artDialog.js" />
+<load href="__PUBLIC__/js/artDialog/plugins/iframeTools.js" />
+<title>编辑区域</title>
+<style>
+.content2 {
+  padding: 0 18px;
+  height: 50%;
+}
+</style>
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+
+</head>
+<body>
+<div class="content2" style="height:300px;">
+<div class="title">区域修改</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="area_name" value="{$vo.area_name}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >排序：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="sort" value="{$vo.sort}"></TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<input type="hidden" name="id" value="{$vo.id}" />
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>

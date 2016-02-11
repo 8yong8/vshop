@@ -1,0 +1,312 @@
+<include file="Public:header" />
+<script language="JavaScript">
+
+function resetpwd(){
+    var pass	 =	 $('#resetPwd').val();
+	if(pass.length<4){
+	  alert('密码必须大于3位');
+	  return;
+	}
+	$.ajax({
+	  type:'POST',
+	  dataType:'json',
+	  url:'__URL__/resetPwd/',
+	  data:'id={$vo.id}&password='+encodeURIComponent(pass),
+	  success:function(obj){
+		if(obj.error_code==0){
+		  //alert('密码已修改为'+encodeURIComponent(pass));
+			  art.dialog({
+				time: 2,
+				content: obj.notice
+			  });
+		}else{
+		  //alert(msg);
+			  art.dialog({
+				time: 2,
+				content: obj.notice
+			  });
+		}
+	  }
+	})
+}
+</script>
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/laydate/laydate.js"></script>
+<div class="content">
+<div class="title">编辑帐号 [ <a href="__URL__">返回列表</a> ]</div>
+<form method='post' id="form1" action="__URL__/edit?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<table cellpadding=3 cellspacing=3 class="add">
+<tr>
+	<td class="tRight">重置密码：</td>
+	<td class="tLeft" ><input type="text" name="resetPwd" id="resetPwd"> <INPUT type="button" value="重置密码" onclick="resetpwd();" class="button" style="height:25px"></td>
+</tr>
+<tr>
+	<td class="tRight" colspan="2"><hr></td>
+</tr>
+<tr>
+	<td class="tRight" >昵称：</td>
+	<td class="tLeft" ><font color="red"><strong>{$vo.username}</strong></font></td>
+</tr>
+<!--
+<tr>
+	<td class="tRight" >昵称：</td>
+	<td class="tLeft" ><font color="red"><strong><input type="text" class="medium bLeft" name="nickname" id="nickname" value="{$vo.nickname}"></strong></font></td>
+</tr>
+-->
+<tr>
+	<td class="tRight" >性别：</td>
+	<td class="tLeft" >
+	<SELECT NAME="sex">
+		<OPTION VALUE="1" <eq name="vo.sex" value="1">SELECTED</eq>>女</OPTION>
+		<OPTION VALUE="2" <eq name="vo.sex" value="2">SELECTED</eq>>男</OPTION>
+		<OPTION VALUE="3" <eq name="vo.sex" value="3">SELECTED</eq>>未知</OPTION>
+	</SELECT>	
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >用户类型：</td>
+	<td class="tLeft" >
+	<SELECT NAME="utype" id="utype" onchange="up_type()">
+		<OPTION VALUE="1" <eq name="vo.utype" value="1">SELECTED</eq>>会员</OPTION>
+		<OPTION VALUE="2" <eq name="vo.utype" value="2">SELECTED</eq>>战略合作商</OPTION>
+		<OPTION VALUE="3" <eq name="vo.utype" value="3">SELECTED</eq>>合作商</OPTION>
+		<OPTION VALUE="4" <eq name="vo.utype" value="4">SELECTED</eq>>分销商</OPTION>
+		<OPTION VALUE="5" <eq name="vo.utype" value="5">SELECTED</eq>>代理商</OPTION>
+	</SELECT>
+	</td>
+</tr>
+
+<tr id="lv_tr">
+	<td class="tRight" >会员等级：</td>
+	<td class="tLeft" >
+	<SELECT NAME="lv" id="lv">
+		<OPTION VALUE="0" <eq name="vo.lv" value="0">SELECTED</eq>>普通会员</OPTION>
+		<OPTION VALUE="1" <eq name="vo.lv" value="1">SELECTED</eq>>VIP1</OPTION>
+		<OPTION VALUE="2" <eq name="vo.lv" value="2">SELECTED</eq>>VIP2</OPTION>
+		<OPTION VALUE="3" <eq name="vo.lv" value="3">SELECTED</eq>>VIP3</OPTION>
+		<OPTION VALUE="4" <eq name="vo.lv" value="4">SELECTED</eq>>VIP4</OPTION>
+		<OPTION VALUE="5" <eq name="vo.lv" value="5">SELECTED</eq>>VIP5</OPTION>
+		<OPTION VALUE="6" <eq name="vo.lv" value="6">SELECTED</eq>>钻石会员</OPTION>
+	    <!--
+	    <volist name="lvs" id="lv">
+		<OPTION VALUE="{$lv.val}" <eq name="vo.lv" value="$lv.val">SELECTED</eq>>{$lv.name}</OPTION>
+		</volist>
+		-->
+	</SELECT>	
+	</td>
+</tr>
+
+<tr id="bus_lv_tr" <eq name="vo.utype" value="1">style="display:none"</eq>>
+	<td class="tRight" >商家等级：</td>
+	<td class="tLeft" >
+	<SELECT NAME="bus_lv" id="bus_lv">
+		<OPTION VALUE="0" <eq name="vo.bus_lv" value="0">SELECTED</eq>>普通/区代理</OPTION>
+		<OPTION VALUE="1" <eq name="vo.bus_lv" value="1">SELECTED</eq>>银牌/市代理</OPTION>
+		<OPTION VALUE="2" <eq name="vo.bus_lv" value="2">SELECTED</eq>>金牌/省代理</OPTION>
+	</SELECT>	
+	</td>
+</tr>
+
+<script>
+  //会员
+  var lvs1 = [{'name':'普通会员','val':0},{'name':'VIP1','val':1},{'name':'VIP1','val':2},{'name':'VIP1','val':3},{'name':'VIP1','val':4},{'name':'VIP1','val':5},{'name':'钻石会员','val':6}];
+  //合作商
+  var lvs3 = [{'name':'银牌','val':1},{'name':'金牌','val':2}];
+
+  function up_type(){
+    var utype = jQuery('#utype').val();
+	//alert(utype);
+	if(utype==1){
+	  /*jQuery('#lv_tr').show();
+	  var html = '';
+	  for(i=0;i<lvs1.length;i++){
+		html += '<option value='+lvs1[i].val+'>'+lvs1[i].name+'</option>';	
+	  }
+	  */
+	  jQuery('#bus_lv_tr').hide();
+	  //html = '<option value="0"></option>';
+	}else{
+	  //jQuery('#sub_lv_tr').hide();
+	  jQuery('#bus_lv_tr').show();
+	  //html = '<option value="0">普通</option>';
+	}
+	//jQuery('#sub_lv').html(html);
+	//alert(lvs1[0]['name']);
+  }
+</script>
+
+<TR>
+	<TD class="tRight" >
+		到期时间：
+	</TD>
+	<TD class="tLeft">
+		<input type="text" name="exp_time" id="exp_time" value="{$vo.exp_time|toDate='Y-m-d'}" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"> 
+		<strong><font color="red">日期格式：<?php echo date('Y-m-d');  ?>；0表示永久有效</font></strong>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight" >真实姓名：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="realname" value="{$vo.realname}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >Email：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="email" value="{$vo.email}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >头像：<a href="__URL__/head/id/{$vo.id}">裁剪</a></td>
+	<td class="tLeft" ><input type="file" name="logo" onchange="yulan(this,'show1')">
+	<div id="show1">
+	<neq name="vo.logo" value="">
+	<!--<img src="{$vo.logo}">-->
+	<img src="<?php echo str_replace('logo.jpg','m_logo.jpg',$vo['logo']);  ?>">
+	</neq>
+	</div>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft"><SELECT class="small bLeft"  name="status">
+	<option <eq name="vo.status" value="1" >selected</eq> value="1">启用</option>
+	<option <eq name="vo.status" value="0" >selected</eq> value="0">禁用</option>
+	</SELECT></td>
+</tr>
+
+<tr>
+	<td class="tRight" colspan="2"><hr></td>
+</tr>
+
+<tr>
+	<td class="tRight">电话：</td>
+	<td class="tLeft"><INPUT TYPE="text" NAME="phone" id="phone" value="{$vo.phone}"></td>
+</tr>
+
+<tr>
+	<td class="tRight">手机：</td>
+	<td class="tLeft"><INPUT TYPE="text" NAME="mobile" id="mobile" value="{$vo.mobile}"></td>
+</tr>
+
+<tr>
+	<td class="tRight">地区：</td>
+	<td class="tLeft">
+	<SELECT name="pv_id" id="province"  size=1 onchange="pvchange(this);">   
+		<OPTION>请选择</OPTION>
+		<volist name="pvlist" id="pv">
+		<OPTION value="{$pv.id}" <eq name="vo.pv_id" value="$pv.id">selected</eq>>{$pv.area_name}</OPTION>
+		</volist>
+	</SELECT>
+	<span>
+	<SELECT name="ct_id" id="city" size=1 onchange="ctchange(this);">   
+		<OPTION>请选择</OPTION>
+		<volist name="ctlist" id="ct">
+		<OPTION value="{$ct.id}" <eq name="vo.ct_id" value="$ct.id">selected</eq>>{$ct.area_name}</OPTION>
+		</volist>
+	</SELECT>
+	</span>
+	<span>
+	<SELECT name="dist_id" id="district" size=1>   
+		<OPTION>请选择</OPTION>
+		<volist name="districts" id="ct">
+		<OPTION value="{$ct.id}" <eq name="vo.dist_id" value="$ct.id">selected</eq>>{$ct.area_name}</OPTION>
+		</volist>
+	</SELECT>
+	</span>
+	<INPUT TYPE="hidden" NAME="province" id="post_pv">
+	<INPUT TYPE="hidden" NAME="city" id="post_ct">
+	<INPUT TYPE="hidden" NAME="district" id="post_district">
+	<INPUT TYPE="hidden" NAME="lv_name" id="lv_name" value="{$vo.lv_name}">
+	<INPUT TYPE="hidden" NAME="bus_lv_name" id="bus_lv_name" value="{$vo.bus_lv_name}">
+	</td>
+</tr>
+<script>
+  function check(){
+	var pv = jQuery('#province option:selected').text();
+	var ct = jQuery('#city option:selected').text();
+	var district = jQuery('#district option:selected').text();
+	var lv_name = jQuery('#lv option:selected').text();
+	var bus_lv_name = jQuery('#bus_lv option:selected').text();
+	//alert(bus_lv_name);return false;
+	if(!pv || pv=='请选择'){
+	  alert('省必须选择!');
+	  return false;
+	}
+	if(!ct || ct=='请选择'){
+	  alert('市必须选择!');
+	  return false;
+	}
+	if(!district || district=='请选择'){
+	  alert('区域必须选择!');
+	  return false;
+	}
+	jQuery('#post_pv').val(pv);
+	jQuery('#post_ct').val(ct);
+	jQuery('#post_district').val(district);
+	jQuery('#lv_name').val(lv_name);
+	jQuery('#bus_lv_name').val(bus_lv_name);
+	return true;
+  }
+
+  //显示城市
+  function pvchange(){
+	var pid = jQuery('#province').val();
+	jQuery.ajax({
+	   type: "POST",
+	   url: "__URL__/get_city",
+	   data: "pid="+pid,
+	   success: function(msg){
+		 var objs = eval('('+msg+')');
+		 //var html = '<select id="city" name="ct_id">';
+		 var html = '';
+		 for(i=0;i<objs.length;i++){
+			//html += '<option value='+objs[i].id+'>'+objs[i].class_name+'</option>';
+			if(i==0){
+			   html += '<option value='+objs[i].id+' selected>'+objs[i].area_name+'</option>';
+			}else{
+			   html += '<option value='+objs[i].id+'>'+objs[i].area_name+'</option>';	
+			}
+		 }
+		 //html += '</select>';
+		 jQuery('#city').html(html);
+		 ctchange();
+	   }
+	}); 
+  }
+
+  //显示区域
+  function ctchange(){
+	var pid = jQuery('#city').val();
+	jQuery.ajax({
+	   type: "POST",
+	   url: "__URL__/get_district",
+	   data: "pid="+pid,
+	   success: function(msg){
+		 var objs = eval('('+msg+')');
+		 //var html = '<select id="city" name="ct_id">';
+		 var html = '';
+		 for(i=0;i<objs.length;i++){
+			html += '<option value='+objs[i].id+'>'+objs[i].area_name+'</option>';
+		 }
+		 //html += '</select>';
+		 jQuery('#district').html(html);
+	   }
+	}); 
+  }
+</script>
+<tr>
+	<td class="tRight tTop">简 介：</td>
+	<td class="tLeft"><myhtml:editor type="KINDEDITOR"  id="intro" name="intro" width="650px" height="345px" items="base">{$vo.intro}</myhtml:editor></td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<input type="submit" value="保 存" class="button">
+	</td>
+</tr>
+</table>
+</form>
+
+<include file="Public:footer" />

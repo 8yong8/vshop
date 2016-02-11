@@ -1,0 +1,86 @@
+<load href ="__PUBLIC__/css/style.css" />
+<load href="__PUBLIC__/js/jquery.js" />
+<load href='__PUBLIC__/js/artDialog/skins/blue.css' />
+<load href="__PUBLIC__/js/artDialog/jquery.artDialog.js" />
+<load href="__PUBLIC__/js/artDialog/plugins/iframeTools.js" />
+
+<script language="JavaScript">
+//art.dialog.close();
+</script>
+<div class="content" style="padding-left:5px;min-width: 500px;width:760px;">
+<div class="title">审核</div>
+<form method='post' id="form1" action="__URL__/sh_edit?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<table cellpadding=3 cellspacing=3 class="add">
+<tr>
+	<td class="tRight" >用户信息：</td>
+	<td class="tLeft" >
+	<font color="red">用户名：{$vo.username} 联系电话：{$vo.tel} </font>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >商家名称：</td>
+	<td class="tLeft" >
+	{$vo.company}
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >公司地址：</td>
+	<td class="tLeft" >{$vo.company_address}</td>
+</tr>
+
+<tr>
+	<td class="tRight" >经纬度：</td>
+	<td class="tLeft" >
+	经度 :{$vo.longitude} 纬度 :{$vo.latitude}
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >营业执照：</td>
+	<td class="tLeft" >
+	<div id="show1">
+	<neq name="vo.certificate" value="">
+	<a href="{$vo.certificate}"><img src="{$vo.certificate}" width="200px;"></a>
+	</neq>
+	</div>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight tTop">公司简介：</td>
+	<td class="tLeft">
+	{$vo.about}
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >状态：</td>
+	<td class="tLeft" >
+	<SELECT NAME="status">
+		<OPTION VALUE="0" <eq name="vo.status" value="0">SELECTED</eq>>待审核</OPTION>
+		<OPTION VALUE="1" <eq name="vo.status" value="1">SELECTED</eq>>通过</OPTION>
+		<OPTION VALUE="-1" <eq name="vo.status" value="-1">SELECTED</eq>>驳回</OPTION>
+	</SELECT>	
+	</td>
+</tr>
+
+
+<tr>
+	<td class="tRight tTop">回复：</td>
+	<td class="tLeft">
+	<TEXTAREA NAME="remark" ROWS="8" COLS="25">{$vo.remark}</TEXTAREA>
+	</td>
+</tr>
+
+<tr>
+	<td></td>
+	<td>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<input type="submit" value="保 存" class="button">
+	</td>
+</tr>
+</table>
+</form>
+</div>

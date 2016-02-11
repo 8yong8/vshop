@@ -1,0 +1,143 @@
+<include file="Public:header" />
+<script language="JavaScript">
+
+function resetPwd(){
+	var pass	 =	 jQuery('#resetPwd').val();
+	jQuery.ajax({
+	  type:'POST',
+	  url:'__URL__/resetPwd/',
+	  data:'id={$vo.id}&password='+encodeURIComponent(pass),
+	  success:function(msg){
+		if(msg==1){
+		  //alert('密码已修改为'+encodeURIComponent(pass));
+		  art.dialog({
+			time: 1.5,
+			content: '密码已修改为'+encodeURIComponent(pass)
+		  });
+		}else{
+		  art.dialog({
+			time: 1.5,
+			content: msg
+		  });
+		}
+	  }
+	})
+}
+
+function checkName(){
+  var account = $('#account').val();
+	jQuery.ajax({
+	  type:'POST',
+	  url:'__URL__/checkAccount/',
+	  data:'account='+account,
+	  success:function(msg){
+		//alert(msg);
+		  art.dialog({
+			time: 1.5,
+			content: msg
+		  });
+	  }
+	});
+
+}
+</script>
+<div class="content">
+<div class="title">编辑微信用户 [ <a href="__URL__">返回列表</a> ]</div>
+<table cellpadding=3 cellspacing=3 class="add">
+<form method='post' id="form1" action="__URL__/edit?<?php echo time(); ?>" enctype="multipart/form-data">
+<tr>
+	<td class="tRight" >名称：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeftRequire"  check='Require' warning="用户名不能为空" id="wxname" name="wxname" value="{$vo.wxname}">
+	<!--<input type="button" value="检测帐号" onclick="checkName()" class="submit hMargin">-->
+	</td>
+</tr>
+<tr>
+	<td class="tRight" >原始id：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="wxid" value="{$vo.wxid}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >微信号：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="weixin" value="{$vo.weixin}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >appid：</td>
+	<td class="tLeft" ><input name="appid" value="{$vo.appid}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >appsecret：</td>
+	<td class="tLeft" ><input name="appsecret" value="{$vo.appsecret}" class="huge"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >WeixinEncodingAESKey：</td>
+	<td class="tLeft" ><input name="aeskey" value="{$vo.aeskey}" class="huge"></td>
+</tr>
+<!--
+<tr>
+	<td class="tRight" >商户号：</td>
+	<td class="tLeft" ><input name="appshopid" value="{$vo.appshopid}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >商户支付秘钥：</td>
+	<td class="tLeft" ><input name="appshopsecret" value="{$vo.appshopsecret}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >API 密钥：</td>
+	<td class="tLeft" ><input name="apisecret" value="{$vo.apisecret}" class="huge"></td>
+</tr>
+-->
+<TR id="pic">
+	<TD class="tRight" >
+		头像：
+	</TD>
+	<TD class="tLeft">
+		<input type="file" name="lit_pic" id="lit_pic" class="input_text" onchange="yulan(this,'show1');">
+		<span id="show1" style="width:100;height:100px;">
+		<neq name="vo.lit_pic" value="">
+		<img src="{$vo.lit_pic}" width="150px;">
+		</neq>
+		</span>
+	</TD>
+</TR>
+
+<TR id="pic">
+	<TD class="tRight" >
+		二维码：
+	</TD>
+	<TD class="tLeft">
+		<input type="file" name="qrcodepic" id="qrcodepic" onchange="yulan(this,'show2');">
+		<span id="show2" style="width:100;height:100px;">
+		<neq name="vo.qrcodepic" value="">
+		<img src="{$vo.qrcodepic}" width="150px;">
+		</neq>
+		</span>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft"><SELECT class="small bLeft"  name="status">
+	<option value="1">启用</option>
+	<option value="0">禁用</option>
+	</SELECT></td>
+</tr>
+<tr>
+	<td class="tRight tTop">备  注：</td>
+	<td class="tLeft"><TEXTAREA class="large bLeft"  name="remark" rows="5" cols="57"></textarea></td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<input type="submit" value="保 存" class="button">
+	</td>
+</tr>
+</table>
+</form>
+
+<include file="Public:footer" />

@@ -1,0 +1,75 @@
+<include file="Public:header" />
+<div class="menu">
+   <a class="back" href="javascript:;" onclick="history.go(-1);"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">会员中心</div>
+   <a class="out" href="__APP__/Public/logout"><img src="__PUBLIC__/images/btn_out.png"></a>
+</div>
+<div class="menber">
+    <div class="m_info"><input type="button" value="编辑头像" onclick="window.location='__APP__/Member/edit'" class="bj_tx">
+         <div class="m_tx">
+			<neq name='user.logo' value="">
+            <img src="{$user.logo}" width="100%" height="100%">
+			<else/>
+            <img src="__PUBLIC__/images/m_tx.png" width="100%" height="100%">
+			</neq>
+         </div>
+         <div class="m_zh">
+            <p><span>
+			{$user.username}
+			</span></p>
+            <p>{$user.lv_name}</p>
+            <p>云币：<em>{$user.balance}</em></p>
+         </div>
+    </div>
+    <div class="my_order">
+        <div class="my_allorder"><a href="__APP__/Order">我的订单<span>查看全部已购商品</span></a></div>
+        <div class="mo_list">
+           <ul>
+              <li><a href="__APP__/Order/index?status=1" class="mico_fk">
+			  <gt name="dfk_count" value="0">
+			  <i class="ico_num">{$dfk_count}</i>
+			  </gt>待付款
+			  </a></li>
+              <li><a href="__APP__/Order/index?status=2" class="mico_fh">
+			  <gt name="dfh_count" value="0">
+			  <i class="ico_num">{$dfh_count}</i>
+			  </gt>待发货			  
+			  </a></li>
+              <li><a href="__APP__/Order/index?status=3" class="mico_sh">
+			  <gt name="dqr_count" value="0">
+			  <i class="ico_num">{$dqr_count}</i>
+			  </gt>待收货				  
+			  </a></li>
+              <li><a href="__APP__/Order/index?status=4" class="mico_pj">
+			  <gt name="dpj_count" value="0">
+			  <i class="ico_num">{$dpj_count}</i>
+			  </gt>待评价</a></li>
+              <li><a href="__APP__/Order/index?status=5" class="mico_tk">
+			  <gt name="dtk_count" value="0">
+			  <i class="ico_num">{$dtk_count}</i>
+			  </gt>退款</a></li>
+           </ul>
+        </div>
+    </div>
+    <div class="men_list">
+       <ul>
+          <li class="ico_qb"><a href="__APP__/Wallet">我的钱包<span>余额、红包等</span></a></li>
+          <!--<li class="ico_jm"><a href="#">加盟代理</a></li>-->
+          <li class="ico_sy"><a href="__APP__/Wallet/income">我的收益<span>推荐人数、会员分享收益等</span></a></li>
+       </ul>
+    </div>
+    <div class="men_list">
+       <ul>
+          <li class="ico_ewm"><a href="__APP__/Member/qrcode">我的二维码<span></span></a></li>
+          <li class="ico_sc"><a href="__APP__/Collect">我的收藏<span></span></a></li>
+          <li class="ico_sh"><a href="__APP__/Consignee">我的收货地址<span></span></a></li>
+          <li class="ico_zh"><a href="__APP__/Member/safety">账户安全<span></span></a></li>
+       </ul>
+    </div>
+    <div class="men_list">
+       <ul>
+          <li class="ico_kf"><a href="#">联系客服<span></span></a></li>
+       </ul>
+    </div>
+</div>
+<include file="Public:footer" />

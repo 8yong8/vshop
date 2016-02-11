@@ -1,0 +1,34 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title">新增分类 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD class="tRight" >分类名：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="用户名不能为空" NAME="name" ></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >所属分类：</TD>
+	<TD class="tLeft" >
+	<select name="pid">
+	  <option value="0">无</option>
+	  <volist name="types" id="type">
+	  <option value="{$type.id}"<eq name="type.id" value="$Think.get.id">selected</eq>>{$type.name}</option>
+	  </volist>
+	</select>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

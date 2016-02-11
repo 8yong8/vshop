@@ -1,0 +1,129 @@
+<include file="Public:header" />
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/laydate/laydate.js"></script>
+<script>
+$(function() {
+	var start = {
+		elem: '#btime',
+		format: 'YYYY-MM-DD',
+		//min: laydate.now(), //设定最小日期为当前日期
+		max: '2099-06-16 23:59:59', //最大日期
+		istime: false,
+		istoday: true,
+		choose: function(datas){
+			 end.min = datas; //开始日选好后，重置结束日的最小日期
+			 end.start = datas //将结束日的初始值设定为开始日
+		}
+	};
+	var end = {
+		elem: '#etime',
+		format: 'YYYY-MM-DD',
+		//min: laydate.now(),
+		max: '2099-06-16 23:59:59',
+		istime: false,
+		istoday: true,
+		choose: function(datas){
+			start.max = datas; //结束日选好后，重置开始日的最大日期
+		}
+	};
+	laydate(start);
+	laydate(end);
+});
+
+//清空
+function clearall(){
+	if (window.confirm('确实要清空数据吗？清空后数据将不可恢复')){
+		window.location.href = URL+"/clearall/time/"+new Date().getTime();
+	}  
+}
+</script>
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">模块：</TD>
+			<TD>
+			<SELECT NAME="model">
+			 <OPTION value="">选择模块</OPTION>
+			 <volist name="models" id="model_">
+			 <OPTION value="{$model_.name}" <eq name="model" value="$model_.name">selected</eq> >
+			 {$model_.title}</OPTION>
+			 </volist>
+			</SELECT>
+			</TD>
+			<TD class="tRight">操作：</TD>
+			<TD>
+			<SELECT NAME="action">
+			  <OPTION value="">选择操作</OPTION>
+			  <OPTION value="insert" <eq name="action" value="insert">selected</eq>>添加</OPTION>
+			  <OPTION value="update" <eq name="action" value="update">selected</eq>>修改</OPTION>
+			  <OPTION value="foreverdelete" <eq name="$action" value="foreverdelete">selected</eq>>删除</OPTION>
+			  <OPTION value="resume" <eq name="action" value="resume">selected</eq>>恢复</OPTION>
+			  <OPTION value="forbid" <eq name="action" value="forbid">selected</eq>>禁用</OPTION>
+			</SELECT>	
+			</TD>
+			<TD class="tRight">对应ID：</TD>
+			<TD><INPUT TYPE="text" NAME="sourceid" class="small" value="{$sourceid}"></TD>
+			<TD class="tRight">用户名：</TD>
+			<TD><INPUT TYPE="text" NAME="username" class="small" value="{$username}"></TD>
+			<TD class="tRight">开始时间：</TD>
+			<TD><INPUT TYPE="text" NAME="btime" id="btime" class="small" value="{$btime}"></TD>
+			<TD class="tRight">结束时间：</TD>
+			<TD><INPUT TYPE="text" NAME="etime" id="etime" class="small" value="{$etime}"></TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="no" value="清除" click="clearall()" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<myhtml:list id="checkList" name="user" style="list" checkbox="true" action="true" datasource="list" show="id:编号|8%,model|getmodelname:模块,action|getactionname:操作,sourceid:对应ID,username:操作者,create_time|toDate='Y-m-d H#i#s':操作时间" order_fields="id" actionlist="look:查看"/>
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

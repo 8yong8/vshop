@@ -1,0 +1,60 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title">API添加[ <A HREF="__URL__">返回列表</A> ]</div>
+<script>
+function ResetAppKey(){
+  $('#appkey').val(randomString(32));
+}
+</script>
+<FORM METHOD=POST id="form1" action="__URL__/add/">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="name" value="{$vo.name}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >AppId：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="appid" value="{$appid}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >AppKey：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="appkey" id="appkey" value="{$appkey}">
+	<input type="button" value="生成随机数" onclick="ResetAppKey()" class="button" style="height:25px">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >网关地址：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="gateway" id="gateway" value="{$vo.gateway}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >状态：</TD>
+	<TD class="tLeft" >
+	<SELECT class="small bLeft" NAME="status">
+	  <option value="1"<eq name="vo.status" value="1">
+	  selected = "selected"
+	</eq>>启用</option>
+	  <option value="0"<eq name="vo.status" value="0">
+	  selected = "selected"
+	</eq>>禁用</option>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

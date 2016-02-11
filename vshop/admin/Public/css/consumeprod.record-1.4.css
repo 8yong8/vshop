@@ -1,0 +1,411 @@
+.ui-poptip{position:absolute;color:#db7c22;z-index:101;line-height:1.5;zoom:1}
+.ui-poptip-shadow{background-color:rgba(229,169,107,0.15);FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#26e5a96b,endColorstr=#26e5a96b);border-radius:2px;padding:2px;zoom:1;_display:inline}
+.ui-poptip-container{position:relative;background-color:#fffcef;border:1px solid #ffbb76;border-radius:2px;padding:5px 22px 5px 10px;zoom:1;_display:inline}
+.ui-poptip:after,.ui-poptip-shadow:after,.ui-poptip-container:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+a.ui-poptip-close{position:absolute;right:3px;top:3px;border:1px solid #ffc891;text-decoration:none;border-radius:3px;width:12px;height:12px;font-family:tahoma;color:#dd7e00;line-height:10px;line-height:10px\0;*line-height:12px;text-align:center;font-size:14px;background:#ffd7af;background:-webkit-gradient(linear,left top,left bottom,from(#fff0e1),to(#ffe7cd));background:-moz-linear-gradient(top,#fff0e1,#ffe7cd);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF0E1',endColorstr='#FFE7CD');background:-o-linear-gradient(top,#fff0e1,#ffe7cd);background:linear-gradient(top,#fff0e1,#ffe7cd);overflow:hidden}
+a.ui-poptip-close:hover{border:1px solid #ffb24c;text-decoration:none;color:#dd7e00;background:#ffd7af;background:-webkit-gradient(linear,left top,left bottom,from(#ffe5ca),to(#ffcc98));background:-moz-linear-gradient(top,#ffe5ca,#ffcc98);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE5CA',endColorstr='#FFCC98');background:-o-linear-gradient(top,#ffe5ca,#ffcc98);background:linear-gradient(top,#ffe5ca,#ffcc98)}
+.ui-poptip-arrow,.ui-poptip-arrow em,.ui-poptip-arrow span{position:absolute;font-size:14px;font-family:SimSun,Hiragino Sans GB;font-style:normal;line-height:21px;z-index:10;*zoom:1}
+.ui-poptip-arrow em,.ui-poptip-arrow-left em,.ui-poptip-arrow-right em{color:#ffbb76}
+.ui-poptip-arrow span,.ui-poptip-arrow-left span,.ui-poptip-arrow-right span{color:#fffcef;top:0;left:0}
+.ui-poptip-arrow-left,.ui-poptip-arrow-left em,.ui-poptip-arrow-left span{position:absolute;font-size:14px;font-family:SimSun,Hiragino Sans GB}
+.ui-poptip-arrow-left,.ui-poptip-arrow-10{top:6px;left:-6px}
+.ui-poptip-arrow-left em,.ui-poptip-arrow-10 em{top:0;left:-1px}
+.ui-poptip-arrow-right,.ui-poptip-arrow-right em,.ui-poptip-arrow-right span{position:absolute;font-size:14px;font-family:SimSun,Hiragino Sans GB}
+.ui-poptip-arrow-right,.ui-poptip-arrow-2{top:6px;right:8px;*right:7px;right:7px\0}
+.ui-poptip-arrow-right em,.ui-poptip-arrow-2 em{top:0;left:1px}
+.ui-poptip-arrow-11{left:14px;top:-10px;top:-9px\0}
+.ui-poptip-arrow-11 em{top:-1px;left:0}
+.ui-poptip-arrow-1{right:28px;top:-10px;top:-9px\0}
+.ui-poptip-arrow-1 em{top:-1px;left:0}
+.ui-poptip-arrow-7{left:14px;bottom:10px}
+.ui-poptip-arrow-7 em{top:1px;left:0}
+.ui-poptip-arrow-5{right:28px;bottom:10px}
+.ui-poptip-arrow-5 em{top:1px;left:0}
+.ui-poptip-icon{float:left;display:inline;margin-right:6px;width:50px;height:42px}
+.ui-poptip-icon-notice{background:transparent url('https://i.alipayobjects.com/e/201207/32UMBEuECH.png') no-repeat}
+.ui-poptip-icon-trade{background:transparent url('https://i.alipayobjects.com/e/201207/3coEJviyzD.png') no-repeat}
+.ui-poptip-icon-text{display:none}
+.ui-poptip-content{float:none;display:inline;*zoom:1}
+.ui-poptip-content:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+.ui-poptip-link{margin-top:4px;float:left}
+.ui-poptip-link a{color:#08c}
+:root .ui-poptip-shadow{FILTER:none\9}
+.ui-poptip-blue{color:#4d4d4d}
+.ui-poptip-blue .ui-poptip-shadow{background-color:rgba(0,0,0,0.05);FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#0c000000,endColorstr=#0c000000)}
+.ui-poptip-blue .ui-poptip-container{background-color:#f8fcff;border:1px solid #b9c8d3}
+.ui-poptip-blue .ui-poptip-arrow em,.ui-poptip-blue .ui-poptip-arrow-left em,.ui-poptip-blue .ui-poptip-arrow-right em{color:#b9c8d3}
+.ui-poptip-blue .ui-poptip-arrow span,.ui-poptip-blue .ui-poptip-arrow-left span,.ui-poptip-blue .ui-poptip-arrow-right span{color:#f8fcff}
+.ui-poptip-white{color:#333}
+.ui-poptip-white .ui-poptip-shadow{background-color:rgba(0,0,0,0.05);FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#0c000000,endColorstr=#0c000000)}
+.ui-poptip-white .ui-poptip-container{background-color:#fff;border:1px solid #b1b1b1}
+.ui-poptip-white .ui-poptip-arrow em,.ui-poptip-white .ui-poptip-arrow-left em,.ui-poptip-white .ui-poptip-arrow-right em{color:#b1b1b1}
+.ui-poptip-white .ui-poptip-arrow span,.ui-poptip-white .ui-poptip-arrow-left span,.ui-poptip-white .ui-poptip-arrow-right span{color:#fff}
+.ui-title{display:block;overflow:hidden;position:relative;color:#4d4d4d;clear:both}
+.ui-title-line{border-bottom:2px solid #808080;padding-bottom:7px;margin-top:31px}
+.ui-title h2{float:left;font:700 18px/20px "STHei","Microsoft YaHei","WenQuanYi Micro Hei"}
+.ui-title h3{float:left;font:700 14px/20px tahoma,arial,\5b8b\4f53}
+.ui-title .link{float:left;padding:3px 0 0 8px}
+.ui-tiptext{color:#4d4d4d;position:relative;overflow:hidden;vertical-align:middle;line-height:15px;*line-height:17px;_line-height:15px;line-height:17px\0;zoom:1}
+.ui-tiptext-container{padding:8px 12px;position:relative;zoom:1}
+.ui-tiptext-icon{background:transparent url('https://i.alipayobjects.com/e/201201/2NBAbOHc4g.png') no-repeat}
+.ui-tiptext-icon{width:15px;height:15px;vertical-align:top;margin-right:8px;display:inline-block;*display:inline;*zoom:1}
+.ui-tiptext-message .ui-tiptext-icon{background-position:0 -33px}
+.ui-tiptext-container-message{background:#e5f5ff;border:1px solid #c9d5e2}
+.ui-tiptext-success .ui-tiptext-icon{background-position:-45px -33px}
+.ui-tiptext-container-success{background:#e7ffce;border:1px solid #b9e2a0}
+.ui-tiptext-error .ui-tiptext-icon{background-position:-30px -33px}
+.ui-tiptext-container-error{background:#fceee8;border:1px solid #f6c8b5}
+.ui-tiptext-warning .ui-tiptext-icon{background-position:-15px -33px}
+.ui-tiptext-container-warning{background:#ffff8d;border:1px solid #e7c560}
+.ui-tiptext-question .ui-tiptext-icon{background-position:-60px -33px}
+.ui-tiptext-container-question{background:#e5f5ff;border:1px solid #c9d5e2}
+.ui-tiptext-stop .ui-tiptext-icon{background-position:-75px -33px}
+.ui-tiptext-container-stop{background:#fceee8;border:1px solid #f6c8b5}
+.ui-tiptext-wait .ui-tiptext-icon{background-position:-90px -33px}
+.ui-tiptext-container-wait{background:#fff9d9;border:1px solid #e6cbb1}
+.ui-tiptext-arrowup,.ui-tiptext-arrowup em,.ui-tiptext-arrowup span,.ui-tiptext-arrowleft,.ui-tiptext-arrowleft em,.ui-tiptext-arrowleft span,.ui-tiptext-arrowdown,.ui-tiptext-arrowdown em,.ui-tiptext-arrowdown span{position:absolute;font-size:14px;font-family:"SimSun";top:0;left:0}
+.ui-tiptext-arrowup,.ui-tiptext-arrowleft,.ui-tiptext-arrowdown{height:10px;width:16px}
+.ui-tiptext-arrowup{left:32px;top:-10px;_top:-9px}
+.ui-tiptext-arrowup em{top:-1px}
+:root .ui-tiptext-arrowup{top:-9px\9}
+.ui-tiptext-arrowleft{left:-6px;top:5px;_top:6px}
+.ui-tiptext-arrowleft em{left:-1px}
+.ui-tiptext-arrowdown{left:32px;top:20px;top:22px\0;*top:22px;_top:21px}
+:root .ui-tiptext-arrowdown{top:23px\9}
+.ui-tiptext-arrowdown em{top:1px}
+.ui-tiptext-container-message .ui-tiptext-arrow em{color:#c9d5e2}
+.ui-tiptext-container-message .ui-tiptext-arrow span{color:#e5f5ff}
+.ui-tiptext-container-success .ui-tiptext-arrow em{color:#b9e2a0}
+.ui-tiptext-container-success .ui-tiptext-arrow span{color:#e7ffce}
+.ui-tiptext-container-error .ui-tiptext-arrow em{color:#f6c8b5}
+.ui-tiptext-container-error .ui-tiptext-arrow span{color:#fceee8}
+.ui-tiptext-container-warning .ui-tiptext-arrow em{color:#e7c560}
+.ui-tiptext-container-warning .ui-tiptext-arrow span{color:#ffff8d}
+.ui-tiptext-container-question .ui-tiptext-arrow em{color:#c9d5e2}
+.ui-tiptext-container-question .ui-tiptext-arrow span{color:#e5f5ff}
+.ui-tiptext-container-stop .ui-tiptext-arrow em{color:#f6c8b5}
+.ui-tiptext-container-stop .ui-tiptext-arrow span{color:#fceee8}
+.ui-tiptext-container-wait .ui-tiptext-arrow em{color:#e6cbb1}
+.ui-tiptext-container-wait .ui-tiptext-arrow span{color:#fff9d9}
+.sl-linear{background:-webkit-gradient(linear,left top,left bottom,from(#fcfcfc),to(#f1f1f1));background:-moz-linear-gradient(top,#fcfcfc,#f1f1f1);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc',endColorstr='#f1f1f1');background:-o-linear-gradient(top,#fcfcfc,#f1f1f1);background:linear-gradient(top,#fcfcfc,#f1f1f1)}
+.sl-linear-light{background:-webkit-gradient(linear,left top,left bottom,from(#fcfcfc),to(#f9f9f9));background:-moz-linear-gradient(top,#fcfcfc,#f9f9f9);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc',endColorstr='#f9f9f9');background:-o-linear-gradient(top,#fcfcfc,#f9f9f9);background:linear-gradient(top,#fcfcfc,#f9f9f9)}
+.ui-button *{margin:0;padding:0}
+.ui-button{padding:0;display:inline-block;position:relative;text-align:center;text-decoration:none!important;vertical-align:middle;overflow:visible;cursor:pointer;font-family:verdana,Hiragino Sans GB}
+div.ui-button,p.ui-button,span.ui-button{*display:inline}
+.ui-button-text{display:inline-block;*display:inline;*zoom:1;cursor:pointer;border:0;text-decoration:none;overflow:visible;font-size:14px;font-weight:700}
+.ui-button a.ui-button-text:hover{text-decoration:none}
+input.ui-button-text,button.ui-button-text{*vertical-align:top;font-family:Hiragino Sans GB}
+.ui-separator{color:#b2b2b2}
+.ui-separator-pd{color:#b2b2b2;padding:0 5px}
+.ui-box{border:1px solid #ccc}
+.ui-box-green{border:1px solid #a0c96f}
+.ui-box-orange{border:1px solid #d5c5b1}
+.ui-box-gray{border:1px solid #e6e6e6}
+.ui-box-light{border:1px solid #d9d9d9}
+.ui-box-follow{border-top:0}
+.ui-box-title{border-bottom:1px solid #ccc;position:relative}
+.ui-box-title-border{border:1px solid #fff;height:14px;line-height:16px;overflow:hidden;padding:9px 10px 10px;*padding:9px 10px 10px;padding:9px 10px\0}
+.ui-box-title h3{color:#656565;font-size:14px;font-weight:700;float:left;display:inline}
+.ui-box-title .ui-box-title-setting{float:right;display:inline;width:16px;height:16px;line-height:16px;background:transparent url(https://img.alipay.com/sys/personal/style/ui-components.png) no-repeat -2px -2px;text-indent:-9999px;overflow:hidden;cursor:pointer}
+.ui-box-title .ui-box-title-setting:hover{background:transparent url(https://img.alipay.com/sys/personal/style/ui-components.png) no-repeat -29px -2px}
+.ui-box-title .ui-box-title-more{float:right}
+.ui-box-title .ui-box-title-link{float:left;display:inline;margin:0 0 0 15px}
+.ui-box-title .ui-box-title-text{margin-left:10px;color:#808080}
+.ui-box-container{background:#fff}
+.ui-box-content{padding:10px 10px 15px}
+.ui-box-green .ui-box-container{background:#efffe2;border:0}
+.ui-box-orange .ui-box-container{background:#f9f0e4;border:0}
+.ui-box-gray .ui-box-container{background:#fafafa;border:0}
+.ui-box-nocontainer{border-bottom:0;overflow:hidden;_position:relative;height:36px}
+.ui-box-nocontainer .ui-box-container{opacity:0}
+.ui-box-light .ui-box-title{border-bottom:1px solid #d9d9d9;color:#4d4d4d}
+.ui-box-light .ui-box-title-border{border:0;height:16px;padding-left:20px}
+.ui-button-lwhite,.ui-button-lwhite:hover,.ui-button-mwhite,.ui-button-mwhiter:hover,.ui-button-swhite,.ui-button-swhite:hover,.ui-button-lwhite .ui-button-text,.ui-button-mwhite .ui-button-text,.ui-button-swhite .ui-button-text{background:transparent url(https://i.alipayobjects.com/e/201208/3IgyctwEjp.png) no-repeat;color:#595959}
+.ui-button-lwhite{background-position:0 -89px}
+.ui-button-lwhite .ui-button-text{padding:0 20px;background-position:right -266px;line-height:35px;height:35px}
+.ui-button-lwhite:hover{background-position:0 -133px}
+.ui-button-lwhite:hover .ui-button-text{background-position:right -310px}
+.ui-button-mwhite{background-position:0 -429px}
+.ui-button-mwhite .ui-button-text{padding:0 22px;background-position:right -577px;line-height:31px;height:31px}
+.ui-button-mwhite:hover{background-position:0 -466px}
+.ui-button-mwhite:hover .ui-button-text{background-position:right -614px}
+.ui-button-swhite{background-position:0 -711px}
+.ui-button-swhite .ui-button-text{padding:0 12px;font-size:12px;background-position:right -831px;line-height:25px;height:25px}
+.ui-button-swhite:hover{background-position:0 -741px}
+.ui-button-swhite:hover .ui-button-text{background-position:right -861px}
+.ui-button-lorange,.ui-button-lorange:hover,.ui-button-morange,.ui-button-morange:hover,.ui-button-sorange,.ui-button-sorange:hover,.ui-button-lorange .ui-button-text,.ui-button-morange .ui-button-text,.ui-button-sorange .ui-button-text{background:transparent url(https://i.alipayobjects.com/e/201208/3IgyctwEjp.png) no-repeat;color:#fff}
+.ui-button-lorange{background-position:0 0}
+.ui-button-lorange .ui-button-text{padding:0 20px;background-position:right -177px;line-height:35px;height:35px}
+.ui-button-lorange:hover{background-position:0 -45px}
+.ui-button-lorange:hover .ui-button-text{background-position:right -222px}
+.ui-button-morange{background-position:0 -355px}
+.ui-button-morange .ui-button-text{padding:0 22px;background-position:right -503px;line-height:31px;height:31px}
+.ui-button-morange:hover{background-position:0 -392px}
+.ui-button-morange:hover .ui-button-text{background-position:right -540px}
+.ui-button-sorange{background-position:0 -651px}
+.ui-button-sorange .ui-button-text{padding:0 12px;font-size:12px;background-position:right -771px;line-height:25px;height:25px}
+.ui-button-sorange:hover{background-position:0 -681px}
+.ui-button-sorange:hover .ui-button-text{background-position:right -801px}
+.ui-button-ldisable,.ui-button-mdisable,.ui-button-sdisable,.ui-button-ldisable .ui-button-text,.ui-button-mdisable .ui-button-text,.ui-button-sdisable .ui-button-text{background:transparent url(https://i.alipayobjects.com/e/201208/3IgyctwEjp.png) no-repeat;color:#fff;cursor:default}
+.ui-button-ldisable{background-position:0 -1021px}
+.ui-button-ldisable .ui-button-text{padding:0 20px;background-position:right -1063px;line-height:35px;height:35px}
+.ui-button-mdisable{background-position:0 -891px}
+.ui-button-mdisable .ui-button-text{padding:0 22px;background-position:right -927px;line-height:31px;height:31px}
+.ui-button-sdisable{background-position:0 -962px}
+.ui-button-sdisable .ui-button-text{padding:0 12px;font-size:12px;background-position:right -991px;line-height:25px;height:25px}
+.ui-tipxbox{position:relative;*zoom:1;overflow:hidden}
+.ui-tipxbox .ui-tipxbox-icon{width:32px;height:32px;position:absolute;top:24px;left:40px;text-indent:-9999px}
+.ui-tipxbox-icon,a.xbox-close-link{background:transparent url('https://i.alipayobjects.com/e/201201/2NBAbOHc4g.png') no-repeat}
+.ui-icon-message{background-position:0 0}
+.ui-icon-success{background-position:-99px 0}
+.ui-icon-error{background-position:-66px 0}
+.ui-icon-warning{background-position:-33px 0}
+.ui-icon-question{background-position:-132px 0}
+.ui-icon-stop{background-position:-165px 0}
+.ui-icon-wait{background-position:-198px 0}
+.ui-tipxbox-content{margin:22px 0 30px 87px}
+.ui-tipxbox-content h3{color:#333;font-size:14px;font-weight:bold}
+.ui-tipxbox-explain{color:#808080}
+.ui-tipxbox-other{color:#333}
+.ui-tipxbox-other a{color:#3d86e5}
+.ui-confirmXbox{zoom:1}
+.ui-confirmXbox-title{height:45px;font-size:16px;font-family:'微软雅黑','黑体',Arial;line-height:46px;border-bottom:1px solid #e1e1e1;color:#4d4d4d}
+.ui-confirmXbox-title h2{margin-left:20px}
+.ui-confirmXbox-container{padding:15px 20px 20px}
+.ui-confirmXbox-content{margin-bottom:15px}
+.ui-confirmXbox-operation{zoom:1}
+.ui-confirmXbox-operation .ui-button{margin-right:6px}
+.mt-5{margin-top:5px}
+.mt-10{margin-top:10px}
+.mt-15{margin-top:15px}
+.mt-20{margin-top:20px}
+.mt-30{margin-top:30px}
+.mt-50{margin-top:50px}
+.mr-5{margin-right:5px}
+.mr-10{margin-right:10px}
+.mr-15{margin-right:15px}
+.mr-20{margin-right:20px}
+.mr-30{margin-right:30px}
+.mr-50{margin-right:50px}
+.mb-5{margin-bottom:5px}
+.mb-10{margin-bottom:10px}
+.mb-15{margin-bottom:15px}
+.mb-20{margin-bottom:20px}
+.mb-30{margin-bottom:30px}
+.mb-50{margin-bottom:50px}
+.ml-5{margin-left:5px}
+.ml-10{margin-left:10px}
+.ml-15{margin-left:15px}
+.ml-20{margin-left:20px}
+.ml-30{margin-left:30px}
+.ml-50{margin-left:50px}
+.pt-5{padding-top:5px}
+.pt-10{padding-top:10px}
+.pt-15{padding-top:15px}
+.pt-20{padding-top:20px}
+.pt-30{padding-top:30px}
+.pt-50{padding-top:50px}
+.pr-5{padding-right:5px}
+.pr-10{padding-right:10px}
+.pr-15{padding-right:15px}
+.pr-20{padding-right:20px}
+.pr-30{padding-right:30px}
+.pr-50{padding-right:50px}
+.pb-5{padding-bottom:5px}
+.pb-10{padding-bottom:10px}
+.pb-15{padding-bottom:15px}
+.pb-20{padding-bottom:20px}
+.pb-30{padding-bottom:30px}
+.pb-50{padding-bottom:50px}
+.pl-5{padding-left:5px}
+.pl-10{padding-left:10px}
+.pl-15{padding-left:15px}
+.pl-20{padding-left:20px}
+.pl-30{padding-left:30px}
+.pl-50{padding-left:50px}
+.ft-red{color:red}
+.ft-orange{color:#f37800}
+.ft-white{color:white}
+.ft-gray{color:##9a9a9a}
+.ft-green{color:#53a000}
+.ft-bd{font-weight:bold}
+.ft-12{font-size:12px}
+.ft-14{font-size:14px}
+.ft-18{font-size:18px}
+.ft-24{font-size:24px}
+.ft-12b{font-size:12px;font-weight:bold}
+.ft-14b{font-size:14px;font-weight:bold}
+.ft-18b{font-size:18px;font-weight:bold}
+.ft-24b{font-size:24px;font-weight:bold}
+.ft-bar{margin:0 5px;color:#aaa}
+.inline-block{display:inline-block;*display:inline;zoom:1}
+.ft-left{text-align:left}
+.ft-right{text-align:right}
+.ft-center{text-align:center}
+.fn-pr{position:relative}
+.fn-pa{position:relative}
+.ui-xbox-close:hover{text-decoration:none}
+.ui-title .action{float:right;margin-top:3px}
+.record-search-form{border-top:2px solid #b3cfee;border-bottom:1px solid #cbdaea;margin-top:5px;margin-bottom:20px;padding-bottom:20px}
+.record-search-form .ui-form-label{float:left;height:28px;line-height:28px;*+line-height:32px;font-weight:bold;text-align:right;vertical-align:top;color:#4d4d4d}
+.record-search-form label.ui-label-text{height:20px;line-height:20px;*+line-height:25px}
+.record-search-form .ui-form-item{padding:0;vertical-align:top}
+.record-search-form .ui-form-item-content{float:left}
+.record-search-option .ui-form-item-content{width:390px}
+.record-search-form .customize-category-item .ui-form-item-content{width:720px}
+.ui-grid-21 .record-search-option .ui-form-item-content{width:auto}
+.record-search-date .date-search-input{border:1px solid #a1bad5;border-radius:2px;box-shadow:2px 2px 3px #ebf3fa;font-size:18px;width:95px;padding:0 8px;height:27px;line-height:25px}
+.record-search-date .quick-input-date{width:290px}
+.record-search-date .quick-link-date{margin-top:5px}
+.record-search-form .category-list{float:left;*display:inline;zoom:1;overflow:hidden;max-width:465px;_width:465px;margin-right:10px}
+.record-search-form .record-search-cate{padding-top:10px}
+.record-search-form .gray-links a:link,.record-search-form .gray-links a:visited{display:inline-block;padding:2px 7px;line-height:18px;border-radius:2px;margin-bottom:5px;margin-right:4px;outline:0 none;text-decoration:none;color:#4d4d4d}
+.record-search-form .gray-links a.active:link,.record-search-form .gray-links a.active:visited,.record-search-form .gray-links a.active:hover{color:white;background-color:#0188cc}
+.record-search-form .gray-links a:hover{background-color:#cbe9f1}
+.record-search-form .ui-btn-mini-more,.record-search-form .ui-button-mini{border-radius:3px;text-decoration:none;border:1px solid #b3b3b3;display:inline-block;height:20px;line-height:20px;color:#666;background:#fcfcfc}
+.record-search-form .ui-btn-mini-more{padding:0 20px 0 10px}
+.record-search-form .ui-button-mini{padding:0 12px}
+.record-search-form .ui-btn-mini-more:hover,.record-search-form .ui-button-mini:hover{color:#333;text-decoration:none;background-color:white}
+.record-search-option .ui-form-select{margin:0;padding:4px;border:1px solid #ccc;height:28px}
+.record-search-option .ui-select-len9{width:90px}
+.record-search-option .ui-select-len8{width:80px}
+.record-search-min .record-type-more,.record-search-min .show .record-type-more,.record-search-min .ui-btn-mini-more,.record-search-max .ui-btn-mini-more{background-image:url("https://i.alipayobjects.com/e/201212/1ucjDOnsb7.png");background-repeat:no-repeat}
+.record-search-min{background-color:#fbfdff}
+.record-search-min .ui-form-label{width:90px}
+.record-search-min .record-search-date{background-color:#f4f9fe;border-bottom:1px solid #cbdaea;padding-top:20px}
+.record-search-min .range-date{display:block;margin-left:-25px;height:60px}
+.record-search-min .customize-category-item{padding-top:5px}
+.record-search-min .record-search-state{padding-top:10px}
+.record-search-min .record-search-option{display:none}
+.record-search-min .record-type-more{display:inline-block;color:#6d6d6d;margin-top:3px;vertical-align:top;background-position:30px -256px;background-position:30px -258px\0;*background-position:30px -258px;_background-position:30px -256px;width:40px;margin-left:10px}
+.record-search-min .show .record-type-more{background-position:30px -403px;background-position:30px -405px\0;*background-position:30px -405px;_background-position:30px -403px}
+.record-search-min .record-type-list{height:24px;overflow:hidden;width:465px;line-height:2.0}
+.record-search-min .show .record-type-list{height:auto}
+.record-search-min .record-search-state .ui-btn-mini-more{display:inline-block;float:right;margin-right:20px;background-position:65px -280px;background-position:65px -282px\0;*+background-position:65px -282px}
+.record-search-max{background-color:#fbfdff;padding:20px 10px}
+.record-search-max .range-date,.record-search-max .record-search-state .ui-btn-mini-more,.record-search-max .record-type-more{display:none}
+.record-search-max .ui-form-label{width:80px}
+.record-search-max div.ui-form-item-time{border-bottom:1px dashed #c1c1c1;width:100%;padding-bottom:10px}
+.record-search-max .customize-category-item{display:block}
+.record-search-max .record-search-date{padding-bottom:0}
+.record-search-max .record-search-state{padding:8px 0 10px;border-bottom:1px dashed #c1c1c1}
+.record-search-max .record-type-list{height:auto;overflow:hidden;width:720px;line-height:2.0}
+.record-search-max .record-search-submit{padding-left:80px;padding-top:20px}
+.record-search-max .record-search-keyword .ui-btn-mini-more{float:right;background-position:88px -429px;background-position:88px -431px\0;*+background-position:88px -431px;margin-right:10px;margin-top:5px}
+.record-search-keyword,.record-search-amount{height:30px;margin-top:10px}
+.record-search-amount .ui-form-item a,.record-search-keyword .ui-form-item a{display:none;top:2px}
+.record-search-amount .ui-form-item a{left:205px}
+.record-search-keyword .ui-form-item a{left:295px;*left:290px}
+.record-search-amount .ui-form-item .showBox a,.record-search-keyword .ui-form-item .showBox a{display:inline-block}
+.record-search-amount .amount-input{width:255px}
+.record-search-keyword .amount-input{width:345px}
+.record-search-amount .showBox .amount-input,.record-search-keyword .showBox .amount-input{position:absolute;background-color:white;border:1px solid #e0e0e0;box-shadow:0 1px 3px rgba(0,0,0,0.2);padding:4px;left:-5px;top:-5px}
+.merge-pay{text-align:right;padding-right:20px;padding-bottom:5px}
+.ui-button-sblue,.ui-button-sblue:hover,.ui-button-sblue .ui-button-text{background:transparent url(https://i.alipayobjects.com/e/201301/1y98iznZIr.png) no-repeat;font-weight:normal}
+.ui-button-sblue{background-position:0 0}
+.ui-button-sblue .ui-button-text{padding:0 12px;font-size:12px;background-position:right -60px;line-height:25px;height:25px}
+.ui-button-sblue:hover{background-position:0 -30px}
+.ui-button-sblue:hover .ui-button-text{background-position:right -90px}
+.fn-ml10{margin-left:10px}
+.record-icon{display:inline-block;background-image:url("https://i.alipayobjects.com/e/201212/1ucjDOnsb7.png");background-repeat:no-repeat;background-position:20px 10px;width:14px;height:16px;text-align:center;vertical-align:middle}
+.ui-record-table thead th{border-bottom:1px solid #ccc;height:30px;line-height:30px;background:#f5f5f5;background:-moz-linear-gradient(top,#f8f8f8,#f2f2f2);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#f8f8f8),color-stop(1,#f2f2f2));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8',endColorstr='#f2f2f2',GradientType='0')}
+.ui-record-table tr.split{background-color:#fbfbfb}
+.ui-record-table tbody td{vertical-align:top;padding:10px 0;border-bottom:1px solid #e6e6e6}
+.ui-record-table .time{padding-left:20px;width:60px;text-align:left}
+.ui-record-table td.memo{text-align:center}
+.security-tips{border-top:1px dashed #ffbb76;margin-top:5px;padding-top:5px;color:#878787}
+.ui-record-table td.name,.ui-record-table td.other,.ui-record-table td.tradeNo{padding-right:10px}
+.ui-record-table td.name,.ui-record-table td.tradeNo,.memo-info{word-break:break-all;word-wrap:break-word}
+.memo-info{float:left;width:140px}
+.ui-record-table td .consume-title a{color:#4d4d4d;outline:0 none}
+.ui-record-table td .consume-title a:hover{color:#08c}
+.ui-record-table td .consume-bizNo a{color:#9a9a9a;outline:0 none}
+.ui-record-table .consume-bizNo a:hover{color:#9a9a9a;cursor:default}
+.ui-record-table .consume-bizNo a.hover{text-decoration:underline}
+.ui-record-table td.name .consume-bizNo .J-tradeNo-copy{display:inline-block}
+.ui-record-table .ft-gray{color:#9a9a9a}
+.ui-record-table td.detail{text-align:left;padding-left:10px}
+.ui-record-table td.detail a{float:left;margin-right:10px;margin-top:2px}
+.ui-record-table .amount,.ui-record-table .status{text-align:right}
+.amount-pay{font-weight:bold;color:#808080}
+.amount-pay-out{color:#f37800;font-weight:bold}
+.amount-pay-in{color:#53a000;font-weight:bold}
+.ui-record-table .action{padding-right:20px;text-align:right}
+.ui-record-table .refund{height:20px;padding-top:7px;border-top:1px dashed #ccc}
+.ui-record-table .action .refund{padding-right:20px}
+.ui-record-table tr.no-border td{border-bottom:0 none;padding-bottom:0}
+.icon-trash{background-position:0 -513px}
+.icon-memo{background-position:2px -310px}
+a.icon-memo:hover,.amount-scheme-b em i.icon-memo{background-position:2px -342px}
+.icon-contact{background-position:0 5px}
+.icon-ww-online{background-position:0 -19px}
+.icon-ww-offline{background-position:0 -43px}
+.icon-fee{background-position:0 -128px}
+.icon-detail{background-position:0 -74px}
+a.icon-detail:hover{background-position:0 -102px}
+.icon-count{height:14px;background-position:0 -183px}
+.icon-download{height:14px;background-position:0 -157px}
+.operation-menu-trigger{display:inline-block;*display:inline;zoom:1}
+.operation-menu-trigger .current-item{color:#0188cc;padding:2px 7px;font-size:12px;cursor:pointer;display:inline-block;*display:inline;zoom:1;line-height:17px;height:17px}
+.operation-menu-trigger-hot .current-item{padding:1px 6px;border:1px solid #f47c02;color:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#f99236;background:-moz-linear-gradient(top,#fa9b3d 0,#f99236 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fa9b3d),color-stop(100%,#f99236));background:-webkit-linear-gradient(top,#fa9b3d 0,#f99236 100%);background:-o-linear-gradient(top,#fa9b3d 0,#f99236 100%);background:-ms-linear-gradient(top,#fa9b3d 0,#f99236 100%);background:linear-gradient(top,#fa9b3d 0,#f99236 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FA9B3D',endColorstr='#F99236',GradientType=0)}
+.operation-menu-trigger .icon-pull-down{display:inline-block;*display:inline;zoom:1;width:12px;background:url("https://i.alipayobjects.com/e/201212/1ucjDOnsb7.png") no-repeat scroll 5px -210px transparent}
+.operation-menu-trigger-hot .icon-pull-down{background-position:5px -230px}
+.custom-menu{background-color:#fff;color:#0188cc;z-index:1;top:0;left:0;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;box-shadow:0 2px 4px rgba(0,0,0,0.25)}
+.custom-menu li{border-left:1px solid #c4c4c4;border-right:1px solid #c4c4c4;cursor:pointer;line-height:21px;height:21px;padding:0;text-align:right;position:relative;overflow:hidden;*margin-top:-3px}
+.custom-menu li.first{border-top:1px solid #c4c4c4;border-radius:3px 3px 0 0;line-height:20px;height:20px;*margin-top:0}
+.custom-menu li.last{border-bottom:1px solid #c4c4c4;border-radius:0 0 3px 3px;line-height:20px;height:20px}
+.custom-menu li.split{border-top:1px solid #e9e9e9;line-height:20px;height:20px}
+.custom-menu li.hover{line-height:19px!important;height:19px!important;color:#fff;border:1px solid #f47c02!important;background:#fa9b3d;background:-moz-linear-gradient(top,#fa9b3d 0,#f99236 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fa9b3d),color-stop(100%,#f99236));background:-webkit-linear-gradient(top,#fa9b3d 0,#f99236 100%);background:-o-linear-gradient(top,#fa9b3d 0,#f99236 100%);background:linear-gradient(top,#fa9b3d 0,#f99236 100%)}
+.custom-menu li a,.custom-menu li span{display:block;padding-right:18px;padding-left:6px}
+.custom-menu li.hover a,.custom-menu li a:hover{text-decoration:none;color:white}
+.custom-menu li.disabled a:link,.custom-menu li.disabled a:visited,.custom-menu li.disabled a:hover{color:#a1a1a1!important}
+#searchResultTip .border-b{border-bottom:1px solid #e6e6e6}
+.have-no-result{padding-bottom:40px;margin-top:30px}
+.have-no-result .module-myrecord-msg{width:420px;margin:0 auto}
+.have-no-result .module-myrecord-msg-txt{margin-top:25px;font-size:18px;font-family:"Microsoft YaHei","\9ED1\4F53"}
+.have-no-result .module-myrecord-msg-link{display:inline-block;margin-top:5px}
+.amount-top{margin:8px 0 3px}
+.amount-top .action-other-show{width:900px}
+.amount-bottom{border-bottom:1px solid #e6e6e6;padding:15px 15px 10px}
+.action-content{position:relative}
+.amount-links{position:relative;display:inline-block;height:27px;width:76px;text-align:center;top:2px;left:2px;padding-top:8px}
+.action-other{height:28px;padding-top:10px}
+.action-other-show{position:absolute;top:0;left:75px;width:880px}
+.amount-detail{display:none}
+.show-amount .amount-links{width:78px;border:1px solid #e0e0e0;background-color:#f7f7f7;border-bottom:medium none;top:1px;left:0}
+.show-amount .amount-detail{display:block;background-color:#f7f7f7;border:1px solid #e0e0e0;display:block;padding:12px 10px}
+.show-amount .first-bar{color:white}
+.page-link a{margin:0 4px}
+.page-link .ui-button{line-height:1.5;position:relative;top:-4px}
+.ui-grid-21 .tip-faq dt{width:750px}
+#topSearchForm .ui-form-item .placeholder{color:#aaa}
+.ui-recordtab ul{list-style:none;background:#f6f8fa;filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#f9fbfd',endColorStr='#f1f3f6',gradientType='0');background:-moz-linear-gradient(top,#f9fbfd,#f1f3f6);background:-o-linear-gradient(top,#f9fbfd,#f1f3f6);background:-webkit-gradient(linear,0% 0,0% 100%,from(#f9fbfd),to(#f1f3f6));border-top:1px solid #e5e5e5;border-right:1px solid #e5e5e5;border-left:1px solid #e5e5e5;border-bottom:1px solid #e6e6e6}
+.ui-recordtab li{float:left;vertical-align:middle}
+.ui-recordtab-item a{font-size:14px;line-height:33px;height:33px;padding:0 20px;border-right:1px solid #e5e5e5;color:#666;display:inline-block;*display:inline;*zoom:1;transition:all .4s ease-out}
+.ui-recordtab-item a:hover{text-decoration:none;background:#fefefe;color:#4d4d4d}
+.ui-recordtab-item-current a,.ui-recordtab-item-current a:hover{font-weight:700;background:#fcfcfc;filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#fefefe',endColorStr='#fafafa',gradientType='0');background:-moz-linear-gradient(top,#fefefe,#fafafa);background:-o-linear-gradient(top,#fefefe,#fafafa);background:-webkit-gradient(linear,0% 0,0% 100%,from(#fefefe),to(#fafafa));position:relative;top:1px;color:#4d4d4d}
+.ui-calendar{position:absolute;font:16px 'Xin Gothic','PT Sans','Hiragino Sans GB','Helvetica Neue',Helvetica,Arial,sans-serif;background:#f9f9f9;border-collapse:collapse;border-spacing:0;border:1px solid #dadada;box-shadow:1px 1px 9px #ccc;text-align:center}
+.ui-calendar ul{list-style-type:none;margin:0;padding:0;clear:both;width:210px;zoom:1}
+.ui-calendar ul:after{display:block;content:"";visibility:hidden;font-size:0;clear:both;height:0}
+.ui-calendar li{float:left;text-align:center;width:30px;padding:3px 0;cursor:pointer}
+.ui-calendar .ui-calendar-navigation{font-size:14px;border-bottom:1px solid #dadada}
+.ui-calendar .ui-calendar-month-year{width:90px}
+.ui-calendar .month:hover,.ui-calendar .year:hover{color:#2d689f}
+.ui-calendar .ui-calendar-previous-year:hover,.ui-calendar .ui-calendar-previous-month:hover,.ui-calendar .ui-calendar-next-month:hover,.ui-calendar .ui-calendar-next-year:hover{color:#2d689f}
+.ui-calendar .ui-calendar-data-container{border-top:1px solid #dadada;border-bottom:1px solid #dadada}
+.ui-calendar .ui-calendar-date-column .previous-month,.ui-calendar .ui-calendar-date-column .next-month{color:#ccc}
+.ui-calendar .ui-calendar-date-column .disabled-date{background:#eee;color:#bbb}
+.ui-calendar .ui-calendar-year-column li,.ui-calendar .ui-calendar-month-column li{width:65px;margin:2px;padding:2px 0;border-radius:4px}
+.ui-calendar li.ui-calendar-day-0,.ui-calendar li.ui-calendar-day-6{color:#2d689f}
+.ui-calendar .ui-calendar-year-column li:hover,.ui-calendar .ui-calendar-month-column li:hover,.ui-calendar .ui-calendar-date-column li:hover{color:#333;background:#dadada}
+.ui-calendar .ui-calendar-year-column li.focused-element,.ui-calendar .ui-calendar-month-column li.focused-element,.ui-calendar .ui-calendar-date-column li.focused-element{color:#fff;background:#2d689f}
+.ui-calendar .ui-calendar-footer{color:#999}
+.ui-calendar .ui-calendar-today,.ui-calendar .ui-calendar-time{width:auto;padding:3px 4px}
+.ui-calendar .ui-calendar-time{float:right}
+.ui-calendar ul,.ui-calendar .ui-calendar-data-container{*float:left;*clear:both}
+.ui-newxbox{background-color:rgba(0,0,0,0.5);FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#88000000,endColorstr=#88000000);padding:6px;-webkit-transition:height .3s ease-in-out .3s;-moz-transition:height .3s ease-in-out .3s;-o-transition:height .3s ease-in-out .3s;-ms-transition:height .3s ease-in-out .3s;transition:height .3s ease-in-out}
+:root .ui-newxbox{FILTER:none\9}
+.ui-newxbox-content{background:#fff;height:100%;*zoom:1}
+.ui-newxbox-close{color:#999;cursor:pointer;display:block;font-family:tahoma;font-size:24px;height:18px;line-height:14px;overflow:hidden;position:absolute;right:16px;text-decoration:none;top:10px;width:18px;z-index:10}
+.ui-newxbox-close:hover{color:#666;text-shadow:0 0 2px #aaa}
+.ui-newxbox-loading{position:absolute;top:0;left:0;background:white;height:4px;_overflow:hidden}

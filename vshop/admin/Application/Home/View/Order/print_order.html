@@ -1,0 +1,104 @@
+<include file="Public:header" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.print.js"></script>
+<style type="text/css">
+.button_search{
+	background-image: -webkit-linear-gradient(top,#ffffff,#e6e6e6);
+	background-image: -moz-linear-gradient(top,#ffffff,#e6e6e6);
+	background-image: -o-linear-gradient(top,#ffffff,#e6e6e6);
+	border: 1px solid #c7c7c7;
+	cursor: pointer;
+	width: 80px;
+	height: 26px;
+	line-height: 24px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+</style>
+<div class="content">
+<div id="tool" style="text-align:center;">
+    <input type='button' class='button_search' onclick="printStart();" value='开始打印' /> &nbsp;&nbsp;
+    <input type='button' class='button_search' onclick='window.history.go(-1);' value='返回上一级' />
+</div>
+<div id="content" style="position: relative;width:<?php echo $content['width']?>px; height:<?php echo $content['height']; ?>px;">
+
+  <table style="width:100%;height:10%;" border="0">
+   <tbody>
+    <tr class="firstRow">
+     <td style="height:100%;" rowspan="3"><img style="float:left;" src="__PUBLIC__/images/logo.png" /></td>
+     <td style="width:33%;" rowspan="3"><p style="font-size:100%;text-align:center; display:block; overflow:hidden;">商品发货单</p></td>
+     <td style="width:33%;text-align:center;" rowspan="2"><img style="float:left;height:100%;" src="__PUBLIC__/images/logo.png" /></td>
+    </tr>
+    <tr></tr>
+    <tr>
+     <td style="text-align:center;"><span style="font-size:120%;">{$vo.order_sn}</span></td>
+    </tr>
+   </tbody>
+  </table>
+  <table style="width:100%;margin:2.5% 0px 1% 0px;" border="0">
+   <tbody>
+    <tr class="firstRow" style="width:100%;">
+     <td style="width:40%;">收货人：{$vo.recipient}</td>
+     <td style="width:26%;">电话：{$vo.mobile}</td>
+     <td style="width:33%;">&nbsp;</td>
+     <td style="width:33%;"><br /></td>
+    </tr>
+    <tr style="width:100%;">
+     <td style="width:40%;">地址：{$vo.address}</td>
+     <td style="width:27%;"></td>
+     <td style="width:33%;"></td>
+     <td style="width:33%;"><br /></td>
+    </tr>
+    <tr style="width:100%;">
+     <td style="width:40%;">订单号：{$vo.order_sn}</td>
+     <td style="width:27%;"></td>
+     <td style="width:33%;"></td>
+     <td style="width:33%;"><br /></td>
+    </tr>
+    <tr style="width:100%;">
+	 <td style="width:27%;">配送公司：{$vo.shipping_company}</td>
+     <td style="width:33%;">快递单号：{$vo.shipping_no}</td>
+	 <td style="width:33%;">打印时间：<?php echo date('Y-m-d H:i:s'); ?></td>
+	 <td style="width:33%;"></td>
+    </tr>
+   </tbody>
+  </table>
+  <h3>商品清单</h3>
+  <table style="text-align:center;" border="1" cellspacing="0" width="100%" class="goodslist">
+   <tbody>
+    <tr class="firstRow">
+     <th style="border-bottom:1px solid #000000;">商品货号</th>
+     <th style="border-bottom:1px solid #000000;">商品名称</th>
+	 <th style="border-bottom:1px solid #000000;">商品规格</th>
+     <th style="border-bottom:1px solid #000000;">单价</th>
+     <th style="border-bottom:1px solid #000000;">数量</th>
+     <th style="border-bottom:1px solid #000000;">金额</th>
+    </tr>
+	<volist name="items" id="item">
+    <tr id="goodslist">
+     <td style="border-bottom:1px solid #000000;">{$item.product_sn}</td>
+     <td style="border-bottom:1px solid #000000;">{$item.product_name}</td>
+	 <td style="border-bottom:1px solid #000000;">{$item.spec}</td>
+     <td style="border-bottom:1px solid #000000;">{$item.price}</td>
+     <td style="border-bottom:1px solid #000000;">{$item.num}</td>
+     <td style="border-bottom:1px solid #000000;"><?php echo $item['price']*$item['num'] ?></td>
+    </tr>
+	</volist>
+    <tr>
+     <td style="border-bottom:0px solid #000000;">&nbsp;</td>
+     <td style="border-bottom:0px solid #000000;">&nbsp;</td>
+     <td style="border-bottom:0px solid #000000;">&nbsp;</td>
+	 <td style="border-bottom:0px solid #000000;">&nbsp;</td>
+     <td style="border-bottom:0px solid #000000;">实际支付</td>
+     <!--<td style="border-bottom:0px solid #000000;">{$vo.total_num}</td>-->
+     <td style="border-bottom:0px solid #000000;">{$vo.actual_paid}</td>
+    </tr>
+   </tbody>
+  </table>
+</div>
+<script type="text/javascript">
+function printStart() {
+    $("#content").jqprint();
+}
+</script>
+<include file="Public:footer" /> 

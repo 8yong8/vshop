@@ -1,0 +1,159 @@
+<include file="Public:header" />
+<script>
+ function uponline(){
+   window.location.href = "__URL__/uponline";
+ }
+
+ function she_uponline(){
+   window.location.href = "__URL__/she_uponline";
+ }
+
+ function look(id){
+   var url = '__URL__/look/id/'+id;
+   window.open(url) 
+ }
+
+
+ function addold(){
+   window.location.href = "__URL__/addold";
+ }
+
+ function upshowtime(id){
+   var url = '__URL__/upshowtime/id/'+id;
+   window.open(url);
+ }
+</script>
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli" style="/*border:1px red solid;*/">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">ID：</TD>
+			<TD><INPUT TYPE="text" NAME="id" class="small" value="{$id}"></TD>
+			<TD class="tRight">标题：</TD>
+			<TD><INPUT TYPE="text" NAME="title" class="small" value="{$title}"></TD>
+			<TD class="tRight">分类：</TD>
+			<TD>	
+			<select name="cid">
+			<option value="" >分类选择</option>
+			 <volist name="types" id="vo">
+			 <option value="{$vo.id}" <eq name="cid" value="$vo.id">selected</eq> >
+			 {$vo.node_name}</option>
+			 </volist>
+			</select>
+			</TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+					<td>
+					  <myhtml:imageBtn name="import" value="排序" click="sort()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+
+					<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+					<tr><td height="5" colspan="12" class="topTd" ></td></tr>
+					<tr class="row" >
+					  <th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+					  <th width="8%">
+					  <eq name="sort" value="1">
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-desc" style="text-align: center;" onclick="javascript:sortBy('id','1','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  <else/>
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-asc" style="text-align: center;" onclick="javascript:sortBy('id','0','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  </a>
+					  </eq>
+					  </th>
+					  <th width="28%">商品</th>
+					  <th>分类</th>
+					  <th>已参与/总需</th>
+					  <th>单价/元</th>
+					  <th>期数/最大期数</th>
+					  <th>添加时间</th>
+					  <th>状态</th>
+					  <th>操作</th>
+					</tr>
+					<volist name="list" id="vo" mod="2">
+					<tr  class="datagrid-row <eq name="mod" value="1">datagrid-row-alt</eq>">
+					  <td><input type="checkbox" name="key"	value="{$vo.id}"></td>
+					  <td>{$vo.id}</td>
+					  <td style="text-align:left;height:auto;padding-left:8px;"><a href="__URL__/edit/id/{$vo.id}">{$vo.name}</a></td>
+					  <td>{$vo.type_name}</td>
+					  <td>
+					  {$vo.canyurenshu}/{$vo.zongrenshu}
+					  </td>
+					  <td>
+					  {$vo.yunjiage}
+					  </td>
+					  <td>
+					  {$vo.qishu}/{$vo.maxqishu}
+					  </td>
+					  <td>
+					  {$vo.create_time|toDate='Y-m-d H#i#s'}
+					  </td>
+					  <td>{$vo.status|rs='0#下架#red@1#上架#blue'}</td>
+					  <td style="text-align:left;height:auto;">
+					  <eq name="vo.status" value="1">
+					  <a href="javascript:forbid({$vo.id})">下架</a>&nbsp;
+					  <else/>
+					  <a href="javascript:resume({$vo.id})">上架</a>&nbsp;
+					  </eq>
+					  <a href="javascript:edit('{$vo.id}')">编辑</a>&nbsp;
+					  <a href="__URL__/album/sourceid/{$vo.id}">图片编辑</a>&nbsp;
+					  <a href="__URL__/before/id/{$vo.id}">查看往期</a>&nbsp;
+					  </td>
+					</tr>
+					</volist>
+					</table>
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

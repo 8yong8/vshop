@@ -1,0 +1,78 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<script>
+function show(id){
+  $('#'+id).toggle();
+}
+
+function oCopy(){
+obj = document.getElementById('duanxin');
+obj.select(); 
+js=obj.createTextRange(); 
+js.execCommand("Copy")
+alert("复制成功!"); 
+} 
+
+</script>
+<div id="main" class="main" >
+<div class="content">
+<style>
+#zx td{
+  border:1px red solid;
+}
+</style>
+  <div class="title">详细数据 [ <A HREF="__URL__">返回列表</A> ]</div>
+	<TABLE cellpadding=3 cellspacing=3 id="zx">
+	<TR>
+	<TH>订单号:</TH><td>{$vo.order_id}</td>
+	</TR>
+	<TR>
+	<TH>会员</TH><td>{$vo.member_name} | {$vo.realname}</td>
+	</TR>
+	<TR>
+	<TH>支付方式</TH><td>{$vo.pay_type|rs='1#充值#blue@2#消费#red@3#提现#3f8813@4#回购#BF80FF@5#售出#FF944D'}</td>
+	</TR>
+	<TR>
+	<TH>收货人姓名</TH><td>{$vo.member_msg.name}</td>
+	</TR>
+	<TR>
+	<TH>收货地址</TH><td>{$vo.member_msg.address}</td>
+	</TR>
+	<TR>
+	<TH>邮编</TH><td>{$vo.member_msg.postcode}</td>
+	</TR>
+	<TR>
+	<TH>联系方式</TH><td>{$vo.member_msg.mobile}/{$vo.member_msg.hone1}</td>
+	</TR>
+	<TR>
+	<TH>IP</TH><td>{$vo.ip}</td>
+	</TR>
+	<TR>
+	<TH>报名时间</TH><td>{$vo.create_time|toDate='Y-m-d H:i:s'}</td>
+	</TR>
+
+	<TR>
+	<TH>订单总金额</TH><td>{$vo.price}</td>
+	</TR>
+	<TR>
+	<TH>订购商品总数量</TH><td>{$vo.total}</td>
+	</TR>
+	<neq name="vo.discount_id" value="0">
+	<TR>
+	<TH>优惠券</TH><td>{$vo.discount_id}</td>
+	</TR>
+	</neq>
+	<TR>
+	<TH>是否受理</TH><td>{$vo.if_shouli|rs='0#未受理#red@1#已受理#blue'}</td>
+	</TR>
+
+
+
+	</TABLE>
+  </div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

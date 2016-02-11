@@ -1,0 +1,12 @@
+.cloud-zoom-lens {
+	BORDER-BOTTOM: #888 4px solid; BORDER-LEFT: #888 4px solid; BACKGROUND-COLOR: #fff; MARGIN: -4px; BORDER-TOP: #888 4px solid; CURSOR: move; BORDER-RIGHT: #888 4px solid
+}
+.cloud-zoom-title {
+	POSITION: absolute !important; TEXT-ALIGN: center; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #000; PADDING-LEFT: 3px; WIDTH: 100%; PADDING-RIGHT: 3px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #fff; FONT-SIZE: 10px; TOP: 0px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.cloud-zoom-big {
+	BORDER-BOTTOM: #ccc 4px solid; BORDER-LEFT: #ccc 4px solid; OVERFLOW: hidden; BORDER-TOP: #ccc 4px solid; BORDER-RIGHT: #ccc 4px solid
+}
+.cloud-zoom-loading {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; BACKGROUND: #222; COLOR: white; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 3px
+}

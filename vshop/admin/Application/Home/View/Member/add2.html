@@ -1,0 +1,141 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<div id="main" class="main" >
+<load href="__PUBLIC__/Js/prototype.js" />
+<load href="__PUBLIC__/Js/mootools.js" />
+<style type="text/css">
+/**********日历样式开始********************/
+#calendar_container {
+	width:160px;
+	border:1px solid #06C;
+}
+#calendar {
+	border-collapse:collapse;
+	background-color:#FFF;
+	width:160px;
+	height:120px;
+	margin:0px auto;
+	cursor:default;
+}
+#calendar td {
+	font-size:12px;
+	text-align:center;
+	vertical-align:middle;
+	font-family:"宋体";
+}
+#calendar thead {
+	background-color:#999;
+	color:#FFF;
+}
+#calendar caption {
+	background-color:#06C;
+}
+#calendar a{
+	color:#F90;
+	margin:0 5px;
+	text-decoration:none;
+}
+#calendar #prev_month,#calendar #next_month {
+	font-size:18px;
+	margin:0;
+}
+#calendar #c_today {
+	background-color:#036;
+	color:#FFF;
+}
+#calendar .over {
+	background-color:#CCC;
+}
+#calendar .keydate {
+	color:#06F;
+}
+</style>
+<script language="JavaScript">
+
+function checkName(){
+	ThinkAjax.send('__URL__/checkAccount/','ajax=1&account='+$F('username'));
+}
+
+ window.onload = function(){
+ 	var j = new JCalendar();
+	j.setYears(1950,2010);
+	j.bind('bday',"bottom");
+ }
+</script>
+<div class="content">
+<div class="title">新增用户 [ <a href="__URL__">返回列表</a> ]</div>
+<table cellpadding=3 cellspacing=3>
+<form method='post' id="form1" action="__URL__/add?<?php echo time(); ?>" enctype="multipart/form-data">
+<tr>
+	<td class="tRight" >用户名：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeftRequire"  check='Require' warning="用户名不能为空" id="username" name="username"><input type="button" value="检测帐号" onclick="checkName()" class="submit hMargin"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >真实姓名：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="realname" value=""></td>
+</tr>
+
+
+<tr>
+	<td class="tRight" >密码：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="password" value=""></td>
+</tr>
+
+<tr>
+	<td class="tRight" >Email：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="email"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >形象图：</td>
+	<td class="tLeft" ><input type="file" name="logo" onchange="yulan(this,'show1')">
+	<div id="show1">
+	</div>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" colspan="2"><hr></td>
+</tr>
+
+<tr>
+	<td class="tRight">电话：</td>
+	<td class="tLeft"><INPUT TYPE="text" NAME="phone" id="phone"></td>
+</tr>
+
+<tr>
+	<td class="tRight">手机：</td>
+	<td class="tLeft"><INPUT TYPE="text" NAME="tel" id="tel"></td>
+</tr>
+
+<tr>
+	<td class="tRight">出生日期：</td>
+	<td class="tLeft"><INPUT TYPE="text" NAME="bday" id="bday"></td>
+</tr>
+
+<tr>
+	<td class="tRight">地区：{$vo.pv}</td>
+	<td class="tLeft">
+	<select name="pv" id="placeprovince" size="1" onchange="slcity();">
+	<volist name="pvlist" id="province">
+	  <option value="{$province.pv}" pid="{$province.id}" <eq name="vo.pv" value="$province.pv">selected="selected"</eq>>{$province.pv}</option>
+	</volist>
+	</select>	
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight tTop">简 介：</td>
+	<td class="tLeft"><TEXTAREA class="large bLeft"  name="intro" rows="5" cols="57"></textarea></td>
+</tr>
+<tr>
+	<td></td>
+	<td class="center">
+	<input type="submit" value="保 存" class="small submit">
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+	<script type="text/javascript" src="__PUBLIC__/js/zepto.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/nav1.0.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/messageBox.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/iscroll.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/zTouch.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/WeixinApi.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<title></title>
+</head>
+<body>
+<!-- 导航 [[ -->
+		<div class="top" id="lineNav">
+			<ul>
+			
+					<li class="active"><p>热议</p></li>
+				
+			
+					<li><p>话题</p></li>
+			
+			
+					<li><p>附近</p></li>
+				
+			
+					<li><p>最新</p></li>
+			
+				
+					<li><p>心洞</p></li>
+			
+			</ul>
+			<span class="bline" >
+				<div></div>
+			</span>
+		</div>
+	<!-- 导航 ]] -->
+	<div class="main" id="mwrapper">
+		<div id="mscroller">
+			<!-- 轮播 [[ -->
+			<div id='wrapper'>
+						<div id="touchBox">
+							<div id='scroller'>
+							<!-- 每张图片必须一样大小 -->
+							<volist name="ad_list" id="ad">
+							<a href="{$ad.url}"><img class="swipeimg" src="{$ad.pic}"></a>
+							</volist>
+							</div>
+							<ul class="dotNav">
+								
+							</ul>
+						</div>
+			</div>
+			<!-- 轮播 ]] -->
+			<!-- chat列表 [[ -->
+			<div class="chatBox">
+				<ul class="chatUi">
+					<li>
+						<div class="chatTop">
+							<dl>
+									<dt class='p_img'>
+										<img src="__PUBLIC__/images/p1.png">
+									</dt>
+									<dd class='p_detail'>
+										<p class='p_name'>大婶</p>
+										<p class='p_addr'><i class="icon-time"></i>0秒前回复</p>
+									</dd>
+									<i class="icon-angle-right"></i>
+							</dl>
+						</div>
+						<p class="textBox">
+							<a href="#" class="ht">#晒照片咯咯#</a>啦啦啦，晒几张丑照片
+						</p>
+						<div class="imgList">
+									<img src="__PUBLIC__/images/003.jpg">
+									<img src="__PUBLIC__/images/003.jpg">
+									<img src="__PUBLIC__/images/003.jpg">
+									<img src="__PUBLIC__/images/003.jpg">
+									
+						</div>
+						<p class="position"><i class="icon-map-marker"></i>合肥市肥西</p>
+						<ul class="shareBtn">
+							<li class="s1"><a href="#"><p><img src="images/icon2.png">分享</p></a></li>
+							<li><a href="#"><p><img src="images/icon3.png">17</p></a></li>
+							<li><a href="#"><p><img src="images/icon4.png">14</p></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- char列表 ]] -->
+			<div id="pullUp">
+				<i class="icon-spinner"></i><span class="pullUpLabel">下拉显示更多</span>
+			</div>
+		</div>
+		
+
+	</div>
+	<div class="foot">
+		<a  class="searchBtn"><img src="images/icon5.png"></a>
+		<a  class="subMessage"><img src="images/icon1.png">发布信息</a>
+		<a  class="moreBtn"><img src="images/icon6.png"></a>
+	</div>
+	<div class="shareBox">
+		<h2>分享至：</h2>
+		<ul>
+			<li><a href="#"><img src="images/appiCON/icon1.png"><p>微信好友</p></a></li>
+			<li><a href="#"><img src="images/appiCON/icon2.png"><p>微信朋友圈</p></a></li>
+			<li><a href="#"><img src="images/appiCON/icon3.png"><p>QQ好友</p></a></li>
+			<li><a href="#"><img src="images/appiCON/icon4.png"><p>新浪微博</p></a></li>
+			<li><a href="#"><img src="images/appiCON/icon5.png"><p>QQ空间</p></a></li>
+			<li><a href="#"><img src="images/appiCON/icon6.png"><p>我的蜜友</p></a></li>
+		</ul>
+		<a class="btnCancel">取消</a>
+	</div>
+	<div class="mask"></div>
+</body>
+<script type="text/javascript">
+document.onreadystatechange = iscrollRefresh;
+function iscrollRefresh(){
+	wrapper.refresh();
+	
+}
+function pullUpAction(){
+	var li='<li>'
+							+'<div class="chatTop">'
+							+'<dl>'
+									+'<dt class="p_img">'
+										+'<img src="images/p1.png">'
+									+'</dt>'
+									+'<dd class="p_detail">'
+										+'<p class="p_name">大婶</p>'
+										+'<p class="p_addr"><i class="icon-time"></i>0秒前回复</p>'
+									+'</dd>'
+									+'<i class="icon-angle-right"></i>'
+							+'</dl>'
+						+'</div>'
+						+'<p class="textBox">'
+							+'<a href="#" class="ht">#晒照片咯咯#</a>啦啦啦，晒几张丑照片'
+						+'</p>'
+						+'<div class="imgList">'
+									+'<img src="images/003.jpg">'
+									+'<img src="images/003.jpg">'
+									+'<img src="images/003.jpg">'
+									+'<img src="images/003.jpg">'
+									
+						+'</div>'
+						+'<p class="position"><i class="icon-map-marker"></i>合肥市肥西</p>'
+						+'<ul class="shareBtn">'
+							+'<li class="s1"><a href="#"><p><img src="images/icon2.png">分享</p></a></li>'
+							+'<li><a href="#"><p><img src="images/icon3.png">17</p></a></li>'
+							+'<li><a href="#"><p><img src="images/icon4.png">14</p></a></li>'
+						+'</ul>'
+						+'</li>';
+	$('.chatUi').append(li);
+	wrapper.refresh();
+}
+//全屏滚动
+		 var pullUpEl = document.getElementById('pullUp');	
+	 	 var pullUpOffset = pullUpEl.offsetHeight;
+
+		 var args={
+		 disableMouse: true,
+         disablePointer: true,
+         hScrollbar:false,
+	         onRefresh: function () {
+
+		         if (pullUpEl.className.match('loading')) {
+		             pullUpEl.className = '';
+		             $("#pullUp i").hide();
+		             pullUpEl.querySelector('.pullUpLabel').innerHTML = '下拉显示更多';
+		         }
+		     },
+		     onScrollMove: function () {
+		         if (this.y < (this.maxScrollY - 20) && !pullUpEl.className.match('flip')) {
+		             pullUpEl.className = 'flip';
+		             $(".pullUpIcon img").hide();
+		             pullUpEl.querySelector('.pullUpLabel').innerHTML = '松开手刷新';
+		             this.maxScrollY = this.maxScrollY;
+		         } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
+		             pullUpEl.className = '';
+		             $(".pullUpIcon img").hide();
+		             pullUpEl.querySelector('.pullUpLabel').innerHTML = '下拉显示更多';
+		             this.maxScrollY = pullUpOffset;
+		         }
+		     },
+		     onScrollEnd: function () {
+	             
+		         if (pullUpEl.className.match('flip')) {
+		             pullUpEl.className = 'loading';
+		             $("#pullUp i").show();
+		             pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中...';
+		             pullUpAction(); // Execute custom function (ajax call?)
+		             //
+		             $('.shareBtn li.s1').on('click',function(){
+						$('.shareBox').show();
+						$('.mask').show();
+					});
+		         }
+		     }
+
+
+		 }
+		 var wrapper = new iScroll('mwrapper',args);
+	//全局触发事件
+    window._event='tap';
+	$(function(){
+		
+		//mask 全屏
+		var h=$(window).height();
+		$('.mask').css({
+			"height":h
+		});
+		// 导航
+		Z_navUi.start($('#lineNav'),_event);
+		// 轮播
+		checkImgDom();
+		// 滑动
+		 Z_scrollUi.start($('.imgscroller img'),85);
+		 //弹出分享菜单
+		 //分享按钮
+		 $('.shareBtn li.s1').on(_event,function(){
+		 	$('.shareBox').show();
+		 	$('.mask').show();
+		 });
+		 //分享取消
+		 $('.btnCancel').on(_event,function(){
+		 	$('.shareBox').hide();
+		 	$('.mask').hide();
+		 });
+		 
+		
+		
+	});
+	
+</script>
+</html>

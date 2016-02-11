@@ -1,0 +1,25 @@
+[ 2015-12-16T20:29:19+08:00 ] ::1 /guoji/vshop/admin2/index.php/Product/search_spec/pid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2015-12-16T20:29:19+08:00 ] ::1 /guoji/vshop/admin2/index.php?c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+
+[ 2015-12-16T20:29:19+08:00 ] ::1 /guoji/vshop/admin2/index.php?c=Public&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+
+[ 2015-12-16T20:29:21+08:00 ] ::1 /guoji/vshop/admin2/index.php/Public/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+
+[ 2015-12-16T20:29:21+08:00 ] ::1 /guoji/vshop/admin2/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+

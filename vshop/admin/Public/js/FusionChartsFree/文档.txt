@@ -1,0 +1,84 @@
+功能特性
+
+animation ：是否动画显示数据，默认为1（True）
+showNames ：是否显示横向坐标轴(x轴)标签名称
+rotateNames ：是否旋转显示标签，默认为0(False):横向显示
+showValues ：是否在图表显示对应的数据值，默认为1(True)
+yAxisMinValue： 指定纵轴(y轴)最小值，数字
+yAxisMaxValue： 指定纵轴(y轴)最小值，数字
+showLimits ：是否显示图表限值(y轴最大、最小值)，默认为1(True)
+
+图表标题和轴名称
+
+caption ：图表主标题
+subCaption： 图表副标题
+xAxisName ：横向坐标轴(x轴)名称
+yAxisName ：纵向坐标轴(y轴)名称
+
+图表和画布的样式
+
+bgColor： 图表背景色，6位16进制颜色值
+canvasBgColor ：画布背景色，6位16进制颜色
+canvasBgAlpha ：画布透明度，[0-100]
+canvasBorderColor ：画布边框颜色，6位16进制颜色
+anvasBorderThickness ：画布边框厚度，[0-100]
+shadowAlpha ：投影透明度，[0-100]
+showLegend ：是否显示系列名，默认为1(True)
+
+字体属性
+
+baseFont ：图表字体样式
+baseFontSize ：图表字体大小
+baseFontColor ：图表字体颜色，6位16进制颜色值
+outCnvBaseFont ：图表画布以外的字体样式
+outCnvBaseFontSize： 图表画布以外的字体大小
+outCnvBaseFontColor： 图表画布以外的字体颜色，6位16进制颜色值
+
+分区线和网格
+
+numDivLines ：画布内部水平分区线条数，数字
+divLineColor ：水平分区线颜色，6位16进制颜色值
+divLineThickness ：水平分区线厚度，[1-5]
+divLineAlpha ：水平分区线透明度，[0-100]
+showAlternateHGridColor ：是否在横向网格带交替的颜色，默认为0(False) alternateHGridColor 横向网格带交替的颜色，6位16进制颜色值
+alternateHGridAlpha ：横向网格带的透明度，[0-100]
+showDivLinues ：是否显示Div行的值，默认？？
+numVDivLines ：画布内部垂直分区线条数，数字
+vDivLineColor ：垂直分区线颜色，6位16进制颜色
+vDivLineThickness： 垂直分区线厚度，[1-5]
+vDivLineAlpha ：垂直分区线透明度，[0-100
+showAlternateVGridColor ：是否在纵向网格带交替的颜色，默认为0(False) alternateVGridColor 纵向网格带交替的颜色，6位16进制颜色值
+alternateVGridAlpha ：纵向网格带的透明度，[0-100]
+
+数字格式
+
+numberPrefix ：增加数字前缀
+numberSuffix ：增加数字后缀 % 为 '%25
+formatNumberScale ：是否格式化数字,默认为1(True),自动的给你的数字加上K（千）或M（百万）；若取0,则不加K或M
+decimalPrecision： 指定小数位的位数，[0-10] 例如：='0' 取整 divLineDecimalPrecision 指定水平分区线的值小数位的位数，[0-10]
+limitsDecimalPrecision ：指定y轴最大、最小值的小数位的位数，[0-10] formatNumber 逗号来分隔数字(千位，百万位),默认为1(True)；若取0,则不加分隔符
+
+decimalSeparator ：指定小数分隔符,默认为'.'
+thousandSeparator ：指定千分位分隔符,默认为',
+
+Tool-tip/Hover标题
+
+showhovercap ：是否显示悬停说明框，默认为1(True)
+hoverCapBgColor ：悬停说明框背景色，6位16进制颜色值
+hoverCapBorderColor ：悬停说明框边框颜色，6位16进制颜色值
+hoverCapSepChar： 指定悬停说明框内值与值之间分隔符,默认为','
+
+折线图的参数
+
+lineThickness： 折线的厚度
+anchorRadius ：折线节点半径，数字
+anchorBgAlpha： 折线节点透明度，[0-100]
+anchorBgColor ：折线节点填充颜色，6位16进制颜色值
+anchorBorderColor ：折线节点边框颜色，6位16进制颜色值
+
+Set标签使用的参数
+
+value ：数据值
+color ：颜色
+link ：链接（本窗口打开[Url]，新窗口打开[n-Url]，调用JS函数[JavaScript:函数]）
+name ：横向坐标轴标签名

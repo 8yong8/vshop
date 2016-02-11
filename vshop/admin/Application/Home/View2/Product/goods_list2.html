@@ -1,0 +1,179 @@
+<include file="Public:header" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/EasyUI/themes/haidaoblue/easyui.css">
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/hd_default_config.js"></script>
+<style>
+span{
+  margin-top:13px;
+}
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+var pic_id = 1;
+var td_num = '{$attribute|count}';
+function add_attr_product(){
+  var obj = jQuery('#attr_row');
+  //在原基础上加2个TD
+  var html = '<TR>'+obj.html()+'<TD><INPUT TYPE="text" NAME="pic2[]" id="pic_'+pic_id+'" value=""> <font class="uplogo" style="cursor: pointer;left:300px;line-height: 22px;" onclick="upyunPicUpload(\'pic_'+pic_id+'\',300,300)">选择</font> <font class="uplogo" style="cursor: pointer;line-height: 22px;left:330px;" onclick="viewImg(\''+pic_id+'\')">预览</font></TD><TD><input type="button" class="button" value=" - " onclick="product_remove2(this)"/></TD></TR>';
+  var last_obj = obj.parent().find('TR:last-child').prev();
+  last_obj.after(html);
+  var obj2 =  obj.parent().find('TR:last-child').prev();
+  //删除倒数第三和第四个TD
+  var eq_num = 2+parseInt(td_num)+2;
+  //alert(eq_num);
+  $(obj2).find('TD').eq(7).remove();
+  $(obj2).find('TD').eq(7).remove();
+  pic_id++;
+}
+
+function val_del(obj){
+  $(obj).parent().remove();
+}
+
+function goods_type_change(){
+  var tid = jQuery("#tid").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/get_attr",
+	data:"product_id={$Think.get.product_id}&tid="+tid,
+	success:function(html){
+	  $('#attr_list').html(html);
+	}
+  })
+}
+
+function product_remove(id,product_id){
+  if(confirm("您确定要删除吗？")){
+	  jQuery.ajax({
+		type:"POST",
+		dataType:'json',
+		url: URL+"/product_del",
+		data:"id="+id+'&product_id='+product_id,
+		success:function(obj){
+		  if(obj.error_code=='0'){
+		    art.dialog({
+			  id  :'del',
+			  time: 1.5,
+			  content: obj.notice
+		    });
+		    jQuery('#tr_'+id).remove();
+		  }else{
+			  art.dialog({
+			    id  :'del',
+				time: 1.5,
+				content: obj.notice
+			  });		
+		  }
+		}
+	  })  
+  
+  }
+}
+
+function product_remove2(obj){
+  jQuery(obj).parent().parent().remove(); 
+}
+
+function check(){
+  return true;
+}
+var old_data = {};
+//监控
+$(function() {
+  //alert($('input[name^=pic]').length);
+  $('input[name^=pic]').each(function(){
+    var id = $(this).parent().parent().attr('data-id');
+	if(id!=null){
+		old_data[id] = $(this).val();
+		$(this).change(function(){
+		   var id = $(this).parent().parent().attr('data-id');
+		   var val = $(this).val();
+		   //alert(old_data[id]+'/'+val);
+		   //值改变,修改数据
+		   if(val!=old_data[id]){
+		     $('#pus_'+id).val(1);
+		   }
+		});
+	}
+  });
+
+})
+</SCRIPT>
+<div class="content">
+<div class="title">货品列表 [ <A HREF="__URL__">返回列表</A> ] <font color="red">[ <A HREF="__URL__/goods_list/id/{$_GET['id']}/mb/1"><font color="red">切换模式</font></A> ]</font></div>
+<FORM METHOD=POST id="form1" action="__URL__/product_add2?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<TABLE cellpadding=3 cellspacing=3 class="add list" style="width:80%;border-top:silver 1px solid;">
+
+<TR>
+
+<TD height="5" colspan="12" class="topTd" align="center" style="padding:10px;"><strong>
+商品名称：{$vo.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;货号：{$vo.sn}</strong></TD>
+</TR>
+
+<TR class="row" >
+	<th><div align="center"><strong>ID</strong></div></th>
+	<th><div align="center"><strong>货号</strong></div></th>
+	<volist name="attribute" id="attribute_value">
+	<th><div align="center"><strong>{$attribute_value.attr_name}</strong></div></th>
+	</volist>
+	<th><div align="center"><strong>库存</strong></div></th>
+	<th><div align="center"><strong>价格</strong></div></th>
+	<th><div align="center"><strong>图片</strong></div></th>
+	<th><div align="center"><strong>操作</strong></div></th>
+</TR>
+
+<volist name="list" id="product">
+<TR id="tr_{$product.id}" data-id="{$product.id}">
+  <TD class="td_1">{$product.id}</TD>
+  <TD class="td_1"><span onclick="field_value_update(this, 'sn', {$product.id})">{$product.sn|default=''}</span></TD>
+  <volist name="product.product_attr" id="goods_attr">
+  <TD scope="col"><div align="center">{$goods_attr.attr_value}</div></TD>
+  </volist>
+  <TD class="td_1"><span onclick="field_value_update(this, 'stock', {$product.id})">{$product.stock}</span></TD>
+  <TD class="td_1"><span onclick="field_value_update(this, 'price', {$product.id})">{$product.price}</span></TD>
+  <TD>
+    <INPUT TYPE="text" NAME="pic[{$product.id}]" id="pic_{$product.id}" value="{$product.pic}">
+	<font class="uplogo" style="cursor: pointer;left:300px;line-height: 22px;" onclick="upyunPicUpload('pic_{$product.id}',300,300)">选择</font>
+	<font class="uplogo" style="cursor: pointer;line-height: 22px;left:330px;" onclick="viewImg('pic_{$product.id}')">预览</font>
+  </TD>
+  <TD><input type="button" class="button" value=" - " onclick="product_remove({$product.id},{$product.product_id})"/></TD>
+</TR>
+<!--产品值是否有修改状态-->
+<INPUT TYPE="hidden" NAME="pus[{$product.id}]" id="pus_{$product.id}" value="0">
+</volist>
+
+<TR id="attr_row">
+<!-- start for specifications_value -->
+  <TD class="td_1">0</TD>
+  <TD class="label_2"><input type="text" name="sn[]" value="" size="20"/></TD>
+<volist name="attribute" id="attribute_value" key="attribute_key">
+  <TD align="center">
+	<select name="attr[{$attribute_value.attr_id}][]">
+	<option value="" selected>请选择...</option>
+	<volist name="attribute_value.attr_values" id="value" key="k">
+	<option value="{$attribute_value['product_attr_id'][$k-1]}">{$value}</option>
+	</volist>
+	</select>
+  </TD>
+</volist>
+<!-- end for specifications_value -->
+  <TD class="label_2"><input type="text" name="stock[]" value="" size="10"/></TD>
+  <TD class="label_2"><input type="text" name="price[]" value="{$vo.price}" size="10"/></TD>
+  <TD>
+    <INPUT TYPE="text" NAME="pic2[]" id="pic_0" value="">
+	<font class="uplogo" style="cursor: pointer;left:300px;line-height: 22px;" onclick="upyunPicUpload('pic_0',300,300)">选择</font>
+	<font class="uplogo" style="cursor: pointer;line-height: 22px;left:330px;" onclick="viewImg('pic_0')">预览</font>
+  </TD>
+  <TD><input type="button" class="button" value=" + " onclick="javascript:add_attr_product();"/></TD>
+</TR>
+
+</TABLE>
+<div class="submit">
+	<INPUT TYPE="hidden" NAME="product_id" value="{$vo.id}">
+	<input type="submit" class="button_search" value="提交">
+	<a href="__URL__">返回</a>
+</div>
+</FORM>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

@@ -1,0 +1,119 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<div id="main" class="main" >
+<div class="content">
+<div class="title">新增报名信息 [ <A HREF="__URL__/look/id/{$Think.get.id}">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/insertmember/" enctype="multipart/form-data" onsubmit="return ck();">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" >
+	{$vo.name}
+	</TD>
+</TR>
+
+<volist name="list" id="form" key="k">
+<neq name="form.type" value="hidden">
+<tr><td width="10%">{$form.title}</td><td width="90%">
+</neq>
+<?php
+echo showForm($form['type'], $form['options'], $form['defaultvalue'] ,$k);
+?>
+<neq name="form.type" value="hidden">
+<eq name="form.ismust" value="1"><font color="red"> <b>*</b> </font></eq>&nbsp{$form.msg}</td></tr>
+</neq>
+</volist>
+<TR>
+	<TD class="tRight" >IP：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" NAME="ip"></TD>
+</TR>
+<TR>
+	<TD class="tRight" >报名时间：</TD>
+	<TD class="tLeft" >
+	<select name="byear">
+	  <?php
+       for($i=$year-5;$i<$year+5;$i++){
+	     if($i==$year){
+		   echo '<option value="'.$i.'" selected="selected">'.$i.'</option>';
+		 }else{
+		   echo '<option value="'.$i.'">'.$i.'</option>';
+		 }   
+	   }
+	  ?>
+	</select>年
+	<select name="bmonth">
+	  <?php
+       for($i=1;$i<=12;$i++){
+	     if($i==$month){
+		   echo '<option value="'.$i.'" selected="selected">'.$i.'</option>';
+		 }else{
+		   echo '<option value="'.$i.'">'.$i.'</option>';
+		 }   
+	   }
+	  ?>
+	</select>月
+	<select name="bday">
+	  <?php
+       for($i=1;$i<=$days;$i++){
+	     if($i==$day){
+		   echo '<option value="'.$i.'" selected="selected">'.$i.'</option>';
+		 }else{
+		   echo '<option value="'.$i.'">'.$i.'</option>';
+		 }   
+	   }
+	  ?>
+	</select>号
+	<select name="bhours">
+	  <?php
+       for($i=0;$i<=24;$i++){
+	     if($i==$hour){
+		   echo '<option value="'.$i.'" selected="selected">'.$i.'</option>';
+		 }else{
+		   echo '<option value="'.$i.'">'.$i.'</option>';
+		 }
+	   }
+	  ?>
+	</select>小时
+	<select name="bminutes">
+	  <?php
+       for($i=0;$i<=60;$i++){
+	     if($i==$minute){
+		   echo '<option value="'.$i.'" selected="selected">'.$i.'</option>';
+		 }else{
+		   echo '<option value="'.$i.'">'.$i.'</option>';
+		 }
+	   }
+	  ?>
+	</select>分钟
+	<select name="bseconds">
+	  <?php
+       for($i=0;$i<=60;$i++){
+	     if($i==$second){
+		   echo '<option value="'.$i.'" selected="selected">'.$i.'</option>';
+		 }else{
+		   echo '<option value="'.$i.'">'.$i.'</option>';
+		 }
+	   }
+	  ?>
+	</select>秒
+	</TD>
+</TR>
+<INPUT TYPE="hidden" NAME="fid" value="{$vo.id}"><INPUT TYPE="hidden" NAME="ftitle" value="{$vo.name}">
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

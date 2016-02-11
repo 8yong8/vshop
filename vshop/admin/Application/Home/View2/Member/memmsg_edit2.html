@@ -1,0 +1,49 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<div id="main" class="main" >
+<load href="__PUBLIC__/Js/WdatePicker/WdatePicker.js" />
+<script language="JavaScript">
+function setlatlng(longitude,latitude){
+
+	art.dialog.data('longitude', longitude);
+
+	art.dialog.data('latitude', latitude);
+
+	art.dialog.open('__MODULE__?m=Map&a=setLatLng',{lock:false,title:'设置经纬度',width:600,height:400,yesText:'关闭',background: '#000',opacity: 0.87});
+
+}
+
+</script>
+<div class="content">
+<div class="title">编辑帐号 [ <a href="__URL__">返回列表</a> ]</div>
+<form method='post' id="form1" action="__URL__/memmsg_edit?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<table cellpadding=3 cellspacing=3 class="add">
+
+
+<tr>
+	<td class="tRight" >用户信息：</td>
+	<td class="tLeft" >
+	<font color="red">用户名：{$vo.username} 联系电话：{$vo.tel} </font>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >经纬度：</td>
+	<td class="tLeft" >
+	经度 <input type="text" id="longitude" name="longitude" size="14" class="px" value="{$vo.longitude}"> 纬度 <input type="text" name="latitude" size="14" id="latitude" class="px" value="{$vo.latitude}"> <a href="###" onclick="setlatlng($('#longitude').val(),$('#latitude').val())">在地图中查看/设置</a>
+	<a href="http://api.map.baidu.com/lbsapi/getpoint/" target="_blank">百度坐标拾取</a>
+	</td>
+</tr>
+
+<tr>
+	<td></td>
+	<td>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<input type="submit" value="保 存" class="button">
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<include file="Public:footer" />

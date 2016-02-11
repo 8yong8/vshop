@@ -1,0 +1,106 @@
+<include file="Public:header" />
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/laydate/laydate.js"></script>
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/js/apply/order_promotion.js"></script>
+<div class="content">
+<div class="title">新增促销[ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>" enctype="multipart/form-data">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >名称：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="title"  value="{$vo.title}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">开始日期：</TD>
+	<TD><INPUT TYPE="text" NAME="btime" id="btime" class="medium" value="{$vo.btime|toDate='Y-m-d H#i#s'}" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">结束日期：</TD>
+	<TD><INPUT TYPE="text" NAME="etime" id="etime" class="medium" value="{$vo.etime|toDate='Y-m-d H#i#s'}" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">优惠条件：</TD>
+	<TD class="tRight">
+	  <select id="prom_type" name="award_type" value="2">
+		<option value="1" <eq name="vo.award_type" value="1">selected</eq> >满额优惠金额</option>
+		<option value="2" <eq name="vo.award_type" value="2">selected</eq> >满额打折</option>
+		<option value="3" <eq name="vo.award_type" value="3">selected</eq> >满额送倍数积分</option>
+		<option value="4" <eq name="vo.award_type" value="4">selected</eq> >满额送优惠券</option>
+		<option value="5" <eq name="vo.award_type" value="5">selected</eq> >满额免运费</option>
+	  </select>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >订单金额满：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="large bLeftRequire" NAME="limt" value="{$vo.limt}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >减免：</TD>
+	<TD class="tLeft" >
+	<ul>
+       <div id="expression"><li><b class="red">*</b>优惠金额： <input name="award_value" type="text" class="small" value="{$vo.award_value}"> <label>立减金额（元）</label> </li></div>
+    </ul>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft"><SELECT class="small bLeft"  name="status">
+	<option <eq name="vo.status" value="1" >selected</eq> value="1">启用</option>
+	<option <eq name="vo.status" value="0" >selected</eq> value="0">禁用</option>
+	</SELECT></td>
+</tr>
+
+<TR>
+	<TD class="tRight" >信息：</TD>
+	<TD class="tLeft" ><TEXTAREA NAME="info" ROWS="5" COLS="33">{$vo.info}</TEXTAREA></TD>
+</TR>
+<TR>
+<TD></TD>
+	<TD style="width:90%;">
+		<div class="choose-pro mt10">
+        	<div class="choose-pro-div">
+        		<a href="javascript:goods_search()" class="fl chooseBtn1"><img src="__PUBLIC__/images/order-50.png"></a>
+        		<a href="javascript:void(0)" onclick="delAll()" class="fr"><img src="__PUBLIC__/images/order-51.png" alt=""></a>
+        	</div>
+        	<div class="clear"></div>
+        	<table border="" cellspacing="" cellpadding="" class="chooseBG" id="goodsRowTable">
+        		<tbody><tr class="odd" style="height: 30px;">
+        			<th>商品名称</th>
+        			<th>销售价</th>
+        			<th>库存</th>
+        			<th>操作</th>
+        		</tr>
+        		</tbody>
+				<tbody id="goodsBaseBody">
+				<volist name="list" id="product" mod="2">
+        		  <tr id="tr_{$product.id}" data-id="{$product.id}" <eq name="mod" value="0">class="even"<else/>class="odd"</eq>>
+        			<td class="mo_text">{$product.name}</td>
+        			<td>{$product.price}</td>
+        			<td>{$product.stock}</td>
+        			<td><a href="javascript:void(0)" onclick="ajax_del({$product.id},this);">删除</a></td>
+        		  </tr>
+				</volist>
+    			</tbody>
+        	</table>
+        </div>
+	</TD>
+</TR>
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

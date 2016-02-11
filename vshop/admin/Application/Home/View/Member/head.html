@@ -1,0 +1,208 @@
+<include file="Public:header" /> 
+<script src="__PUBLIC__/js/jquery.form.js"></script>  
+<script src="__PUBLIC__/js/Jcrop/jquery.Jcrop.min.js"></script>  
+<link rel="stylesheet" href="__PUBLIC__/js/Jcrop/css/jquery.Jcrop.css" type="text/css" /> 
+<style>
+.user_face_all {
+    width: 710px;
+    float: left;
+    background: #fff;
+    padding: 0 40px;
+}
+
+</style>
+<script language="JavaScript">
+
+</script>
+
+<div class="content">
+<div class="title">编辑帐号 [ <a href="__URL__">返回列表</a> ]</div>
+<div class="user_face_all">
+        
+        <div class="my_face"><!--my_face begin-->
+      
+      <div class="upload_ts">建议上传一张您的近期生活照，头像通过审核后才能被大家看到哦</div>
+      <div class="upload_error" style="display:none;"></div>
+      <div class="upload_ok" style="display:none;"></div>
+      <div class="upload_area"><!--upload_area begin-->
+        
+        <div class="btns"><!--btns begin-->
+          
+          <form id="uploadImgForm" method="post" enctype="multipart/form-data">
+            <input class="btn_file_molding" size="6" type="file" name="profileLogo" onchange="javascript:uploadImage(this);">
+			<input id="member_id" name="member_id" value="{$Think.get.id}" type="hidden">
+            <a href="#"></a>
+          </form>
+        </div>
+        <!--btns end-->
+
+        <div class="loading" style="display: none"><a href="#"></a></div>
+        <img id="target" style="display: none;">
+        <form id="logoCutForm" action="__SELF__?{$Think.const.NOW_TIME}" method="post">
+          <input id="filePath" name="filePath" type="hidden">
+          <input id="member_id" name="member_id" value="{$Think.get.id}" type="hidden">
+          <input id="x" name="x" type="hidden">
+          <input id="y" name="y" type="hidden">
+          <input id="h" name="h" type="hidden">
+          <input id="w" name="w" type="hidden">
+        </form>
+
+        </div>
+		
+      <!--upload_area end-->
+      
+      <div class="preview_face"><!--preview_face begin-->
+        
+        <p>裁剪后的效果</p>
+        <span><img src="{$img|default='__PUBLIC__/images/noavatar_big.gif'}" id="preview_120" width="120" height="120"></span> </div>
+      <!--preview_face end-->
+      
+      <div class="btn_area"><a href="javascript:void(0);" style="display: none" class="save"></a>
+        <div class="reload" style="display: none"><!--btns begin-->
+          
+          <form id="uploadImgForm" method="post" enctype="multipart/form-data">
+            <input class="reload_input" size="6" type="file" name="profileLogo" onchange="javascript:uploadImage(this);">
+			<input id="member_id" name="member_id" value="{$Think.get.id}" type="hidden">
+            <a href="#"></a>
+          </form>
+        </div>
+        <div class="reloading" style="display: none"><!--btns begin--> 
+          
+          <a href="javascript:void(0);"></a> </div>
+        <!--btns end--> 
+        
+      </div>
+    </div>
+        
+    </div>
+</div>
+<script>
+$('.save').click(function(){
+//alert(12223);
+  $('#logoCutForm').submit();
+});
+var jcrop_api;
+function prepareJcrop() {
+	var b = null;
+	var a = null;
+	$("#target").Jcrop({
+		onChange: function(d) {
+			updatePreview(d, b, a)
+		},
+		onSelect: function(d) {
+			updatePreview(d, b, a)
+		},
+		aspectRatio: 1
+	},
+	function() {
+		var e = this.getBounds();
+		b = e[0];
+		a = e[1];
+		var d = 120;
+		if (a < 180) {
+			d = 90
+		}
+		var c = (b / 2) - d / 2;
+		var f = (a / 2) - d / 2;
+		jcrop_api = this;
+		jcrop_api.animateTo([c, f, c + d, f + d]);
+		jcrop_api.setOptions(this.checked ? {
+			minSize: [200, 200]
+		}: {
+			minSize: [200, 200]
+		})
+	})
+}
+
+
+function updatePreview(f, b, a) {
+	if (parseInt(f.w) > 0) {
+		var e = 180 / f.w;
+		var d = 180 / f.h;
+		$("#preview_180").css({
+			width: Math.round(e * b) + "px",
+			height: Math.round(d * a) + "px",
+			marginLeft: "-" + Math.round(e * f.x) + "px",
+			marginTop: "-" + Math.round(d * f.y) + "px"
+		});
+		e = 120 / f.w;
+		d = 120 / f.h;
+		$("#preview_120").css({
+			width: Math.round(e * b) + "px",
+			height: Math.round(d * a) + "px",
+			marginLeft: "-" + Math.round(e * f.x) + "px",
+			marginTop: "-" + Math.round(d * f.y) + "px"
+		});
+		e = 50 / f.w;
+		d = 50 / f.h;
+		$("#preview_50").css({
+			width: Math.round(e * b) + "px",
+			height: Math.round(d * a) + "px",
+			marginLeft: "-" + Math.round(e * f.x) + "px",
+			marginTop: "-" + Math.round(d * f.y) + "px"
+		});
+		$("#x").val(f.x);
+		$("#y").val(f.y);
+		$("#w").val(f.w);
+		$("#h").val(f.h)
+	}
+}
+
+function uploadImage(b) {
+	var c = b.value;
+	$("div.upload_area > div.btns").hide();
+	$("div.my_face > div.upload_error").hide();
+	$("div.my_face > div.upload_ts").hide();
+	if (!$("div.btn_area>a.save").is(":visible")) {
+		$("div.upload_area > div.loading").show()
+	} else {
+		$("div.btn_area > div.reloading").show()
+	}
+	$("div.btn_area > div.reload").hide();
+	$("div.my_face > div.upload_ok").hide();
+	var a = {
+		//url: "http://localhost/cs/jcrop/upload.php",
+		url: "__URL__/head_up",
+		type: "POST",
+		dataType: "json",
+		iframe: "true",
+		success: function(d) {
+			$("#target").attr("src", d.img).show();
+			$("#preview_120").attr("src", d.img);
+			$("#filePath").val(d.img);
+			//$("#imghead").attr("src", d.img).show();
+			//$('#imgUrl').val(d.img);
+			if (jcrop_api != null) {
+				jcrop_api.destroy()
+			}
+			prepareJcrop();
+			$("div.upload_area > div.loading").hide();
+			$("div.my_face > div.upload_ok ").text("已成功上传 " + c);
+			$("div.my_face > div.upload_ok").show();
+			$("div.btn_area > a").show();
+			$("div.btn_area > div.reload").show();
+			$("div.btn_area > div.reloading").hide()
+
+		},
+		error: function(d) {
+			var e = d.responseText;
+			if (e != null && e.indexOf("413 Request Entity Too Large") != -1) {
+				$("div.my_face > div.upload_error").text("图片不要大于4M")
+			} else {
+				$("div.my_face > div.upload_error").text("上传失败，请稍后再试")
+			}
+			$("div.my_face > div.upload_error").show();
+			$("div.upload_area > div.loading").hide();
+			$("div.btn_area > div.reloading").hide();
+			if ($("div.btn_area>a.save").is(":visible")) {
+				$("div.btn_area > div.reload").show()
+			} else {
+				$("div.upload_area > div.btns").show()
+			}
+		}
+	};
+	$(b).parent().ajaxSubmit(a);
+	return false
+};
+</script>
+<include file="Public:footer" />

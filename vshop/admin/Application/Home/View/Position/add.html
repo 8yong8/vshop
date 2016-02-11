@@ -1,0 +1,67 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title"> 新增[ <a href="__URL__">返回列表</a> ] [<a href="__URL__/index/pid/{$pid}">返回上级</a> ]</div>
+<form method='post'  id="form1" action='__URL__/add?<?php echo time(); ?>' enctype="multipart/form-data">
+<table cellpadding=3 cellspacing=3 class="add">
+
+<TR>
+	<TD class="tRight" >父节点：</TD>
+	<TD class="tLeft" >
+	<neq name="list" value="">
+	<span id="cid_span">
+	<select name="pid" id="pid">
+	<volist name="list" id="type">
+	<option value="{$type[id]}" <eq name="pid" value="$type[id]">selected</eq> >
+	{$type.node_name}</option>
+	</volist>
+	</select>
+	</span>
+	<else/>
+	--
+	</neq>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight" >名称：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeftRequire"  name="title"></td>
+</tr>
+
+<TR>
+	<TD class="tRight tTop">区位图：</TD>
+	<TD class="tLeft">
+	<div>
+		<input type="file" id="lit_pic" name="lit_pic" onchange="yulan(this,'show1')">
+		<div id="show1">
+		<neq name="vo.lit_pic" value="">
+		<img src="{$vo.litpic}">
+		<INPUT TYPE="hidden" NAME="lit_pic" value="{$vo.lit_pic}">
+		</neq>
+		</div>
+	</div>
+	</TD>
+</TR>
+
+<tr>
+	<td class="tRight">状态：</td>
+	<td class="tLeft"><SELECT class="small bLeft"  name="status">
+	<option value="1">启用</option>
+	<option value="0">禁用</option>
+	</SELECT></td>
+</tr>
+<tr>
+	<td class="tRight tTop">描 述：</td>
+	<td class="tLeft"><TEXTAREA class="large bLeft" name="info"  rows="5" cols="57"></textarea></td>
+</tr>
+<tr>
+	<td></td>
+	<td><div style="width:85%;margin:5px">
+	<input type="hidden" name="level" value="{$level}">
+	<div class="impBtn fLeft">
+	<input type="submit" value="保存" class="button">	
+	</div>
+	</div></td>
+</tr>
+</table>
+</form>
+<include file="Public:footer" /> 

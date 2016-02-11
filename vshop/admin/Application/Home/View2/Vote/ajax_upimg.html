@@ -1,0 +1,110 @@
+{// 加载头部公共文件 }
+<include file="../Public/header" />
+<style>
+img{cursor:pointer}
+.Folders td{text-align:center}
+	TD.digg {
+		PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 3px; TEXT-ALIGN: left;font-size:12px
+	}
+	TD.digg A {
+		BORDER-RIGHT: #aaaadd 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaaadd 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #aaaadd 1px solid; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaadd 1px solid; TEXT-DECORATION: none
+	}
+	TD.digg A:hover {
+		BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid
+	}
+	TD.digg A:active {
+		BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid
+	}
+	TD.digg SPAN.current {
+		BORDER-RIGHT: #000099 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #000099 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #000099 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #000099 1px solid; BACKGROUND-COLOR: #000099
+	}
+	TD.digg SPAN.disabled {
+		BORDER-RIGHT: #eee 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #eee 1px solid; COLOR: #ddd; PADDING-TOP: 2px; BORDER-BOTTOM: #eee 1px solid
+	}
+    .pagebox_pre_nolink{border:1px #ddd solid; width:53px; height:21px; line-height:21px; text-align:center; color:#999; cursor:default;}
+</style>
+<script language="javascript">
+function upyulan(obj){
+  $('#upimg').html("<img src='"+obj.value+"'>");
+}
+function imgupsave(){
+ $('#upform').submit(); 
+}
+//添加上传条
+function addinput(name){
+  var o = jQuery('#'+name).parent();
+  var n = jQuery(o).find('input:last').val();
+  var title = jQuery(o).find('input:last').prev().attr('name');
+  var vname = jQuery(o).find('input:last').prev().prev().attr('name');
+  var html = "标题:<input name='"+title+"1' class='small'><input type='file' onChange=yulan(this,'"+vname+"1') name='"+vname+"1'><div id='"+vname+"1'></div>";
+  jQuery('#'+name).parent().append(html);
+}
+
+//图片预览
+function yulan(file,id) {
+  if(file.value.indexOf(".jpg")<0 && file.value.indexOf(".jpeg")<0 &&   file.value.indexOf(".gif")<0 && file.value.indexOf(".png")<0 && file.value.indexOf(".JPG")<0 && file.value.indexOf(".JPEG")<0 &&   file.value.indexOf(".GIF")<0 && file.value.indexOf(".PNG")<0){
+		alert('您选择的不是图片文件');
+		return false;
+	}
+	if(navigator.userAgent.indexOf("Mozilla/5.")>-1){
+	    document.getElementById(id).innerHTML = "<img src='"+file.files[0].getAsDataURL()+"' width='128px'>";
+		CheckFileSize(file.files[0].getAsDataURL(),id);
+
+	}else{
+      //var newPreview = document.getElementById(id);
+      //newPreview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = file.value;
+	  file.select();
+	  var img = document.selection.createRange().text;
+	  jQuery('#'+id).html("<img src='"+img+"' width='128px'>");
+	  //document.getElementById(id).innerHTML = "<img src='"+img+"' width='128px'>";
+	}
+}
+</script>
+<div>
+<form action="__URL__/ajax_upmoreimg" enctype="multipart/form-data" METHOD="POST"  id="upform">
+<div>
+<!--图片名:<INPUT  NAME="imgname" style="width:50px">
+<input type="file" NAME="img" onchange="upyulan(this)" >-->
+		<table>
+		  <tr>
+		    <td>作品图上传：<input type="button" value="添加上传" onclick="addinput('up_zp1')"/></td>
+		  </tr>
+		  <tr>
+		   <td>
+		   标题:<input name="title1" class="small">
+		   <input type="file" name="up_zp1" onchange="yulan(this,'up_zp1')"><div id="up_zp1"></div>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td>
+		   标题:<input name="title2" class="small">
+		   <input type="file" name="up_zp2" onchange="yulan(this,'up_zp2')"><div id="up_zp2"></div>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td>
+		   标题:<input name="title3" class="small">
+		   <input type="file" name="up_zp3" onchange="yulan(this,'up_zp3')"><div id="up_zp3"></div>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td>
+		   标题:<input name="title4" class="small">
+		   <input type="file" name="up_zp4" onchange="yulan(this,'up_zp4')"><div id="up_zp4"></div>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td>
+		   标题:<input name="title5" class="small">
+		   <input type="file" name="up_zp5" onchange="yulan(this,'up_zp5')"><div id="up_zp5"></div>
+		   </td>
+		  </tr>
+		</table>
+<INPUT TYPE="hidden" NAME="jsdo" value="{$jsdo}">
+<INPUT TYPE="hidden" NAME="hash" value="{$hash}">
+<input type="button" value="图片上传" onclick="imgupsave()">
+</div>
+</form>
+</div>
+</table>
+<include file="../Public/footer" />  

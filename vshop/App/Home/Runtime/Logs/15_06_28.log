@@ -1,0 +1,2173 @@
+[ 2015-06-28T08:11:11+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 423 行.
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003039s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 53 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 65 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000223s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000574s ]
+
+[ 2015-06-28T08:11:34+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000813s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+
+[ 2015-06-28T08:12:29+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000691s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002622s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000150s ]
+ERR: 1103:Incorrect table name 'zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1'
+ [ SQL语句 ] : SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1  
+
+[ 2015-06-28T08:13:07+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002147s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000145s ]
+ERR: 1103:Incorrect table name 'zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1'
+ [ SQL语句 ] : SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1  
+
+[ 2015-06-28T08:13:32+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002234s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000203s ]
+ERR: 1103:Incorrect table name 'zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1'
+ [ SQL语句 ] : SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1  
+
+[ 2015-06-28T08:15:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000695s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002104s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000163s ]
+ERR: 1103:Incorrect table name 'zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1'
+ [ SQL语句 ] : SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1  
+
+[ 2015-06-28T08:15:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000772s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002125s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000164s ]
+ERR: 1103:Incorrect table name 'zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1'
+ [ SQL语句 ] : SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1  
+
+[ 2015-06-28T08:15:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000761s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002728s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000165s ]
+ERR: 1103:Incorrect table name 'zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1'
+ [ SQL语句 ] : SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1  
+
+[ 2015-06-28T08:15:09+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000727s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002016s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000131s ]
+ERR: 1103:Incorrect table name 'zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1'
+ [ SQL语句 ] : SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1  
+
+[ 2015-06-28T08:15:13+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000907s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002100s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000164s ]
+ERR: 1103:Incorrect table name 'zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1'
+ [ SQL语句 ] : SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1  
+
+[ 2015-06-28T08:16:05+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002053s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000743s ]
+
+[ 2015-06-28T08:16:22+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000767s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002084s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003374s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 53 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 65 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000475s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000447s ]
+
+[ 2015-06-28T08:16:23+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000718s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002093s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003369s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 53 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 65 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000439s ]
+
+[ 2015-06-28T08:16:23+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002096s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003243s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 53 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 65 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000553s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000408s ]
+
+[ 2015-06-28T08:16:23+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002120s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002570s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 53 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 65 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000394s ]
+
+[ 2015-06-28T08:16:24+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000661s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004244s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003146s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 53 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 65 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000386s ]
+
+[ 2015-06-28T08:16:52+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000735s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002135s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002774s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 54 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 62 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 66 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000406s ]
+NOTIC: [8] Undefined variable: voList D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 47 行.
+
+[ 2015-06-28T08:17:10+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000862s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003150s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001567s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002678s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 54 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 62 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 66 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000386s ]
+NOTIC: [8] Undefined variable: voList D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 47 行.
+
+[ 2015-06-28T08:17:22+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000756s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002115s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003384s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 54 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 58 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 62 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 66 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zy_member` LIMIT 1   [ RunTime:0.001179s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 22 行.
+SQL: SELECT a.id,a.utype,a.username,a.realname,a.create_time,a.status,`province`,`city`,`district`,b.balance,b.frozen,`lv_name`,`bus_lv_name` FROM `zy_member` as a LEFT JOIN `zy_member_wallet` as b on a.id=b.member_id ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000472s ]
+NOTIC: [8] Undefined variable: voList D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 47 行.
+
+[ 2015-06-28T10:32:28+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+NOTIC: [8] Undefined index: tel D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 92 行.
+
+[ 2015-06-28T10:33:25+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000673s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002668s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=1,`y`=2015,`m`=6,`d`=28,`code`='1246',`tel`=18758781144,`msg`='验证码：1246，请勿将验证码泄漏给其他人',`status`=0,`update_time`=1435458805 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000293s ]
+
+[ 2015-06-28T10:33:49+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000746s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.003046s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.001567s ]
+SQL: INSERT INTO `zy_member_verify` (`member_id`,`code`,`tel`,`y`,`m`,`d`,`sent_num`,`msg`,`status`,`update_time`) VALUES (0,'3057',18758781144,2015,6,28,1,'验证码：3057，请勿将验证码泄漏给其他人',0,1435458829) [ RunTime:0.000329s ]
+
+[ 2015-06-28T10:35:16+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000725s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002690s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000435s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=2,`y`=2015,`m`=6,`d`=28,`code`='4195',`tel`=18758781144,`msg`='验证码：4195，请勿将验证码泄漏给其他人',`status`=0,`update_time`=1435458916 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000393s ]
+
+[ 2015-06-28T10:35:30+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000732s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002318s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000360s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=3,`y`=2015,`m`=6,`d`=28,`code`='1831',`tel`=18758781144,`msg`='验证码：1831，请勿将验证码泄漏给其他人',`status`=0,`update_time`=1435458930 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000218s ]
+
+[ 2015-06-28T10:35:41+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000710s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002882s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: INSERT INTO `zy_member_verify` (`member_id`,`code`,`tel`,`y`,`m`,`d`,`sent_num`,`msg`,`ip`,`status`,`update_time`) VALUES (0,'5852',18758781144,2015,6,28,1,'验证码：5852，请勿将验证码泄漏给其他人','127.0.0.1',0,1435458941) [ RunTime:0.000279s ]
+
+[ 2015-06-28T10:37:22+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000776s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002326s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000334s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=2,`y`=2015,`m`=6,`d`=28,`code`='0366',`tel`=18758781144,`msg`='验证码：0366，请勿将验证码泄漏给其他人',`status`=0,`update_time`=1435459041 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000248s ]
+
+[ 2015-06-28T10:48:05+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000779s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002470s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=3,`y`=2015,`m`=6,`d`=28,`code`='6184',`tel`=18758781144,`msg`='验证码：6184，请勿将验证码泄漏给其他人',`status`=0,`update_time`=1435459685 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000251s ]
+
+[ 2015-06-28T11:04:50+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000800s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002826s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000350s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=4,`y`=2015,`m`=6,`d`=28,`code`='8339',`tel`=18758781144,`msg`='验证码：8339，请勿将验证码泄漏给其他人',`status`=0,`update_time`=1435460690 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000283s ]
+
+[ 2015-06-28T11:14:50+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000722s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002299s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000348s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=5,`y`=2015,`m`=6,`d`=28,`code`='6026',`tel`=18758781144,`msg`='验证码：6026，请勿将验证码泄漏给其他人',`status`=0,`update_time`=1435461290 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000438s ]
+
+[ 2015-06-28T11:16:25+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000850s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.003049s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+
+[ 2015-06-28T11:16:51+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000716s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002403s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+
+[ 2015-06-28T11:17:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000724s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002305s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000307s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+
+[ 2015-06-28T11:17:17+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000701s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002457s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+
+[ 2015-06-28T11:17:34+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000735s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002327s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: INSERT INTO `zy_member_verify` (`member_id`,`code`,`tel`,`y`,`m`,`d`,`sent_num`,`msg`,`ip`,`status`,`update_time`) VALUES (0,'2810',18758781144,2015,6,28,1,'验证码：2810，请勿将验证码泄漏给其他人【夜猫圈】','127.0.0.1',0,1435461454) [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: flag D:\wamp\www\guoji\yunwang\include\function.inc.php 第 438 行.
+NOTIC: [8] Undefined variable: params D:\wamp\www\guoji\yunwang\include\function.inc.php 第 442 行.
+
+[ 2015-06-28T11:17:44+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000669s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002223s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000304s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=2,`y`=2015,`m`=6,`d`=28,`code`='7440',`tel`=18758781144,`msg`='验证码：7440，请勿将验证码泄漏给其他人【夜猫圈】',`status`=0,`update_time`=1435461464 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000234s ]
+NOTIC: [8] Undefined variable: flag D:\wamp\www\guoji\yunwang\include\function.inc.php 第 438 行.
+NOTIC: [8] Undefined variable: params D:\wamp\www\guoji\yunwang\include\function.inc.php 第 442 行.
+
+[ 2015-06-28T11:18:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002384s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=3,`y`=2015,`m`=6,`d`=28,`code`='2626',`tel`=18758781144,`msg`='验证码：2626，请勿将验证码泄漏给其他人【夜猫圈】',`status`=0,`update_time`=1435461481 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000361s ]
+
+[ 2015-06-28T11:18:07+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000654s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.003767s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=4,`y`=2015,`m`=6,`d`=28,`code`='8978',`tel`=18758781144,`msg`='验证码：8978，请勿将验证码泄漏给其他人【夜猫圈】',`status`=0,`update_time`=1435461487 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000233s ]
+
+[ 2015-06-28T11:18:09+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000673s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.003711s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=5,`y`=2015,`m`=6,`d`=28,`code`='0523',`tel`=18758781144,`msg`='验证码：0523，请勿将验证码泄漏给其他人【夜猫圈】',`status`=0,`update_time`=1435461489 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000281s ]
+
+[ 2015-06-28T11:22:15+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.004535s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000391s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+
+[ 2015-06-28T11:22:49+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000752s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002350s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: INSERT INTO `zy_member_verify` (`member_id`,`code`,`tel`,`y`,`m`,`d`,`sent_num`,`msg`,`ip`,`status`,`update_time`) VALUES (0,'3850',18758781144,2015,6,28,1,'验证码：3850，请勿将验证码泄漏给其他人【夜猫圈】','127.0.0.1',0,1435461769) [ RunTime:0.000245s ]
+
+[ 2015-06-28T11:22:58+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000726s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002304s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000318s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=2,`y`=2015,`m`=6,`d`=28,`code`='4432',`tel`=18758781144,`msg`='验证码：4432，请勿将验证码泄漏给其他人【夜猫圈】',`status`=0,`update_time`=1435461778 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000295s ]
+
+[ 2015-06-28T11:23:10+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000895s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002243s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000304s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=3,`y`=2015,`m`=6,`d`=28,`code`='6394',`tel`=18758781144,`msg`='验证码：6394，请勿将验证码泄漏给其他人【夜猫圈】',`status`=0,`update_time`=1435461790 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: flag D:\wamp\www\guoji\yunwang\include\function.inc.php 第 438 行.
+NOTIC: [8] Undefined variable: params D:\wamp\www\guoji\yunwang\include\function.inc.php 第 442 行.
+NOTIC: [8] Undefined variable: v_vo D:\wamp\www\guoji\yunwang\include\function.inc.php 第 477 行.
+NOTIC: [8] Undefined variable: vmodel D:\wamp\www\guoji\yunwang\include\function.inc.php 第 479 行.
+
+[ 2015-06-28T11:24:03+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.003718s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000317s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=4,`y`=2015,`m`=6,`d`=28,`code`='6968',`tel`=18758781144,`msg`='验证码：6968，请勿将验证码泄漏给其他人',`status`=0,`update_time`=1435461843 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: flag D:\wamp\www\guoji\yunwang\include\function.inc.php 第 438 行.
+NOTIC: [8] Undefined variable: params D:\wamp\www\guoji\yunwang\include\function.inc.php 第 442 行.
+
+[ 2015-06-28T11:28:05+08:00 ] 127.0.0.1 /guoji/yunwang/api/Public/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002908s ]
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `tel` = 18758781144 ) LIMIT 1   [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: update D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\PublicAction.class.php 第 109 行.
+SQL: UPDATE `zy_member_verify` SET `sent_num`=5,`y`=2015,`m`=6,`d`=28,`code`='1881',`tel`=18758781144,`msg`='验证码：1881，请勿将验证码泄漏给其他人【夜猫圈】',`status`=0,`update_time`=1435462085 WHERE ( `tel` = 18758781144 ) [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: flag D:\wamp\www\guoji\yunwang\include\function.inc.php 第 438 行.
+NOTIC: [8] Undefined variable: params D:\wamp\www\guoji\yunwang\include\function.inc.php 第 442 行.
+
+[ 2015-06-28T11:41:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000715s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002493s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000681s ]
+ERR: 非法操作:reg_sms
+
+[ 2015-06-28T11:41:59+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/reg_sms
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000654s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002680s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000571s ]
+
+[ 2015-06-28T11:44:33+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/logout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000735s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002173s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `zy_user` [ RunTime:0.002313s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `zy_user` SET  WHERE ( `id` = 2 ) [ RunTime:0.000146s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 2 )' at line 1
+ [ SQL语句 ] : UPDATE `zy_user` SET  WHERE ( `id` = 2 )
+
+[ 2015-06-28T11:45:22+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/logout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000693s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002091s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a8x787d' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `zy_user` [ RunTime:0.002118s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `zy_user` SET  WHERE ( `id` = 2 ) [ RunTime:0.000118s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` = 2 )' at line 1
+ [ SQL语句 ] : UPDATE `zy_user` SET  WHERE ( `id` = 2 )
+
+[ 2015-06-28T12:08:55+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000676s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002847s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003287s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: real D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 1031 行.
+
+[ 2015-06-28T12:09:29+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000755s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002114s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003527s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000634s ]
+
+[ 2015-06-28T12:09:53+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003335s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002556s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000197s ]
+
+[ 2015-06-28T12:09:59+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000651s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002742s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003571s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000477s ]
+NOTIC: [8] Undefined index: real D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 1031 行.
+
+[ 2015-06-28T12:15:26+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000760s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002988s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002456s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 883 行.
+ERR: 模板不存在[./AppApi/Tpl/Public/error.html]
+
+[ 2015-06-28T12:19:14+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000717s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003221s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002671s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000209s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 883 行.
+
+[ 2015-06-28T12:19:26+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000625s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002164s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002965s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000502s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 883 行.
+
+[ 2015-06-28T12:19:49+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000619s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002474s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002906s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 883 行.
+
+[ 2015-06-28T12:19:52+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002109s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004601s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000216s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 883 行.
+
+[ 2015-06-28T12:20:02+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000637s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002183s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002716s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000208s ]
+
+[ 2015-06-28T12:22:38+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000694s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002177s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002551s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 883 行.
+
+[ 2015-06-28T12:23:51+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000641s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002056s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002695s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000341s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 883 行.
+
+[ 2015-06-28T12:23:54+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000602s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002299s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002606s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash D:\wamp\www\guoji\yunwang\ThinkPHP\Lib\Core\Model.class.php 第 883 行.
+
+[ 2015-06-28T12:25:23+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000685s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002589s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003778s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.001700s ]
+
+[ 2015-06-28T12:25:34+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000787s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002215s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002508s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000201s ]
+
+[ 2015-06-28T12:25:50+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000672s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002137s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004978s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 151 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 155 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000251s ]
+
+[ 2015-06-28T12:26:32+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000598s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002152s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002739s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000713s ]
+
+[ 2015-06-28T12:27:06+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002121s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000582s ]
+
+[ 2015-06-28T12:27:20+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000618s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002215s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000597s ]
+
+[ 2015-06-28T12:27:31+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000742s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002312s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002762s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000220s ]
+
+[ 2015-06-28T12:27:45+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000687s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002227s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005864s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000225s ]
+
+[ 2015-06-28T12:30:22+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002074s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004027s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000243s ]
+
+[ 2015-06-28T12:30:42+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000815s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002141s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003455s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000413s ]
+
+[ 2015-06-28T12:31:41+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000645s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002164s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002992s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000331s ]
+
+[ 2015-06-28T12:31:56+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000742s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002943s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001678s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002749s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000236s ]
+
+[ 2015-06-28T12:36:18+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000743s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002451s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005646s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000223s ]
+
+[ 2015-06-28T12:36:30+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000642s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002989s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004158s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000434s ]
+
+[ 2015-06-28T12:36:33+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002671s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005232s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000280s ]
+
+[ 2015-06-28T12:36:39+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000634s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002085s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005771s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000183s ]
+
+[ 2015-06-28T12:37:30+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000593s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003213s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003141s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000726s ]
+
+[ 2015-06-28T12:37:33+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000763s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002084s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003095s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000994s ]
+
+[ 2015-06-28T12:40:33+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000699s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002608s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003295s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000195s ]
+
+[ 2015-06-28T12:41:20+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000729s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002577s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004508s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000222s ]
+
+[ 2015-06-28T12:42:13+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000666s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002746s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003259s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000406s ]
+
+[ 2015-06-28T12:43:47+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000792s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002085s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003581s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000338s ]
+
+[ 2015-06-28T12:44:17+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000793s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002913s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003236s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000387s ]
+
+[ 2015-06-28T12:44:44+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000688s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002606s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004116s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000235s ]
+
+[ 2015-06-28T12:46:32+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004141s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003762s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000237s ]
+
+[ 2015-06-28T12:47:29+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000719s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002729s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003510s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000303s ]
+
+[ 2015-06-28T12:48:26+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000860s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003105s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002836s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000446s ]
+
+[ 2015-06-28T12:48:58+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000858s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003212s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001905s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003466s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000253s ]
+
+[ 2015-06-28T12:51:02+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000732s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003112s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004108s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000298s ]
+
+[ 2015-06-28T12:51:16+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000651s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002490s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004828s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000295s ]
+
+[ 2015-06-28T12:54:02+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001760s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002039s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002866s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003271s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000946s ]
+
+[ 2015-06-28T12:54:14+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000760s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001656s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003849s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004216s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000281s ]
+
+[ 2015-06-28T12:55:55+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000815s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004227s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003635s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000302s ]
+
+[ 2015-06-28T12:56:05+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000807s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004236s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004355s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000527s ]
+
+[ 2015-06-28T12:56:31+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000718s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004039s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003528s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000325s ]
+
+[ 2015-06-28T12:56:48+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000841s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002437s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003237s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000582s ]
+
+[ 2015-06-28T12:56:51+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000881s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002187s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005085s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000211s ]
+
+[ 2015-06-28T12:57:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000723s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002091s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002935s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.001283s ]
+
+[ 2015-06-28T12:57:16+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000597s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003299s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003205s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000420s ]
+
+[ 2015-06-28T12:57:28+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000658s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002155s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002503s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000205s ]
+
+[ 2015-06-28T12:57:51+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000736s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002060s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005280s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000251s ]
+
+[ 2015-06-28T12:57:58+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002113s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002457s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000181s ]
+
+[ 2015-06-28T12:58:09+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000659s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003864s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003174s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000216s ]
+
+[ 2015-06-28T12:58:11+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000659s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002818s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005006s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000245s ]
+
+[ 2015-06-28T12:58:16+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000685s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002070s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002446s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000193s ]
+
+[ 2015-06-28T12:58:59+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002156s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003097s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000223s ]
+
+[ 2015-06-28T12:59:10+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000765s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002089s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002835s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000277s ]
+
+[ 2015-06-28T12:59:39+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000799s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002104s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005132s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000273s ]
+
+[ 2015-06-28T13:00:09+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000611s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002173s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002525s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000175s ]
+
+[ 2015-06-28T13:00:49+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000732s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002138s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002499s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000191s ]
+
+[ 2015-06-28T13:01:02+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000696s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002090s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005284s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: UPDATE `zy_member` SET `realname`='122',`pass_time`=1435467662 WHERE ( `id` = 3 ) [ RunTime:0.006935s ]
+
+[ 2015-06-28T13:01:31+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000884s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002050s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003819s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000190s ]
+SQL: UPDATE `zy_member` SET `realname`='��֣',`pass_time`=1435467691 WHERE ( `id` = 3 ) [ RunTime:0.010136s ]
+
+[ 2015-06-28T13:02:05+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000626s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002866s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005139s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: UPDATE `zy_member` SET `realname`='老郑',`pass_time`=1435467725 WHERE ( `id` = 3 ) [ RunTime:0.002806s ]
+
+[ 2015-06-28T13:02:42+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000748s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002138s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003232s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000220s ]
+
+[ 2015-06-28T13:04:19+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000753s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002328s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002614s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: UPDATE `zy_member` SET `realname`='112',`pass_time`=1435467859 WHERE ( `id` = 3 ) [ RunTime:0.005793s ]
+
+[ 2015-06-28T13:09:46+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002155s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001787s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002680s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: UPDATE `zy_member` SET `realname`='合格和规范',`pass_time`=1435468186 WHERE ( `id` = 3 ) [ RunTime:0.006095s ]
+
+[ 2015-06-28T13:10:02+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000613s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002780s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003540s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000606s ]
+SQL: UPDATE `zy_member` SET `realname`='人托人',`pass_time`=1435468202 WHERE ( `id` = 3 ) [ RunTime:0.002224s ]
+
+[ 2015-06-28T13:11:04+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000613s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002722s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002437s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: UPDATE `zy_member` SET `realname`='非法打工',`pass_time`=1435468264 WHERE ( `id` = 3 ) [ RunTime:0.009707s ]
+
+[ 2015-06-28T13:11:13+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000645s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002187s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005154s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: UPDATE `zy_member` SET `realname`='122',`pass_time`=1435468273 WHERE ( `id` = 3 ) [ RunTime:0.003137s ]
+
+[ 2015-06-28T13:11:25+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002349s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002633s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: UPDATE `zy_member` SET `realname`='1122',`pass_time`=1435468285 WHERE ( `id` = 3 ) [ RunTime:0.003977s ]
+
+[ 2015-06-28T13:11:35+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000645s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002203s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002529s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: UPDATE `zy_member` SET `realname`='大是大非',`pass_time`=1435468295 WHERE ( `id` = 3 ) [ RunTime:0.002496s ]
+
+[ 2015-06-28T13:11:42+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000621s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002586s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004272s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.001084s ]
+SQL: UPDATE `zy_member` SET `realname`='112',`pass_time`=1435468302 WHERE ( `id` = 3 ) [ RunTime:0.009503s ]
+
+[ 2015-06-28T13:11:52+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000775s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002114s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002909s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: UPDATE `zy_member` SET `realname`='佛挡杀佛',`pass_time`=1435468312 WHERE ( `id` = 3 ) [ RunTime:0.009515s ]
+
+[ 2015-06-28T13:12:26+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002673s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003383s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: UPDATE `zy_member` SET `pass_time`=1435468346 WHERE ( `id` = 3 ) [ RunTime:0.008753s ]
+
+[ 2015-06-28T13:12:38+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000622s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002622s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004613s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000570s ]
+
+[ 2015-06-28T13:12:50+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000596s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002630s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002468s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000180s ]
+
+[ 2015-06-28T13:12:58+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003299s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005279s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000259s ]
+
+[ 2015-06-28T13:13:15+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002061s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.002496s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000214s ]
+
+[ 2015-06-28T13:13:42+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000577s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003804s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.005123s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000888s ]
+SQL: UPDATE `zy_member` SET `realname`='梵蒂冈',`pass_time`=1435468422 WHERE ( `id` = 3 ) [ RunTime:0.010153s ]
+
+[ 2015-06-28T13:14:07+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000894s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002915s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003984s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000243s ]
+
+[ 2015-06-28T13:18:16+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000776s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002615s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.003880s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002232s ]
+NOTIC: [8] Undefined index: tel D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Model\MemberModel.class.php 第 25 行.
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `type` = 'reg' ) AND ( `tel` = null ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: UPDATE `zy_member` SET `realname`='',`pass_time`=1435468696 WHERE ( `id` = 3 ) [ RunTime:0.002679s ]
+
+[ 2015-06-28T13:18:21+08:00 ] 127.0.0.1 /guoji/yunwang/api/Member/update2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000740s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+NOTIC: [2048] Declaration of MemberAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+NOTIC: [2048] Declaration of MemberAction::show() should be compatible with that of Action::show() D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002380s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = '1429513639310.123047' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `zy_member` [ RunTime:0.004878s ]
+NOTIC: [8] Undefined index: exp_time D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 194 行.
+NOTIC: [8] Undefined index: utype D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 196 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\MemberAction.class.php 第 200 行.
+SQL: SELECT `id`,`pass_time` FROM `zy_member` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `zy_member_verify` [ RunTime:0.002254s ]
+NOTIC: [8] Undefined index: tel D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Model\MemberModel.class.php 第 25 行.
+SQL: SELECT * FROM `zy_member_verify` WHERE ( `type` = 'reg' ) AND ( `tel` = null ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: UPDATE `zy_member` SET `realname`='给对方',`pass_time`=1435468701 WHERE ( `id` = 3 ) [ RunTime:0.003877s ]
+

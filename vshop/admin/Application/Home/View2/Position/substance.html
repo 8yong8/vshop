@@ -1,0 +1,125 @@
+<include file="Public:header" />
+<load href ="__PUBLIC__/js/apply/position.js" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/EasyUI/themes/haidaoblue/easyui.css">
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > <a href="__URL__">{$node_title}</a>
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	<div class="guanli">
+	  <FORM METHOD=get ACTION="__URL__">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">标题：</TD>
+			<TD><INPUT TYPE="text" NAME="title" class="medium" value="{$title}"></TD>
+			<TD>
+			<INPUT TYPE="hidden" NAME="pid" value="{$Think.get.pid}">
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </FORM>
+	</div>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="handle mt10" style="margin-bottom:10px;">
+        		<span class="fr"><a href="__URL__/index/pid/{$parent.pid}">返回</a></span>
+				<strong>推荐位：<font color="red">{$parent.title}</font></strong>
+				{$parent.info}
+				</div>
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="sub_add({$Think.get.id})" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+
+				    <td>
+					  <myhtml:imageBtn name="no" value="禁用" click="sub_forbid()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="ok" value="通过" click="sub_resume()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="restore" value="排序" click="sort({$Think.get.id})" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+				  <div class="datagrid-view">
+				    <FORM METHOD=POST ACTION="">
+					<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+					<tr class="row" >
+					  <th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+					  <th width="5%">
+					  <eq name="sort" value="1">
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-desc" style="text-align: center;" onclick="javascript:sortBy('id','1','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  <else/>
+					  <div class="datagrid-cell datagrid-cell-c1-name datagrid-sort-asc" style="text-align: center;" onclick="javascript:sortBy('id','0','index');"><span>编号</span><span class="datagrid-sort-icon">&nbsp;</span></div>
+					  </a>
+					  </eq>
+					  </th>
+					  <th width="8%">名称</th>
+					  <th width="8%">关联</th>
+					  <th width="8%">排序</th>
+					  <th width="30%">图片</th>
+					  <th>状态</th>
+					  <th>操作</th>
+					</tr>
+					<volist name="list" id="vo" mod="2">
+					<tr id="row_{$vo.id}" class="datagrid-row <eq name="mod" value="1">datagrid-row-alt</eq>">
+					  <td><input type="checkbox" name="key"	value="{$vo.id}"></td>
+					  <td>{$vo.id}</td>
+					  <td><a href="__URL__/edit/id/{$vo.id}">{$vo.title}</a></td>
+					  <td>{$vo.data_type|rs='product_list#产品列表@product_detail#产品详情@article_list#文章列表@article_detail#文章详情'}</td>
+					  <td>
+					  {$vo.sort}
+					  </td>
+					  <td style="text-align:left;padding:8px; cursor: pointer;"> 
+					  
+					  <img src="{$vo.lit_pic}" height="50px;" onclick="art_open(\'<img src={$vo.lit_pic}>\');">
+					  
+					  </td>
+					  <td>{$vo.status|rs='0#禁用#red@1#启用#blue'}</td>
+					  <td style="text-align:left;height:auto;">
+						&nbsp;<a href="__URL__/sub_edit/id/{$vo.id}" >编辑</a>&nbsp;
+						<a href="javascript:;" onclick="ajax_sub_del('{$vo.id}')">删除</a>&nbsp;
+					  </td>
+					</tr>
+					</volist>
+					</table>
+					</FORM>
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

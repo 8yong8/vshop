@@ -1,0 +1,72 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<div id="main" class="main" >
+<script language="JavaScript">
+<!--
+function resetPwd(){
+var pass	 =	 jQuery('#resetPwd').val();
+jQuery.ajax({
+  type:'POST',
+  url:'__URL__/resetPwd/',
+  data:'id={$vo.id}&password='+encodeURIComponent(pass),
+  success:function(msg){
+    //alert(msg);
+	if(msg==1){
+	  alert('密码已修改为'+encodeURIComponent(pass));
+	}else{
+	  alert('修改失败');
+	}
+  }
+})
+}
+//-->
+</script>
+<div class="content">
+<div class="title">站点授权 [ <a href="__URL__">返回列表</a> ]</div>
+<table cellpadding=3 cellspacing=3>
+<form method='post' id="form1" action="__URL__/sitesave/">
+<tr>
+	<td class="tRight" >用户ID：</td>
+	<td class="tLeft" >{$user.id}</td>
+</tr>
+<tr>
+	<td class="tRight" >用户名：</td>
+	<td class="tLeft" >{$user.account}</td>
+</tr>
+<tr>
+	<td class="tRight" >姓名：</td>
+	<td class="tLeft" >{$user.nickname}</td>
+</tr>
+<tr>
+	<td class="tRight" >站点：</td>
+	<td class="tLeft" >
+	<volist name="sites" id ="site" key="k">
+	<input name="ac_sites[]" value="{$site.key}" type="checkbox"
+	<php>
+	if($user['ac_sites']){
+	  $keys = unserialize($user['ac_sites']);
+	  if(in_array($site['key'],$keys)){
+	    echo 'checked="checked"';
+	  }  
+	}	
+	</php>
+	>{$site.name}
+	<php>
+	  if($k%5==0 && $k!=count($sites)){
+	    echo "<br>";
+	  }
+	</php>
+	</volist>	
+	</td>
+</tr>
+<tr>
+	<td></td>
+	<td class="center">
+	<INPUT TYPE="hidden" NAME="id" value="{$user.id}">
+	<input type="submit" value="保 存" class="small submit">
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div>

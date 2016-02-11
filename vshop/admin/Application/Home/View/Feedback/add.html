@@ -1,0 +1,31 @@
+<include file="Public:header" />
+<div class="content">
+<div class="title">新增分类 [ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<FORM METHOD=POST id="form1" action="__URL__/add?<?php echo time(); ?>">
+<TR>
+	<TD class="tRight" >分类名：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="用户名不能为空" NAME="name" ></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >
+		&nbsp;默认 ：</TD>
+	<TD>
+		<SELECT NAME="is_select">
+			<OPTION VALUE="0" <eq name="vo.is_select" value="0">SELECTED</eq>>否</OPTION>
+			<OPTION VALUE="1" <eq name="vo.is_select" value="1">SELECTED</eq>>是</OPTION>
+		</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD>
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<include file="Public:footer" /> 

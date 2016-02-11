@@ -1,0 +1,18 @@
+<include file="Public:header" />
+<div class="menu">
+   <a class="back" href="__APP__/Order/lists"></a>
+   <div class="tit">购买成功</div>
+</div>
+<div class="content minh400">
+    <div class="b_ok_i">付款成功</div>
+    <div class="b_ok_f">
+         <ul>
+            <li><span>订单号</span>{$order.order_sn}</li>
+            <!--<li><span>配送方式</span>圆通速递</li>-->
+            <li><span>支付方式</span>{$order.payment}</li>
+            <li><span>付款金额</span>￥{$order.actual_paid} 元</li>
+         </ul>
+    </div>
+    <div class="b_ok_b mgt15"><input type="button" value="用户中心" class="i_btn" onclick="window.location.href = '__APP__/Member'"></div>
+</div>
+<include file="Public:footer" />

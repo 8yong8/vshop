@@ -1,0 +1,235 @@
+{// 加载头部公共文件 }
+<include file="Public:header" />
+<!-- 菜单区域  -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/EasyUI/themes/haidaoblue/easyui.css">
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/EasyUI/hd_default_config.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/Css/diymen/tipswindown.css" type="text/css" media="all" />
+<script type="text/javascript" src="__PUBLIC__/Css/diymen/tipswindown.js"></script> 
+
+<script type="text/javascript">
+ $(document).ready(function() {
+	$("#iframe1").click(function(){
+		tipsWindown("添加菜单","iframe:{:U('Wx_user/class_add')}","460","600","true","","true","leotheme");
+	});
+ });
+
+function class_add(){
+  tipsWindown("添加菜单","iframe:{:U('Wx_user/class_add')}","460","600","true","","true","leotheme");
+}
+
+function foreverdel(id){
+	var keyValue;
+	if (id)
+	{
+		keyValue = id;
+	}else {
+		keyValue = getSelectCheckboxValues();
+	}
+	if (!keyValue)
+	{
+		alert('请选择删除项！');
+		return false;
+	}
+
+	if (window.confirm('确实要永久删除选择项吗？'))
+	{
+		window.location.href = URL+"/class_del/id/"+keyValue+"/time/"+new Date().getTime();
+	}
+}
+
+function class_clear(){
+
+	if (window.confirm('确实要清除菜单吗？')){
+		window.location.href = URL+"/class_clear/time/"+new Date().getTime();
+	}
+}
+
+function drop_confirm(title,url){
+	if (window.confirm(title))
+	{
+		window.location.href = url;
+	}
+
+
+}
+ </script>
+ <style>
+.btnGreen {
+	/*border: 1px solid #3d810c;*/
+	box-shadow: 0 1px 1px #aaa;
+	-moz-box-shadow: 0 1px 1px #aaa;
+	-webkit-box-shadow: 0 1px 1px #aaa;
+	padding: 5px 20px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	vertical-align: bottom;
+	overflow: visible;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #5ba607;
+	background-image: linear-gradient(bottom, #4d910c 3%, #69b310 97%, #fff 100%);
+	background-image: -moz-linear-gradient(bottom, #4d910c 3%, #69b310 97%, #fff 100%);
+	background-image: -webkit-linear-gradient(bottom, #4d910c 3%, #69b310 97%, #fff 100%);
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom:5px;
+}
+
+.board {
+  text-align: left;
+  padding-left:60px;
+}
+.td25{
+  padding-top:10px;
+}
+ </style>
+<!-- 主页面开始 -->
+<div id="main" class="main" >
+
+<!-- 主体内容  -->
+<div class="content" >
+	<div class="site">
+		{:C('site_name')} <a href="#">{$board_title}</a> > <a href="__CONTROLLER__">{$node_title}</a> > 自定义菜单 
+	</div>
+	<!--<div class="title">微信会员列表 [<a href="__CONTROLLER__">返回微信会员</a>]</div>-->
+<!--  功能操作区域  -->
+<!-- 功能操作区域结束 -->
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" id="iframe1" value="添加" click="class_add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+				<!-- 列表显示区域  -->
+				<div class="datagrid-view">
+
+				<table id="checkList" class="list" cellpadding=0 cellspacing=0> 
+				<tr>
+					<tr class="row" ><th width="8"><input type="checkbox" id="check" onclick="CheckAll('checkList')"></th>
+					<th width="5%">显示顺序</th>
+					<th width="20%">主菜单名称</th>
+					<th width="15%">关联关键词</th>
+					<th width="45%">外链URL</th>
+					<th>状态</th>
+					<th>操作</th>
+				</tr>
+
+				   <tbody>
+					<volist id="class" name="class">
+					<tr class="hover">
+						<td class="td25">
+							<input type="checkbox" name="key" value="{$class.id}">
+						</td>
+						<td class="td25">
+							<span>{$class.sort}</span>
+						</td>
+						<td>
+						  <div class="board">
+							<span>{$class.title}</span>
+						  </div>
+						</td>
+						<td><span>{$class.keyword}</span></td>
+						<td><span><if condition="$class['url'] eq false">无链接地址<else/>{$class.url}</if></span></td>
+						<td><span><if condition="$class['is_show'] eq 1">显示<else/>禁用</if></span></td>
+						<td >
+							<a class="ajax btnGreen  cboxElement" href='javascript:tipsWindown("修改菜单","iframe:{:U('Wx_user/class_edit',array('id'=>$class['id']))}","460","600","true","","true","leotheme");' title="修改主菜单">修改</a>
+							<a class=" btnGreen " href="javascript:drop_confirm('您确定要删除吗?', '__CONTROLLER__/class_del/id/{$class['id']}');">删除</a>
+						</td>				
+					  </tr>
+					  <neq name="class.class" value="">
+					  <volist id="class1" name="class['class']">
+					  <tr class="td29">
+							<td class="td25">
+								<input type="checkbox" name="key" value="{$class1.id}">
+							</td>
+							<td colspan="1">
+								<span>{$class1.sort}</span>
+							</td>
+							<td colspan="1">
+							  <div class="board">
+								<span><img src="__PUBLIC__/images/bg_repno.gif">{$class1.title}</span>
+							  </div>
+							</td>
+							
+							<td colspan="1">
+								<span>{$class1.keyword}</span>
+							</td>
+							 <td><span><if condition="$class1['url'] eq false">无链接地址<else/>{$class1.url}</if></span></td>
+
+							 <td><span><if condition="$class1['is_show'] eq 1">显示<else/>禁用</if></span></td>
+
+							<td colspan="1" style="padding-bottom:10px;">
+							<a class="ajax btnGreen cboxElement" href='javascript:tipsWindown("修改菜单","iframe:{:U('Wx_user/class_edit',array('id'=>$class1['id']))}","460","600","true","","true","leotheme");' title="修改主菜单">修改</a>
+							<a class=" btnGreen " href="javascript:drop_confirm('您确定要删除吗?', '__CONTROLLER__/class_del/id/{$class1['id']}');">删除</a></td>				
+					 </tr>	
+					</volist>
+					</neq>
+					</volist>
+					<tr class="hover">
+						<td class="td25" colspan="10">
+						<if condition="$class neq false">
+						<a class="btnGreen" style="margin-top:10px;margin-right:10px;" title="" href="{:U('Wx_user/class_send')}">生成自定义菜单</a>
+						</if>
+
+						<a class="btnGreen" title="" href="javascript:class_clear();">清除自定义菜单</a>
+
+						<span style="float:left;width:100%;text-align:left;padding-left:10px;" id="cdul">
+						<style>
+							#cdul{
+								float:left;
+								color:red;
+							}
+						</style>
+						注：<br>
+						(使用前提是已经拥有了自定义菜单的用户才能够使用，)<br>
+						第一步:必须先填写【AppId】【 AppSecret】！<br>
+						第二步:添加菜单，<br>
+						第三步:点击生成!<br>
+						注意：1级菜单最多只能开启3个，2级子菜单最多开启5个<br>
+						官方说明：修改后，需要重新关注，或者最迟隔天才会看到修改后的效果！<br>
+						</span>
+						</td>				
+					  </tr>
+							  
+					</tbody>
+				</table>
+				</div>
+				  <!--  分页显示区域 -->
+				  <neq name="page" value="">
+				  <div class="datagrid-pager pagination">
+				   <div class="page" style="float:left">{$page}</div>
+				   <div class="pagination-info">
+					共{$count}条记录
+				   </div>
+				   <div style="clear:both;"></div>
+				  </div>
+				  </neq>
+			<!-- 列表显示区域结束 -->
+			</div>
+			<!-- 主体内容结束 -->
+		</div>
+		<!-- 主页面结束 -->
+<include file="Public:footer" />

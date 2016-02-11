@@ -1,0 +1,193 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<load href="__PUBLIC__/Js/WdatePicker/WdatePicker.js" />
+<style>
+span{
+  margin-top:13px;
+}
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+function add_attr_product(){
+  var obj = jQuery('#attr_row');
+  var html = '<TR>'+obj.html()+'<TD><input type="button" class="button" value=" - " onclick="product_remove2(this)"/></TD></TR>';
+  var last_obj = obj.parent().find('TR:last-child').prev();
+  last_obj.after(html);
+  var obj2 =  obj.parent().find('TR:last-child').prev();
+  $(obj2).find('TD:last-child').prev().remove(); 
+}
+
+function val_del(obj){
+  $(obj).parent().remove();
+}
+
+function goods_type_change(){
+  var tid = jQuery("#tid").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/get_attr",
+	data:"goods_id={$Think.get.id}&tid="+tid,
+	success:function(html){
+	  $('#attr_list').html(html);
+	}
+  })
+}
+
+function product_remove(id,goods_id){
+  if(confirm("您确定要删除吗？")){
+	  jQuery.ajax({
+		type:"POST",
+		dataType:'json',
+		url: URL+"/product_del",
+		data:"product_id="+id+'&goods_id='+goods_id,
+		success:function(obj){
+		  if(obj.status==1){
+		    art.dialog({
+			  time: 1.5,
+			  content: obj.notice
+		    });
+		    jQuery('#tr_'+id).remove();
+		  }else{
+			  art.dialog({
+				time: 1.5,
+				content: obj.notice
+			  });		
+		  }
+		}
+	  })  
+  
+  }
+}
+
+function product_remove2(obj){
+  jQuery(obj).parent().parent().remove(); 
+}
+
+function edit(obj, act, id)
+{
+  var tag = obj.firstChild.tagName;
+
+  if (typeof(tag) != "undefined" && tag.toLowerCase() == "input")
+  {
+    return;
+  }
+
+  /* 保存原始的内容 */
+  var org = jQuery(obj).html();
+  var val = jQuery(obj).text();
+  //var org = obj.innerHTML;
+  //var val = Browser.isIE ? obj.innerText : obj.textContent;
+
+  /* 创建一个输入框 */
+  var txt = document.createElement("INPUT");
+  txt.value = (val == 'N/A') ? '' : val;
+  txt.style.width = (obj.offsetWidth + 12) + "px" ;
+
+  /* 隐藏对象中的内容，并将输入框加入到对象中 */
+  obj.innerHTML = "";
+  obj.appendChild(txt);
+  txt.focus();
+
+  /* 编辑区输入事件处理函数 */
+  txt.onkeypress = function(e)
+  {
+    if (e.which == 13)
+    {
+      obj.blur();
+
+      return false;
+    }
+
+    if (e.which == 27)
+    {
+      obj.parentNode.innerHTML = org;
+    }
+  }
+
+  /* 编辑区失去焦点的处理函数 */
+  txt.onblur = function(e)
+  {
+    var val = jQuery(obj).find('input').val();
+    if (val.length > 0){
+	  jQuery.ajax({
+		type:"POST",
+		dataType:'json',
+		url: URL+"/"+act,
+		data:"product_id="+id+'&val='+val,
+		success:function(obj){
+		  if(obj.status==1){
+		    obj.innerHTML = jQuery(obj).find('input').val();
+		  }else{
+			obj.innerHTML = org;		
+		  }
+		}
+	  })
+	  obj.innerHTML = jQuery(obj).find('input').val();
+    }else{
+      obj.innerHTML = org;
+    }
+  }
+}
+</SCRIPT>
+<div id="main" class="main" style="width:85%">
+<div class="content">
+<div class="title">货品列表 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/product_add?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<TABLE cellpadding=3 cellspacing=3>
+
+<TR>
+
+<TD height="5" colspan="12" class="topTd" align="center" style="padding:10px;"><strong>
+商品名称：{$vo.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;货号：{$vo.goods_sn}</strong></TD>
+</TR>
+
+<TR class="row" >
+	<volist name="attribute" id="attribute_value">
+        <th><div align="center"><strong>{$attribute_value.attr_name}</strong></div></th>
+	</volist>
+        <th><div align="center"><strong>货号</strong></div></th>
+		<th><div align="center"><strong>库存</strong></div></th>
+		<th><div align="center"><strong>操作</strong></div></th>
+</TR>
+
+<volist name="list" id="product">
+<TR id="tr_{$product.product_id}">
+  <volist name="product.goods_attr" id="goods_attr">
+  <TD scope="col"><div align="center">{$goods_attr.attr_value}</div></TD>
+  </volist>
+  <TD class="td_1"><span onclick="edit(this, 'edit_product_sn', {$product.product_id})">{$product.product_sn|default=''}</span></TD>
+  <TD class="td_1"><span onclick="edit(this, 'edit_product_number', {$product.product_id})">{$product.product_number}</span></TD>
+  <TD><input type="button" class="button" value=" - " onclick="product_remove({$product.product_id},{$product.goods_id})"/></TD>
+</TR>
+</volist>
+
+<TR id="attr_row">
+<!-- start for specifications_value -->
+<volist name="attribute" id="attribute_value" key="attribute_key">
+  <TD align="center">
+	<select name="attr[{$attribute_value.attr_id}][]">
+	<option value="" selected>请选择...</option>
+	<volist name="attribute_value.attr_values" id="value" key="k">
+	<option value="{$attribute_value['goods_attr_id'][$k-1]}">{$value}</option>
+	</volist>
+	</select>
+  </TD>
+</volist>
+<!-- end for specifications_value -->
+  <TD class="label_2"><input type="text" name="product_sn[]" value="" size="20"/></TD>
+  <TD class="label_2"><input type="text" name="product_number[]" value="{$product_number}" size="10"/></TD>
+  <TD><input type="button" class="button" value=" + " onclick="javascript:add_attr_product();"/></TD>
+</TR>
+
+<TR>
+	<TD class="center">
+	<INPUT TYPE="hidden" NAME="goods_id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button" >
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

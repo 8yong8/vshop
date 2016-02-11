@@ -1,0 +1,72 @@
+<include file="Public:header" />
+<style>
+span{
+  margin-top:13px;
+}
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+function val_add(id){
+  var obj = jQuery('#'+id);
+  var html = '<span><br/><a href="javascript:;" onclick="val_del(this);"><img src="__PUBLIC__/images/minus.png"></a>'+obj.html()+'</span>';
+  var last_obj = obj.parent().find('span:last-child');
+  last_obj.after(html);
+  var obj2 =  obj.parent().find('span:last-child');
+  $(obj2).children().get(2).remove();
+}
+
+function val_del(obj){
+  $(obj).parent().remove();
+}
+
+function goods_type_change(){
+  var tid = jQuery("#tid").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/get_attr",
+	data:"goods_id={$Think.get.id}&tid="+tid,
+	success:function(html){
+	  $('#attr_list').html(html);
+	}
+  })
+}
+</SCRIPT>
+<div class="content">
+<div class="title">新增属性 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/insert_attr?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+
+<TR>
+	<TD class="tRight" >
+		商品类型：
+	</TD>
+	<TD class="tLeft">
+	  <select name="tid" id="tid" onchange="goods_type_change();">
+		 <volist name="goods_types" id="producttype">
+		 <option value="{$producttype.id}" <eq name="vo.goods_type" value="$producttype.id">selected</eq> >
+		 {$producttype.name}</option>
+		 </volist>
+	  </select>		
+	</TD>
+</TR>
+<TBODY id="attr_list">
+<volist name="attrs" id="attr">
+<TR>
+	<TD class="tRight" >
+		{$attr.attr_name}：
+	</TD>
+	<TD class="tLeft">
+	    {$attr.content}
+	</TD>
+</TR>
+</volist>
+</TBODY>
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="hidden" NAME="goods_id" value="{$Think.get.id}">
+	<INPUT TYPE="submit" value="保 存" class="button" >
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

@@ -1,0 +1,62 @@
+<include file="Public:header" />
+<div class="menu">
+   <a class="back" href="#"></a>
+   <div class="tit">注 册</div>
+</div>
+<FORM METHOD=POST ACTION="__URL__/register" id="reg" onsubmit="return false;">
+<div class="info">
+   <div class="ptxt"><input type="text" class="p_txt" value="手机号" onFocus="if(value =='手机号'){ value ='' }"onblur="if(value ==''){ value='手机号' }" id="mobile" name="mobile"></div>
+   <div class="bbtxt">
+       <div class="stxt"><input type="text" class="s_txt" value="请输入图形验证码" onFocus="if(value =='请输入图形验证码'){ value ='' }"onblur="if(value ==''){ value='请输入图形验证码' }" name="verifycode" id="verifycode"></div>
+       <div class="sstxt2"><img src="__APP__/Public/verify" id="verifyImg" onclick="fleshVerify();"></div>
+   </div>
+   <div class="bbtxt">
+       <div class="stxt"><input type="text" class="s_txt" value="请输入手机短信验证码" onFocus="if(value =='请输入手机短信验证码'){ value =''}"onblur="if(value ==''){ value='请输入手机短信验证码' }" name="code" id="code"></div>
+       <div class="sstxt" id="show_msg" num="60">发送短信验证码</div>
+   </div>
+   <div class="btxt"><input name="" type="text" value="6-16位密码" class="p_txt" id="tx" /> 
+<input name="password" type="password" id="pwd" class="p_txt" style="display:none;" /> 
+
+<script type="text/javascript" src="__PUBLIC__/js/apply/register.js"></script>
+<script type="text/javascript"> 
+var tx = document.getElementById("tx"), pwd = document.getElementById("pwd"); 
+tx.onfocus = function(){ 
+if(this.value != "6-16位密码") return; 
+this.style.display = "none"; 
+pwd.style.display = ""; 
+pwd.value = ""; 
+pwd.focus(); 
+} 
+pwd.onblur = function(){ 
+if(this.value != "") return; 
+this.style.display = "none"; 
+tx.style.display = ""; 
+tx.value = "6-16位密码"; 
+} 
+
+function fleshVerify(){
+//重载验证码
+	var timenow = new Date().getTime();
+	$('#verifyImg').attr('src','__APP__/Public/verify?time='+timenow);
+}
+$(document).ready(function(){
+  $('#show_msg').click(function(){
+	 sentmsm('reg');
+  });
+});	
+</script> 
+</div>
+
+   <div class="bbtxt">
+       <input type="hidden" class="s_txt" value="{$parent.id}" name="pid" id="pid" >
+       <div class="stxt_1"><input type="text" class="s_txt" value="{$parent.account}" name="referee" id="referee" <neq name="parent" value="">readonly</neq>></div>
+	   <div class="sstxt_1"><input type="button" value="推荐人" class="t_btn"></div>
+
+   </div>
+
+   <div class="agrin"><input type="checkbox" checked="checked" class="cbox" id="agreement">我已经阅读<a href="#">《服务协议》</a></div>
+   <div class="bbtn"><input type="submit" value="注册" class="i_btn" id="reg_do"></div>
+   <div class="btna"><span><a href="__URL__/login">使用已有账号登录</a></span><a href="__URL__/findpwd">找回密码</a></div>
+</div>
+</FORM>
+<include file="Public:footer" />

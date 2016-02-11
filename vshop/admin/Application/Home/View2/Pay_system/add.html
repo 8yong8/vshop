@@ -1,0 +1,77 @@
+<include file="Public:header" />
+<script>
+function search(){
+  var key = jQuery("#name").val();
+  jQuery.ajax({
+    type:"POST",
+	dataType: "json",
+	url: APP+"/Product/get_product",
+	data:"key="+key,
+	success:function(objs){
+	 //alert(objs);return false;
+	 //alert(objs.length);
+	 var html = '<select name="product_id" id="product_id"  onchange="productchange();"><option value="0">选择</option>';
+	 for(i=0;i<objs.length;i++){
+	   if(i==0){
+	     html += '<option value='+objs[i].id+' selected product_name="'+objs[i].name+'">'+objs[i].name+' | '+objs[i].member_name+' | '+objs[i].realname+'</option>';
+		 $('#product_name').val(objs[i].name);
+	   }else{
+	     html += '<option value='+objs[i].id+' product_name="'+objs[i].name+'">'+objs[i].name+' | '+objs[i].member_name+' | '+objs[i].realname+'</option>';
+	   }
+	 }
+	 html += '</select>';
+	 jQuery('#cidspan').html(html);
+	}
+  })
+}
+
+function productchange(){
+  var product_name = $('#product_id option:selected').attr('product_name');
+  $('#product_name').val(product_name);
+}
+</script>
+<div id="main" class="main" >
+<div class="content">
+<div class="title">添加数据 [ <A HREF="__URL__">返回列表</A> ]</div>
+<FORM METHOD=POST id="form1"  action="__URL__/add?<?php echo time(); ?>"  onsubmit="check();" enctype="multipart/form-data">
+<TABLE cellpadding=3 cellspacing=3>
+
+
+<TR>
+	<TD class="tRight" >艺术品：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" NAME="name" id="name" value="{$vo.product_name}"> <INPUT TYPE="button" value="搜 索" class="button" onclick="search();">
+			<span id="cidspan">
+			<select name="product_id" id="product_id" onchange="productchange();">
+			  <option value="">选择</option>
+			  <neq name="vo" value="">
+			  <option value="{$vo.id}" SELECTED>{$vo.name} | {$vo.member_name} | {$vo.realname}</option>
+			  </neq>
+			</select>
+			</span>
+			<INPUT TYPE="hidden" NAME="product_name" id="product_name" value="$vo.name">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >价格：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="pay"   ID="pay" value="{$vo.pay}"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >日期：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="time"   ID="pay" value=""> 格式必须:2014-10-20</TD>
+</TR>
+
+<TR>
+  <TD>
+  <INPUT TYPE="submit" value="保 存" class="button">
+  </TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

@@ -1,0 +1,426 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<div id="main" class="main" style="width:85%">
+<div class="content">
+<script language="javascript" src="__PUBLIC__/Js/jquery.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+var imgurl = "{$imgurl}";
+//获取标签信息
+function gettags(){  
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/getfolders',
+	data:"dir="+dir+"&vname="+vname+"&p="+p,
+	success:function(msg){
+	 jQuery('#img').html(msg);
+	}
+  })
+}
+//插入分页
+function insertPage(){
+	var oEditor = FCKeditorAPI.GetInstance("content");
+	if (oEditor.EditMode==FCK_EDITMODE_WYSIWYG)
+	{
+	   var text = document.getElementById('title').value;
+	   oEditor.InsertHtml('[page]'+text+'[/page]');
+	}
+	else
+	{
+		return false;
+	}
+	return;
+}
+//缩略图
+function insertsl(dir){
+  var imgdir = dir;
+  jQuery('#litpic').val(imgurl+imgdir);
+  var img = "<img src='"+imgurl+imgdir+"' width='200px'>";
+  jQuery('#showimg').html(img);
+  InsertHTML("<img src='"+imgurl+imgdir+"'>");
+}
+//内容
+function insertnr(dir){
+  var imgdir = dir;
+  var img = "<img src='"+imgurl+imgdir+"'>";
+	var oEditor = FCKeditorAPI.GetInstance("content");
+	if (oEditor.EditMode==FCK_EDITMODE_WYSIWYG)
+	{
+	   oEditor.InsertHtml(img);
+	}
+	else
+	{
+		return false;
+	}
+	return;
+}
+
+//多图添加内容
+function insertnrjson(msg){
+  var objs = eval('('+msg+')');
+  var oEditor = FCKeditorAPI.GetInstance("content");
+  for(i=0;i<objs.length;i++){
+    var img = "<img src='"+imgurl+objs[i].filepath+"' title='"+objs[i].title+"' alt='"+objs[i].title+"'>";
+    oEditor.InsertHtml(img);
+  }
+
+}
+
+//分类信息
+function gettype( o ){
+  var webset = o.value;
+  if(webset==''){
+    return false;
+  }
+  jQuery.ajax({
+    type:"POST",
+	url:URL+'/gettype',
+	data:"webset="+webset,
+	success:function(msg){
+	 var objs = eval('('+msg+')');
+	 var html = '<select name="cid" id="cid">';
+	 for(i=0;i<objs.length;i++){
+		html += '<option value='+objs[i].id+'>'+objs[i].name+'</option>';
+	 }
+	 html += '</select>';
+	 jQuery('#cid_span').html(html);
+	}
+  })
+}
+
+function ck(){
+  if(jQuery('#title').val()==''){
+    alert('标题必须填写!');
+    return false;
+  }
+  return true;
+}
+
+//团购分类
+function xsl(){
+  //alert($('select').find('option:contains("团购"').attr('selected','selected').val());
+  //alert($('select:option:contains("团购")').text());
+  var txet;
+  jQuery('select[name="cid"] option').each(function(msg){
+	//alert($(this).text().find(":contains('团购").val());
+	text = jQuery(this).text();
+  });
+}
+
+
+function getProduct(){
+  var webset = jQuery("#pwebset").val();
+  var tid = jQuery("#ptid").val();
+  var id = jQuery("#ppid").val();
+  var name = jQuery("#pname").val();
+  var supplierid = jQuery("#psupplierid").val();
+  var suppliername = jQuery("#psuppliername").val();
+  var stauts = jQuery("#pstatus").val();
+  jQuery.ajax({
+    type:"GET",
+	url: ROOT+"/index.php",
+	data:"webset="+webset+"&tid="+tid+"&id="+id+"&name="+name+"&supplierid="+supplierid+"&suppliername="+suppliername+"&status="+status+"&ajax=1&listRows=100&m=Product&a=index",
+	success:function(msg){
+	 var objs = eval('('+msg+')');
+	 var html ='';
+	 for(i=0;i<objs.length;i++){
+		html += '<option value='+objs[i].id+'>'+objs[i].name+'</option>';
+	 }
+	 jQuery('#pid').html(html);
+	}
+  })
+}
+
+//添加奢侈品
+function add_scp(){
+  var status = jQuery('#t_scp').val();
+  if(status==1){
+    jQuery('#t_cid_span').html('<select name="t_cid"><option value="475"  >奢侈品</option><option value="476" selected >&nbsp;├最新资讯</option><option value="477"  >&nbsp;├品牌专区</option><option value="478"  >&nbsp;├品牌活动</option><option value="479"  >&nbsp;├先锋设计</option><option value="480"  >&nbsp;├国际风尚</option><option value="481"  >&nbsp;├尚品推荐</option><option value="482"  >&nbsp;└专题推荐</option></select>');
+  }else{
+    jQuery('#t_cid_span').html('');
+  }
+}
+
+//装修公司
+function cid_change(){
+  var cname = jQuery('#cid option:selected').text();
+  var webset = jQuery('#webset').val();
+  var reg = /[^\u4E00-\u9FA5\uf900-\ufa2d]/ig;
+  cname = cname.replace(reg,'');
+  jQuery('#cname').val(cname);
+  if(cname=='装饰公司'){
+	  jQuery.ajax({
+		type:"POST",
+		url: URL+"/getdc",
+		data:"webset="+webset,
+		success:function(msg){
+		 var objs = eval('('+msg+')');
+		 var html = '<select name="dc_id" id="dc_id"><option value="0" >选择装修公司</option>';
+		 for(i=0;i<objs.length;i++){
+			html += '<option value='+objs[i].id+'>'+objs[i].name+'</option>';
+		 }
+		 html += '</select>';
+		 jQuery('#dcid_span').html(html);
+		}
+	  })
+  }else{
+    jQuery('#dcid_span').html('');
+  }
+}
+</SCRIPT>
+<div class="title">新增文章 [ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/insert/" enctype="multipart/form-data" onsubmit="return ck();">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<tr>
+<td>
+相关产品查询：
+</td>
+<td>
+<!-- 高级查询区域 -->
+<div  id="searchM"class="search cBoth">
+<TABLE cellpadding="1" cellspacing="2" width="100%">
+<TR>
+	<TD class="tRight">地区：</TD>
+	<TD>	
+	<select name="webset" id="pwebset">
+	<option value="" >地区选择</option>
+	 <volist name="ac_sites" id="site">
+	 <option value="{$site.key}" <eq name="webset" value="$site.key">selected</eq> >
+	 {$site.name}</option>
+	 </volist>
+	</select>
+	</TD>
+	<TD class="tRight">产品ID：</TD>
+	<TD><INPUT TYPE="text" NAME="id" class="small" value="{$id}" id="ppid"></TD>
+	<TD class="tRight">产品：</TD>
+	<TD><INPUT TYPE="text" NAME="name" class="small" value="{$name}" id="pname"></TD>
+	<TD class="tRight">供应商ID：</TD>
+	<TD><INPUT TYPE="text" NAME="supplierid" class="small" value="{$supplierid}" id="psupplierid"></TD>
+	<TD class="tRight">供应商：</TD>
+	<TD><INPUT TYPE="text" NAME="suppliername" class="small" value="{$suppliername}" id="psuppliername"></TD>
+	<TD class="tRight">状态：</TD>
+	<TD>	
+	<select name="status" id="pstatus">
+	 <option value="" >状态选择</option>
+	 <option value="1" <eq name="status" value="1">selected</eq> >
+	 上架</option>
+	 <option value="-1" <eq name="status" value="-1">selected</eq> >
+	 下架</option>
+	</select>
+	</TD>
+	<TD><div class="impBtn hMargin fLeft shadow">
+<input id="" class="search imgButton" type="button" onclick="getProduct()" value="查询" name="search">
+</div></TD>
+</TR>
+</TABLE>
+</div>
+</td></tr>
+<tr>
+<td>
+相关产品选择：
+</td>
+<td >
+<select name="pid" id="pid">
+<?php if($product){ ?>
+<option value="<?php echo $product['id']; ?>"><?php echo $product['name']; ?></option>
+<?php }else{ ?>
+<option value="">请先筛选产品</option>
+<?php } ?>
+</select>
+</td>
+</tr>
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="title" ID="title"></TD>
+</TR>
+<TR>
+	<TD class="tRight" >简略标题：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="标题不能为空" NAME="shorttitle" ID="shorttitle"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >URL：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="url" ID="url"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >分类连接URL：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire" NAME="curl" ID="curl">
+	<INPUT type="button" value="团购文章"  class="button" onclick="xsl();"></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >文章来源：</TD>
+	<TD class="tLeft" ><input name="source" type="text" id="f_source" style="width:160px;" value="137home" onclick="this.value=''"/> &nbsp;作 者：<input name="author" type="text" id="author" style="width:120px;" value="{$Think.session.editorname}" onclick="this.value=''"/></TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >关键字：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire" NAME="keyword" ></TD>
+</TR>
+<TR>
+	<TD class="tRight" >描述</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="description" ROWS="3" COLS="45"></TEXTAREA>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight">城市：</TD>
+	<TD class="tLeft">
+	<SELECT class="small bLeft" NAME="webset" id="webset" onchange="gettype(this)">
+	<volist name="ac_sites" id="site">
+	<option value="{$site.key}" <eq name="site.key" value="$webset">
+	  selected = "selected"
+	</eq>>{$site.name}</option>
+	</volist>
+	</SELECT>
+	</TD>
+</TR>
+
+<neq name="Think.session.ac_site" value="sh">
+<TR>
+	<TD class="tRight">添加至上海奢侈品：</TD>
+	<TD class="tLeft">
+	<SELECT class="small bLeft" NAME="t_scp" id="t_scp" onchange="add_scp();">
+	<option value="0">不添加</option>
+	<option value="1">添加</option>
+	</SELECT>
+	<span id="t_cid_span">
+	</span>
+	</TD>
+</TR>
+</neq>
+
+<TR>
+	<TD class="tRight" >分类：</TD>
+	<TD class="tLeft" >
+	<span id="cid_span">
+	<select name="cid" id="cid" onchange="cid_change();">
+	<volist name="types" id="type">
+	<option value="{$type['id']}" <eq name="Think.session.art_cid" value="$type['id']">selected</eq>>{$type['name']}</option>
+	</volist>
+	</select>
+	</span>
+	<span id="dcid_span">
+	</span>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight" >属性：</TD>
+	<TD class="tLeft" >
+	<volist name="flags" id="flag" key="k">
+	<input name="flags[]" value="{$flag['id']}" type="checkbox">{$flag['name']}&nbsp;
+	<php>
+	if($k%6==0){
+	  echo "<br>";
+	}
+	</php>
+	</volist>
+	</TD>
+</TR>
+<script>
+  function show(id){
+    jQuery('#'+id).show(); 
+  }
+
+  function hide(){
+    jQuery('#'+id).hide();  
+  }
+</script>
+<TR>
+	<TD class="tRight tTop">缩略图：</TD>
+	<TD class="tLeft">
+	<!--<input id="litpic" name="litpic" class="medium">
+	宽:<input name="litpicwidth" value="95" class="small">
+	高:<input name="litpicheight" value="70" class="small">
+	<input type="button" onclick="window.open('__URL__/ajax_upimg/jsdo/insertsl/hash/{$hash}')" class="button" value="上传缩略图">-->
+	<script>
+	  function showhide(){
+		jQuery('#more').toggle();
+	  }
+//图片预览
+  function yulan(imgFile,id){
+
+
+	 var newPreview=document.getElementById(id);
+	 var imgDiv=document.createElement("div");
+	 document.body.appendChild(imgDiv);
+	 imgDiv.style.width="118px";imgDiv.style.height="127px";
+	 imgDiv.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+	 imgDiv.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src=imgFile.value;
+	 newPreview.innerHTML = '';
+	 newPreview.appendChild(imgDiv);
+  }
+	</script>
+
+	<input type="button" class="button" value="显示多缩略图" onclick="showhide()">
+	<div>
+	像素:325*430(首页焦点图,设计师焦点图)  <input type="file" id="litpic" name="litpic" onchange="yulan(this,'show1')">
+	<div id="show1"></div>
+	<!--
+	像素:325*430(首页焦点图,设计师焦点图)  <input type="file" id="litpic" name="litpic" onchange="yulan(this,'show1')">
+	<div><img id="show1" /></div>
+	-->
+	</div>
+	<div>
+	像素:135*100(首页地板子频道焦点,首页卫浴子频道焦点,文章终端页专题等)  <input type="file" id="litpic2" name="litpic2" onchange="yulan(this,'show2')">
+	<div id="show2"></div>
+	</div>
+	<div id="more" style="display:none">
+	    <div>
+	    像素:(商城首页(515*325),优惠卷首页&美图首页(525*250),奢侈品首页(600*313))  <input type="file" id="litpic3" name="litpic3" onchange="yulan(this,'show3')">
+	    <div id="show3"></div>
+	    </div>
+		<div>
+		像素:350*110(首页访谈,装修知识)  <input type="file" id="litpic4" name="litpic4" onchange="yulan(this,'show4')">
+		<div id="show4"></div>
+		</div>
+		<div>
+		像素:115*135(商城奢侈品,名家邀约,搭配尚品小图,装修设计小图)  <input type="file" id="litpic5" name="litpic5" onchange="yulan(this,'show5')">
+		<div id="show5"></div>
+		</div>
+		<div>
+		像素:235*270(商城首页地板子频道焦点,商城首页卫浴子频道焦点等)  <input type="file" id="litpic6" name="litpic6" onchange="yulan(this,'show6')">
+		<div id="show6"></div>
+		</div>
+		<div>
+		像素:170*155(商城首页地板子频道焦点,商城首页卫浴子频道焦点等,奢侈品频道图2(160*120),奢侈品频道图3(210*135))  <input type="file" id="litpic7" name="litpic7" onchange="yulan(this,'show7')">
+		<div id="show7"></div>
+		</div>
+		<div>
+		像素:130*175(设计师页高端访谈)  <input type="file" id="litpic8" name="litpic8" onchange="yulan(this,'show8')">
+		<div id="show8"></div>
+		</div>
+		<div>
+		像素:160*180(文章终端页推荐,搭配尚品大图,装修设计大图,奢侈品频道图1(178*278))  <input type="file" id="litpic9" name="litpic9" onchange="yulan(this,'show9')">
+		<div id="show9"></div>
+		</div>
+	</div>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight tTop">内 容：</TD>
+	<TD class="tLeft"><font color="red">	<input type="button" onclick="window.open('__URL__/ajax_upimg/jsdo/insertnrjson/hash/{$hash}')" class="button" value="上传图片"> 	<input type="button" class="button" value="插入分页符" onclick="insertPage();"></font></TD>
+</TR>
+<TR>
+	<TD class="tLeft" colspan="2" style="padding-left:80px"><html:editor type="fckeditor"  id="content" width="850px" height="345px" name="content" /></TD>
+</TR>
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="hidden" NAME="writer" value="{$Think.session.nickname}">
+	<INPUT TYPE="hidden" NAME="hash" value="{$hash}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="Public:footer" /> 

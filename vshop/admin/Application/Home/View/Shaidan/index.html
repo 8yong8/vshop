@@ -1,0 +1,127 @@
+<include file="Public:header" />
+<script>
+
+  function ajax_edit(id){
+	jQuery.ajax({
+	  type:'GET',
+	  url:'__URL__/edit',
+	  data:'id='+id,
+	  success:function(html){
+		  art.dialog({
+			//time: 1.5,
+			id:'abc',
+			content: html
+		  });
+	  }
+	})
+	/*art.dialog.open('__URL__/edit/id/'+id,
+    {title: '编辑', width: 285, height: 350});*/
+  }
+
+  function look(id){
+ 	$.ajax({
+	  type:'GET',
+	  url:'__URL__/look',
+	  data:'id='+id,
+	  success:function(html){
+		  art.dialog({
+			//time: 1.5,
+			id:'abc',
+			width: '30%',
+			content: html
+		  });
+	  }
+	}) 
+  
+  }
+
+</script>
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <FORM METHOD=get ACTION="__URL__">
+	  <div class="guanli">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">会员：</TD>
+			<TD><INPUT TYPE="text" NAME="member_name" class="small" value="{$member_name}" class="J_check"></TD>
+			<TD class="tRight">商品ID：</TD>
+			<TD><INPUT TYPE="text" NAME="shopid" class="small" value="{$shopid}"></TD>
+			<TD class="tRight">状态：</TD>
+			<TD>	
+			<select name="status">
+			 <option value="" >状态选择</option>
+			 <option value="1" <eq name="status" value="1">selected</eq> >
+			 审核通过</option>
+			 <option value="0" <eq name="status" value="0">selected</eq> >
+			 待审核</option>
+			</select>
+			</TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+	  </div>
+	  </FORM>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				<div class="datagrid-toolbar">
+				<table cellspacing="0" cellpadding="0"><tbody>
+				  <tr>
+					<td>
+					  <myhtml:imageBtn name="add" value="添加" click="add()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td><div class="datagrid-btn-separator"></div></td>
+
+				    <td>
+					  <myhtml:imageBtn name="del" value="删除" click="foreverdel()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="no" value="禁用" click="forbid()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				    <td>
+					  <myhtml:imageBtn name="ok" value="通过" click="resume()" style="impBtn hMargin fLeft shadow" />
+					</td>
+					<td>
+					<div class="datagrid-btn-separator"></div>
+					</td>
+
+				</tr>
+				</tbody>
+			    </table>
+				</div>
+
+				  <div class="datagrid-view">
+					<myhtml:list id="checkList" name="user" style="list" checkbox="true" action="true" datasource="list" show="id:编号|8%,shopname:商品名称|28%:ajax_edit,member_name:谁晒单,status|rs='0#待审核#red@1#审核通过@-1#驳回':状态,create_time|toDate='Y-m-d H#i#s':添加时间" order_fields="id" align_left='shopname' actionlist="look:查看详情" /> 
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

@@ -1,0 +1,17 @@
+					<volist name="list" id="vo" mod="2">
+						 <tr id="row_{$vo.id}" class="datagrid-row <eq name="mod" value="1">datagrid-row-alt</eq> treegrid-tr-tree_{$pid}" mod="2">
+						  <td>
+						   <div style="text-align:left;height:auto;" class="datagrid-cell datagrid-cell-c1-area_name">
+							<span class="tree-indent"></span>
+							<span class="tree-indent"></span>
+							<span class="tree-icon tree-file"></span>
+							<span class="tree-title">{$vo.area_name}</span>
+						   </div></td>
+						  <td>{$vo.sort}</td>
+						  <td>
+						   <div style="text-align:left;height:auto;padding-left:8px;" class="datagrid-cell datagrid-cell-c1-none">
+							  <a href="javascript:void (0)" onclick="ajax_edit({$vo.id})">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;
+							  <a href="javascript:void (0)" onclick="ajax_del({$vo.id})">删除</a>
+						   </div></td>
+						 </tr>
+					</volist>

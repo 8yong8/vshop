@@ -1,0 +1,195 @@
+<include file="Public:header" />
+<script>
+//搜索会员
+function get_members(){
+  var key = jQuery("#key").val();
+  jQuery.ajax({
+    type:"POST",
+	url: URL+"/get_members",
+	data:"key="+key,
+	success:function(msg){
+	 //alert(msg);
+	 var objs = eval('('+msg+')');
+	 var html = '<select name="member_id" id="member_id"><option value="0">选择</option>';
+	 for(i=0;i<objs.length;i++){
+	   if(i==0){
+	     html += '<option value='+objs[i].id+' selected>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }else{
+	     html += '<option value='+objs[i].id+'>'+objs[i].username+' | '+objs[i].realname+'</option>';
+	   }
+	 }
+	 html += '</select>';
+	 jQuery('#cidspan').html(html);
+	}
+  })
+}
+</script>
+<div class="content">
+<div class="title">编辑信息[ <A HREF="__URL__">返回列表</A> ] [ <A HREF="__URL__/look/id/{$Think.get.id}" target="_blank">查看详情</A> ]</div>
+<FORM METHOD=POST id="form1" action="__URL__/edit?<?php echo time(); ?>">
+<TABLE cellpadding=3 cellspacing=3 class="add">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+
+<TR>
+	<TD class="tRight">
+		&nbsp;购买者：</TD>
+	<TD  style="width:450px;">
+		{$vo.member_name} | {$vo.realname}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight">
+		&nbsp;出售：</TD>
+	<TD  style="width:450px;">
+		{$vo.user.username} | {$vo.user.realname}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付方式：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="payment_mode">
+		<OPTION VALUE="1" <eq name="vo.payment_mode" value="1">SELECTED</eq>>1</OPTION>
+		<OPTION VALUE="2" <eq name="vo.payment_mode" value="线下支付">SELECTED</eq>>线下支付</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >支付单位：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" NAME="payment_company" value="{$vo.payment_company}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >订单号：</TD>
+	<TD class="tLeft" >
+	<a href="__MODULE__/Order/index/" target="_blank" style="color:red">{$vo.order_id}</a>
+	</TD>
+</TR>
+
+
+<eq name="vo.status" value="0">
+
+<TR>
+	<TD class="tRight" >第三方订单号：</TD>
+	<TD class="tLeft" >
+	<input type="text" name="pay_order_id" id="pay_order_id" value="{$vo.pay_order_id}"> <span>支付宝、银行或由本站生成的交易号</span>
+	</TD>
+</TR>
+
+<else/>
+<TR>
+	<TD class="tRight" >支付交易号：</TD>
+	<TD class="tLeft" >
+	{$vo.pay_order_id} <span>支付宝、银行或由本站生成的交易号</span>
+	</TD>
+</TR>
+</eq>
+
+<TR>
+	<TD class="tRight" >交易类型：</TD>
+	<TD class="tLeft" >
+	<?php
+	  if($vo['type']==1){
+	    echo '商品';
+	  }else if($vo['type']==2){
+	    echo '1元云购';
+	  }else if($vo['type']==3){
+	    echo '兑换商品';
+	  }else if($vo['type']==4){
+	    echo '拍卖';
+	  }else if($vo['type']==5){
+	    echo '众筹';
+	  }
+	?>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易金额：</TD>
+	<TD class="tLeft" >
+	{$vo.total_fee}
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易状态：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="status">
+	  <option value="2" <eq name="vo.status" value="2">SELECTED</eq>>完成交易</option>
+	  <option value="1" <eq name="vo.status" value="1">SELECTED</eq>>完成支付</option>
+	  <option value="0" <eq name="vo.status" value="0">SELECTED</eq>>未支付</option>
+	  <option value="-1" <eq name="vo.status" value="-1">SELECTED</eq>>撤销</option>
+	</SELECT>
+	</TD>
+</TR>
+
+
+<TR>
+	<TD class="tRight" >物流状态：</TD>
+	<TD class="tLeft" >
+	<SELECT NAME="shipping_status">
+		<OPTION VALUE="2" <eq name="vo.shipping_status" value="2">SELECTED</eq>>已收货</OPTION>
+		<OPTION VALUE="1" <eq name="vo.shipping_status" value="1">SELECTED</eq>>已发货</OPTION>
+		<OPTION VALUE="0" <eq name="vo.shipping_status" value="0">SELECTED</eq>>未发货</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >物流公司：</TD>
+	<TD class="tLeft" >
+	<select name="shipping_id">
+		<volist name="shippings" id="ship">
+		<option value="{$ship.id}" <eq name="shipping.shipping_id" value="$ship.id">selected</eq> >{$ship.name}</option>
+		</volist>
+	</select>
+	<!--
+	<input type="text" name="shipping_company" id="shipping_company" value="{$vo.shipping_company}">
+	-->
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >物流单号：</TD>
+	<TD class="tLeft" >
+	<input type="text" name="shipping_no" id="shipping_no" value="{$shipping.shipping_no}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >交易内容：</TD>
+	<TD class="tLeft" >
+
+	<volist name="details" id="detail">
+	<div>
+	<img src="{$detail.lit_pic}"> 
+	<br/>名称:{$detail.product_name} 价格:{$detail.price} 数量:{$detail.num}
+	</div>
+	</volist>
+
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >备注：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="remark" ROWS="10" COLS="30">{$vo.remark}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD></TD>
+	<TD>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+<include file="Public:footer" /> 

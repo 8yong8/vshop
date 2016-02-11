@@ -1,0 +1,104 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<script>
+function typeck(){
+  var type = $('#type').val();
+  if(type=='radio' || type=='checkbox'){
+    $('#options').show();
+  }else{
+    $('#options').hide();
+  }
+
+}
+</script>
+<div id="main" class="main" >
+<div class="content">
+<div class="title">编辑表单信息 [ <A HREF="__URL__/listoption/id/{$vo.fid}">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/formupdate/" enctype="multipart/form-data" onsubmit="return ck();">
+<TR>
+	<TD colspan="2"><div id="result" class="result none"></div></TD>
+</TR>
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="medium bLeftRequire" NAME="title" value="{$vo.title}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >类型：</TD>
+	<TD class="tLeft" >
+	<select name="type" id="type" onchange="typeck()">
+	  <option value="text" <eq name="vo.type" value="text">selected="selected"</eq> >文本框(text)</option>
+      <option value="radio" <eq name="vo.type" value="radio">selected="selected"</eq> >单选(radio)</option>
+	  <option value="checkbox" <eq name="vo.type" value="checkbox">selected="selected"</eq> >复选框(checkbox)</option>
+	  <option value="textarea" <eq name="vo.type" value="textarea">selected="selected"</eq> >文本域(textarea)</option>
+	  <option value='password' <eq name="vo.type" value="password">selected="selected"</eq> >密码框(password)</option>
+	  <option value="select" <eq name="vo.type" value="select">selected="selected"</eq> >下拉框(select)</option>
+	  <option value='hidden' <eq name="vo.type" value="hidden">selected="selected"</eq> >隐藏域(hidden)</option>
+	</select>
+	</TD>
+</TR>
+
+<TR id="options">
+	<TD class="tRight" >选项：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="large bLeftRequire" NAME="options" value="{$vo.options}">
+	<font color="red">半角逗号分开</font>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >默认值：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="small bLeftRequire" NAME="defaultvalue" value="{$vo.defaultvalue}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >说明：</TD>
+	<TD class="tLeft" >
+	<TEXTAREA NAME="msg" ROWS="5" COLS="30">{$vo.msg}</TEXTAREA>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >排序：</TD>
+	<TD class="tLeft" >
+	<INPUT TYPE="text" class="small bLeftRequire" NAME="sort" value="{$vo.sort}">
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >是否必填：</TD>
+	<TD class="tLeft" >
+	是<INPUT TYPE="radio" NAME="ismust" value="1" <eq name="vo.ismust" value="1">checked="checked"</eq> >
+	否<INPUT TYPE="radio" NAME="ismust" value="0" <eq name="vo.ismust" value="0">checked="checked"</eq> >
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight" >是否为手机<br/>(需发短信时用)：</TD>
+	<TD class="tLeft" >
+	是<INPUT TYPE="radio" NAME="istel" value="1" <eq name="vo.istel" value="1">checked="checked"</eq> >
+	否<INPUT TYPE="radio" NAME="istel" value="0" <eq name="vo.istel" value="0">checked="checked"</eq> >
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD class="center">
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<INPUT TYPE="submit" value="保 存" class="button">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="../Public/footer" /> 

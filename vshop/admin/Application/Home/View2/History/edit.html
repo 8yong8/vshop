@@ -1,0 +1,159 @@
+<tagLib name="html" />
+<include file="../Public/header" />
+<script language="javascript" src="__PUBLIC__/jS/jquery.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+var imgurl = "{$imgurl}";
+//获取标签信息
+function gettags(){  
+  $.ajax({
+    type:"POST",
+	url:URL+'/getfolders',
+	data:"dir="+dir+"&vname="+vname+"&p="+p,
+	success:function(msg){
+	 $('#img').html(msg);
+	}
+  })
+}
+//插入分页
+function insertPage(){
+	var oEditor = FCKeditorAPI.GetInstance("content");
+	if (oEditor.EditMode==FCK_EDITMODE_WYSIWYG)
+	{
+	   oEditor.InsertHtml('[page]####[/page]');
+	}
+	else
+	{
+		return false;
+	}
+	return;
+}
+//缩略图
+function insertsl(dir){
+  var imgdir = dir;
+  $('#litpic').val(imgdir);
+  var img = "<img src='"+imgurl+imgdir+"' width='200px'>";
+  $('#showimg').html(img);
+  InsertHTML("<img src='"+imgurl+imgdir+"'>");
+}
+//内容
+function insertnr(dir){
+  var imgdir = dir;
+  var img = "<img src='"+imgurl+imgdir+"'>";
+	var oEditor = FCKeditorAPI.GetInstance("content");
+	if (oEditor.EditMode==FCK_EDITMODE_WYSIWYG)
+	{
+	   oEditor.InsertHtml(img);
+	}
+	else
+	{
+		return false;
+	}
+	return;
+}
+</SCRIPT>
+<div id="main" class="main" >
+<div class="content">
+<div class="title">编辑数据 [ <A HREF="__URL__">返回列表</A> ]</div>
+<TABLE cellpadding=3 cellspacing=3>
+<FORM METHOD=POST id="form1" action="__URL__/update/">
+<TR>
+	<TD class="tRight" >标题：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="large bLeftRequire"  check='Require' warning="标题不能为空" NAME="title" value="{$vo.title}"></TD>
+</TR>
+<TR>
+	<TD class="tRight" >简略标题：</TD>
+	<TD class="tLeft" ><INPUT TYPE="text" class="medium bLeftRequire"  check='Require' warning="标题不能为空" NAME="shorttitle"  value="{$vo.shorttitle}"></TD>
+</TR>
+<TR>
+	<TD class="tRight" >分类：</TD>
+	<TD class="tLeft" >
+	<select name="cid" id="cid">
+	<volist name="types" id="type">
+	<option value="{$type[id]}" <eq name="vo[cid]" value="$type[id]">selected</eq> >
+	{$type.name}</option>
+	</volist>
+	</select>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight">城市：</TD>
+	<TD class="tLeft">
+	<SELECT class="small bLeft"  NAME="status">
+	<volist name="ac_sites" id="site">
+	<option value="{$site.key}" <eq name="site.key" value="$vo.webset">
+	  selected = "selected"
+	</eq>>{$site.name}</option>
+	</volist>
+	</SELECT></TD>
+</TR>
+<TR>
+	<TD class="tRight" >属性：</TD>
+	<TD class="tLeft" >
+	<volist name="flags" id="flag" key="k">
+	<input name="flags[]" value="{$flag['id']}" type="checkbox"
+	<php>
+	if($vo['flags']){
+	  $ar = explode(',',$vo['flags']);
+	  if(array_search($flag['id'],$ar)!==false){
+	    echo 'checked="checked"';
+	  }
+	}
+	</php>
+	>{$flag['name']}&nbsp;
+	<php>
+	if($k%6==0){
+	  echo "<br>";
+	}
+	</php>
+	</volist>
+	</TD>
+</TR>
+<TR>
+	<TD class="tRight tTop">缩略图：</TD>
+	<TD class="tLeft">
+	<input id="litpic" name="litpic" class="medium" value="{$vo.litpic}">
+	宽:<input name="litpicwidth" value="95" class="small" value="{$vo.litpicwidth}">
+	高:<input name="litpicheight" value="70" class="small" value="{$vo.litpicheight}">
+	<input type="button" onclick="window.open('__URL__/ajax_upimg/jsdo/insertsl/hash/{$hash}')" class="button" value="上传缩略图">
+	<div id="showimg">
+	<neq name="vo.litpic" value="">
+	<img src="{$vo.litpic}" width="200px">
+	</neq>
+	</div>
+	</TD>
+</TR>
+
+<TR>
+	<TD class="tRight tTop">内 容：</TD>
+	<TD class="tLeft"><font color="red">	<input type="button" onclick="window.open('__URL__/ajax_upimg/jsdo/insertnr/hash/{$hash}')" class="button" value="上传图片"> 	<input type="button" class="button" value="插入分页符" onclick="insertPage();"></font></TD>
+</TR>
+<TR>
+	<TD class="tLeft" colspan="2" style="padding-left:80px">
+<html:editor type="fckeditor"  id="content" width="550px" height="245px" name="content"  content="{$vo['content']}"/>
+	</TD>
+</TR>
+<!--<TR>
+	<TD class="tRight tTop" >标签：</TD>
+	<TD class="tLeft"><INPUT TYPE="text" class="huge text"  NAME="tags" value="{$vo['tags']}"> <span style="color:gray">用逗号隔开多个标签</span></TD>
+</TR>-->
+<TR>
+	<TD class="tRight" ></TD>
+	<TD class="tLeft" >
+	<div id="yulan"></div>
+	</TD>
+</TR>
+
+<TR>
+	<TD ></TD>
+	<TD class="center"><INPUT TYPE="hidden" name="id" value="{$vo[id]}" >
+	<INPUT TYPE="submit" value="保 存" class="button" >
+	<INPUT TYPE="reset" class="button" value="清 空" >
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</div>
+</div>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="../Public/footer" /> 

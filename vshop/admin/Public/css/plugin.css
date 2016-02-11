@@ -1,0 +1,76 @@
+/**
+ * 插件管理
+ */
+.soft h1{list-style: none;font-size: 18px;}
+.m10{margin-top: 10px;}
+.plugbox{}
+.plugbox li{
+	float: left;
+	width: 318px;
+	height: 115px;
+	border: 1px solid #e1e1e1;
+	margin-right: 30px;
+	margin-top: 10px;
+	background: #FFFFFF;
+	padding-bottom: 7px;
+}
+.plugSoft{
+	height: 70px;
+	width:70px;
+	margin: 0px 10px;
+	line-height: 70px;
+	border: 1px solid #e1e1e1;
+}
+.plugSoft img{
+	vertical-align: middle;
+	text-align: center;
+	border: none;
+	height: 70px;
+	width:70px;
+}
+.newPlug1{display: inline-block;}
+.newPlug,.newPlug1{color: #ff6600;}
+.newPlug:hover,.return_plug:hover{text-decoration: underline;}
+.plug_btn a.systemC{background: #cb2d01;}
+.plug_btn a.delC{background: #636363;}
+.plug_btn a{
+	margin-top: 10px;
+	display: block;
+	width: 54px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #FFFFFF;
+	background: #417fb7;
+	float: right;
+	margin-right: 5px;
+}
+.plug_btn a:hover{text-decoration: underline;}
+.soft{width: 180px;}
+.soft_title {
+	height: 45px;
+	line-height: 40px;
+}
+.soft h1,.soft a,.soft p{
+	width: 180px;
+	overflow: hidden;
+}
+.soft h1{height: 30px;}
+.soft a{height: 15px;display: inline-block;}
+.soft p{height: 22px;line-height: 22px;}
+/*卸载*/
+.plugDel{
+	cursor: pointer;
+	display: block;
+	width: 42px;
+	height: 15px;
+	text-indent: 15px;	
+	line-height: 17px;
+	background: url(../../images/del_03.png) no-repeat left center;
+}
+.plugDel:hover{
+	text-decoration: underline;
+}
+.Plug_head{width: 100%;}
+.site a.return_plug{color: #2d689f;}
+.mL40{margin-left: 40px;}

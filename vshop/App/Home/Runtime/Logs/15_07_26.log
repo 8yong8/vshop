@@ -1,0 +1,414 @@
+[ 2015-07-26T01:24:40+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002615s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002744s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003911s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_free,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000488s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T01:26:22+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001580s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005420s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000082s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_free,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000356s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T01:29:58+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002871s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003038s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004943s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000128s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_free,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.001214s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T01:29:58+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001762s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001848s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004059s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_free,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000515s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T01:29:58+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001851s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.006107s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000109s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_free,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000498s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T01:29:59+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001818s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001943s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004084s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000228s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000293s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_free,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.001423s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T01:29:59+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001813s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001903s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003812s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_free,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.003009s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T01:29:59+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001786s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001877s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001754s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003676s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_free,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000684s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T08:10:54+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002485s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002584s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002343s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003388s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000197s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000755s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000738s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T08:11:07+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002319s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002540s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003440s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000116s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 97 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 100 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000393s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000463s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T08:11:16+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002693s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002478s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003325s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000103s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.001140s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T08:11:27+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003303s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003401s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002146s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004352s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000089s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000145s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000383s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T08:57:35+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002396s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002498s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002417s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005825s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000103s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000953s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T09:46:01+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002026s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002118s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002850s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.004061s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000104s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.payment_company,a.payment_channel,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.001504s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T09:58:19+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002362s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002458s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002231s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003803s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000097s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.payment_company,a.payment_channel,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000980s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T10:01:35+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002022s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002118s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002715s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005104s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000105s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.payment_company,a.payment_channel,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000476s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T10:01:39+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003325s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003479s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003422s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003776s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000328s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 101 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000852s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.payment_company,a.payment_channel,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.000484s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+
+[ 2015-07-26T10:02:15+08:00 ] 127.0.0.1 /guoji/yunwang/api/Order
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001912s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001995s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+NOTIC: [2048] Declaration of OrderAction::_search() should be compatible with that of CommonAction::_search() D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 2 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003388s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM zy_order as a [ RunTime:0.000095s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM zy_order as a
+NOTIC: [8] Undefined index: order_id D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 99 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 102 行.
+NOTIC: [8] Undefined variable: asc D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM zy_order as a WHERE ( a.member_id = '107' ) LIMIT 1   [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: page_size D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 28 行.
+SQL: SELECT a.id,a.title,a.order_id,a.payment_mode,a.payment_company,a.payment_channel,a.total_fee,a.bond,a.site_pay,a.other_pay,a.create_time,a.status,b.product_id,b.product_name,b.item_id,b.lit_pic,b.price,b.num,b.status as item_status,c.attr_name,c.product_attr_value,c.price as item_price FROM `zy_order` as a LEFT JOIN `zy_order_detail` as b on a.id=b.order_id LEFT JOIN `zy_product_item` as c on b.item_id=c.id WHERE ( a.member_id = '107' ) ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.001160s ]
+NOTIC: [8] Undefined variable: total_fee D:\wamp\www\guoji\yunwang\Api\Home\Lib\Action\OrderAction.class.php 第 55 行.
+

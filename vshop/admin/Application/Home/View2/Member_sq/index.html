@@ -1,0 +1,75 @@
+<include file="Public:header" />
+<script>
+function showmsg(id){
+  //alert(id);
+	art.dialog.open('__MODULE__?m=Member_sq&a=show&id='+id,{lock:false,title:'查看申请信息',width:800,height:600,yesText:'关闭',background: '#000',opacity: 0.87});
+}
+</script>
+<!-- 内容区 -->
+<div class="content">
+	<div class="site">
+		{:C('site_name')} {$board_title} > {$node_title}
+	</div>
+	<span class="line_white"></span>
+	<div class="goods mt10">
+	  <div class="guanli">
+	    <FORM METHOD=get ACTION="__URL__">
+		<TABLE cellpadding="1" cellspacing="2" width="100%">
+		<TR>
+			<TD class="tRight">用户ID：</TD>
+			<TD><INPUT TYPE="text" NAME="member_id" class="small" value="{$member_id}"></TD>
+			<TD class="tRight">用户名：</TD>
+			<TD><INPUT TYPE="text" NAME="member_name" class="width120" value="{$member_name}"></TD>
+			<TD>
+			<input type="submit" value="提交" class="button_search">
+			</TD>
+		</TR>
+		</TABLE>
+		</FORM>
+	  </div>
+	<dl class="mt10">
+		<dd>
+			<div class="login mt10" style="border: none;">
+				<div class="panel datagrid easyui-fluid" style="width: 100%;">
+				<div class="datagrid-wrap panel-body panel-body-noheader" title="" style="width: 99.8%;">
+				  <div class="datagrid-view">
+					<table id="checkList" class="list" cellpadding=0 cellspacing=0 >
+					<tr class="row" >
+					  <th width="13%"><a href="javascript:sortBy('id','1','index')" title="按照编号升序排列 ">用户名</a></th>
+					  <th>申请类型</th>
+					  <th>申请信息</th>
+					  <th>状态</th>
+					</tr>
+					<volist name="list" id="vo" mod="2">
+					<tr class="row">
+					  <td>{$vo.member_name}</td>
+					  <td>
+					  {$vo.type|rs='1#会员#black@2#战略合作商#blue@3#合作商#red@4#分销商'}
+					  </td>
+					  <td>
+					  <eq name="vo.status" value="0">
+					  <a href="javascript:showmsg('{$vo.id}');">查看信息并操作</a>
+					  <else/>
+					  <strong>{$vo.remark}</strong> <a href="javascript:showmsg('{$vo.id}');">查看信息</a>
+					  </eq>
+					  </td>
+					  <td>{$vo.status|rs='0#待审核#red@1#审核通过#blue@-1#驳回#red'}</td>
+					</tr>
+					</volist>
+					</table>  
+					<!--  分页显示区域 -->
+					  <div class="datagrid-pager pagination">
+					   <div class="page" style="float:left">{$page}</div>
+					   <div class="pagination-info">
+						共{$count}条记录
+					   </div>
+					   <div style="clear:both;"></div>
+					  </div>
+				  </div>
+			
+			<div class="clear"></div>
+		</dd>
+	</dl>
+<!-- /内容区 -->
+</div>
+<include file="Public:footer" />  

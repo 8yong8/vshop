@@ -1,0 +1,69 @@
+<include file="Public:header" />
+<style>
+/*查询结果框*/
+.result-info2 {
+	width: 580px;
+	border: 1px solid #90bfff
+}
+
+.result-info2 td {
+	padding: 10px;
+	color: #878787;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #fbfbfb
+}
+</style>
+<script>
+function show(id){
+  $('#'+id).toggle();
+}
+
+function oCopy(){
+obj = document.getElementById('duanxin');
+obj.select(); 
+js=obj.createTextRange(); 
+js.execCommand("Copy")
+alert("复制成功!"); 
+} 
+
+</script>
+<div class="content">
+<style>
+#zx td{
+  border:1px red solid;
+}
+#list td{
+border:1px blue solid;
+}
+</style>
+  <div class="title">操作详细记录 [ <A HREF="__URL__">返回列表</A> ]</div>
+	<TABLE cellpadding=3 cellspacing=3 id="zx" class="add" style="min-width:680px;">
+	<TR>
+	<TH>模块</TH><td>{$vo.model|getmodelname}</td>
+	</TR>
+	<TR>
+	<TH>操作</TH><td>{$vo.action|getactionname}</td>
+	</TR>
+	<TR>
+	<TH>ID</TH><td>{$vo.sourceid}</td>
+	</TR>
+	<TR>
+	<TH>操作员</TH><td>{$vo.username}</td>
+	</TR>
+	<TR>
+	<TH>信息</TH>
+	<td>
+	<table class="list result-info2" id="list" cellpadding=0 cellspacing=0>
+	<?php 
+	$array = unserialize($vo['info']);
+	//dump($array);
+	foreach($array as $key=>$val){
+	  echo '<tr><td>'.$key.':</td><td>'.$val.'</td></tr>';
+	}
+	?>
+	</table>
+	</td>
+	</TR>
+	<TR>
+	</TABLE>
+<include file="Public:footer" /> 

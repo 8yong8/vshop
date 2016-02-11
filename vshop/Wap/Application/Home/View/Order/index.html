@@ -1,0 +1,80 @@
+<include file="Public:header" />
+<script type="text/javascript" src="__PUBLIC__/js/apply/order.js"></script>
+
+<div class="menu">
+   <a class="back" href="__APP__/Member"><img src="__PUBLIC__/images/menu_back.png"></a>
+   <div class="tit">我的订单</div>
+   <a class="nav_kf" href="#"><img src="__PUBLIC__/images/btn_kf.png"></a>
+</div>
+<div class="order">
+    <div class="my_order2">
+       <ul>
+          <li><a href="__APP__/Order"  <eq name="status" value="">class="cur"</eq> >全部</a></li>
+          <li><a href="__APP__/Order?status=1" <eq name="status" value="1">class="cur"</eq> >待付款</a></li>
+          <li><a href="__APP__/Order?status=2" <eq name="status" value="2">class="cur"</eq> >待发货</a></li>
+          <li><a href="__APP__/Order?status=3" <eq name="status" value="3">class="cur"</eq> >待收货</a></li>
+          <li><a href="__APP__/Order?status=4" <eq name="status" value="4">class="cur"</eq> >待评价</a></li>
+          <li><a href="__APP__/Order?status=5" <eq name="status" value="5">class="cur"</eq> >退款</a></li>
+       </ul>
+    </div>
+	<volist name="list" id="order">
+    <div class="o_list">
+       <div class="order_num2"><em>{$order.status_name}</em>订单号：{$order.order_sn}</div>
+	   <volist name="order.items" id="item" key="k">
+       <div class="o_box">
+           <div class="o_price">￥{$item.price}<p>x{$item.num}</p></div>
+           <div class="o_img"><img src="{$item.lit_pic}"></div>
+           <div class="o_name"><p>{$item.product_name}</p></div>
+		   <?php if(($order['payment_mode']==2 && $order['delivery_status']==1) ||($order['payment_mode']==1 && $item['refund_status']==0 && $order['pay_status']==1)){  ?>
+			<!-- 
+			退货申请：[先发货后支付  && 已发货] || [先支付后发货 && 无退货 && 已支付]
+			-->
+		   <div class="o_price" style="margin-top:35px;"><input type="button" value="申请退货" class="btn_qxdd" style="width:55px;height:20px;font-size: 12px;" onclick="refund('{$order.order_sn}_<?php echo $item['id']+8000; ?>');"></div>
+		   <?php }else if($item['refund_status']==1){ ?>
+		   <div class="o_price" style="margin-top:35px;"><font color="red">退款申请待确认</font></div>
+		   <?php }else if($item['refund_status']==2){ ?>
+		   <!--
+		   <div class="o_price" style="margin-top:35px;"><font color="red" onclick="refund('{$item.id}');">填写退货单</font></div>
+		   -->
+		   <div class="o_price" style="margin-top:35px;"><input type="button" value="填写退货单" class="btn_qxdd" style="width:65px;height:20px;font-size: 12px;border: 1px solid red;color: red;" onclick="return_item('{$order.order_sn}_<?php echo $item['id']+8000; ?>');"></div>
+		   <?php }else if($item['refund_status']==3){ ?>
+		   <div class="o_price" style="margin-top:35px;"><font color="red">待确认退货</font></div>
+		   <?php }else if($item['refund_status']==4){ ?>
+		   <div class="o_price" style="margin-top:35px;"><font color="red">确认退货,待退款</font></div>
+		   <?php }else if($item['refund_status']==5){ ?>
+		   <div class="o_price" style="margin-top:35px;"><font color="red">完成退货</font></div>
+		   <?php }else if($item['refund_status']==-1){ ?>
+		   <div class="o_price" style="margin-top:35px;"><font color="red">拒绝退款</font></div>
+		   <?php } ?>
+       </div>
+	   </volist>
+       <div class="o_fkinfo">
+          共{$order.item_count}件商品 <i>实付</i> <span>￥{$order.actual_paid}</span>
+       </div>
+       <div class="fk_btnbox">
+	   <neq name="order.status" value="-1">
+	   <?php if($order['state']==0){ ?>
+	   <input type="button" value="取消订单" class="btn_qxdd" onclick="cancel('{$order.order_sn}');">
+	   <input type="button" value="付款" class="btn_fk2" onclick="payment('{$order.order_sn}');">
+	   <?php }else if($order['state']==1){ ?>
+	   <!--<input type="button" value="退款" class="btn_qxdd" onclick="refund('{$order.order_sn}');">-->
+	   <?php }else if($order['state']==2){ ?>
+	   <input type="button" value="查看物流" class="btn_qxdd" onclick="shipping({$order.order_sn});">
+	   <input type="button" value="确认收货" class="btn_fk2" onclick="finish('{$order.order_sn}');">
+	   <?php }else if($order['state']==3){ ?>
+	   <input type="button" value="删除订单" class="btn_qxdd" onclick="del('{$order.order_sn}');">
+	   <eq name="order.is_rate" value="0">
+	   <input type="button" value="评价订单" class="btn_qxdd" onclick="feedback('{$order.order_sn}');">
+	   </eq>
+	   <?php }?>
+	   <else/>
+	   <input type="button" value="删除订单" class="btn_qxdd" onclick="del('{$order.order_sn}');">
+	   </neq>
+	   <!--
+	   <input type="button" value="填写退货单" class="btn_qxdd" onclick="return_product('{$order.order_sn}');">
+	   -->
+	   </div>
+    </div>
+	</volist>
+</div>
+<include file="Public:footer" /> 

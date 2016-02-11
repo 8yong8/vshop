@@ -1,0 +1,211 @@
+<include file="Public:header" />
+<load href="__PUBLIC__/Js/WdatePicker/WdatePicker.js" />
+<script language="JavaScript">
+function setlatlng(longitude,latitude){
+
+	art.dialog.data('longitude', longitude);
+
+	art.dialog.data('latitude', latitude);
+
+	art.dialog.open('__APP__?m=Map&a=setLatLng',{lock:false,title:'设置经纬度',width:600,height:400,yesText:'关闭',background: '#000',opacity: 0.87});
+
+}
+
+</script>
+<div class="content">
+<div class="title">编辑帐号 [ <a href="__URL__">返回列表</a> ]</div>
+<form method='post' id="form1" action="__URL__/agent_edit?<?php echo time(); ?>" enctype="multipart/form-data" onsubmit="return check();">
+<table cellpadding=3 cellspacing=3 class="add">
+
+<tr>
+	<td class="tRight" >用户信息：</td>
+	<td class="tLeft" >
+	<font color="red">用户名：{$vo.username} 联系电话：{$vo.tel} </font>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >商家名称：</td>
+	<td class="tLeft" >
+	<input type="text" class="medium bLeft" name="company" value="{$vo.company}">
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >企业LOGO：</td>
+	<td class="tLeft" ><input type="file" name="sup_logo" onchange="yulan(this,'show2')">
+	<div id="show2">
+	<neq name="vo.sup_logo" value="">
+	<img src="{$vo.sup_logo}" width="100px;">
+	</neq>
+	</div>
+	</td>
+</tr>
+
+<eq name="vo.utype" value="2">
+<tr>
+	<td class="tRight" >分成：</td>
+	<td class="tLeft" >
+	广告分成比例：<input type="text" class="medium bLeft" name="ad_pct" value="{$vo.ad_pct}"><font color="red">(百分比,填写整数;30即为30%的佣金)</font><br/>
+	产品分成比例：<input type="text" class="medium bLeft" name="goods_pct" value="{$vo.goods_pct}"><br/>
+	VIP分成比例&nbsp;&nbsp;：<input type="text" class="medium bLeft" name="vip_pct" value="{$vo.vip_pct}"><br/>
+	</td>
+</tr>
+</eq>
+
+<eq name="vo.utype" value="5">
+<tr>
+	<td  class="password_font1">地区：</td>
+	<td  class="password_font1">
+	<SELECT name="agent_pv_id" id="province"  size=1 onchange="pvchange(this);">   
+		<OPTION>请选择</OPTION>
+		<volist name="pvlist" id="pv">
+		<OPTION value="{$pv.id}" <eq name="vo.agent_pv_id" value="$pv.id">selected</eq>>{$pv.class_name}</OPTION>
+		</volist>
+	</SELECT>
+	<span>
+	<SELECT name="agent_ct_id" id="city" size=1 onchange="ctchange(this);">   
+		<OPTION>请选择</OPTION>
+		<volist name="ctlist" id="ct">
+		<OPTION value="{$ct.id}" <eq name="vo.agent_ct_id" value="$ct.id">selected</eq>>{$ct.class_name}</OPTION>
+		</volist>
+	</SELECT>
+	</span>
+	<span>
+	<SELECT name="agent_dist_id" id="district" size=1>   
+		<OPTION>请选择</OPTION>
+		<volist name="districts" id="ct">
+		<OPTION value="{$ct.id}" <eq name="vo.agent_dist_id" value="$ct.id">selected</eq>>{$ct.class_name}</OPTION>
+		</volist>
+	</SELECT>
+	</span>
+	<INPUT TYPE="hidden" NAME="agent_province" id="post_pv">
+	<INPUT TYPE="hidden" NAME="agent_city" id="post_ct">
+	<INPUT TYPE="hidden" NAME="agent_district" id="post_district">
+	</td>
+</tr>
+<script>
+  function check(){
+	var pv = jQuery('#province option:selected').text();
+	var ct = jQuery('#city option:selected').text();
+	var district = jQuery('#district option:selected').text();
+	//alert(bus_lv_name);return false;
+	if(!pv || pv=='请选择'){
+	  alert('省必须选择!');
+	  return false;
+	}
+	if(!ct || ct=='请选择'){
+	  alert('市必须选择!');
+	  return false;
+	}
+	if(!district || district=='请选择'){
+	  alert('区域必须选择!');
+	  return false;
+	}
+	jQuery('#post_pv').val(pv);
+	jQuery('#post_ct').val(ct);
+	jQuery('#post_district').val(district);
+	return true;
+  }
+
+  //显示城市
+  function pvchange(){
+	var pid = jQuery('#province').val();
+	jQuery.ajax({
+	   type: "POST",
+	   url: "__URL__/get_city",
+	   data: "pid="+pid,
+	   success: function(msg){
+		 var objs = eval('('+msg+')');
+		 //var html = '<select id="city" name="ct_id">';
+		 var html = '';
+		 for(i=0;i<objs.length;i++){
+			//html += '<option value='+objs[i].id+'>'+objs[i].class_name+'</option>';
+			if(i==0){
+			   html += '<option value='+objs[i].id+' selected>'+objs[i].class_name+'</option>';
+			}else{
+			   html += '<option value='+objs[i].id+'>'+objs[i].class_name+'</option>';	
+			}
+		 }
+		 //html += '</select>';
+		 jQuery('#city').html(html);
+		 ctchange();
+	   }
+	}); 
+  }
+
+  //显示区域
+  function ctchange(){
+	var pid = jQuery('#city').val();
+	jQuery.ajax({
+	   type: "POST",
+	   url: "__URL__/get_district",
+	   data: "pid="+pid,
+	   success: function(msg){
+		 var objs = eval('('+msg+')');
+		 //var html = '<select id="city" name="ct_id">';
+		 var html = '';
+		 for(i=0;i<objs.length;i++){
+			html += '<option value='+objs[i].id+'>'+objs[i].class_name+'</option>';
+		 }
+		 //html += '</select>';
+		 jQuery('#district').html(html);
+	   }
+	}); 
+  }
+</script>
+</eq>
+
+<tr>
+	<td class="tRight" >公司地址：</td>
+	<td class="tLeft" ><input type="text" class="medium bLeft" name="company_address" value="{$vo.company_address}"></td>
+</tr>
+
+<tr>
+	<td class="tRight" >行业：</td>
+	<td class="tLeft" >
+	<SELECT NAME="tid">
+	  <volist name="tlist" id="type">
+	  <OPTION value="{$type.id}" <eq name="vo.tid" value="$type.id">SELECTED</eq>>{$type.name}</OPTION>
+	  </volist>
+	</SELECT>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >经纬度：</td>
+	<td class="tLeft" >
+	经度 <input type="text" id="longitude" name="longitude" size="14" class="px" value="{$vo.longitude}"> 纬度 <input type="text" name="latitude" size="14" id="latitude" class="px" value="{$vo.latitude}"> <a href="###" onclick="setlatlng($('#longitude').val(),$('#latitude').val())">在地图中查看/设置</a>
+	<a href="http://api.map.baidu.com/lbsapi/getpoint/" target="_blank">百度坐标拾取</a>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight" >营业执照：</td>
+	<td class="tLeft" ><input type="file" name="certificate" onchange="yulan(this,'show1')">
+	<div id="show1">
+	<neq name="vo.certificate" value="">
+	<img src="{$vo.certificate}" width="200px;">
+	</neq>
+	</div>
+	</td>
+</tr>
+
+<tr>
+	<td class="tRight tTop">公司简介：</td>
+	<td class="tLeft">
+	<myhtml:editor type="KINDEDITOR"  id="about" name="about" width="650px" height="345px" items="base">{$vo.about}</myhtml:editor>
+	</td>
+</tr>
+
+
+<tr>
+	<td></td>
+	<td>
+	<INPUT TYPE="hidden" NAME="id" value="{$vo.id}">
+	<input type="submit" value="保 存" class="button">
+	</td>
+</tr>
+</table>
+</form>
+<include file="Public:footer" />

@@ -1,0 +1,195 @@
+/*云检测页面*/
+@charset "utf-8";
+.yuntest-box {
+	height: 200px;
+	border-bottom: 1px solid #dfdfdf;
+	max-width: 1024px;
+}
+.yun-mac{
+	width: 190px;
+	height: 160px;
+	text-align: center;
+	line-height: 150px;
+	background: url("../../images/admin/yun-mac-img.png") no-repeat 5px 15px;
+}
+.yun-text{height: 150px;}
+.test-word-t{
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 35px;
+}
+.test-word-t-p {
+	margin-left: 20px;
+	height: 40px;
+	line-height: 20px;
+	margin-top: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
+	width: 450px;
+}
+.test-btn1,.test-btn2{
+	font-family: "微软雅黑";
+	margin-left: 160px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 37px;
+	font-size: 16px;
+	color: #eeeeee;
+	width: 116px;
+	display: block;
+	height: 37px;
+	border: 1px solid #2d689f;
+	background: url("../../images/admin/testsafeimg.png") no-repeat;
+}
+.test-btn1:hover,.test-btn1.hover,.test-btn2{
+	background: url("../../images/admin/testsafe-cur.png") no-repeat;
+}
+/*检测项*/
+.test-jsct .testpro-btn {
+	min-height: 35px;
+	border-top: 1px solid #FFFFFF;
+}
+.test-jsct span {
+	display: inline-block;
+}
+.test-jsct span a:hover{
+	color: #005ABD;
+}
+.test-jsct li {
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #d2e2ed;
+}
+.test-jsct .testpro-t {
+	min-width: 110px;
+	text-align: right;
+	color: #000000;
+}
+.test-jsct .testpro-explain {
+	width: 340px;
+	color: #636363;
+}
+.test-jsct .testpro-btn{
+	cursor: pointer;
+	min-width: 76px; 
+	height: 23px;
+	background: url("../../images/admin/testpro-btn.png") no-repeat;
+	line-height: 23px;
+	text-align: center;
+	color: #000000;
+}
+/*检测提示-正常*/
+.testpro-btn2{
+	min-width: 76px; 
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: #2d650b;
+}
+/*检测提示-正在检测*/
+.testpro-btn3{
+	min-width: 76px; 
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: #417eb7;
+}
+/*未检测*/
+.testpro-btn4{
+	min-width: 76px; 
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: #df1d1d;
+}
+
+.test-jsct .testpro-btn:hover{
+	text-decoration: underline;
+}
+.test-day{color: #FF0000;}
+
+/*检测完成-安全*/
+.test-safe{display: none;}
+/*从未检测*/
+.never-test{display: none;}
+/*一段时间未检测*/
+.atime-notest{display: none;}
+/*检测完成-不安全*/
+.test-nosafe{display: none;}
+/*正在检测*/
+.test-ing{display: block;}
+
+.test-num {
+	font-size: 40px;
+	font-weight: bold;
+	color: #F1F1F1;
+}
+.test-number-pb {
+	margin-left: 20px;
+	margin-top: 15px;
+	width: 500px;
+	height: 30px;
+	margin-top: 20px;
+	line-height: 30px;
+	background: url("../../images/admin/test-number-img1.png")no-repeat;
+}
+.test-score{
+	width: 0%;
+	height: 15px;
+	margin-top: 10px;
+	background-image: url("../../images/admin/test-score.png");
+}
+/*.number-pb {
+	width: 500px;
+	height: 20px;
+	background: url("../../images/admin/test-number-img.png")no-repeat;
+}*/
+.tsst-percent{
+	display: inline-block;
+	margin-top: 5px;
+	height: 20px;
+	font-size: 16px;
+	color: #F57E20;
+	margin-left: 10px;
+}
+.nosafe {
+	width: 15px;
+	height: 51px;
+	position: absolute;
+	top:80px;
+	left: 105px;
+	background: url("../../images/admin/unsafe-test.png") no-repeat;
+}
+.safe {
+	position: absolute;
+	top:80px;
+	left: 90px;
+	width: 54px;
+	height: 51px;
+	background: url("../../images/admin/safe-test.png") no-repeat;
+}
+.upversion img{margin-left: 10px;}
+.test-success-btn{
+	min-width: 76px; 
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: #417eb7;
+}
+.test-normal-btn{
+	min-width: 76px; 
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: #417eb7;
+}
+.test-error-btn{
+	min-width: 76px; 
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: red;
+}

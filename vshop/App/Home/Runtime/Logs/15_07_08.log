@@ -1,0 +1,1008 @@
+[ 2015-07-08T21:05:47+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000960s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001666s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002311s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003948s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.004069s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002404s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000363s ]
+
+[ 2015-07-08T21:05:57+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000707s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002635s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.004299s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002574s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002607s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000319s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000273s ]
+
+[ 2015-07-08T22:54:23+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002342s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003904s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.004513s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002274s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000585s ]
+
+[ 2015-07-08T22:54:35+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000738s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003893s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.002364s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002255s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000184s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002271s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000288s ]
+
+[ 2015-07-08T22:54:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000730s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003735s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.002459s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002578s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002771s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000262s ]
+
+[ 2015-07-08T22:54:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000686s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002356s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.002396s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002401s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002461s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000265s ]
+
+[ 2015-07-08T22:54:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000930s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002391s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.002344s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002302s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002918s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000417s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000340s ]
+
+[ 2015-07-08T22:54:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002359s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003398s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002598s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002224s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000267s ]
+
+[ 2015-07-08T22:54:36+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000719s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002900s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003194s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002348s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002242s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000270s ]
+
+[ 2015-07-08T22:54:37+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000913s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002462s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.002383s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.003215s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.003065s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000271s ]
+
+[ 2015-07-08T22:54:37+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000662s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.005097s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.002541s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002405s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002268s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000447s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000654s ]
+
+[ 2015-07-08T22:54:37+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000718s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002593s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.003756s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002404s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002254s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000284s ]
+
+[ 2015-07-08T22:54:37+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.003425s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.002403s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002564s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.003578s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000283s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000269s ]
+
+[ 2015-07-08T22:54:37+08:00 ] 127.0.0.1 /guoji/yunwang/api/Product/detail/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000695s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\CommonAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `zy_member_token` [ RunTime:0.002331s ]
+SQL: SELECT b.* FROM `zy_member_token` as a LEFT JOIN `zy_member` as b on a.member_id=b.id WHERE ( a.token = 'a14782764160fe8905a69b22ccb84eb2' ) AND ( b.status = 1 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `zy_product` [ RunTime:0.002652s ]
+SQL: SELECT * FROM `zy_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `zy_pic` [ RunTime:0.002968s ]
+SQL: SELECT `domain`,`filepath`,`savename` FROM `zy_pic` WHERE ( `source` = 'Product' ) AND ( `sourceid` = 3 )  [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `zy_product_item` [ RunTime:0.002305s ]
+SQL: SELECT * FROM `zy_product_item` WHERE ( `source` = 'Product' ) AND ( `product_id` = 3 )  [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 216 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 37 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 40 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 42 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 25 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 36 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 217 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 46 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+NOTIC: [8] Undefined index: 218 D:\wamp\www\guoji\yunwang\Api\AppApi\Lib\Action\ProductAction.class.php 第 125 行.
+SQL: SELECT a.*,b.attr_name FROM `zy_product_attr` as a LEFT JOIN `zy_attribute` as b on a.attr_id=b.id WHERE ( `product_id` = '3' ) AND ( a.id IN ('24','38','35','37','40','42','25','36','46') )  [ RunTime:0.000267s ]
+
