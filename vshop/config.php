@@ -28,7 +28,7 @@ return array(
     'COOKIE_PREFIX'         => 'gj',    // Cookie前缀 避免冲突
 	'SESSION_LIFETIME'=>10800, //session有效期
 	'VAR_PAGE'=>'p',//分页标签
-    //'ERROR_PAGE'    => 'http://www.137home.com/error/',
+    //'ERROR_PAGE'    => 'http://localhost/gh/vshop/admin',
 	'TOKEN_ON'              =>false,
     'sign'                  =>'H9UImivKbqmzh653s5wKaB3sMDgCrEqi',//签名
 	'site_company'          =>'浙江vion网络科技有限公司',
