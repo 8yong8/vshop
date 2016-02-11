@@ -2,7 +2,7 @@
 $config	=	require '../config.php';
 $site_config_dir = $config['PUBLIC_CACHE'].'config/list.php';
 $array	=	array(
-    /* 运行时间设置 */
+    /* 调试模式 */
     'SHOW_RUN_TIME'			=> false,   // 运行时间显示
     'SHOW_ADV_TIME'			=> false,   // 显示详细的运行时间
     'SHOW_DB_TIMES'			=> false,   // 显示数据库查询和写入次数
