@@ -9,17 +9,17 @@ return array(
 	'DB_PORT'=>'3306',
 	'DB_PREFIX'=>'zy_',
 	'DB_CHARSET' =>  'UTF8',  //数据库编码
-	'ROOT_SITE_DIR'=>'D:\wamp\www\gh\vshop/',	//跟网站目录
-	'SITE_URL'=>'http://localhost/gh/vshop/wap',	//默认网站URL
-	'WAP_URL'=>'http://localhost/gh/vshop/wap',	//wap网站URL
-	'PC_URL'=>'http://localhost/gh/vshop/pc',		//pc网站URL
-	'API_URL'=>'http://localhost/gh/vshop/BaseApi',//API接口URL
-	'MEMBER_SITE_URL'=>'http://localhost/gh/vshop/member',//会员地址
-	'STATIC_SITE_URL'=>'http://localhost/gh/vshop/static',//静态文件地址
-	'IMG_ROOT'=>'D:\wamp\www\gh\vshop\img0/',     //图片上传路径
-	'IMG_URL'=>'http://localhost/gh/vshop/img0/', //图片地址
-	'PUBLIC_INCLUDE'=>'D:\wamp\www\gh\vshop\include/', //公共库目录
-	'INTERFACE_PATH'=>'D:\wamp\www\gh\vshop\interface/',//接口路径
+	'ROOT_SITE_DIR'=>'D:\wamp\www\git\vshop/',	//跟网站目录
+	'SITE_URL'=>'http://localhost/git/vshop/wap',	//默认网站URL
+	'WAP_URL'=>'http://localhost/git/vshop/wap',	//wap网站URL
+	'PC_URL'=>'http://localhost/git/vshop/pc',		//pc网站URL
+	'API_URL'=>'http://localhost/git/vshop/BaseApi',//API接口URL
+	'MEMBER_SITE_URL'=>'http://localhost/git/vshop/member',//会员地址
+	'STATIC_SITE_URL'=>'http://localhost/git/vshop/static',//静态文件地址
+	'IMG_ROOT'=>'D:\wamp\www\git\vshop\img0/',     //图片上传路径
+	'IMG_URL'=>'http://localhost/git/vshop/img0/', //图片地址
+	'PUBLIC_INCLUDE'=>'D:\wamp\www\git\vshop\include/', //公共库目录
+	'INTERFACE_PATH'=>'D:\wamp\www\git\vshop\interface/',//接口路径
 	'APP_DOMAIN'=>'', //cookie域名设置
     /* Cookie设置 */
     'COOKIE_EXPIRE'         => 60*60*24*30,    // Coodie有效期
@@ -28,7 +28,7 @@ return array(
     'COOKIE_PREFIX'         => 'gj',    // Cookie前缀 避免冲突
 	'SESSION_LIFETIME'=>10800, //session有效期
 	'VAR_PAGE'=>'p',//分页标签
-    //'ERROR_PAGE'    => 'http://localhost/gh/vshop/admin',
+    //'ERROR_PAGE'    => 'http://localhost/git/vshop/admin',
 	'TOKEN_ON'              =>false,
     'sign'                  =>'H9UImivKbqmzh653s5wKaB3sMDgCrEqi',//签名
 	'site_company'          =>'浙江vion网络科技有限公司',
@@ -44,7 +44,7 @@ return array(
 	'DATA_CACHE_TYPE'       => 'Memcache',  // 数据缓存类型,
 	'MEMCACHE_HOST'  => 'tcp://localhost:11211',
     */
-    'DATA_CACHE_PATH'       => 'D:\wamp\www\gh\vshop\Cache/',// 缓存路径设置 (仅对File方式缓存有效)
+    'DATA_CACHE_PATH'       => 'D:\wamp\www\git\vshop\Cache/',// 缓存路径设置 (仅对File方式缓存有效)
     //'DATA_CACHE_SUBDIR'     => true,    // 使用子目录缓存 (自动根据缓存标识的哈希创建子目录)
     //'DATA_PATH_LEVEL'       => 3,        // 子目录缓存级别
 	'DATA_CACHE_TIME' => 0,
