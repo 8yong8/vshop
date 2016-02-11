@@ -1,9 +1,0 @@
-[ 2015-11-12T23:10:32+08:00 ] 127.0.0.1 /guoji/yunwang/CacheApi/?a=Get&appid=201586485090108670&m=Local&name=list&nonce_str=dmcbcc8ty63pvy4zw3ofvm86hzp5wzxd&time_stamp=1447341031&version=1.0
-INFO: [ app_begin ] --START--
-INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001531s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
-NOTIC: [8] Undefined index: session_id D:\wamp\www\guoji\yunwang\ThinkPHP\Common\functions.php 第 581 行.
-NOTIC: [2048] Declaration of LocalAction::Get() should be compatible with that of Action::get() D:\wamp\www\guoji\yunwang\CacheApi\Cache\Lib\Action\LocalAction.class.php 第 3 行.
-SQL: SHOW COLUMNS FROM `zy_api` [ RunTime:0.008893s ]
-SQL: SELECT * FROM `zy_api` WHERE ( `py_name` = 'cache' ) AND ( `appid` = '201586485090108670' ) LIMIT 1   [ RunTime:0.000259s ]
-
