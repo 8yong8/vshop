@@ -2,13 +2,6 @@
 $config	=	require '../config.php';
 //$site_config_dir = $config['DATA_CACHE_PATH'].'config/list.php';
 $array	=	array(
-    /* 运行时间设置 */
-    //'SHOW_RUN_TIME'			=> false,   // 运行时间显示
-    //'SHOW_ADV_TIME'			=> false,   // 显示详细的运行时间
-    //'SHOW_DB_TIMES'			=> false,   // 显示数据库查询和写入次数
-    //'SHOW_CACHE_TIMES'		=> false,   // 显示缓存操作次数
-    //'SHOW_USE_MEM'			=> false,   // 显示内存开销
-    //'SHOW_PAGE_TRACE'		=> false,   // 显示页面Trace信息 由Trace文件定义和Action操作赋值
     'SHOW_ERROR_MSG'        => true,    // 显示错误信息
 	'LANG_SWITCH_ON'=>	TRUE,       //语言包开启
 	'ArrayCache'            =>  './Cache/', //缓存数组地址
