@@ -6,39 +6,39 @@
 <meta http-equiv="x-ua-compatible"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo ($head_title); ?></title>
-<link rel="stylesheet" type="text/css" href="/gh/vshop/admin/Public/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/git/vshop/admin/Public/css/style.css" />
 <style>
 body{
  background:#f1f1f1;
 }
 </style>
 <!--[if IE 6]>
-<script type="text/javascript" src="/gh/vshop/admin/Public/js/DD_belatedPNG.js" ></script>
+<script type="text/javascript" src="/git/vshop/admin/Public/js/DD_belatedPNG.js" ></script>
 <script type="text/javascript">
 DD_belatedPNG.fix('*');
 </script>
 <![endif]-->
 
-<script type="text/javascript" src="/gh/vshop/admin/Public/js/jquery.js"></script>
+<script type="text/javascript" src="/git/vshop/admin/Public/js/jquery.js"></script>
 
-<script type="text/javascript" src="/gh/vshop/admin/Public/js/common.js"></script>
-<link rel="stylesheet" type="text/css" href="/gh/vshop/admin/Public/js/artDialog/skins/chrome.css" />
-<script type="text/javascript" src="/gh/vshop/admin/Public/js/artDialog/jquery.artDialog.js"></script>
-<script type="text/javascript" src="/gh/vshop/admin/Public/js/artDialog/plugins/iframeTools.js"></script>
+<script type="text/javascript" src="/git/vshop/admin/Public/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/git/vshop/admin/Public/js/artDialog/skins/chrome.css" />
+<script type="text/javascript" src="/git/vshop/admin/Public/js/artDialog/jquery.artDialog.js"></script>
+<script type="text/javascript" src="/git/vshop/admin/Public/js/artDialog/plugins/iframeTools.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/gh/vshop/admin/Public/css/icon.css">
+<link rel="stylesheet" type="text/css" href="/git/vshop/admin/Public/css/icon.css">
 <?php if(ACTION_NAME=='index' && MODULE_NAME!='Config'){ ?>
-<link rel="stylesheet" type="text/css" href="/gh/vshop/admin/Public/js/EasyUI/themes/haidaoblue/easyui.css">
-<script type="text/javascript" src="/gh/vshop/admin/Public/js/EasyUI/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="/gh/vshop/admin/Public/js/EasyUI/locale/easyui-lang-zh_CN.js"></script>
-<script type="text/javascript" src="/gh/vshop/admin/Public/js/EasyUI/hd_default_config.js"></script>
+<link rel="stylesheet" type="text/css" href="/git/vshop/admin/Public/js/EasyUI/themes/haidaoblue/easyui.css">
+<script type="text/javascript" src="/git/vshop/admin/Public/js/EasyUI/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/git/vshop/admin/Public/js/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="/git/vshop/admin/Public/js/EasyUI/hd_default_config.js"></script>
 <?php } ?>
 <SCRIPT LANGUAGE="JavaScript">
 //指定当前组模块URL地址
-var ROOT = '/gh/vshop/admin';
-var URL = '/gh/vshop/admin/index.php/Article';
-var APP	 =	 '/gh/vshop/admin/index.php';
-var PUBLIC = '/gh/vshop/admin/Public';
+var ROOT = '/git/vshop/admin';
+var URL = '/git/vshop/admin/index.php/Article';
+var APP	 =	 '/git/vshop/admin/index.php';
+var PUBLIC = '/git/vshop/admin/Public';
 var uid = '<?php echo $_SESSION[C("USER_AUTH_KEY")]; ?>';
 var hash = '<?php echo ($hash); ?>';
 //图片预览
@@ -102,45 +102,45 @@ function clacImgZoomParam( maxWidth, maxHeight, width, height ){
 <body>
 <div class="header">
     <div class="logo fl" style="padding:0px;margin:0px;">
-		<img src="/gh/vshop/admin/Public/images/logo.png" alt="" height="60px;"/>
+		<img src="/git/vshop/admin/Public/images/logo.png" alt="" height="60px;"/>
 	</div>
     <div class="menu-box">
         <div class="menu-left-bg"></div>
         <div class="top_menu fl">
-			<?php if(is_array($menu1)): $i = 0; $__LIST__ = $menu1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><a href='/gh/vshop/admin/index.php?c=<?php echo ($item['nlist'][0]['name']); echo ($item['nlist'][0]['param_str']); ?>' <?php if(($item["show"]) == "1"): ?>class='hover'<?php endif; ?> ><?php echo ($item["cname"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+			<?php if(is_array($menu1)): $i = 0; $__LIST__ = $menu1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><a href='/git/vshop/admin/index.php?c=<?php echo ($item['nlist'][0]['name']); echo ($item['nlist'][0]['param_str']); ?>' <?php if(($item["show"]) == "1"): ?>class='hover'<?php endif; ?> ><?php echo ($item["cname"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
 			</div>
         <div class="menu-right-bg"></div>
     </div>
     <div class="help">
-        <a href="/gh/vshop/admin/index.php?m=Cache&a=clear"><img src="/gh/vshop/admin/Public/images/ico_1.png" alt="" />更新缓存</a>
-        <a href="javascript:;"><img src="/gh/vshop/admin/Public/images/ico_2.png" alt="" />帮助</a>
+        <a href="/git/vshop/admin/index.php?m=Cache&a=clear"><img src="/git/vshop/admin/Public/images/ico_1.png" alt="" />更新缓存</a>
+        <a href="javascript:;"><img src="/git/vshop/admin/Public/images/ico_2.png" alt="" />帮助</a>
     </div>
     <div class="clear"></div>
     <div class="welcome">
         <a href="javascript:void(0)">欢迎您 <?php echo $_SESSION['account']; ?></a>|
-        <a href="/gh/vshop/admin/index.php?c=Index&a=uc_sup_infoxg" target="mainFrame">更改密码</a>|
-        <a href="/gh/vshop/admin/index.php" target="_blank">网站前台</a>|
-        <a href="/gh/vshop/admin/index.php?c=Public&a=logout">退出系统</a>|
+        <a href="/git/vshop/admin/index.php?c=Index&a=uc_sup_infoxg" target="mainFrame">更改密码</a>|
+        <a href="/git/vshop/admin/index.php" target="_blank">网站前台</a>|
+        <a href="/git/vshop/admin/index.php?c=Public&a=logout">退出系统</a>|
     </div>
 </div>
 
 <div class="side">
     <div class="head">
 		<?php if(!$_SESSION['logo']){ ?>
-        <img src="/gh/vshop/admin/Public/images/head.jpg" width="43" height="43" alt="" />
+        <img src="/git/vshop/admin/Public/images/head.jpg" width="43" height="43" alt="" />
 		<?php }else{ ?>
 		<img src="<?php echo $_SESSION['logo'];?>" width="43" height="43" alt="" />
 		<?php } ?>
 
     </div>
-    <h3><img src="/gh/vshop/admin/Public/images/ico_6.png" />管理员</h3>
+    <h3><img src="/git/vshop/admin/Public/images/ico_6.png" />管理员</h3>
     <ul>
-		<?php if(is_array($left_nlist)): $i = 0; $__LIST__ = $left_nlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$node): $mod = ($i % 2 );++$i;?><li><a href='/gh/vshop/admin/index.php?c=<?php echo ($node["name"]); echo ($node["param_str"]); ?>' name='' class='n<?php echo ($node["id"]); ?> z_side <?php if((MODULE_NAME) == $node["name"]): ?>hover<?php endif; ?>'><?php echo ($node["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+		<?php if(is_array($left_nlist)): $i = 0; $__LIST__ = $left_nlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$node): $mod = ($i % 2 );++$i;?><li><a href='/git/vshop/admin/index.php?c=<?php echo ($node["name"]); echo ($node["param_str"]); ?>' name='' class='n<?php echo ($node["id"]); ?> z_side <?php if((MODULE_NAME) == $node["name"]): ?>hover<?php endif; ?>'><?php echo ($node["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 	</ul>
 </div>
 
 <div id="Container" style="min-width: 1000px;">
-    <div class="ico_left"><img src="/gh/vshop/admin/Public/images/ico_8.png" /></div>
+    <div class="ico_left"><img src="/git/vshop/admin/Public/images/ico_8.png" /></div>
 	<!--
     <iframe id="mainFrame" style="min-width: 1000px;" name="mainFrame" frameborder="0" src="" width="100%" height="100%" >
     </iframe>
@@ -152,25 +152,25 @@ function clacImgZoomParam( maxWidth, maxHeight, width, height ){
 </style>
 <script>
  function uponline(){
-   window.location.href = "/gh/vshop/admin/index.php/Article/uponline";
+   window.location.href = "/git/vshop/admin/index.php/Article/uponline";
  }
 
  function she_uponline(){
-   window.location.href = "/gh/vshop/admin/index.php/Article/she_uponline";
+   window.location.href = "/git/vshop/admin/index.php/Article/she_uponline";
  }
 
  function look(id){
-   var url = '/gh/vshop/admin/index.php/Article/look/id/'+id;
+   var url = '/git/vshop/admin/index.php/Article/look/id/'+id;
    window.open(url) 
  }
 
 
  function addold(){
-   window.location.href = "/gh/vshop/admin/index.php/Article/addold";
+   window.location.href = "/git/vshop/admin/index.php/Article/addold";
  }
 
  function upshowtime(id){
-   var url = '/gh/vshop/admin/index.php/Article/upshowtime/id/'+id;
+   var url = '/git/vshop/admin/index.php/Article/upshowtime/id/'+id;
    window.open(url);
  }
 </script>
@@ -182,7 +182,7 @@ function clacImgZoomParam( maxWidth, maxHeight, width, height ){
 	<span class="line_white"></span>
 	<div class="goods mt10">
 	  <div class="guanli" style="/*border:1px red solid;*/">
-	  <FORM METHOD=get ACTION="/gh/vshop/admin/index.php/Article">
+	  <FORM METHOD=get ACTION="/git/vshop/admin/index.php/Article">
 		<TABLE cellpadding="1" cellspacing="2" width="100%">
 		<TR>
 			<TD class="tRight">ID：</TD>
@@ -287,13 +287,13 @@ $(".ico_left").toggle(function(){
 			$(".side").animate({left:"-200px"});
 			$("#Container").animate({left:"0"});
 			$(".welcome").animate({paddingLeft:"10px"});
-			$(this).children().attr('src','/gh/vshop/admin/Public/images/ico_8a.png');
+			$(this).children().attr('src','/git/vshop/admin/Public/images/ico_8a.png');
 		},
 		function(){
 			$(".side").animate({left:"0px"});
 			$("#Container").animate({left:"200px"});
 			$(".welcome").animate({paddingLeft:"65px"});
-			$(this).children().attr('src','/gh/vshop/admin/Public/images/ico_8.png');
+			$(this).children().attr('src','/git/vshop/admin/Public/images/ico_8.png');
 		}
 	  );
 </script>

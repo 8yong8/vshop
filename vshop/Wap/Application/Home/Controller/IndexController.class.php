@@ -114,12 +114,12 @@ class IndexController extends PublicController {
 			if($positionData['url']!=''){
 				$positionsData[$key]['url'] = $positionData['url'];
 			}else if($positionData['data_type']=='product_detail'){
-				$positionsData[$key]['url'] = __APP__.'Product/detail/?id='.$params['product_id'];
+				$positionsData[$key]['url'] = __APP__.'/Product/detail/?id='.$params['product_id'];
 			}else if($positionData['data_type']=='product_list'){
 				$param_str = http_build_query($params);
-				$positionsData[$key]['url'] = __APP__.'Product/list?'.$param_str;				
+				$positionsData[$key]['url'] = __APP__.'/Product/list?'.$param_str;				
 			}else if($positionData['data_type']=='article_detail'){
-				$positionsData[$key]['url'] = __APP__.'News/detail/?id='.$params['news_id'];					
+				$positionsData[$key]['url'] = __APP__.'/News/detail/?id='.$params['news_id'];					
 			}
 		}
 		$id = $position['id'];

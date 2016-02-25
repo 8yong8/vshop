@@ -64,13 +64,13 @@ class ClassController extends CommonController {
    * 排版保存
    */
   function savelayout(){
-    $model = D('Class_node');
+    $model = D('ClassNode');
 	$data['cid'] = $_POST['cid'];
 	$result = $model->where($data)->delete();
 	$array = explode(',',$_POST['ids']);
-	$clist = include './cache/class/list.php';
+    $clist = F('list','','./cache/class/');
 	$cname = $clist[$_POST['cid']]['name'];
-	$nlist = include './cache/node/list.php';
+    $nlist = unserialize(file_get_contents('./cache/node/list.php'));
 	foreach($array as $val){
 	  $data['nid'] = $val;
 	  $data['cname'] = $cname;
@@ -78,7 +78,6 @@ class ClassController extends CommonController {
 	  $result = $model->add($data);
 	}
 	if($result){
-	  //$this->GiveCache(0);
 	  echo "保存成功";
 	}else{
 	  echo "保存失败";
@@ -157,12 +156,13 @@ class ClassController extends CommonController {
 	  }
 	  mk_dir('./cache/class/');
 	  F('list',$data,'./cache/class/');
-	  $nlist = include './cache/node/list.php' ;
-	  $cnmodel = D('Class_node');
+	  //$nlist = include './cache/node/list.php' ;
+      $nlist = F('list','','./cache/node/');
+	  $cnmodel = D('ClassNode');
 	  foreach($nlist as $val){
 	    if($val['name']!='Index' && $val['name']!='Public'){
 		  $data1['a.nid'] = $val['id'];
-		  $caches = $cnmodel->field('a.*,b.sort')->table('`137_class_node` as a ')->join('`137_class` as b on a.cid=b.id')->where($data1)->find();
+		  $caches = $cnmodel->field('a.*,b.sort')->alias('a')->join('__CLASS__ as b on a.cid=b.id')->where($data1)->find();
 		  F('np_'.$val['id'],$caches,'./cache/class/');
 		}
 	  }

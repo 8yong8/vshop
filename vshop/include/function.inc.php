@@ -38,16 +38,6 @@ function getCache($string,$data) {
 		  return false;
 		}
 	  }else{
-		  /*
-		  S(array('type'=>'File','expire'=>60));
-		  $dir	= $dir ? $module.'/'.$dir : $module;
-		  $options['temp'] = C('DATA_CACHE_PATH').$dir;
-		  $options['filename'] = $name;
-		  $cache = new Cache();
-		  $cache = $cache->connect(C('DATA_CACHE_TYPE'),$options);
-		  $cache->getInstance();
-		  $data = $cache->get($name);
-		  */
 		  $dir = $module;
 		  $options['temp'] = C('DATA_CACHE_PATH').$dir;
 		  $options['filename'] = $name;
@@ -74,7 +64,6 @@ function setCache($string, $value = NULL, $expire = 0, $data = array()) {
 		$module = CONTROLLER_NAME;
 		$name = $ar[0];  
 	}
-	//dump(C('DATA_CACHE_TYPE'));exit;
 	//集群部署
 	if(C('WEB_DEPLOY_TYPE')==1 && C('DATA_CACHE_TYPE')=='File'){
 		GLOBAL $config;
@@ -93,16 +82,6 @@ function setCache($string, $value = NULL, $expire = 0, $data = array()) {
 		//dump($data);//exit;
 		$result = json_decode($cache->set($para,$data),true);
 	}else{
-		/*
-		$dir = $data['dir'] ? $data['dir'] : $module;
-		$expire = $data['expire'];
-		$options['temp'] = C('DATA_CACHE_PATH').$dir;
-		$options['filename'] = $name;
-		$cache = new Cache();
-		$cache = $cache->connect(C('DATA_CACHE_TYPE'),$options);
-		$cache->getInstance();
-		$result = $cache->set($name,$value,$expire);
-		*/
 		$dir = $module;
 		$options['temp'] = C('DATA_CACHE_PATH').$dir;
 		$options['filename'] = $name;
@@ -302,11 +281,11 @@ function gps_to_baidu($lat,$lng){
 
 //生成订单号
 function build_order_no($id = 0){
-  //$mstr = str_pad(substr($mid,-1,6),6,0,STR_PAD_LEFT);
-  /*
-  $mstr = str_pad(mt_rand(0,9999),4,0,STR_PAD_LEFT);
-  return date('Ymd').substr(implode(NULL, array_map('ord', str_split(substr(uniqid(), 7, 13), 1))), 0, 8).$mstr;
-  */
+    //$mstr = str_pad(substr($mid,-1,6),6,0,STR_PAD_LEFT);
+    /*
+    $mstr = str_pad(mt_rand(0,9999),4,0,STR_PAD_LEFT);
+    return date('Ymd').substr(implode(NULL, array_map('ord', str_split(substr(uniqid(), 7, 13), 1))), 0, 8).$mstr;
+    */
     $his = substr(time(), -5);
     $msec = substr(microtime(), 2, 5);
     $str = substr($his,0,2).substr($msec,0,2).substr($msec,2,1).substr($his,2,2).substr($msec,3,2).substr($his,4,1);

@@ -74,10 +74,9 @@ class PositionController extends CommonController {
    * 公用
    */
   public function Predecessor(){
-	import('@.ORG.Util.Tree');
 	$data['status'] = 1;
 	$list = $this->db->where($data)->order('sort asc,id asc')->select();
-	$tree = new Tree($list);
+	$tree = new \My\Tree($list);
 	$tree->name_field = 'title';
 	$list = $tree->get_tree('0');
 	//dump($list);exit;

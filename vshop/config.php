@@ -1,4 +1,5 @@
 <?php
+$_dirname = dirname(__FILE__);
 //服务器配置
 return array(
 	'DB_TYPE'=>'mysql',
@@ -16,10 +17,10 @@ return array(
 	'API_URL'=>'http://localhost/git/vshop/BaseApi',//API接口URL
 	'MEMBER_SITE_URL'=>'http://localhost/git/vshop/member',//会员地址
 	'STATIC_SITE_URL'=>'http://localhost/git/vshop/static',//静态文件地址
-	'IMG_ROOT'=>'D:\wamp\www\git\vshop\img0/',     //图片上传路径
+	'IMG_ROOT'=> 'D:\wamp\www\git\vshop\img0/',     //图片上传路径
 	'IMG_URL'=>'http://localhost/git/vshop/img0/', //图片地址
-	'PUBLIC_INCLUDE'=>'D:\wamp\www\git\vshop\include/', //公共库目录
-	'INTERFACE_PATH'=>'D:\wamp\www\git\vshop\interface/',//接口路径
+	'PUBLIC_INCLUDE'=>$_dirname. '\include/', //公共库目录
+	'INTERFACE_PATH'=>$_dirname. '\interface/',//接口路径
 	'APP_DOMAIN'=>'', //cookie域名设置
     /* Cookie设置 */
     'COOKIE_EXPIRE'         => 60*60*24*30,    // Coodie有效期
@@ -48,9 +49,9 @@ return array(
     //'DATA_CACHE_SUBDIR'     => true,    // 使用子目录缓存 (自动根据缓存标识的哈希创建子目录)
     //'DATA_PATH_LEVEL'       => 3,        // 子目录缓存级别
 	'DATA_CACHE_TIME' => 0,
-	//'UP_DRIVER'             =>'Ftp',//FTP上传
 	'wx_desc'				=>'vion电商欢迎您',
 	'version'				=>'0.6',
-	'UP_DRIVER' =>'Local',//图片上传方式,默认本地
+	'UP_DRIVER'             =>'Ftp',//FTP上传
+	//'UP_DRIVER' =>'Local',//图片上传方式,默认本地
 );
 ?>

@@ -80,8 +80,13 @@ class PaymentConfigController extends CommonController {
 	  if (false === $model->create ()) {
 		$this->error ( $model->getError () );
 	  }
+	  $content = $_POST;
+	  unset($content['interface']);
+	  unset($content['account_nickname']);
+	  unset($content['status']);
+	  $model->content = serialize($content);
 	  // 更新数据
-	  $list=$model->save ();
+	  $list = $model->save ();
 	  if (false !== $list) {
 		//成功提示
 		$this->history($_POST['id']);
@@ -92,11 +97,11 @@ class PaymentConfigController extends CommonController {
 		$this->error ('编辑失败!');
 	  }
 	}else{
-	  $name=CONTROLLER_NAME;
+	  $name = CONTROLLER_NAME;
 	  $model = M ( $name );
 	  $id = $_REQUEST [$model->getPk ()];
 	  $vo = $model->getById ( $id );
-	  $content = unserialize($vo['content']);
+	  $content = unserialize(htmlspecialchars_decode($vo['content']));
 	  $this->assign('content',$content);
 	  $vo = array_merge($vo,$content);
 	  $this->assign ( 'vo', $vo );

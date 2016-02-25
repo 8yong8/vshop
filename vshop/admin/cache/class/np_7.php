@@ -1,1 +1,1 @@
-<?php	return false;?>
+a:6:{s:3:"cid";s:1:"8";s:5:"cname";s:18:"高级模块管理";s:3:"nid";s:1:"7";s:5:"nname";s:12:"后台用户";s:6:"params";s:0:"";s:4:"sort";s:2:"10";}

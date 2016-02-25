@@ -921,10 +921,10 @@ class CommonController extends Controller {
 	$config['allowExts'] = array('jpg','gif','png','jpeg','swf');
 	$config['saveRule'] = 'uniqid';
 	$config['rootPath'] = C('IMG_ROOT');
-	//$options['rootPath'] = '/guoji/vshop/img0/'; //FTP相对路径
+	//$options['rootPath'] = '/git/vshop/img0/'; //FTP相对路径
 	$config['savePath'] = '';
 	$config['subName'] = date('Y/m/d');
-	$config['driver'] = C('UP_DRIVER');
+	//$config['driver'] = C('UP_DRIVER');
 	$config['thumb'] = C('thumb');
 	$config['thumbPrefix'] = C('thumbPrefix');  //生产2张缩略图
 	$config['thumbMaxWidth'] = C('thumbMaxWidth');
@@ -932,7 +932,7 @@ class CommonController extends Controller {
 	if($options){
 		$config = array_merge($config,$options);
 	}
-	//$upload = new \Think\Upload($options,'FTP',include C("ROOT_SITE_DIR").'config/Ftp_config.php');
+	//$upload = new \Think\Upload($config,'FTP',include C("ROOT_SITE_DIR").'config/Ftp_config.php');
 	$upload = new \Think\Upload($config);
 	$info = $upload->upload();
 	//dump($info);exit;

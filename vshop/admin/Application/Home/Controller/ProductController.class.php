@@ -597,33 +597,19 @@ class ProductController extends CommonController{
    */
   public function upablum(){
 	if($_FILES){
-	  import("@.ORG.UploadFile");
-	  $upload = new UploadFile();
-	  $is_thumb = 1;
-	  $upload->thumb = $is_thumb;
-	  $upload->thumbPrefix = '48_,400_';
-	  $upload->thumbMaxWidth = '48,400,640';
-	  $upload->thumbMaxHeight = '48,400,640';
-	  //设置上传文件大小
-	  $upload->maxSize  = 1024*1024*2 ;
-	  //设置上传文件类型
-	  $upload->allowExts  = array('jpg','gif','png','jpeg');
-	  $upload->saveRule = 'uniqid';
-	  $path = $upload->savePath =  C('IMG_ROOT');
-	  //$filepath = date('Y').'/'.date('m').'/'.date('d').'/';
-	  mk_dir($upload->savePath);
-	  $upload->upload();
-	  $info = $upload->getUploadFileInfo();
-	  if($info!=""){
-		foreach($info as $file){
+      $pic_data = $this->upload($options);
+      //dump($pic_data);
+	  if($pic_data!=""){
+		foreach($pic_data['data'] as $file){
 		  $key = $file['key'];
 		  if($key=='up_zp'.$_POST['f_logo']){
 			$_POST['logo'] = C('IMG_URL').$file['savename'];
 		  }
 		  preg_match('/\d+/i',$key,$matches);
 		  $pics['title'][] = $_POST['title'.$matches[0]];
-		  $pics['size'][] = filesize($path.$file['savename']);
-		  $pics['filepath'][] = $filepath;
+          //dump($file);echo C('IMG_ROOT').$file['savepath'].$file['savename'].'<br/>';
+		  $pics['size'][] = filesize(C('IMG_ROOT').$file['savepath'].$file['savename']);
+		  $pics['filepath'][] = $file['savepath'].$file['savename'];
 		  $pics['click'][] = rand(0,10);
 		  $pics['savename'][] = $file['savename'];
 		  //$pics['title'][] = 'title'.$matches[0];
@@ -631,7 +617,6 @@ class ProductController extends CommonController{
 		}
 	  }
 	}
-	//dump($pics);exit;
 	if(count($pics['filepath'])>0){
 	  $model = M('Product');
 	  $vdata['id'] = $_POST['id'];
@@ -641,9 +626,9 @@ class ProductController extends CommonController{
 	$model = D('Pic');
 	for($i=0;$i<count($pics['filepath']);$i++){
 	  $pdata['title'] = $pics['title'][$i];
-	  $pdata['filepath'] = $pics['savename'][$i];
+	  $pdata['filepath'] = $pics['filepath'][$i];
 	  //$pdata['savename'] = $pics['savename'][$i];
-	  $pdata['is_thumb'] = $is_thumb;
+	  $pdata['thumb'] = C('thumbPrefix');
 	  $pdata['click'] = $pics['click'][$i];
 	  $pdata['size'] = $pics['size'][$i];
 	  $pdata['domain'] = C('IMG_URL');
@@ -680,7 +665,7 @@ class ProductController extends CommonController{
 	$model = D('Pic');
 	$data['source'] = CONTROLLER_NAME;
 	$data['picid'] = $_POST['pid'];
-	$vo = $model->field('domain,filepath,savename,is_thumb')->where($data)->find();
+	$vo = $model->field('domain,filepath,thumb')->where($data)->find();
 	//dump($vo);exit;
     //include "../../Ftp.php";
 	//是否开启FTP删除
@@ -695,14 +680,15 @@ class ProductController extends CommonController{
 	  $ftp->del_file($dir);	
 	}else{
 	  //$dir = $_NFTP[$vo['domain']].'/'.$vo['filepath'];
-	  $dir = C('IMG_ROOT').$vo['filepath'].$vo['savename'];
-	  //echo C('IMG_ROOT').$vo['filepath'].$vo['savename'];exit;
+	  $dir = C('IMG_ROOT').$vo['filepath'];
 	  unlink($dir);
-	  if($vo['is_thumb']){
-	    $dir = C('IMG_ROOT').$vo['filepath'].'thumb_'.$vo['savename'];
-	    unlink($dir);
-	    $dir = C('IMG_ROOT').$vo['filepath'].'thumb2_'.$vo['savename'];
-	    unlink($dir);
+	  if($vo['thumb']){
+        $thumbs = explode(',',$vo['thumb']);
+        foreach($thumbs as $thumb){
+            $thumb_dir = C('IMG_ROOT').get_thumb($vo['filepath'],str_ireplace("_", "", $thumb));
+            //echo $thumb_dir;exit; 
+            unlink($thumb_dir);
+        }
 	  }
 	}
 	$url= $vo['domain'].$vo['filepath'];

@@ -134,7 +134,7 @@ class CommonController extends BaseController {
 	$this->assign('page_count',$page_count);
 	if ($count > 0) {
 		//import ( "@.ORG.Page1" );.
-		import("@.ORG.Util.Page");
+		//import("@.ORG.Util.Page");
 		//创建分页对象
 		$p = new \Page ( $count, $listRows );
 		//分页查询数据

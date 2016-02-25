@@ -16,7 +16,6 @@ class BaseController extends Controller {
    * 前期执行
    */
   public function _initialize(){
-    echo 123;exit;
 	//配置
 	$configs = getCache('Config:list');
 	$this->configs = $configs;
